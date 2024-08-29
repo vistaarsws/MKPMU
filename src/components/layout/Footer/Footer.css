@@ -1,0 +1,137 @@
+footer {
+  background-color: #ececec;
+  display: grid;
+  grid-template-columns: 0.5fr 0.6fr 0.6fr 0.8fr;
+  justify-items: center;
+  align-items: start;
+  min-height: 38rem;
+  padding: 5% 5% 1%;
+}
+footer section {
+  margin: 1rem;
+}
+
+footer section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  list-style: none;
+  padding-left: 0;
+  row-gap: 8px;
+  margin-top: 1.6rem;
+}
+
+footer section ul li {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.904rem;
+  color: #141414;
+}
+
+footer section:nth-of-type(1) h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.52rem;
+  letter-spacing: 5px;
+}
+footer section:nth-of-type(2) ul li,
+footer section:last-of-type ul li {
+  cursor: pointer;
+}
+
+footer section:last-of-type ul {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 0%;
+  gap: 5%;
+}
+
+footer section:last-of-type div div input {
+  padding: 1.2rem 1.6rem;
+  width: 25.2rem;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.8rem;
+}
+
+footer section:last-of-type div div button {
+  background-color: var(--high-grey);
+  color: white;
+  padding: 1.2rem 1rem;
+  border-radius: 0.4rem;
+  width: 15rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+footer section:last-of-type div div {
+  display: flex;
+  margin-top: 1%;
+  gap: 2%;
+}
+
+footer section:last-of-type div label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.24rem;
+}
+
+footer section strong {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+
+footer p {
+  grid-column: span 4;
+  align-content: end;
+  margin: 5% 2% 1%;
+}
+
+@media screen and (max-width: 1400px) {
+  footer {
+    padding: 5% 3% 1%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    padding: 5% 3% 1%;
+  }
+  footer section:last-of-type div div {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer section:last-of-type {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  footer section:last-of-type div div {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  footer section:last-of-type div div {
+    flex-wrap: wrap;
+  }
+  footer section:last-of-type {
+    margin: 0;
+    padding: 2%;
+    width: 100%;
+  }
+  footer section:last-of-type div div input,
+  footer section:last-of-type div div button {
+    width: 100%;
+  }
+}

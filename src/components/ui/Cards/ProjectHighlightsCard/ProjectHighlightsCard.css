@@ -1,0 +1,33 @@
+.phCard_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2rem;
+  max-width: 36rem;
+  max-height: 26rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 3.2rem;
+  padding: 4rem 1.2rem;
+  margin: 2%;
+}
+.phCard_container figure {
+  max-height: 8rem;
+  max-width: 8rem;
+  height: 100%;
+  width: 100%;
+}
+.phCard_container figure img {
+  object-fit: cover;
+}
+.phCard_container strong {
+  display: block;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+.phCard_container p {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.52rem;
+}
