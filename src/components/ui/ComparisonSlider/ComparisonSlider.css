@@ -1,0 +1,135 @@
+:root {
+  --image-comparison-slider-width: min(80vw, 100%);
+  --image-comparison-slider-handle-width: 50px;
+}
+
+#Video-Comparison .container {
+  width: 100%;
+  object-fit: fill;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+#Video-Comparison .comparison-slider {
+  width: var(--image-comparison-slider-width);
+  overflow: hidden;
+  border-radius: 0.5rem;
+  position: relative;
+  border-radius: 4.8rem;
+}
+#Video-Comparison .comparison-slider img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 716px;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+}
+#Video-Comparison .comparison-slider .video-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: inset(0 50% 0 0);
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.25s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+}
+#Video-Comparison .comparison-slider .video-wrapper img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#Video-Comparison .comparison-slider .label {
+  position: absolute;
+  top: 5%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  z-index: 3;
+  border-radius: 4.8rem;
+  padding: 8px 18px 8px 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  user-select: none;
+  background-color: white;
+  opacity: 0;
+}
+#Video-Comparison .comparison-slider:hover .label {
+  opacity: 1;
+}
+#Video-Comparison .comparison-slider .label-before {
+  left: 5%;
+  color: #000;
+}
+#Video-Comparison .comparison-slider .label-after {
+  background-color: rgb(255, 255, 255);
+  right: 5%;
+}
+#Video-Comparison .comparison-slider .handle {
+  position: absolute;
+  top: 0;
+  left: calc(50% - (var(--image-comparison-slider-handle-width) / 2));
+  width: var(--image-comparison-slider-handle-width);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  z-index: 2;
+  transition: 0.25s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+  cursor: grab;
+}
+#Video-Comparison .comparison-slider .handle-line {
+  width: 2px;
+  flex-grow: 1;
+  background-color: #ffff;
+}
+#Video-Comparison .comparison-slider .handle-circle {
+  width: var(--image-comparison-slider-handle-width);
+  height: var(--image-comparison-slider-handle-width);
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1024px) {
+  #Video-Comparison .comparison-slider img {
+    height: 100%;
+    max-height: 60vw;
+  }
+  #Video-Comparison .comparison-slider {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #Video-Comparison .comparison-slider img {
+    height: 100%;
+    max-height: 60vw;
+  }
+  #Video-Comparison .comparison-slider {
+    width: 95%;
+  }
+  #Video-Comparison .comparison-slider {
+    border-radius: 2rem;
+  }
+  #Video-Comparison .comparison-slider .handle-circle {
+    display: none;
+  }
+  #Video-Comparison .comparison-slider .label {
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 4.8rem;
+    padding: 4px 12px 4px 12px;
+  }
+}

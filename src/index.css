@@ -1,0 +1,50 @@
+/*-------IMPORT FONTS-------*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*-------CSS BASE STYLES-------*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/*-----------------------------------------Colors---------------------------------------------------*/
+:root {
+  --primary-accent: #ff6b00;
+  --primary-shade: rgba(86, 85, 185, 1);
+  --primary-pastel: rgba(168, 163, 215, 1);
+  --primary-light: rgba(242, 241, 249, 1);
+
+  --black: rgba(0, 0, 0, 1);
+  --highest-grey: #202020;
+  --high-grey: #434343;
+  --neutral-grey: #737373;
+  --low-grey: #c8c8c8;
+  --lowest-grey: rgba(245, 245, 245, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --semantics-danger: rgba(230, 39, 39, 1);
+  --semantics-success: rgba(12, 183, 18, 1);
+  --semantics-warning: #febd5b;
+  --semantics-flash: rgba(20, 110, 216, 1);
+  --semantics-caution: rgba(255, 100, 11, 1);
+}
+
+/* -------------------------------------------------------------------------------------------------------*/
