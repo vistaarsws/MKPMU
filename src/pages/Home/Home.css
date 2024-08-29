@@ -398,8 +398,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2.4rem;
   overflow-x: auto;
   scrollbar-width: none;
+  margin: 3% 0 2%;
 }
 
 .storyCard {
@@ -409,7 +411,6 @@
   overflow: hidden;
   max-width: 320px;
   width: 100%;
-  margin: 1.5%;
 }
 .storyCard video {
   object-fit: cover;
@@ -437,7 +438,7 @@
 .irrigationProjectSection {
   display: flex;
   height: 100%;
-  margin: 5%;
+  margin: 5% 10%;
   border-radius: 4rem;
   overflow: hidden;
 }
@@ -569,6 +570,7 @@
 }
 .mapSectionContainer figure svg {
   height: 100%;
+  padding: 1rem 3rem;
   max-height: 75.5rem;
   max-width: 93.4rem;
   width: 100%;
@@ -687,23 +689,30 @@
 }
 
 /* -----------------------------------------------------Project Highlight Section---------------------------------------------------------------------------------------- */
-.projectHighlightSection div {
+.projectHighlightSection {
+  margin: 2% 8%;
+}
+
+.projectHighlightSection > div:first-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
+
   flex-wrap: wrap;
+  gap: 2.4rem;
+  margin-top: 4vw;
 }
 .projectHighlightSection h1 {
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4rem;
   color: var(--low-grey);
-  margin: 1% 10%;
+  margin: 1% 8%;
 }
 .projectHighlightSection > p:first-of-type {
   font-size: 4rem;
   line-height: 5rem;
-  margin: 0 10%;
+  margin: 0 8%;
   margin-bottom: 2%;
 }
 
@@ -729,9 +738,6 @@
     font-size: 2rem;
     line-height: 3.2rem;
     margin: 0 5%;
-  }
-  .projectHighlightSection div {
-    margin: 3%;
   }
 }
 @media screen and (max-width: 425px) {

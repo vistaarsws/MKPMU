@@ -1,10 +1,10 @@
 .testimonialContainer {
   background-color: #feffba;
-  max-width: 84.5rem;
   min-width: 32rem;
+  margin-right: 2.4rem;
   width: 100%;
   padding: 2% 5%;
-  margin: 2% 5%;
+  /* margin: 2% 3%; */
   border-radius: 4rem;
   user-select: none;
 }
