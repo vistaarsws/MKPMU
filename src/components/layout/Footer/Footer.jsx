@@ -4,7 +4,7 @@ import instagramIcon from "../../../assets/images/Instagram.svg";
 import youtubeIcon from "../../../assets/images/Youtube.svg";
 import footerLogo from "../../../assets/images/Emblem_of_Madhya_Pradesh1.svg";
 import "./Footer.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const footer_details = {
@@ -15,11 +15,11 @@ export default function Footer() {
       { platform: "Youtube", icon: youtubeIcon },
     ],
     quickLinks: [
-      { companyInfo: "About Us", link: "/" },
-      { companyInfo: "Contact Us", link: "/" },
-      { companyInfo: "Impact Story", link: "/" },
-      { companyInfo: "Research & Publications", link: "/" },
-      { companyInfo: "News & Updates", link: "/" },
+      { companyInfo: "About Us", link: "/about" },
+      { companyInfo: "Contact Us", link: "/contact" },
+      { companyInfo: "Impact Story", link: "/impact-story" },
+      { companyInfo: "Research & Publications", link: "/research-publication" },
+      { companyInfo: "News & Updates", link: "/news-updates" },
     ],
     contactUs: {
       header: "Government of Madhya Pradesh, Water Resource Department",
@@ -46,7 +46,7 @@ export default function Footer() {
             {footer_details.quickLinks.map((e, index) => {
               return (
                 <li key={index}>
-                  <a>{e.companyInfo}</a>
+                  <Link to={e.link}>{e.companyInfo}</Link>
                 </li>
               );
             })}

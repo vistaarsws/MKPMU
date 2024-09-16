@@ -7,11 +7,13 @@
   height: max-content;
   padding: 5% 3%;
 }
+
 .beforeNow_section div {
   position: relative;
   display: flex;
   align-items: center;
 }
+
 .beforeNow_section div {
   align-items: start;
 }
@@ -167,221 +169,6 @@
   }
 }
 
-/* ------------------------------------------------------------------------------------------------------------------- */
-
-.formSection {
-  padding: 5%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.6rem;
-}
-
-.formSection figure {
-  margin: 0 auto;
-}
-
-.formSection form h1 {
-  font-size: 4.8rem;
-  font-weight: 500;
-  line-height: 6.048rem;
-}
-.formSection form {
-  padding: 1rem 5%;
-}
-
-.formSection form p {
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 3.024rem;
-  margin: 1.6rem 0;
-  width: 65%;
-}
-.formSection form button {
-  padding: 0.8rem 1rem;
-  background-color: var(--primary-accent);
-  border-radius: 0.8rem;
-  width: 100%;
-  font-weight: 700;
-  font-size: 2rem;
-  height: 7.4rem;
-  line-height: 2.52rem;
-  color: white;
-}
-.formSection form div div label {
-  line-height: 2.24rem;
-  margin-bottom: 0.8rem;
-}
-.formSection form div > div {
-  margin: 3.4rem 0;
-}
-.formSection form div div input {
-  padding: 1.2rem 1.6rem;
-  border: 1px solid #d9d9d9;
-  border-radius: 0.8rem;
-  width: 100%;
-}
-
-#reason {
-  padding: 1.2rem;
-  border: 1px solid #d9d9d9;
-  border-radius: 0.8rem;
-  width: 100%;
-  max-height: 100%;
-  height: 15rem;
-  line-height: 2.24rem;
-}
-
-.formSection form div div {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-@media screen and (max-width: 1400px) {
-  .formSection form p {
-    /* font-size: 2.4rem;
-    font-weight: 400;
-    line-height: 3.024rem;
-    margin: 1.6rem 0; */
-    width: 80%;
-  }
-  .formSection form div > div {
-    margin: 1.4rem 0;
-  }
-  .formSection form p {
-    font-size: 2rem;
-  }
-  .formSection form h1 {
-    font-size: 3.8rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .formSection {
-    padding: 5%;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6rem;
-  }
-  .formSection figure {
-    margin: 0 5%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .formSection form p {
-    width: 100%;
-  }
-}
-
-/* --------------------------------------------------------------------- MKPMU TEAM ---------------------------------------------------------------------------- */
-
-.mkpmuTeam_container {
-  padding: 5% 3%;
-  background-color: rgb(255, 255, 255);
-}
-
-.TeamMemberCard_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  margin: 2% 3%;
-  justify-content: center;
-  align-items: center;
-}
-
-.TeamMemberCard_container .TeamMemberCard {
-  height: auto;
-  margin: 5% 2%;
-  text-align: center;
-}
-
-.TeamMemberCard_container .TeamMemberCard h2 {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-.TeamMemberCard_container .TeamMemberCard p {
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-.TeamMemberCard_container .TeamMemberCard figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mkpmuTeam_container h1 {
-  font-size: 4.8rem;
-  font-weight: 500;
-  width: 50%;
-
-  text-align: center;
-  margin: 0 auto;
-  line-height: 6.048rem;
-}
-.mkpmuTeam_container > p:first-of-type {
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: center;
-}
-
-@media screen and (max-width: 1400px) {
-  .mkpmuTeam_container h1 {
-    width: 60%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .mkpmuTeam_container h1 {
-    width: 70%;
-  }
-
-  .TeamMemberCard_container .TeamMemberCard {
-    margin: 5% auto;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .mkpmuTeam_container h1 {
-    width: 100%;
-    font-size: 6vw;
-    line-height: 8vw;
-    padding: 0 2%;
-  }
-
-  .TeamMemberCard_container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .mkpmuTeam_container > p:first-of-type {
-    font-size: 3.2vw;
-  }
-  .TeamMemberCard_container .TeamMemberCard h2 {
-    font-size: 2rem;
-  }
-  .TeamMemberCard_container .TeamMemberCard p {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .TeamMemberCard_container {
-    grid-template-columns: 1fr;
-    margin: 2% 5%;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .TeamMemberCard_container {
-    grid-template-columns: 1fr;
-  }
-  .mkpmuTeam_container > p:first-of-type {
-    font-size: 1.4rem;
-  }
-}
-
 /* ----------------------------------------------------------SUCCESS STORY----------------------------------------------------------------------------------- */
 
 .storySection h1 {
@@ -410,10 +197,28 @@
   flex-shrink: 0;
   overflow: hidden;
   max-width: 320px;
+  max-height: 320px;
   width: 100%;
 }
 .storyCard video {
   object-fit: cover;
+}
+
+.custom-player-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.play-pause-btn {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1400px) {
@@ -697,12 +502,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   flex-wrap: wrap;
   gap: 2.4rem;
   margin-top: 4vw;
 }
-.projectHighlightSection h1 {
+
+.projectHighlightSection div figure img {
+  width: max-content;
+  height: auto;
+}
+
+.projectHighlightSection > div:first-of-type div {
+  padding: 4rem 1.2rem;
+  border-radius: 2rem;
+}
+.projectHighlightSection > div:first-of-type div h2 {
+  line-height: 5rem;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.projectHighlightSection > div:first-of-type div h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.projectHighlightSection > h1:first-of-type {
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4rem;

@@ -24,10 +24,23 @@
 .testimonialContainer div {
   display: flex;
   flex-direction: column;
+
   justify-content: center;
   align-items: center;
   margin-top: 2%;
 }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.actualTestimonial_container {
+  border-radius: 2.4rem;
+}
+.actualTestimonial_container image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 1400px) {
   .testimonialContainer blockquote {
