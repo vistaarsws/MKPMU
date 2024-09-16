@@ -43,3 +43,15 @@
   background-color: white;
   opacity: 1;
 }
+
+.navigationArrows_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15rem;
+  margin: 3% auto;
+}
+
+.navigationArrows_container > button:focus {
+  outline: none;
+}

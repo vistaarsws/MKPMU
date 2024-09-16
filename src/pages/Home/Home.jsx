@@ -1,20 +1,14 @@
 import { useState } from "react";
-// import pict1 from "../../assets/images/1.jpg";
-// import pict2 from "../../assets/images/2.jpg";
-// import pict3 from "../../assets/images/3.jpg";
-// import pict4 from "../../assets/images/4.jpg";
-// import pict5 from "../../assets/images/5.jpg";
-// import pict6 from "../../assets/images/6.jpg";
-import damPicture from "../../assets/images/dam.png";
+
 import mapBackground from "../../assets/images/map_background.png";
-import ProjectHighlightsCard from "../../components/ui/Cards/ProjectHighlightsCard/ProjectHighlightsCard";
-import vdo from "../../assets/videos/testimonialVideo.mp4";
+import Card from "../../components/ui/Cards/Card/Card";
+// import vdo from "../../assets/videos/testimonialVideo.mp4";
 import plusIcon from "../../assets/images/plus-circle.svg";
 import minusIcon from "../../assets/images/circle-minus.svg";
 import ReactPlayer from "react-player";
-import { mkpmuTeam } from "../../utils/Constant";
 import "./Home.css";
 import { EmblaSlider } from "../../components/ui/Slider/EmblaSlider";
+import Team_section from "../../components/layout/TeamSection/TeamSection";
 import {
   ministerQuoteSlides_array,
   testimonialSlides_array,
@@ -26,31 +20,38 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
-import ComparisonSlider from "../../components/ui/ComparisonSlider/ComparisonSlider";
-// import ScrollTriggerSlider from "../../components/ui/ScrollTriggerSlider/ScrollTriggerSlider";
+import person_1 from "../../assets/images/Frame1.png";
+import person_2 from "../../assets/images/Frame2.png";
+import person_3 from "../../assets/images/Frame3.png";
+import person_4 from "../../assets/images/Frame4.png";
+import Form from "../../components/ui/Form/Form";
+import { useNavigate } from "react-router-dom";
+import playIcon from "../../assets/images/playIcon.svg";
+import pauseIcon from "../../assets/images/pauseIcon.svg";
 
-const videoUrls = [vdo, vdo, vdo, vdo];
+const cardContent = [person_1, person_2, person_3, person_4];
 
-export default function MyComponent() {
-  // const [isMobile, setIsMobile] = useState(false);
-
-  const [playingIndex, setPlayingIndex] = useState(null);
+export default function Home() {
   const [expanded, setExpanded] = useState(false);
+  const navigate = useNavigate();
+
+  const [playing, setPlaying] = useState(false);
+
+  const isImage = (url) => {
+    return url.match(/\.(jpeg|jpg|gif|png|svg)$/i);
+  };
+
+  const isVideo = (url) => {
+    return url.match(/\.(mp4|webm|ogg|mov)$/i);
+  };
+
+  const handlePlayPause = () => {
+    setPlaying(!playing);
+  };
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
-
-  const handlePlayPause = (index) => {
-    setPlayingIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
-
-  // useEffect(() => {
-  //   const checkScreenSize = () => setIsMobile(window.innerWidth <= 768);
-  //   checkScreenSize();
-  //   window.addEventListener("resize", checkScreenSize);
-  //   return () => window.removeEventListener("resize", checkScreenSize);
-  // }, []);
 
   const [tooltip, setTooltip] = useState({
     visible: false,
@@ -62,8 +63,6 @@ export default function MyComponent() {
   const handleMouseMove = (event, regionName) => {
     const cursorX = event.clientX;
     const cursorY = event.clientY;
-
-    console.log("EEEE", cursorY);
 
     setTooltip({
       visible: true,
@@ -107,18 +106,20 @@ export default function MyComponent() {
           delay={5000}
           autoScroll={false}
           navigationDots={true}
+          backdrop={true}
         />
       </section>
+
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className="descriptionSection">
         <p>
           <span>The Mohanpura and Kundalia</span> Irrigation Projects in Madhya
           Pradesh represent landmark initiatives in sustainable water
-          management. Launched in 2018, these projects feature innovative
+          management. Commissioned in 2018, these projects feature innovative
           underground pipeline systems and pressurised piped-irrigation
           technologies, benefiting over <span>1,000 villages</span> across
           multiple districts. It aims to irrigate more than
-          <span>260,000 hectares of land</span>, transforming agricultural
+          <span> 290,495 hectares of land</span>,transforming agricultural
           practices and improving livelihoods in the region through efficient
           water use and <span>pressurized irrigation systems.</span>
         </p>
@@ -246,12 +247,17 @@ export default function MyComponent() {
         <div>
           {projectHighlightCards_array.map((card, index) => {
             return (
-              <ProjectHighlightsCard
+              <Card
                 key={index}
-                label={card.label}
-                icon={card.icon}
-                value={card.value}
-                bgColor={card.bgColor}
+                card={{
+                  image: { src: card.icon },
+                  color: { bgColor: card.bgColor },
+                  text: {
+                    content: ["", card.value, card.label],
+                    justify: ["center", "center", "center"],
+                  },
+                  dimensions: { maxHeight: "26rem", maxWidth: "36rem" },
+                }}
               />
             );
           })}
@@ -301,7 +307,15 @@ export default function MyComponent() {
                 })}
               </div>
               <div className="learnMoreBtn_container">
-                <button>Learn More</button>
+                <button
+                  onClick={() =>
+                    index
+                      ? navigate("project/kundaliya")
+                      : navigate("project/mohanpura")
+                  }
+                >
+                  Learn More
+                </button>
               </div>
             </article>
             <figure>
@@ -313,8 +327,7 @@ export default function MyComponent() {
           </section>
         );
       })}
-      {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
-      <ComparisonSlider />
+
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className="storySection">
         <h1>A Success Story</h1>
@@ -324,15 +337,42 @@ export default function MyComponent() {
         </p>
 
         <article className="storyContainer">
-          {videoUrls.map((video, index) => {
+          {cardContent.map((content, index) => {
+            console.log(content, "aksjdiuiyugf");
             return (
               <div key={index} className="storyCard">
-                <ReactPlayer
-                  url={video}
-                  width={"100%"}
-                  playing={playingIndex === index}
-                  onClick={() => handlePlayPause(index)}
-                />
+                {isImage(content) ? (
+                  <img
+                    src={content}
+                    alt={`content-${index}`}
+                    className="imageClass"
+                  />
+                ) : isVideo(content) ? (
+                  <div className="custom-player-wrapper">
+                    <ReactPlayer
+                      url={content}
+                      playing={playing}
+                      controls={false}
+                      width="100%"
+                      height="100%"
+                    />
+
+                    <div className="controls">
+                      <button
+                        onClick={handlePlayPause}
+                        className="play-pause-btn"
+                      >
+                        {playing ? (
+                          <img src={pauseIcon} />
+                        ) : (
+                          <img src={playIcon} />
+                        )}
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <p>Unsupported content type</p>
+                )}
               </div>
             );
           })}
@@ -347,28 +387,8 @@ export default function MyComponent() {
         navigationDots={false}
       />
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className="mkpmuTeam_container">
-        <h1>Mohanpura Kundalia Project Management Unit</h1>
-        <p>Team that made the impossible, possible.</p>
-        <div className="TeamMemberCard_container">
-          {mkpmuTeam.map((member, index) => {
-            return (
-              <div key={index} className="TeamMemberCard">
-                <figure>
-                  <img
-                    src={member.picture}
-                    alt={`Picture of ${member.fullName}`}
-                  />
-                </figure>
-                <h2>{member.fullName}</h2>
-                <p>{member.designation}</p>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      <Team_section />
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
-
       <section>
         <EmblaSlider
           slides={ministerQuoteSlides_array}
@@ -378,39 +398,8 @@ export default function MyComponent() {
         />
       </section>
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
+      <Form />
 
-      <section className="formSection">
-        <figure>
-          <img src={damPicture} alt="Dam Picture" />
-        </figure>
-        <form>
-          <h1>Reach us out</h1>
-          <p>To know more about the project or for any enquiries contact us.</p>
-          <div>
-            <div>
-              <label htmlFor="fullName">Full Name</label>
-              <input
-                type="text"
-                placeholder="Enter your full name"
-                id="fullName"
-              />
-            </div>
-            <div>
-              <label htmlFor="email">Email</label>
-              <input type="text" placeholder="Enter your email" id="email" />
-            </div>
-            <div>
-              <label htmlFor="fullName">Reason</label>
-              <textarea
-                name="reason"
-                id="reason"
-                placeholder="Tell us your reason for contacting us"
-              />
-            </div>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className="irrigatedLand_section">
         <div>

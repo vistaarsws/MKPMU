@@ -1,1 +1,60 @@
+.notificationBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #febd5b;
+  padding: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.notificationBar div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.notificationBar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.notificationBar img {
+  margin: 0 1rem;
+}
+.notificationBar span {
+  margin: 0 1rem;
+  color: #006ead;
+  cursor: pointer;
+}
+.notificationBar span:hover {
+  color: #0081cc;
+}
+
+.notificationBar img:last-of-type {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  .notificationBar {
+    align-items: start;
+    padding: 1rem;
+  }
+  .notificationBar div p {
+    align-items: start;
+  }
+
+  .notificationBar div {
+    flex-direction: column;
+    align-items: start;
+  }
+  .notificationBar div {
+    align-items: start;
+    font-size: 1rem;
+  }
+
+  .notificationBar span {
+    margin-left: 4.4rem;
+  }
+}

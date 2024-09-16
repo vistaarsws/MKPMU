@@ -22,17 +22,23 @@ export default function Navbar() {
       linkUrl: "/impact-story",
     },
     {
-      linkText: "Contact Us",
-      linkUrl: "/contact",
+      linkText: "Project Outreach",
+      linkUrl: "/project-outreach",
     },
+    {
+      linkText: "Awards & Acknowledgement",
+      linkUrl: "/awards-acknowledgement",
+    },
+
     {
       linkText: "More",
       linkUrl: "#",
       sideIcon: true,
       dropdown: [
-        { text: "Keep source formatting", link: "#" },
-        { text: "Keep formatting", link: "#" },
-        { text: "Source", link: "#" },
+        { text: "News & Updates", link: "/news-updates" },
+        { text: "Research & Publication", link: "/research-publication" },
+        { text: "Testimonials", link: "/testimonials" },
+        { text: "Contact Us", link: "/contact" },
       ],
     },
   ];
@@ -73,7 +79,10 @@ export default function Navbar() {
                 }
                 to={link.linkUrl}
                 onClick={() => {
-                  setIsNavOpen(false);
+                  if (link.linkText !== "More") {
+                    setIsNavOpen(false);
+                  }
+
                   if (link.dropdown) {
                     setOpenDropdownIndex(
                       openDropdownIndex === index ? null : index
@@ -103,7 +112,14 @@ export default function Navbar() {
               {link.dropdown && openDropdownIndex === index && (
                 <div className="dropdown-content">
                   {link.dropdown.map((dLink, dIndex) => (
-                    <Link key={dIndex} to={dLink.link}>
+                    <Link
+                      key={dIndex}
+                      to={dLink.link}
+                      onClick={() => {
+                        setOpenDropdownIndex(false);
+                        setIsNavOpen(false);
+                      }}
+                    >
                       {dLink.text}
                     </Link>
                   ))}
