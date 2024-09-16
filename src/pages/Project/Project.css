@@ -136,6 +136,9 @@
     line-height: 2.8rem;
     padding: 2rem;
   }
+  .project_container article > h2 {
+    font-size: 3.2rem;
+  }
 
   .salientFeature_block ul > li > div {
     font-size: 1.4rem !important;
@@ -143,9 +146,5 @@
   }
   .salientFeature_block ul > li {
     margin-bottom: 2%;
-  }
-
-  .project_container article > h2 {
-    font-size: 3.2rem;
   }
 }
