@@ -1,16 +1,29 @@
 import "./Navbar.css";
 import logo from "../../../assets/images/logo.png";
-import { useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
+  const dropdownRef = useRef(null);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
-  const location = useLocation();
 
   const handleToggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setOpenDropdownIndex(null); // Close the dropdown
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const navLinks = [
     {
@@ -48,11 +61,7 @@ export default function Navbar() {
       <div className="brand">
         <Link to="/" onClick={() => setIsNavOpen(false)}>
           <img src={logo} alt="Brand Logo" />
-          <h1
-            className={`${location.pathname === "/" ? "" : "text-[#000000]"}`}
-          >
-            MOHANPURA - KUNDALIYA IRRIGATION PROJECTS
-          </h1>
+          <h1>MOHANPURA - KUNDALIYA IRRIGATION PROJECTS</h1>
         </Link>
       </div>
       <div className="nav-mobile">
@@ -67,15 +76,10 @@ export default function Navbar() {
       <nav>
         <ul className={`nav-list ${isNavOpen ? "open" : "hidden"}`}>
           {navLinks.map((link, index) => (
-            <li
-              key={index}
-              className={`nav-item ${
-                location.pathname === "/" ? "" : "text-[#000000]"
-              }`}
-            >
+            <li key={index} className={`nav-item `}>
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "text-[var(--primary-accent)]" : ""
+                  isActive ? "!text-[var(--primary-accent)]" : ""
                 }
                 to={link.linkUrl}
                 onClick={() => {
@@ -98,10 +102,11 @@ export default function Navbar() {
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    stroke="black"
+                    id="dropDownArrow"
                   >
                     <path
                       d="M6 9L12 15L18 9"
-                      stroke={location.pathname === "/" ? "black" : "#000000"}
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -110,18 +115,21 @@ export default function Navbar() {
                 )}
               </NavLink>
               {link.dropdown && openDropdownIndex === index && (
-                <div className="dropdown-content">
+                <div className="dropdown-content" ref={dropdownRef}>
                   {link.dropdown.map((dLink, dIndex) => (
-                    <Link
+                    <NavLink
                       key={dIndex}
                       to={dLink.link}
+                      className={({ isActive }) =>
+                        isActive ? "!text-[var(--primary-accent)]" : ""
+                      }
                       onClick={() => {
                         setOpenDropdownIndex(false);
                         setIsNavOpen(false);
                       }}
                     >
                       {dLink.text}
-                    </Link>
+                    </NavLink>
                   ))}
                 </div>
               )}

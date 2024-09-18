@@ -338,7 +338,6 @@ export default function Home() {
 
         <article className="storyContainer">
           {cardContent.map((content, index) => {
-            console.log(content, "aksjdiuiyugf");
             return (
               <div key={index} className="storyCard">
                 {isImage(content) ? (

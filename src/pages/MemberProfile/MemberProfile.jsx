@@ -1,17 +1,15 @@
 import linkedinIcon from "../../assets/images/linkedin.png";
-import { useLocation } from "react-router-dom";
 import { teamMemberDetails_array } from "../../utils/Constant";
 import Team_section from "../../components/layout/TeamSection/TeamSection";
 import { Link } from "react-router-dom";
+import useUrlToGetPage from "../../hooks/useUrlToGetPage";
 import "./MemberProfile.css";
 
 export default function MemberProfile() {
-  const location = useLocation();
-  const member = location.pathname.split("/").pop();
-
+  const currentPage = useUrlToGetPage();
   const memberProfile = teamMemberDetails_array.find((m) => {
     const memberName = m.fullName.split(" ").join("_");
-    return memberName === member;
+    return memberName === currentPage;
   });
 
   return (

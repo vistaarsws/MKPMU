@@ -61,9 +61,16 @@ nav ul li a:visited {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
+  color: var(--highest-grey);
 }
 
 nav ul li:hover {
+  color: var(--primary-accent);
+}
+
+.nav-item a:hover #dropDownArrow,
+.nav-item a:hover {
+  stroke: var(--primary-accent);
   color: var(--primary-accent);
 }
 
@@ -95,6 +102,7 @@ nav ul li:hover {
   display: block;
   text-align: end;
 }
+
 .dropdown-content a:hover {
   color: var(--primary-accent);
 }
