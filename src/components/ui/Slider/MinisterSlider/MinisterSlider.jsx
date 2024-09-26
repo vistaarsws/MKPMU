@@ -29,7 +29,7 @@ export const MinisterSlider = ({ picture, quote, fullName, date }) => {
 
 MinisterSlider.propTypes = {
   picture: PropTypes.string,
-  quote: PropTypes.string,
+  quote: PropTypes.array,
   fullName: PropTypes.string,
   date: PropTypes.string,
 };

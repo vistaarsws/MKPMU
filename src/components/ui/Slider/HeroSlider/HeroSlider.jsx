@@ -3,9 +3,9 @@ import "./HeroSlider.css";
 
 export default function HeroSlider({ title, description, banner }) {
   return (
-    <>
+    <div className="relative bg-green-500 w-full">
       <section
-        className="heroSlideContainer bg-cover bg-no-repeat"
+        className="heroSlideContainer bg-cover bg-no-repeat "
         style={{
           backgroundImage: `url(${banner})`,
         }}
@@ -15,7 +15,8 @@ export default function HeroSlider({ title, description, banner }) {
           {description && <p>{description}</p>}
         </div>
       </section>
-    </>
+      <div className="banner_backDrop"></div>
+    </div>
   );
 }
 
