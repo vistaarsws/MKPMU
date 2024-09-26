@@ -61,9 +61,16 @@ nav ul li a:visited {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
+  color: var(--highest-grey);
 }
 
 nav ul li:hover {
+  color: var(--primary-accent);
+}
+
+.nav-item a:hover #dropDownArrow,
+.nav-item a:hover {
+  stroke: var(--primary-accent);
   color: var(--primary-accent);
 }
 
@@ -95,6 +102,7 @@ nav ul li:hover {
   display: block;
   text-align: end;
 }
+
 .dropdown-content a:hover {
   color: var(--primary-accent);
 }
@@ -110,10 +118,12 @@ nav ul li:hover {
     position: absolute;
     top: 10vh;
     height: max-content;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
+    right: 2%;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1.8rem;
   }
   .brand h1 {
     margin-right: 10vw;
@@ -121,7 +131,6 @@ nav ul li:hover {
 
   nav ul > li:last-of-type {
     width: 100%;
-    padding-right: 2.4rem;
   }
 
   .dropdown-content {
@@ -136,10 +145,14 @@ nav ul li:hover {
     box-shadow: none;
   }
 
+  .dropdown-content a {
+    text-align: start;
+  }
+
   .nav-list {
     margin: 0 auto;
     width: 100%;
-    align-items: end;
+    align-items: start;
   }
 
   nav ul {
@@ -152,7 +165,7 @@ nav ul li:hover {
   nav ul li a {
     padding: 15px;
     line-height: 20px;
-    justify-content: end;
+    justify-content: start;
   }
 
   #navbar-toggle {

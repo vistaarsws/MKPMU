@@ -1,5 +1,6 @@
 import "./Project.css";
 import { kundaliyaDetails, mohanpuraDetails } from "../../utils/Constant";
+import useUrlToGetPage from "../../hooks/useUrlToGetPage";
 import Banner from "../../components/ui/Header/Banner/Banner";
 
 import damImg_1 from "../../assets/images/Kundalia.png";
@@ -12,10 +13,8 @@ import damImg_2 from "../../assets/images/Mohanpura.png";
 import img_5 from "../../assets/images/5_.png";
 import img_6 from "../../assets/images/6_.png";
 
-import { useLocation } from "react-router-dom";
-
 export default function Project() {
-  const location = useLocation();
+  const pageUrl = useUrlToGetPage();
 
   const kundaliyaBanner = {
     title: "Kundalia Irrigation Project",
@@ -30,10 +29,8 @@ export default function Project() {
       "The Water Resources Department, state government of Madhya Pradesh envisages to develop Mohanpura dam, near vilage Banskhedi in district Rajgarh. The dam is proposed constructed across river Newaj at an estimated investment of 3,866-crore. The proposed Mohanpura dam proposes to provide water for irrigation, domestic and industrial uses.",
   };
 
-  console.log(location.pathname.split("/").pop(), "saugyfdrf");
-
   const currentPage =
-    location.pathname.split("/").pop() == "kundaliya"
+    pageUrl == "kundaliya"
       ? { banner: kundaliyaBanner, details: kundaliyaDetails }
       : { banner: mohanpuraBanner, details: mohanpuraDetails };
 

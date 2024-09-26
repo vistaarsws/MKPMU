@@ -14,7 +14,7 @@ export default function Testimonials() {
         title={testimonialHeader.title}
         description={testimonialHeader.description}
       />
-
+      {/* 
       <article>
         <EmblaSlider
           slides={testimonialSlides_array}
@@ -23,7 +23,7 @@ export default function Testimonials() {
           autoScroll={true}
           navigationDots={false}
         />
-      </article>
+      </article> */}
       <article>
         <EmblaSlider
           slides={actual_testimonials_array}
