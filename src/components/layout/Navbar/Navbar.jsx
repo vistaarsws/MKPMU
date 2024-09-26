@@ -5,17 +5,37 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const dropdownRef = useRef(null);
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(false); // Starts hidden
+  const [isMobileView, setIsMobileView] = useState(null);
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
 
   const handleToggleNav = () => {
-    setIsNavOpen(!isNavOpen);
+    setIsNavVisible(!isNavVisible);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1600) {
+        setIsMobileView(true);
+        setIsNavVisible(false); // Hide nav on mobile initially
+      } else {
+        setIsMobileView(false);
+        setIsNavVisible(true); // Show nav on desktop by default
+      }
+    };
+
+    handleResize(); // Initial setup
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setOpenDropdownIndex(null); // Close the dropdown
+        setOpenDropdownIndex(null); // Close dropdown when clicking outside
       }
     };
 
@@ -42,7 +62,6 @@ export default function Navbar() {
       linkText: "Awards & Acknowledgement",
       linkUrl: "/awards-acknowledgement",
     },
-
     {
       linkText: "More",
       linkUrl: "#",
@@ -59,7 +78,7 @@ export default function Navbar() {
   return (
     <header className="navigation">
       <div className="brand">
-        <Link to="/" onClick={() => setIsNavOpen(false)}>
+        <Link to="/" onClick={() => setIsNavVisible(false)}>
           <img src={logo} alt="Brand Logo" />
           <h1>MOHANPURA - KUNDALIYA IRRIGATION PROJECTS</h1>
         </Link>
@@ -68,15 +87,15 @@ export default function Navbar() {
         <button
           id="navbar-toggle"
           onClick={handleToggleNav}
-          className={isNavOpen ? "active" : ""}
+          className={isNavVisible ? "active" : ""}
         >
           <span></span>
         </button>
       </div>
-      <nav>
-        <ul className={`nav-list ${isNavOpen ? "open" : "hidden"}`}>
+      <nav className={isNavVisible || !isMobileView ? "" : "hidden"}>
+        <ul className="nav-list">
           {navLinks.map((link, index) => (
-            <li key={index} className={`nav-item `}>
+            <li key={index} className={`nav-item`}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "!text-[var(--primary-accent)]" : ""
@@ -84,9 +103,8 @@ export default function Navbar() {
                 to={link.linkUrl}
                 onClick={() => {
                   if (link.linkText !== "More") {
-                    setIsNavOpen(false);
+                    setIsNavVisible(false);
                   }
-
                   if (link.dropdown) {
                     setOpenDropdownIndex(
                       openDropdownIndex === index ? null : index
@@ -124,8 +142,8 @@ export default function Navbar() {
                         isActive ? "!text-[var(--primary-accent)]" : ""
                       }
                       onClick={() => {
-                        setOpenDropdownIndex(false);
-                        setIsNavOpen(false);
+                        setOpenDropdownIndex(null);
+                        setIsNavVisible(false);
                       }}
                     >
                       {dLink.text}

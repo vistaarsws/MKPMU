@@ -117,7 +117,7 @@ export default function Home() {
           Pradesh represent landmark initiatives in sustainable water
           management. Commissioned in 2018, these projects feature innovative
           underground pipeline systems and pressurised piped-irrigation
-          technologies, benefiting over <span>1,000 villages</span> across
+          technologies, benefiting over <span>1,300 villages</span> across
           multiple districts. It aims to irrigate more than
           <span> 290,495 hectares of land</span>,transforming agricultural
           practices and improving livelihoods in the region through efficient
