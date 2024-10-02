@@ -6,15 +6,15 @@ import { TestimonialSlider } from "../components/ui/Slider/TestimonialSlider/Tes
 import HeroSlider from "../components/ui/Slider/HeroSlider/HeroSlider";
 
 import banner1 from "../assets/images/banner1.png";
-import dam1 from "../assets/images/dam_front_view.png";
-import dam2 from "../assets/images/dam_side_view.png";
+import dam1 from "../assets/images/mohanpuraDam_1.png";
+import dam2 from "../assets/images/kindaliyaDam_1.png";
 import actualTestimonials from "../assets/images/actualTestimonials.png";
 
-import profilePicture_1 from "../assets/images/Vikas_Rajoria.png";
-import profilePicture_2 from "../assets/images/Jaswinder_Pal_Singh.png";
-import profilePicture_3 from "../assets/images/Nilesh_Kuralkar.png";
-import profilePicture_4 from "../assets/images/image69.png";
-import profilePicture_5 from "../assets/images/Frame48097492.png";
+import profilePicture_1 from "../assets/images/VikasRajoria.png";
+import profilePicture_2 from "../assets/images/Sandeep_Sir.png";
+import profilePicture_3 from "../assets/images/VipinSir.png";
+import profilePicture_4 from "../assets/images/SilawatSir.png";
+import profilePicture_5 from "../assets/images/ShubhankarSir.png";
 
 import projectHighlight_icon1 from "../assets/images/totalIrrigatedArea.svg";
 import projectHighlight_icon2 from "../assets/images/systemEfficiency.svg";
@@ -152,7 +152,7 @@ const teamMemberDetails_array = [
     ],
   },
   {
-    fullName: "Jaswinder Pal Singh",
+    fullName: "Sandeep Sir",
     profilePicture: profilePicture_2,
     designation: "CE Mohanpura Kundaliya Projects, Bhopal",
     linkedinUrl: "https://in.linkedin.com/",
@@ -179,7 +179,7 @@ const teamMemberDetails_array = [
     ],
   },
   {
-    fullName: "Nilesh Kuralkar",
+    fullName: "Vipin Sir",
     profilePicture: profilePicture_3,
     designation: "CE Mohanpura Kundaliya Projects, Bhopal",
     linkedinUrl: "https://in.linkedin.com/",
@@ -206,7 +206,7 @@ const teamMemberDetails_array = [
     ],
   },
   {
-    fullName: "Lrem Ipsum",
+    fullName: "Silawat Sir",
     profilePicture: profilePicture_4,
     linkedinUrl: "/",
     designation: "CE Mohanpura Kundaliya Projects, Bhopal",
@@ -234,7 +234,7 @@ const teamMemberDetails_array = [
     ],
   },
   {
-    fullName: "Lorem ipsumm",
+    fullName: "Shubhankar Sir",
     profilePicture: profilePicture_5,
     designation: "CE Mohanpura Kundaliya Projects, Bhopal",
     linkedinUrl: "https://in.linkedin.com/",
@@ -804,6 +804,180 @@ const mohanpuraDetails = {
   ],
 };
 
+// ---------------------------------------------------------------BLOGS PAGE---------------------------------------------------------------------------------------
+
+const blogs_page = {
+  title: "Blogs",
+  description:
+    "Dive into our latest blogs featuring expert opinions, project updates, and stories from the field. Stay informed and inspired by the ongoing journey of our initiatives.",
+  cards: [
+    {
+      id: 1,
+      title:
+        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
+      picture: newUpdate_1,
+      description:
+        "The Water Resources Department, state government of Madhya Pradesh envisages to develop Mohanpura dam, near vilage Banskhedi in district Rajgarh. The dam is proposed constructed across river Newaj at an estimated investment of 3,866-crore. The proposed Mohanpura dam proposes to provide water for irrigation, domestic and industrial uses.",
+      date: "2024-10-01",
+      author: {
+        name: "John Doe",
+        profilePic: "https://example.com/profile.jpg",
+      },
+      content: [
+        { type: "heading", level: 1, text: "Introduction" },
+        {
+          type: "paragraph",
+          text: "Mohanpura project is a major multipurpose project, which is proposed, in lower Chambal basin in lower zone-I. The project is proposed on river Kalisindh which is one of the major three river constituting this zone of lower Chambal sub basin. Under the scope of proposed project a barrier is proposed to be constructed on river Kalisindh near village Balaheda of Zirapur tehsil of district Rajgarh",
+        },
+        {
+          type: "paragraph",
+          text: "Mohanpura project is a major multipurpose project, which is proposed, in lower Chambal basin in lower zone-I. The project is proposed on river Kalisindh which is one of the major three river constituting this zone of lower Chambal sub basin. Under the scope of proposed project a barrier is proposed to be constructed on river Kalisindh near village Balaheda of Zirapur tehsil of district Rajgarh",
+        },
+        { type: "subheading", level: 2, text: "Why Structure is Important" },
+        {
+          type: "paragraph",
+          text: "The project in its proposed form will provide irrigation on d/s of proposed Mohanpura dam on left and right flank of Kalisindh River. The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur.",
+        },
+        {
+          type: "image",
+          src: newUpdate_1,
+          alt: "A blog image",
+        },
+        {
+          type: "points",
+          items: [
+            "The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur",
+            "The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur",
+            "The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur",
+          ],
+        },
+        { type: "video", src: "/videos/blog-video.mp4", alt: "A blog video" },
+        { type: "paragraph", text: "Let’s dive into each step." },
+      ],
+      hasItsPage: true,
+      tags: ["Dam", "Hydro Electricity", "Power Generation"],
+      comments: [
+        {
+          id: 101,
+          user: "Jane Smith",
+          comment: "Great explanation of useEffect!",
+          date: "2024-10-01T08:30:00",
+        },
+        {
+          id: 102,
+          user: "Bob Johnson",
+          comment: "I was confused before, but now it's clear.",
+          date: "2024-10-01T09:15:00",
+        },
+      ],
+    },
+    {
+      id: 2,
+      title:
+        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
+      picture: newUpdate_1,
+      description:
+        "The Water Resources Department, state government of Madhya Pradesh envisages to develop Mohanpura dam, near vilage Banskhedi in district Rajgarh. The dam is proposed constructed across river Newaj at an estimated investment of 3,866-crore. The proposed Mohanpura dam proposes to provide water for irrigation, domestic and industrial uses.",
+      date: "2024-10-01",
+      author: {
+        name: "John Doe",
+        profilePic: "https://example.com/profile.jpg",
+      },
+      content: [
+        { type: "heading", level: 1, text: "Introduction" },
+        {
+          type: "paragraph",
+          text: "In this blog, we will discuss how to implement a blog page with multiple elements.",
+        },
+        { type: "subheading", level: 2, text: "Why Structure is Important" },
+        {
+          type: "paragraph",
+          text: "The project in its proposed form will provide irrigation on d/s of proposed Mohanpura dam on left and right flank of Kalisindh River. The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur.",
+        },
+        { type: "image", src: "/images/blog-image.jpg", alt: "A blog image" },
+        { type: "video", src: "/videos/blog-video.mp4", alt: "A blog video" },
+        {
+          type: "points",
+          items: [
+            "Structure your content",
+            "Use components",
+            "Ensure responsiveness",
+          ],
+        },
+        { type: "paragraph", text: "Let’s dive into each step." },
+      ],
+      hasItsPage: true,
+      tags: ["Dam", "Hydro Electricity", "Power Generation"],
+      comments: [
+        {
+          id: 101,
+          user: "Jane Smith",
+          comment: "Great explanation of useEffect!",
+          date: "2024-10-01T08:30:00",
+        },
+        {
+          id: 102,
+          user: "Bob Johnson",
+          comment: "I was confused before, but now it's clear.",
+          date: "2024-10-01T09:15:00",
+        },
+      ],
+    },
+    {
+      id: 3,
+      title:
+        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
+      picture: newUpdate_1,
+      description:
+        "The Water Resources Department, state government of Madhya Pradesh envisages to develop Mohanpura dam, near vilage Banskhedi in district Rajgarh. The dam is proposed constructed across river Newaj at an estimated investment of 3,866-crore. The proposed Mohanpura dam proposes to provide water for irrigation, domestic and industrial uses.",
+      date: "2024-10-01",
+      author: {
+        name: "John Doe",
+        profilePic: "https://example.com/profile.jpg",
+      },
+      content: [
+        { type: "heading", level: 1, text: "Introduction" },
+        {
+          type: "paragraph",
+          text: "In this blog, we will discuss how to implement a blog page with multiple elements.",
+        },
+        { type: "subheading", level: 2, text: "Why Structure is Important" },
+        {
+          type: "paragraph",
+          text: "Organizing content properly helps in building scalable and readable pages.",
+        },
+        { type: "image", src: "/images/blog-image.jpg", alt: "A blog image" },
+        { type: "video", src: "/videos/blog-video.mp4", alt: "A blog video" },
+        {
+          type: "points",
+          items: [
+            "Structure your content",
+            "Use components",
+            "Ensure responsiveness",
+          ],
+        },
+        { type: "paragraph", text: "Let’s dive into each step." },
+      ],
+      hasItsPage: true,
+      tags: ["Dam", "Hydro Electricity", "Power Generation"],
+      comments: [
+        {
+          id: 101,
+          user: "Jane Smith",
+          comment: "Great explanation of useEffect!",
+          date: "2024-10-01T08:30:00",
+        },
+        {
+          id: 102,
+          user: "Bob Johnson",
+          comment: "I was confused before, but now it's clear.",
+          date: "2024-10-01T09:15:00",
+        },
+      ],
+    },
+  ],
+};
+
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 export {
@@ -817,6 +991,7 @@ export {
   actual_testimonials_array,
   projectOutreach_page,
   newsUpdate_page,
+  blogs_page,
   researchPublication,
   awardsAndAcknowledgement,
   testimonialHeader,

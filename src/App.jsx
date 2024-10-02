@@ -14,8 +14,13 @@ import GridConentTemplate from "./components/ui/Templates/GridContentTemplate/Gr
 import Research from "./pages/Research/Research";
 import Awards from "./pages/Awards/Awards";
 import Contact from "./pages/Contact/Contact";
+import Blog from "./pages/Blog/Blog";
 
-import { projectOutreach_page, newsUpdate_page } from "./utils/Constant";
+import {
+  projectOutreach_page,
+  newsUpdate_page,
+  blogs_page,
+} from "./utils/Constant";
 import ScrollToTop from "./hooks/ScrollToTop";
 
 function App() {
@@ -46,6 +51,11 @@ function App() {
             <Route path="/research-publication" element={<Research />} />
             <Route path="/awards-acknowledgement" element={<Awards />} />
             <Route path="/project/:name" element={<Project />} />
+            <Route
+              path="/blogs"
+              element={<GridConentTemplate template={blogs_page} />}
+            />
+            <Route path="/blogs/:id" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

@@ -24,6 +24,8 @@ export default function GridContentTemplate(template) {
             <Card
               key={index}
               card={{
+                id: card.id,
+                hasItsPage: card.hasItsPage,
                 image: { src: card.picture, borderRadius: "1.4rem" },
                 color: {
                   bgColor: card.bgColor,

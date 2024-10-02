@@ -71,6 +71,7 @@ export default function Navbar() {
         { text: "Research & Publication", link: "/research-publication" },
         { text: "Testimonials", link: "/testimonials" },
         { text: "Contact Us", link: "/contact" },
+        { text: "Blogs", link: "/blogs" },
       ],
     },
   ];

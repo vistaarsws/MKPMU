@@ -128,6 +128,11 @@
   font-weight: 700;
   width: 100%;
   height: 7.4rem;
+
+  &:hover {
+    background-color: var(--primary-accent);
+    color: white;
+  }
 }
 .irrigatedLand_section div:nth-of-type(2) {
   display: flex;

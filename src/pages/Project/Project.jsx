@@ -3,13 +3,13 @@ import { kundaliyaDetails, mohanpuraDetails } from "../../utils/Constant";
 import useUrlToGetPage from "../../hooks/useUrlToGetPage";
 import Banner from "../../components/ui/Header/Banner/Banner";
 
-import damImg_1 from "../../assets/images/Kundalia.png";
+import damImg_1 from "../../assets/images/kundaliyaDam_2.png";
 import img_1 from "../../assets/images/1.png";
 import img_2 from "../../assets/images/2.png";
 import img_3 from "../../assets/images/3.png";
 import img_4 from "../../assets/images/4.png";
 
-import damImg_2 from "../../assets/images/Mohanpura.png";
+import damImg_2 from "../../assets/images/mohanpuraDam_2.png";
 import img_5 from "../../assets/images/5_.png";
 import img_6 from "../../assets/images/6_.png";
 

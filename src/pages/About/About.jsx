@@ -4,7 +4,7 @@ import { aboutUs_card_details } from "../../utils/Constant";
 import "./About.css";
 import Team_section from "../../components/layout/TeamSection/TeamSection";
 import Banner from "../../components/ui/Header/Banner/Banner";
-import aboutBanner from "../../assets/images/aboutBanner.jpg";
+import aboutBanner from "../../assets/images/aboutBanner.png";
 
 export default function About() {
   const bannerText = {

@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "./Card.css";
 import PropTypes from "prop-types";
 
@@ -14,6 +15,9 @@ const defaultParameter = {
 };
 
 export default function Card({ card = defaultParameter }) {
+  const navigate = useNavigate();
+  console.log(card.hasItsPage);
+
   const {
     text = {},
     color = {},
@@ -28,6 +32,7 @@ export default function Card({ card = defaultParameter }) {
 
   return (
     <div
+      onClick={card.hasItsPage ? () => navigate(`/blogs/${card.id}`) : null}
       className={`card_container`}
       style={{
         backgroundColor: color.bgColor,

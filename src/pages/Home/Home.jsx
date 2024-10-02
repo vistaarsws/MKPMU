@@ -20,7 +20,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
-import person_1 from "../../assets/images/Frame1.png";
+import testimonial_1 from "../../assets/videos/testimonial-1.mp4";
 import person_2 from "../../assets/images/Frame2.png";
 import person_3 from "../../assets/images/Frame3.png";
 import person_4 from "../../assets/images/Frame4.png";
@@ -29,7 +29,7 @@ import { useNavigate } from "react-router-dom";
 import playIcon from "../../assets/images/playIcon.svg";
 import pauseIcon from "../../assets/images/pauseIcon.svg";
 
-const cardContent = [person_1, person_2, person_3, person_4];
+const cardContent = [testimonial_1, person_2, person_3, person_4];
 
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
@@ -411,7 +411,7 @@ export default function Home() {
           </p>
         </div>
         <div>
-          <button>Book Now</button>
+          <button onClick={() => navigate("/contact")}>Contact Us</button>
         </div>
       </section>
     </>
