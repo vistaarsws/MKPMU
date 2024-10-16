@@ -1,0 +1,81 @@
+.researchCard_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+
+  align-items: center;
+  padding: 2rem;
+}
+
+.researchCard_container figure {
+  height: 15.7rem;
+  width: 16.8rem;
+  flex-shrink: 0;
+}
+.researchCard_container figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.1rem;
+}
+
+.researchCard_container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.researchCard_container article {
+  margin: 0 3%;
+}
+
+.researchCard_container article h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3rem;
+  color: var(--highest-grey);
+}
+.researchCard_container article h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0.8rem 0;
+  color: var(--high-grey);
+}
+.researchCard_container article p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--high-grey);
+}
+.researchCard_container div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 2rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #ff6b00;
+}
+
+@media screen and (max-width: 1002px) {
+  .researchCard_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .researchCard_container figure {
+    order: 1;
+    margin: 1rem;
+  }
+  .researchCard_container article {
+    order: 3;
+    margin: 0 1rem;
+  }
+  .researchCard_container div {
+    order: 2;
+  }
+  .researchCard_container div button {
+    margin: 1rem;
+  }
+}

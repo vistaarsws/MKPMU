@@ -1,0 +1,287 @@
+/* .impactPage_container {
+} */
+
+.impactPage_container > article:first-child {
+  text-align: center;
+  margin: 7.4rem 20%;
+}
+.impactPage_container article h1 {
+  font-size: 6.8rem;
+  font-weight: 700;
+  line-height: 8.2rem;
+  margin-bottom: 2.8rem;
+}
+.impactPage_container article p {
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+}
+.cleanWaterSection article {
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.droughtLandSection article {
+  align-items: start;
+}
+.greenLandSection article {
+  align-items: end;
+}
+
+.cleanWaterSection figure {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.cleanWaterSection figure img {
+  object-fit: contain;
+}
+
+.cleanWaterSection {
+  min-height: 100vh;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding: 8.9rem 10vw;
+}
+
+.droughtLandSection {
+  grid-template-columns: 1fr 1.2fr;
+  background-color: #ffe8c5;
+}
+
+.greenLandSection {
+  grid-template-columns: 1.2fr 1fr;
+  background-color: #c7f5ff;
+}
+
+.cleanWaterSection article div {
+  background-color: white;
+  align-self: start;
+  width: 125%;
+  padding: 4rem;
+  border-radius: 1.2rem;
+}
+
+.greenLandSection article div {
+  align-self: end;
+}
+
+.cleanWaterSection article div p {
+  margin-top: 2.4rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.cleanWaterSection article h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.cleanWaterSection article h2 {
+  font-size: 5.8rem;
+  font-weight: 800;
+  line-height: 6.223rem;
+  width: 70%;
+}
+
+.droughtLandSection article h2 {
+  text-align: start;
+  color: #663d00;
+}
+
+.greenLandSection article h2 {
+  text-align: end;
+  color: #00455a;
+}
+
+.cleanWaterSection article h2 span {
+  color: var(--primary-accent);
+}
+
+.impactOfIrrigation_section {
+  margin: 3% auto;
+}
+.impactOfIrrigation_section > h2:first-of-type {
+  font-size: 4.8rem;
+  font-weight: 500;
+  text-align: center;
+  width: 90%;
+  margin: 1.2rem auto;
+}
+
+.impactOfIrrigation_section > p:first-of-type {
+  font-size: 2rem;
+  line-height: 2.52rem;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.impactOfIrrigation_section section > div:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 80vw;
+  margin: 3% auto;
+  gap: 3.2rem;
+}
+.impactOfIrrigation_section section > div:first-of-type div {
+  align-items: start;
+}
+.impactOfIrrigation_section section > div:first-of-type div h2 {
+  font-size: 3.2rem;
+  margin: 2.4rem 0;
+}
+.impactOfIrrigation_section section > div:first-of-type div p {
+  font-weight: 400;
+}
+
+.impactOfIrrigation_section section > div:first-of-type p {
+  font-size: 2.4rem;
+}
+.impactOfIrrigation_section section > div:first-of-type strong {
+  font-size: 3.2rem;
+  width: 100%;
+}
+.impactOfIrrigation_section section > div:first-of-type figure {
+  max-width: 100%;
+  /* margin-bottom: 2.4rem; */
+}
+
+.impactOfIrrigation_section section div {
+  border-radius: 4.8rem;
+}
+
+.impactOfIrrigation_section section div figure {
+  width: max-content;
+  height: max-content;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 1654px) {
+  .cleanWaterSection article h2 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .impactOfIrrigation_section section > div:first-of-type p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .impactPage_container > article:first-child {
+    margin: 7.4rem 15%;
+  }
+
+  .cleanWaterSection {
+    grid-template-columns: 1fr;
+  }
+
+  .cleanWaterSection figure {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cleanWaterSection article h2 {
+    width: 100%;
+    margin: 3% 0;
+  }
+  .cleanWaterSection article div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .impactPage_container > article:first-child {
+    margin: 7.4rem 10%;
+  }
+  .impactOfIrrigation_section section > div:first-of-type {
+    width: 90vw;
+  }
+  .impactOfIrrigation_section > h2:first-of-type {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    width: 95%;
+  }
+  .impactOfIrrigation_section > p:first-of-type {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .impactPage_container article h1 {
+    font-size: 10vw;
+    line-height: 11.5vw;
+  }
+
+  .impactOfIrrigation_section {
+    margin: 5% auto;
+  }
+
+  .impactPage_container article p {
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+  .impactOfIrrigation_section > p:first-of-type {
+    padding: 2% 5%;
+    width: 95%;
+  }
+  .impactPage_container > article:first-child {
+    margin: 7.4rem 5%;
+  }
+  .cleanWaterSection {
+    padding: 10% 10vw;
+  }
+
+  .cleanWaterSection article h2 {
+    font-size: 8vw;
+    line-height: 9.5vw;
+  }
+  .cleanWaterSection article div p {
+    line-height: 5vw;
+    font-size: 3vw;
+  }
+  .cleanWaterSection article h3 {
+    font-size: 5.5vw;
+  }
+  .impactOfIrrigation_section section > div:first-of-type {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 425px) {
+  .impactPage_container article h1 {
+    margin-bottom: 1.5rem;
+  }
+  .impactPage_container > article:first-child {
+    margin-bottom: 5%;
+  }
+  .cleanWaterSection article div {
+    padding: 2.5rem;
+  }
+  .impactOfIrrigation_section > h2:first-of-type {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .impactOfIrrigation_section > p:first-of-type {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .cleanWaterSection article div p {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .impactOfIrrigation_section section > div:first-of-type p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .impactOfIrrigation_section section > div:first-of-type div {
+    padding: 2.5rem !important;
+  }
+}
