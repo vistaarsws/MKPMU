@@ -5,11 +5,9 @@
 
 .TeamMemberCard_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 42rem));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 42rem));
   padding: 2% 5%;
-
-  justify-content: center;
-  align-items: center;
+  place-content: center;
 }
 
 .TeamMemberCard_container .TeamMemberCard {
@@ -31,7 +29,9 @@
 .TeamMemberCard_container .TeamMemberCard p {
   font-size: 1.6rem;
   font-weight: 400;
+  min-height: 5.5rem;
 }
+
 .TeamMemberCard_container .TeamMemberCard figure {
   display: flex;
   justify-content: center;
@@ -73,7 +73,7 @@
 }
 @media screen and (max-width: 1117px) {
   .mkpmuTeam_container {
-    padding: 5% 0;
+    padding: 5% 2%;
   }
 }
 
@@ -106,15 +106,26 @@
 
 @media screen and (max-width: 490px) {
   .TeamMemberCard_container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .TeamMemberCard div {
     padding: 0 !important;
+    height: 30rem;
   }
 }
 
 @media screen and (max-width: 425px) {
   .mkpmuTeam_container > p:first-of-type {
     font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .TeamMemberCard_container {
+    grid-template-columns: 1fr;
+  }
+  .TeamMemberCard div {
+    padding: 0 !important;
+    height: 35rem;
   }
 }

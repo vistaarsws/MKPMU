@@ -1,13 +1,12 @@
 import downloadIcon from "../../../../assets/images/downloadIcon.svg";
 import "./ResearchCard.css";
 import PropTypes from "prop-types";
-import pdfFile from "/guidline.pdf";
 
 export default function ResearchCard({ research }) {
-  const downloadPdf = () => {
+  const downloadPdf = (pdf) => {
     const link = document.createElement("a");
-    link.href = pdfFile;
-    link.setAttribute("download", "guideline.pdf");
+    link.href = { pdf };
+    link.setAttribute("download", "researchPublication_1.pdf");
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -26,7 +25,7 @@ export default function ResearchCard({ research }) {
       <div>
         <button>
           <img src={downloadIcon} alt="Download Icon" />
-          <button onClick={downloadPdf}>Download</button>
+          <button onClick={downloadPdf(research.pdf)}>Download</button>
         </button>
       </div>
     </div>

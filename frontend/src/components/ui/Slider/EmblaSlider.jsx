@@ -9,7 +9,7 @@ import slider_right_arrow from "../../../assets/images/slider_right_arrow.png";
 
 export function EmblaSlider({
   slides,
-  no_of_slides,
+  no_of_slides = { xs: 1, sm: 1, md: 2, lg: 3, xl: 4 },
   delay,
   autoScroll,
   navigationDots = true,
@@ -29,19 +29,17 @@ export function EmblaSlider({
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setSlidesPerView(1);
-      } else {
-        setSlidesPerView(no_of_slides);
-      }
+      const width = window.innerWidth;
+      if (width < 425) setSlidesPerView(no_of_slides.xs);
+      else if (width < 768) setSlidesPerView(no_of_slides.sm);
+      else if (width < 1024) setSlidesPerView(no_of_slides.md);
+      else if (width < 1440) setSlidesPerView(no_of_slides.lg);
+      else setSlidesPerView(no_of_slides.xl);
     };
 
     handleResize();
     window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, [no_of_slides]);
 
   useEffect(() => {

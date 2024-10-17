@@ -12,6 +12,9 @@
 
 .gridContentTemplate_container article div h2 {
   font-weight: 500;
+  min-height: 5.5rem;
+  display: flex;
+  align-items: start;
 }
 .gridContentTemplate_container article div p {
   font-weight: 500;

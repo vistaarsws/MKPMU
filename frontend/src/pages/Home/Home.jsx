@@ -21,32 +21,44 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import testimonial_1 from "../../assets/videos/testimonial-1.mp4";
-import person_2 from "../../assets/images/Frame2.png";
-import person_3 from "../../assets/images/Frame3.png";
-import person_4 from "../../assets/images/Frame4.png";
+import testimonial_2 from "../../assets/videos/testimonial-2.mp4";
+import testimonial_3 from "../../assets/videos/testimonial-3.mp4";
+import testimonial_4 from "../../assets/videos/testimonial-4.mp4";
+
+// import person_2 from "../../assets/images/Frame2.png";
+// import person_3 from "../../assets/images/Frame3.png";
+// import person_4 from "../../assets/images/Frame4.png";
 import Form from "../../components/ui/Form/Form";
 import { useNavigate } from "react-router-dom";
 import playIcon from "../../assets/images/playIcon.svg";
 import pauseIcon from "../../assets/images/pauseIcon.svg";
 
-const cardContent = [testimonial_1, person_2, person_3, person_4];
+const cardContent = [
+  testimonial_1,
+  testimonial_2,
+  testimonial_3,
+  testimonial_4,
+];
 
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
 
-  const [playing, setPlaying] = useState(false);
+  // const [playing, setPlaying] = useState(false);
 
-  const isImage = (url) => {
-    return url.match(/\.(jpeg|jpg|gif|png|svg)$/i);
-  };
+  // const handlePlayPause = () => {
+  //   setPlaying(!playing);
+  // };
 
-  const isVideo = (url) => {
-    return url.match(/\.(mp4|webm|ogg|mov)$/i);
-  };
+  const [playingStates, setPlayingStates] = useState(
+    Array(cardContent.length).fill(false) // Initially all videos are paused
+  );
 
-  const handlePlayPause = () => {
-    setPlaying(!playing);
+  const handlePlayPause = (index) => {
+    // Toggle the playing state for the clicked video
+    setPlayingStates(
+      (prev) => prev.map((playing, i) => (i === index ? !playing : false)) // Only one video can play at a time
+    );
   };
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -337,50 +349,38 @@ export default function Home() {
         </p>
 
         <article className="storyContainer">
-          {cardContent.map((content, index) => {
-            return (
-              <div key={index} className="storyCard">
-                {isImage(content) ? (
-                  <img
-                    src={content}
-                    alt={`content-${index}`}
-                    className="imageClass"
-                  />
-                ) : isVideo(content) ? (
-                  <div className="custom-player-wrapper">
-                    <ReactPlayer
-                      url={content}
-                      playing={playing}
-                      controls={false}
-                      width="100%"
-                      height="100%"
-                    />
+          {cardContent.map((content, index) => (
+            <div key={index} className="storyCard">
+              <div className="custom-player-wrapper">
+                <ReactPlayer
+                  url={content}
+                  playing={playingStates[index]} // Only play this video if its state is true
+                  controls={false}
+                  width="100%"
+                  height="100%"
+                />
 
-                    <div className="controls">
-                      <button
-                        onClick={handlePlayPause}
-                        className="play-pause-btn"
-                      >
-                        {playing ? (
-                          <img src={pauseIcon} />
-                        ) : (
-                          <img src={playIcon} />
-                        )}
-                      </button>
-                    </div>
-                  </div>
-                ) : (
-                  <p>Unsupported content type</p>
-                )}
+                <div className="controls">
+                  <button
+                    onClick={() => handlePlayPause(index)} // Pass the index to handle which video is clicked
+                    className="play-pause-btn"
+                  >
+                    {playingStates[index] ? (
+                      <img src={pauseIcon} alt="Pause Icon" />
+                    ) : (
+                      <img src={playIcon} alt="Play Icon" />
+                    )}
+                  </button>
+                </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </article>
       </section>
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <EmblaSlider
         slides={testimonialSlides_array}
-        no_of_slides={2}
+        no_of_slides={{ xs: 1, sm: 1, md: 2, lg: 2, xl: 2 }}
         delay={1000}
         autoScroll={true}
         navigationDots={false}
