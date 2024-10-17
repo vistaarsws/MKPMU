@@ -15,6 +15,7 @@ import Research from "./pages/Research/Research";
 import Awards from "./pages/Awards/Awards";
 import Contact from "./pages/Contact/Contact";
 import Blog from "./pages/Blog/Blog";
+import Newsletters from "./pages/newsletters/Newsletters";
 
 import {
   projectOutreach_page,
@@ -44,6 +45,7 @@ function App() {
               path="/news-updates"
               element={<GridConentTemplate template={newsUpdate_page} />}
             />
+            <Route path="/newsletters" element={<Newsletters />} />
             <Route
               path="/project-outreach"
               element={<GridConentTemplate template={projectOutreach_page} />}

@@ -10,7 +10,7 @@
   margin: 3% 0;
 }
 
-.gridContentTemplate_container article div h2 {
+.gridContentTemplate_container > article:first-of-type div h2 {
   font-weight: 500;
   min-height: 5.5rem;
   display: flex;
@@ -21,6 +21,34 @@
   width: 100%;
   margin-top: -1rem;
 }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+.newsletter_section {
+  & > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+    div {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      span {
+        font-size: 1.8rem;
+        cursor: pointer;
+        margin-right: 0.5rem;
+
+        &:hover {
+          color: var(--primary-accent);
+        }
+      }
+    }
+  }
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 1024px) {
   .gridContentTemplate_container {

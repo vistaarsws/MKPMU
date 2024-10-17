@@ -41,7 +41,7 @@ export default function Card({ card = defaultParameter }) {
         padding: padding,
       }}
     >
-      {card.image.src && (
+      {card.image?.src && (
         <figure style={{ borderRadius: image.borderRadius }}>
           <img src={image.src} alt={`${content[1]}`} />
         </figure>
