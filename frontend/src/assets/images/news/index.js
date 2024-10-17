@@ -1,0 +1,36 @@
+import NEWS_1 from "./NEWS_1.png"
+import NEWS_2 from "./NEWS_2.png"
+import NEWS_3 from "./NEWS_3.png"
+import NEWS_4 from "./NEWS_4.png"
+import NEWS_5 from "./NEWS_5.png"
+import NEWS_6 from "./NEWS_6.png"
+import NEWS_7 from "./NEWS_7.png"
+import NEWS_8 from "./NEWS_8.png"
+import NEWS_9 from "./NEWS_9.png"
+import NEWS_10 from "./NEWS_10.png"
+import NEWS_11 from "./NEWS_11.png"
+import NEWS_12 from "./NEWS_12.png"
+import NEWS_13 from "./NEWS_13.png"
+import NEWS_14 from "./NEWS_14.png"
+import NEWS_15 from "./NEWS_15.png"
+import NEWS_16 from "./NEWS_16.png"
+import NEWS_17 from "./NEWS_17.png"
+import NEWS_18 from "./NEWS_18.png"
+import NEWS_19 from "./NEWS_19.png"
+import NEWS_20 from "./NEWS_20.png"
+import NEWS_21 from "./NEWS_21.png"
+import NEWS_22 from "./NEWS_22.png"
+import NEWS_23 from "./NEWS_23.png"
+import NEWS_24 from "./NEWS_24.png"
+import NEWS_25 from "./NEWS_25.png"
+import NEWS_26 from "./NEWS_26.png"
+import NEWS_27 from "./NEWS_27.png"
+import NEWS_28 from "./NEWS_28.png"
+import NEWS_29 from "./NEWS_29.png"
+import NEWS_30 from "./NEWS_30.png"
+
+
+
+
+
+export { NEWS_1, NEWS_2, NEWS_3, NEWS_4, NEWS_5, NEWS_6, NEWS_7, NEWS_8, NEWS_9, NEWS_10, NEWS_11, NEWS_12, NEWS_13, NEWS_14, NEWS_15, NEWS_16, NEWS_17, NEWS_18, NEWS_19, NEWS_20, NEWS_21, NEWS_22, NEWS_23, NEWS_24, NEWS_25, NEWS_26, NEWS_27, NEWS_28, NEWS_29, NEWS_30 }

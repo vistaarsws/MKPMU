@@ -65,6 +65,40 @@ import awards_6 from "../assets/images/awards-6.png";
 import awards_7 from "../assets/images/awards-7.png";
 import awards_8 from "../assets/images/awards-8.png";
 
+// -------------------------------------------------------NEWS
+import {
+  NEWS_1,
+  NEWS_10,
+  NEWS_11,
+  NEWS_12,
+  NEWS_13,
+  NEWS_14,
+  NEWS_15,
+  NEWS_16,
+  NEWS_17,
+  NEWS_18,
+  NEWS_19,
+  NEWS_2,
+  NEWS_20,
+  NEWS_21,
+  NEWS_22,
+  NEWS_23,
+  NEWS_24,
+  NEWS_25,
+  NEWS_26,
+  NEWS_27,
+  NEWS_28,
+  NEWS_29,
+  NEWS_3,
+  NEWS_30,
+  NEWS_4,
+  NEWS_5,
+  NEWS_6,
+  NEWS_7,
+  NEWS_8,
+  NEWS_9,
+} from "../assets/images/news/index";
+
 // ------------------------------------------------------Words of misinster SLIDER---------------------------------------------------------------------------------------
 
 const ministerQuoteSlides = [
@@ -496,41 +530,202 @@ const newsUpdate_page = {
     "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
   cards: [
     {
-      picture: newUpdate_1,
+      picture: NEWS_1,
       title:
         "3 साल में 1.70 लाख हेक्टेयर में सिंचाई:मोहनपुरा कुंडालिया परियोजना में सर्वश्रेष्ठ प्रदर्शन, जिला अभियंता को मिला राज्य स्तरीय पुरस्कार",
       date: "8 महीने पहले",
       url: "https://www.bhaskar.com/local/mp/rajgarh/news/irrigation-in-170-lakh-hectares-in-3-years-132613615.html?_branch_match_id=1280028591755248453&utm_campaign=132613615&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0nMzMvM1k3Sy8zTz%2FbPCTLM8y3P8UgCAMurMc4fAAAA ",
     },
     {
-      picture: newUpdate_1,
-      title:
-        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-      date: "12 April 2023",
+      picture: NEWS_2,
+      title: "",
+      date: "",
+      url: "",
     },
     {
-      picture: newUpdate_1,
-      title:
-        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-      date: "12 April 2023",
+      picture: NEWS_3,
+      title: "",
+      date: "",
+      url: "",
     },
     {
-      picture: newUpdate_1,
-      title:
-        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-      date: "12 April 2023",
+      picture: NEWS_4,
+      title: "",
+      date: "",
+      url: "",
     },
     {
-      picture: newUpdate_1,
-      title:
-        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-      date: "12 April 2023",
+      picture: NEWS_5,
+      title: "",
+      date: "",
+      url: "",
     },
     {
-      picture: newUpdate_1,
+      picture: NEWS_6,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: NEWS_7,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: NEWS_8,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: NEWS_9,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: NEWS_10,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: NEWS_11,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: NEWS_12,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: NEWS_13,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: NEWS_14,
       title:
-        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-      date: "12 April 2023",
+        "50 हजार हेक्टेयर सिंचाई बढ़ाकर एक लाख:इस साल मोहनपुरा की सिंचाई क्षमता बढ़ाकर दोगुनी की, इसी माह मिलेगा किसानों को पानी",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/this-year-the-irrigation-capacity-of-mohanpura-has-been-doubled-farmers-will-get-water-this-month-130545735.html",
+    },
+    {
+      picture: NEWS_15,
+      title:
+        "मोहनपुरा सिंचाई परियोजना ने लौटाई तंवरबाड की होली कलेक्टर ने ग्रामीणों के साथ मनाया त्यौहार",
+      date: "18-03-2022",
+      url: "https://successmedianews.com/?p=1117",
+    },
+    {
+      picture: NEWS_16,
+      title:
+        "सिंचाई के लिए मोहनपुरा की तर्ज पर कर्नाटक में डालेंगे प्रेशर वाले पाइप",
+      date: "01 Sep 2021",
+      url: "https://www.naidunia.com/madhya-pradesh/rajgarh-rajgarh-news-7019346",
+    },
+    {
+      picture: NEWS_17,
+      title:
+        "कुंडालिया वृहद सिंचाई परियोजना:कुंडालिया से पहली बार होगी राजगढ़ व आगर जिले में सिंचाई",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/irrigation-will-be-done-for-the-first-time-from-kundalia-in-rajgarh-and-agar-districts-130570592.html",
+    },
+    {
+      picture: NEWS_18,
+      title:
+        "डेम और ब्रिज निर्माण की है योजना:खोयरी महादेव मंदिर पर अब स्टाप डेम नहीं बनाएंगे, पुराने की होगी रिपेयरिंग",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/now-stop-dam-will-not-be-made-on-khoyari-mahadev-temple-old-one-will-be-repaired-130695586.html",
+    },
+    {
+      picture: NEWS_19,
+      title:
+        "जल संरक्षण व प्रबंधन पर परिचर्चा:भविष्य के लिए जल संरक्षण व प्रबंधन बहुत जरूरी",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/water-conservation-and-management-is-very-important-for-the-future-130528847.html",
+    },
+    {
+      picture: NEWS_20,
+      title:
+        "50 हजार हेक्टेयर सिंचाई बढ़ाकर एक लाख:इस साल मोहनपुरा की सिंचाई क्षमता बढ़ाकर दोगुनी की, इसी माह मिलेगा किसानों को पानी",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/this-year-the-irrigation-capacity-of-mohanpura-has-been-doubled-farmers-will-get-water-this-month-130545735.html",
+    },
+    {
+      picture: NEWS_21,
+      title:
+        "निर्माण कार्य:मोहनपुरा-कुंडालिया परियोजना का बचा काम जल्दी करो पूरा, समय पर देंगे पानी",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/hurry-up-the-remaining-work-of-mohanpura-kundalia-project-water-will-be-given-on-time-127403296.html",
+    },
+    {
+      picture: NEWS_22,
+      title:
+        "सिंचाई सुविधा:नहर का पानी पहुंचा तो रुका पलायन, खाद्यान्न उत्पादन भी ज्यादा",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/when-canal-water-reached-migration-stopped-food-production-also-increased-128823964.html",
+    },
+    {
+      picture: NEWS_23,
+      title:
+        "सेवानिवृत्त इंजीनियर्स हुए सम्मानित:इंजीनियर ही बदलते है देश की दिशा, समय से क्वालिटी का काम करना इंजीनियर की बड़ी खूबी",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/engineers-change-the-direction-of-the-country-doing-quality-work-from-time-to-time-is-a-great-quality-of-an-engineer-130324877.html",
+    },
+    {
+      picture: NEWS_24,
+      title:
+        "प्रभारी मंत्री के तीखे तेवर:मैं यहां कथा करने नहीं आया हूं, आंकड़ों के साथ बैठक में आएं, नहीं तो कार्रवाई के लिए तैयार रहें",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/i-am-not-here-to-tell-stories-come-to-the-meeting-with-figures-otherwise-be-ready-for-action-130622626.html",
+    },
+    {
+      picture: NEWS_25,
+      title:
+        "सिंचाई परियोजना:मंत्री बोले- इसी साल पूरे रकबे में सिंचाई के लिए पानी दीजिए",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/minister-said-give-water-for-irrigation-in-the-entire-area-this-year-128111697.html",
+    },
+    {
+      picture: NEWS_26,
+      title:
+        "सर्वे पूरा:नेवज पर बनेगा 325 मीटर लंबा, 16 मीटर ऊंचा पुल, ताकि डेम से पानी छाेड़ने पर न रुके रास्ता",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/a-325-meter-long-16-meter-high-bridge-will-be-built-on-the-foundation-so-that-the-way-does-not-stop-when-water-is-released-from-the-dam-128607906.html",
+    },
+    {
+      picture: NEWS_27,
+      title:
+        "मुख्य समारोह आयोजित:विद्यार्थियों ने बिखेरे कला-संस्कृति के रंग, बल ने किया मार्च पास्ट",
+      date: "",
+      url: "",
+    },
+    {
+      picture: NEWS_28,
+      title:
+        "दूधी नदी पर बन रहा 1 किमी लंबा पुल:रेलवे के जीएम ने कहा- पुल निर्माण फरवरी तक पूरा करें",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/railway-gm-said-complete-the-bridge-construction-by-february-128726529.html",
+    },
+    {
+      picture: NEWS_29,
+      title:
+        "पौधे रोपे व उनकी देखभाल का संकल्प लिया:अंकुर अभियान- कुंडालिया बांध परिसर में 300 से ज्यादा पौधे रोपे",
+      date: "",
+      url: "",
+    },
+    {
+      picture: NEWS_30,
+      title:
+        "आयोजित हुआ 24 वां कांग्रेस सम्मेलन:अंतर्राष्ट्रीय मंच पर मोहनपुरा परियोजना का प्रस्तुतिकरण",
+      date: "",
+      url: "https://www.naidunia.com/madhya-pradesh/rajgarh-rajgarh-news-6712642",
     },
   ],
 };
