@@ -28,9 +28,18 @@ import NEWS_27 from "./NEWS_27.png"
 import NEWS_28 from "./NEWS_28.png"
 import NEWS_29 from "./NEWS_29.png"
 import NEWS_30 from "./NEWS_30.png"
+import NEWS_31 from "./NEWS_31.png"
+import NEWS_32 from "./NEWS_32.png"
+import NEWS_33 from "./NEWS_33.png"
+import NEWS_34 from "./NEWS_34.png"
+import NEWS_35 from "./NEWS_35.png"
+import NEWS_36 from "./NEWS_36.png"
+import NEWS_37 from "./NEWS_37.png"
+import NEWS_38 from "./NEWS_38.png"
+import NEWS_39 from "./NEWS_39.png"
 
 
 
 
 
-export { NEWS_1, NEWS_2, NEWS_3, NEWS_4, NEWS_5, NEWS_6, NEWS_7, NEWS_8, NEWS_9, NEWS_10, NEWS_11, NEWS_12, NEWS_13, NEWS_14, NEWS_15, NEWS_16, NEWS_17, NEWS_18, NEWS_19, NEWS_20, NEWS_21, NEWS_22, NEWS_23, NEWS_24, NEWS_25, NEWS_26, NEWS_27, NEWS_28, NEWS_29, NEWS_30 }
+export { NEWS_1, NEWS_2, NEWS_3, NEWS_4, NEWS_5, NEWS_6, NEWS_7, NEWS_8, NEWS_9, NEWS_10, NEWS_11, NEWS_12, NEWS_13, NEWS_14, NEWS_15, NEWS_16, NEWS_17, NEWS_18, NEWS_19, NEWS_20, NEWS_21, NEWS_22, NEWS_23, NEWS_24, NEWS_25, NEWS_26, NEWS_27, NEWS_28, NEWS_29, NEWS_30, NEWS_31, NEWS_32, NEWS_33, NEWS_34, NEWS_35, NEWS_36, NEWS_37, NEWS_38, NEWS_39, }
