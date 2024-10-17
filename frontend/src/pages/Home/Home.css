@@ -286,28 +286,11 @@
 }
 .accordionContainer {
   margin-bottom: 2%;
-}
-
-.accordionContainer > div {
-  background-color: rgba(255, 255, 255, 0.11);
-}
-.css-jb1ygz-MuiTypography-root {
-  font-size: 2rem !important;
-  font-weight: 700 !important;
-  font-family: "Plus Jakarta Sans" !important;
-}
-
-.css-ahj2mt-MuiTypography-root {
-  font-family: "Plus Jakarta Sans" !important;
-  font-size: 1.6rem !important;
-}
-
-.css-eqpfi5-MuiAccordionSummary-content {
-  margin: 2rem 2.4rem !important;
-  margin-left: 1rem !important;
-}
-.css-15v22id-MuiAccordionDetails-root {
-  margin-left: 1rem !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2.4rem 2rem;
+  border-radius: 1.6rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .learnMoreBtn_container {
@@ -330,6 +313,11 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .irrigationProjectSection {
+    margin: 5% 0;
+    border-radius: 0;
+  }
+
   .irrigationProjectSection article h1:first-of-type {
     font-size: 3.2rem;
     line-height: 1;
@@ -338,14 +326,6 @@
     font-size: 1.4rem;
     line-height: 2rem;
   }
-
-  .css-jb1ygz-MuiTypography-root {
-    font-size: 1.6rem !important;
-  }
-
-  .css-ahj2mt-MuiTypography-root {
-    font-size: 1.4rem !important;
-  }
 }
 @media screen and (max-width: 425px) {
   .irrigationProjectSection article h1:first-of-type {
@@ -353,18 +333,6 @@
   }
   .irrigationProjectSection article > p:first-of-type {
     font-size: 1.4rem;
-  }
-
-  .css-jb1ygz-MuiTypography-root {
-    font-size: 1.4rem !important;
-  }
-
-  .css-ahj2mt-MuiTypography-root {
-    font-size: 1.2rem !important;
-  }
-  .irrigationProjectSection {
-    margin: 5% 0%;
-    border-radius: 0;
   }
 }
 
@@ -537,12 +505,12 @@
   color: var(--low-grey);
   margin: 1% 8%;
 }
-.projectHighlightSection > p:first-of-type {
+/* .projectHighlightSection > p:first-of-type {
   font-size: 4rem;
   line-height: 5rem;
   margin: 0 8%;
   margin-bottom: 2%;
-}
+} */
 
 @media screen and (max-width: 1024px) {
   .projectHighlightSection h1 {
@@ -550,11 +518,11 @@
     line-height: 4rem;
     margin: 1% 10%;
   }
-  .projectHighlightSection > p:first-of-type {
+  /* .projectHighlightSection > p:first-of-type {
     font-size: 3.2rem;
     line-height: 4.2rem;
     margin: 0 10%;
-  }
+  } */
 }
 @media screen and (max-width: 768px) {
   .projectHighlightSection h1 {
@@ -562,20 +530,20 @@
     line-height: 4rem;
     margin: 1% 5%;
   }
-  .projectHighlightSection > p:first-of-type {
+  /* .projectHighlightSection > p:first-of-type {
     font-size: 2rem;
     line-height: 3.2rem;
     margin: 0 5%;
-  }
+  } */
 }
 @media screen and (max-width: 425px) {
   .projectHighlightSection h1 {
     font-size: 1.4rem;
   }
-  .projectHighlightSection > p:first-of-type {
+  /* .projectHighlightSection > p:first-of-type {
     font-size: 1.6rem;
     line-height: 2.4rem;
-  }
+  } */
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

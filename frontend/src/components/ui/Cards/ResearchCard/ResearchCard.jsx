@@ -3,9 +3,9 @@ import "./ResearchCard.css";
 import PropTypes from "prop-types";
 
 export default function ResearchCard({ research }) {
-  const downloadPdf = (pdf) => {
+  const downloadPdf = () => {
     const link = document.createElement("a");
-    link.href = { pdf };
+    link.href = research.pdf;
     link.setAttribute("download", "researchPublication_1.pdf");
     document.body.appendChild(link);
     link.click();
@@ -25,7 +25,7 @@ export default function ResearchCard({ research }) {
       <div>
         <button>
           <img src={downloadIcon} alt="Download Icon" />
-          <button onClick={downloadPdf(research.pdf)}>Download</button>
+          <button onClick={downloadPdf}>Download</button>
         </button>
       </div>
     </div>
@@ -38,5 +38,6 @@ ResearchCard.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     date: PropTypes.string,
+    pdf: PropTypes.string,
   }),
 };

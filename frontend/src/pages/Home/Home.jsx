@@ -252,10 +252,10 @@ export default function Home() {
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className="projectHighlightSection">
         <h1>Project Highlights</h1>
-        <p>
+        {/* <p>
           The Mohanpura and Kundalia Irrigation projects is India&apos;s first
           such project delivering pressurised water through buried pipes.
-        </p>
+        </p> */}
         <div>
           {projectHighlightCards_array.map((card, index) => {
             return (
@@ -291,29 +291,7 @@ export default function Home() {
                 {project.keyPoints.map((point, index) => {
                   return (
                     <div key={index} className="accordionContainer">
-                      <Accordion
-                        expanded={expanded === index}
-                        onChange={handleChange(index)}
-                      >
-                        <AccordionSummary
-                          expandIcon={
-                            expanded === index ? (
-                              <img src={minusIcon} />
-                            ) : (
-                              <img src={plusIcon} />
-                            )
-                          }
-                          aria-controls="panel1bh-content"
-                          id="panel1bh-header"
-                        >
-                          <Typography sx={{ color: "white" }}>
-                            {point.title}
-                          </Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>{point.description}</Typography>
-                        </AccordionDetails>
-                      </Accordion>
+                      {point.title}
                     </div>
                   );
                 })}
@@ -378,13 +356,13 @@ export default function Home() {
         </article>
       </section>
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
-      <EmblaSlider
+      {/* <EmblaSlider
         slides={testimonialSlides_array}
         no_of_slides={{ xs: 1, sm: 1, md: 2, lg: 2, xl: 2 }}
         delay={1000}
         autoScroll={true}
         navigationDots={false}
-      />
+      /> */}
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <Team_section />
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}

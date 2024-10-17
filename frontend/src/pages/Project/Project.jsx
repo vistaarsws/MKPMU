@@ -45,12 +45,19 @@ export default function Project() {
         <h2>Introduction</h2>
         <div>
           {currentPage.details.introduction.map((intro, index) => {
-            return (
-              <>
-                <p key={index}>{intro}</p>
-                <br />
-              </>
-            );
+            if (intro.type === "paragraph") {
+              return <p key={index}>{intro.content}</p>;
+            } else if (intro.type === "list") {
+              return (
+                <ul key={index}>
+                  {intro.items.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
+              );
+            } else {
+              return null;
+            }
           })}
         </div>
       </article>
@@ -58,14 +65,38 @@ export default function Project() {
         <h2>Main Components</h2>
         <section>
           {currentPage.details.mainComponents.map((card, index) => {
-            return (
-              <div key={index}>
-                <span>{index + 1}.</span>
-                {card}
-              </div>
-            );
+            if (card.type === "paragraph") {
+              return <p key={index}>{card.content}</p>;
+            } else if (card.type === "list") {
+              return (
+                <ul key={index}>
+                  {card.items.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
+              );
+            } else {
+              return null;
+            }
           })}
         </section>
+      </article>
+      <article>
+        {currentPage.details.howItWorks.map((item, index) => {
+          if (item.type === "paragraph") {
+            return <p key={index}>{item.content}</p>;
+          } else if (item.type === "list") {
+            return (
+              <ul key={index}>
+                {item.items.map((item, itemIndex) => (
+                  <li key={itemIndex}>{item}</li>
+                ))}
+              </ul>
+            );
+          } else {
+            return null;
+          }
+        })}
       </article>
       <article className="salientFeatures_container">
         <h2>Salient Features</h2>

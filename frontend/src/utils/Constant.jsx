@@ -418,48 +418,38 @@ const projectHighlightCards_array = [
 const irrigationProjectDetails = [
   {
     projectName: "Mohanpura Irrigation Project",
-    projectDescription:
-      "The Water Resources Department, state government of Madhya Pradesh envisages to develop Mohanpura dam, near vilage Banskhedi in district Rajgarh. The dam is proposed constructed across river Newaj at an estimated investment of 3,866-crore. The proposed Mohanpura dam proposes to provide water for irrigation, domestic and industrial uses.",
     projectImage: dam1,
     keyPoints: [
       {
         title: "Irrigates 1,51,495 ha of land",
-        description:
-          "Country’s First project that irrigates field using underground canal with the longest pressure pipe is to irrigate 1 lakh 51 thousand hectares of land.",
       },
       {
         title: "Benefits 792+ villages in the state",
-        description:
-          "22 Major & 33 Medium  Pressurised Pipe Irrigation (PIN)  projects are built on the Newaj River, 8 km from Rajgarh, ",
       },
       {
-        title: "3726 sq. km of Catchment Area",
-        description:
-          "1361 m long earthen dam on left flank and 875 m long on right flank. The GCA of the Mohanpura project is 92860 ha in Rajgarh and Khilichipur tehsils of Rajgarh district.",
+        title: "Benefits 289152+ Farmer",
+      },
+      {
+        title: "Benefits Rajgarh District",
       },
     ],
   },
   {
     projectName: "Kundalia Irrigation Project ",
 
-    projectDescription:
-      "Kundalia Irrigation Project (KIP) is a part of Madhya Pradesh Irrigation Efficiency Improvement Project (MPIEIP), aimed to achieve high irrigation efficiency and improve water productivity in Madhya Pradesh, India. The project aims to develop a new highly efficient pressurized irrigation network and productive command area under the Kundalia irrigation Project (KIP) in Rajgarh and Agar Malwa Districts.",
     projectImage: dam2,
     keyPoints: [
       {
         title: "Irrigates 1,39,000 ha of land",
-        description:
-          "KMMP comprises of 44.5-meter (m) high composite earth and concrete Kundalia Dam across the Kalisindh River which was started in May 2015 and completed in December 2018",
       },
       {
         title: "Benefits 411+ villages in the state",
-        description:
-          "The Kundalia greenfield irrigation project developed on the Kalisindh river  is designed to provide 2 kg/cm2 pressure at every 1 ha farm outlet that is micro-irrigation-ready (drip and micro-sprinklers).",
       },
       {
-        title: "4900 sq. km of Catchment Area",
-        description:
-          "Earthen dam for 2355 m and subsidiary saddle dam of 2130 m and central gated spillway of 236 m length.The GCA of the Kundalia project is 82625 ha in Rajgarh and Khilichipur tehsils of Rajgarh district.",
+        title: "Benefits 348997+ Farmer",
+      },
+      {
+        title: "Benefits Rajgarh and Agar Malwa District",
       },
     ],
   },
@@ -886,25 +876,46 @@ const awardsAndAcknowledgement = [
 // --------------------------------------------------------------------Kundaliya Details-----------------------------------------------------------------------------
 const kundaliyaDetails = {
   introduction: [
-    "Kundalia project is a major multipurpose project, which is proposed, in lower Chambal basin in lower zone-I. The project is proposed on river Kalisindh which is one of the major three river constituting this zone of lower Chambal sub basin. Under the scope of proposed project a barrier is proposed to be constructed on river Kalisindh near village Balaheda of Zirapur tehsil of district Rajgarh.The proposed dam site can be located at latitude230-55’-41’’ and longitude 76018'15''on Topo sheet no 54D/4.The site is approachable from Km 42 of Zirapur - Pachor road by a 10.0km long road.",
-    "The project is second major dam which is proposed on the main river. The first dam is Ranjit Sagar dam which is proposed in the initial reach of the river in district Shajapur basically as a irrigation project whereas the project under reference is to be designed as a irrigation cum diversion structure under the topographical limitation of the river and sub basin and in particular the gross surplus availability of water taking into consideration.",
-    "The project in its proposed form will provide irrigation on d/s of proposed Kundalia dam on left and right flank of Kalisindh River. The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur.",
-    "The planned use of pressurized pipeline supplying sprinkler and micro irrigation system in the Kundalia major project offers the opportunity for high efficiency irrigation, meaning that more cultivable land can be brought under production. This is the basis upon which the planned CCA of kundalia mojar project was increased from 58040ha to 125000ha.",
+    {
+      type: "paragraph",
+      content:
+        "The Kundalia Irrigation Project (KIP) is a crucial initiative under the Madhya Pradesh Irrigation Efficiency Improvement Project (MPIEIP), aimed at enhancing irrigation efficiency and water productivity in Madhya Pradesh, India. The project has developed a highly efficient pressurized irrigation network over 139,600 hectares in the Rajgarh and Agar Malwa districts. In August 2018, the Asian Development Bank (ADB) signed a $375 million loan agreement with the Government of India to support the expansion of irrigation networks, benefiting over 800,000 people across more than 400 villages.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "KIP focuses on creating a robust irrigation infrastructure, including the construction of a dam on the Kalisindh River, which is a significant tributary of the Chambal River. The project incorporates advanced technologies, such as pressurized pipelines and micro-irrigation systems, to increase water-use efficiency. This infrastructure now serves approximately 125,000 hectares of culturable command area (CCA) and provides irrigation to the surrounding regions.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "In addition to improving agricultural productivity, KIP also addresses domestic and industrial water supply needs, groundwater recharge, and flood control. The dam's construction mitigates flood risks in the Kalisindh sub-basin, ensuring sustainable water management. By fostering agricultural growth and enhancing water availability, the Kundalia Irrigation Project represents a significant step towards transforming the agricultural landscape of Madhya Pradesh while contributing to the region's overall socio-economic development.",
+    },
   ],
   mainComponents: [
-    "Construction of dam for 2655 m. This will consist of left earthen dam in 2335 m length and right earthen dam in 320 m length, and subsidiary bund in a saddle of 2 km.",
-    "Construction of a central gated spillway in 345m length which will consist of 11 no’s of 17x12m size radial gates and 10 piers of 3.5m thickness each.",
-    "Construction of right and left NOF in 120m length wherein5 blocks of 20m each will be provided in left flank and1 blocks of 20m each will provide in right flank.",
-    "One no of head sluice on left flank and one no. of head sluice on right flank from dam to provide irrigation on d/s of dam to approx. 125000ha of CCA.",
-    "One no of under sluice in pier number 9 to provide drinking water facility and release of water for d/s .for maintaining ecological requirements.",
-    "350m long 7.50 m wide T-beam Type double lane Bridge over the spillway.",
-    "10m long key wall on left earthen dam site at junction between earth dam and spillway.",
-    "11 no's of radial service gates of size 17x12m (10+1stand by) with electromechanical rope drum hoisting arrangement. Alternatively this can be provided with hydraulic hoist.",
-    "1 no's of emergency gate consisting of 8 multiple units of 17x 1.35m each and 1 top unit of 17x1.2m with gantry crane type of hoisting arrangement.",
-    "D/S energy dissipation arrangement in the form of slotted roller bucket of 15m radius.",
-    "Construction of d/s training wall, guide wall and returned wall.",
-    "Construction of diversion barrage and channel from Lakhundar river.",
-    "Construction of complete left bank & right bank pressurized irrigation system including rising main, pump house, transmission line including construction of all the pressurized structure required therein.",
+    "Irrigation Area: New pressurized irrigation system covering 125,000 hectares",
+    "Irrigation Infrastructure:",
+    {
+      type: "list",
+      items: [
+        "Fully automated and SCADA-enabled system",
+        "Underground pipeline network extending 130,639 hectares",
+        "Two large pump stations with a design discharge of ~30 m³/s each",
+        "Three distribution chambers (volumes: 22,500 - 54,000 m³)",
+        "Gravity-fed distribution through buried pipelines",
+        "Hydrants installed every 3 hectares",
+        "Designed to provide 2 kg/cm² pressure for micro-irrigation (drip and micro-sprinklers)",
+      ],
+    },
+    "Integrated supply system for domestic and industrial water needs",
+    "Contributes to community development",
+    "Pre-filtration at pump stations",
+    "Secondary filtration at the 30-hectare level for enhanced water quality",
+    "Participatory approach with farmer involvement",
+    "Farmer Field Schools (FFS) covering over 1,250 hectares",
+    "Four Farmer Support Centres (FSC) to assist with irrigation practices and technology adoption",
+    "Decision Support System (DSS) for operational efficiency",
+    "Construction of access roads and electrical connections for pump stations to the grid",
   ],
   salientFeatures: [
     {
@@ -936,26 +947,101 @@ const kundaliyaDetails = {
 };
 const mohanpuraDetails = {
   introduction: [
-    "Mohanpura project is a major multipurpose project, which is proposed, in lower Chambal basin in lower zone-I. The project is proposed on river Kalisindh which is one of the major three river constituting this zone of lower Chambal sub basin. Under the scope of proposed project a barrier is proposed to be constructed on river Kalisindh near village Balaheda of Zirapur tehsil of district Rajgarh",
-    "The proposed dam site can be located at latitude230-55’-41’’ and longitude 76018'15''on Topo sheet no 54D/4.The site is approachable from Km 42 of Zirapur - Pachor road by a 10.0km long road. The site is 26km from Zirapur town. The approach up to dam site from right flank is a PMGSY road which ends up to the right bank of the river.",
-    "The project is second major dam which is proposed on the main river. The first dam is Ranjit Sagar dam which is proposed in the initial reach of the river in district Shajapur basically as a irrigation project whereas the project under reference is to be designed as a irrigation cum diversion structure under the topographical limitation of the river and sub basin and in particular the gross surplus availability of water taking into consideration.",
-    "The project in its proposed form will provide irrigation on d/s of proposed Mohanpura dam on left and right flank of Kalisindh River. The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur.",
-    "The planned use of pressurized pipeline supplying sprinkler and micro irrigation system in the Mohanpura major project offers the opportunity for high efficiency irrigation, meaning that more cultivable land can be brought under production. This is the basis upon which the planned CCA of Mohanpura mojar project was increased from 58040ha to 125000ha.",
+    {
+      type: "paragraph",
+      content:
+        "The Mohanpura Irrigation Project (MIP) is situated in Rajgarh District, Madhya Pradesh, on the Newaj River, part of the Chambal River Basin. The Newaj River, originating from Sehore district, travels 220 km before joining the Chambal River. The Newaj sub-basin covers a drainage area of 4,290 km², which accounts for 7.2% of the Chambal basin's total drainage area within Madhya Pradesh. The location of the Mohanpura dam is strategically positioned within this basin to optimize water resource management for irrigation and other uses. The Mohanpura Irrigation Project (MIP) was initiated to meet the agricultural water demands of the Newaj sub-basin and neighboring Parbati and Kalisindh sub-basins, aiming to irrigate 210,000 hectares. While 877 Mm³ of water was required, only 616 Mm³ of gross storage, including 572.96 Mm³ of live water, could be created through the Mohanpura Dam. Conventionally, this could irrigate only 87,000 hectares. To bridge this gap, MIP adopted a Pressurized Irrigation Network (PIN), increasing efficiency to serve 145,661 hectares, while also addressing drinking, environmental, and industrial needs. The project integrates automated control systems for optimal water distribution, with sub-projects at various stages of completion.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "The operation philosophy of irrigation projects in Madhya Pradesh revolves around a *Source to Farm* approach, utilizing SCADA communication for remote control and monitoring. Key points include:",
+    },
+    {
+      type: "list",
+      items: [
+        "System Control: The entire irrigation system is monitored from the water source to chak levels (30 or 20 ha), extending to sub-chaks (5 ha) and individual farm outlets (1 ha).",
+        "Outlet Management: Each 1 ha outlet provides a residual head of 20 meters and operates under rotational irrigation management.",
+        "Micro Irrigation Systems (MIS): Farmers are responsible for procuring and connecting MIS to the 1 ha outlets.",
+        "Integrated Automation: All automation components, from the pump house to the field outlets, are integrated to ensure efficient operations.",
+        "Remote Monitoring: Remote control of key parameters is vital for successful operation and maintenance of the large-scale Pressurized Irrigation Network System (PINS).",
+      ],
+    },
   ],
   mainComponents: [
-    "Construction of dam for 2655 m. This will consist of left earthen dam in 2335 m length and right earthen dam in 320 m length, and subsidiary bund in a saddle of 2 km.",
-    "Construction of a central gated spillway in 345m length which will consist of 11 no’s of 17x12m size radial gates and 10 piers of 3.5m thickness each.",
-    "Construction of right and left NOF in 120m length wherein5 blocks of 20m each will be provided in left flank and1 blocks of 20m each will provide in right flank.",
-    "One no of head sluice on left flank and one no. of head sluice on right flank from dam to provide irrigation on d/s of dam to approx. 125000ha of CCA.",
-    "One no of under sluice in pier number 9 to provide drinking water facility and release of water for d/s .for maintaining ecological requirements.",
-    "350m long 7.50 m wide T-beam Type double lane Bridge over the spillway.",
-    "10m long key wall on left earthen dam site at junction between earth dam and spillway.",
-    "11 no's of radial service gates of size 17x12m (10+1stand by) with electromechanical rope drum hoisting arrangement. Alternatively this can be provided with hydraulic hoist.",
-    "1 no's of emergency gate consisting of 8 multiple units of 17x 1.35m each and 1 top unit of 17x1.2m with gantry crane type of hoisting arrangement.",
-    "D/S energy dissipation arrangement in the form of slotted roller bucket of 15m radius.",
-    "Construction of d/s training wall, guide wall and returned wall.",
-    "Construction of diversion barrage and channel from Lakhundar river.",
-    "Construction of complete left bank & right bank pressurized irrigation system including rising main, pump house, transmission line including construction of all the pressurized structure required therein.",
+    {
+      type: "paragraph",
+      content: "Mohanpura Reservoir: The primary water source for the project.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "Approach Channel: Carries water from the reservoir to the main pump house.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "Main Pump House: Pumps water from the reservoir through the rising main to higher elevations.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "Rising Main: The main pipeline that transports water from the pump house to different distribution zones.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "Break Pressure Tank/Delivery Chamber (BPT/DC): Regulates the water pressure before further distribution.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "Kalipeeth Booster Pumping Station: Provides additional pressure to distribute water to Area B and Area C.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "Small Booster Pumping Station for Area D: Ensures water delivery to Area D.",
+    },
+    {
+      type: "paragraph",
+      content: "Distribution Networks:",
+    },
+
+    {
+      type: "list",
+      items: [
+        "Area A Distribution",
+        "Area B Distribution",
+        "Area C Distribution",
+        "Area D Distribution",
+      ],
+    },
+  ],
+  howItWorks: [
+    {
+      type: "list",
+
+      items: [
+        "Water is drawn from the Mohanpura Reservoir through the Approach Channel and directed into the Main Pump House.",
+        "The water is pumped into the Rising Main, which transports it to a central distribution hub, the Break Pressure Tank (BPT/DC). This tank reduces and regulates water pressure to ensure smooth flow.",
+        "Water is then directed to different zones:",
+      ],
+    },
+    {
+      type: "list",
+      items: [
+        "Kalipeeth Booster Pumping Station boosts water pressure to supply Area B and Area C, ensuring the water reaches these higher-elevation regions.",
+        "The Small Booster Pumping Station handles water distribution to Area D.",
+        "Each area has its own distribution network to ensure water is delivered effectively to farmers' fields, including a provision for delivering water with adequate pressure at each outlet.",
+      ],
+    },
+
+    {
+      type: "paragraph",
+      content:
+        "This system enables the effective management and distribution of irrigation water to farmlands within the project area.",
+    },
   ],
   salientFeatures: [
     {
@@ -1162,6 +1248,39 @@ const blogs_page = {
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+const newsletters = [
+  {
+    title: "Introduction to Digital Crypto Wallets",
+    description:
+      "Dive into the power of blockchain technology and learn how you can join the decentralized world of web3.",
+    date: "28 oct 2024",
+    link: "",
+  },
+  {
+    title: "Introduction to Digital Crypto Wallets",
+    description:
+      "Dive into the power of blockchain technology and learn how you can join the decentralized world of web3.",
+    date: "28 oct 2024",
+    link: "",
+  },
+  {
+    title: "Introduction to Digital Crypto Wallets",
+    description:
+      "Dive into the power of blockchain technology and learn how you can join the decentralized world of web3.",
+    date: "28 oct 2024",
+    link: "",
+  },
+  {
+    title: "Introduction to Digital Crypto Wallets",
+    description:
+      "Dive into the power of blockchain technology and learn how you can join the decentralized world of web3.",
+    date: "28 oct 2024",
+    link: "",
+  },
+];
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 export {
   ministerQuoteSlides_array,
   testimonialSlides_array,
@@ -1181,4 +1300,5 @@ export {
   awardsAndAcknowledgementHeader,
   kundaliyaDetails,
   mohanpuraDetails,
+  newsletters,
 };
