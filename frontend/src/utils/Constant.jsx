@@ -8,7 +8,27 @@ import HeroSlider from "../components/ui/Slider/HeroSlider/HeroSlider";
 import banner1 from "../assets/images/banner1.png";
 import dam1 from "../assets/images/mohanpuraDam_1.png";
 import dam2 from "../assets/images/kindaliyaDam_1.png";
-import actualTestimonials from "../assets/images/actualTestimonials.png";
+
+// import actualTestimonials from "../assets/images/actualTestimonials.png";
+import writtenTestimonial_1 from "../assets/images/image2.png";
+import writtenTestimonial_2 from "../assets/images/image3.png";
+import writtenTestimonial_3 from "../assets/images/image4.png";
+import writtenTestimonial_4 from "../assets/images/image5.png";
+import writtenTestimonial_5 from "../assets/images/image6.png";
+import writtenTestimonial_6 from "../assets/images/image7.png";
+import writtenTestimonial_7 from "../assets/images/image8.png";
+import writtenTestimonial_8 from "../assets/images/image9.png";
+import writtenTestimonial_9 from "../assets/images/image10.png";
+import writtenTestimonial_10 from "../assets/images/image11.png";
+import writtenTestimonial_11 from "../assets/images/image12.png";
+import writtenTestimonial_12 from "../assets/images/image13.png";
+import writtenTestimonial_13 from "../assets/images/image14.png";
+import writtenTestimonial_14 from "../assets/images/image15.png";
+import writtenTestimonial_15 from "../assets/images/image16.png";
+import writtenTestimonial_16 from "../assets/images/image17.png";
+import writtenTestimonial_17 from "../assets/images/image18.png";
+import writtenTestimonial_18 from "../assets/images/image19.png";
+import writtenTestimonial_19 from "../assets/images/image20.png";
 
 import profilePicture_1 from "../assets/images/VikasRajoria.png";
 import profilePicture_2 from "../assets/images/Sandeep_Sir.png";
@@ -24,9 +44,17 @@ import projectHighlight_icon5 from "../assets/images/totalPipelineLayed.svg";
 import projectHighlight_icon6 from "../assets/images/enabledFullyAutomated.svg";
 import projectHighlight_icon7 from "../assets/images/moreEfficientwaterUse.svg";
 
-import projectOutreact_1 from "../assets/images/PO_image.png";
-import newUpdate_1 from "../assets/images/newsUpdate.png";
-import researchImg_1 from "../assets/images/researchIcon.png";
+import projectOutreact_1 from "../assets/images/po_1.png";
+import projectOutreact_2 from "../assets/images/po_2.png";
+import projectOutreact_3 from "../assets/images/po_3.png";
+import projectOutreact_4 from "../assets/images/po_4.png";
+import projectOutreact_5 from "../assets/images/po_5.png";
+import projectOutreact_6 from "../assets/images/po_6.png";
+
+import newUpdate_1 from "../assets/images/newsUpdate_1.png";
+// import researchImg_1 from "../assets/images/researchIcon.png";
+import researchPublication_1 from "../assets/images/researchPublication_1.jpg";
+import researchPublicationPdf_1 from "../../public/ResearchPublication_1.pdf";
 
 import awards_1 from "../assets/images/awards-1.png";
 import awards_2 from "../assets/images/awards-2.png";
@@ -113,9 +141,25 @@ const testimonialSlides_array = testimonialSlides.map((e, index) => (
 ));
 
 const actual_testimonials = [
-  actualTestimonials,
-  actualTestimonials,
-  actualTestimonials,
+  writtenTestimonial_1,
+  writtenTestimonial_2,
+  writtenTestimonial_3,
+  writtenTestimonial_4,
+  writtenTestimonial_5,
+  writtenTestimonial_6,
+  writtenTestimonial_7,
+  writtenTestimonial_8,
+  writtenTestimonial_9,
+  writtenTestimonial_10,
+  writtenTestimonial_11,
+  writtenTestimonial_12,
+  writtenTestimonial_13,
+  writtenTestimonial_14,
+  writtenTestimonial_15,
+  writtenTestimonial_16,
+  writtenTestimonial_17,
+  writtenTestimonial_18,
+  writtenTestimonial_19,
 ];
 
 const actual_testimonials_array = actual_testimonials.map((e, index) => (
@@ -125,10 +169,10 @@ const actual_testimonials_array = actual_testimonials.map((e, index) => (
 
 const teamMemberDetails_array = [
   {
-    fullName: "Vikas Rajoria",
+    fullName: "Shri Vikas Rajoria",
     profilePicture: profilePicture_1,
-    designation: "CE Mohanpura Kundaliya Projects, Bhopal",
-    linkedinUrl: "https://in.linkedin.com/",
+    designation: "Supriendent Engineer and Project Administrator",
+    linkedinUrl: "https://www.linkedin.com/in/vikasrajoria80/",
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
       "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
@@ -152,10 +196,10 @@ const teamMemberDetails_array = [
     ],
   },
   {
-    fullName: "Sandeep Sir",
+    fullName: "Shri Sandeep Dubey",
     profilePicture: profilePicture_2,
-    designation: "CE Mohanpura Kundaliya Projects, Bhopal",
-    linkedinUrl: "https://in.linkedin.com/",
+    designation: "Executive Engineer and Program Manager",
+    linkedinUrl: "https://www.linkedin.com/in/sandeep-dubey-b2972731b/",
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
       "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
@@ -179,10 +223,10 @@ const teamMemberDetails_array = [
     ],
   },
   {
-    fullName: "Vipin Sir",
+    fullName: "Shri Vipin Tiwari",
     profilePicture: profilePicture_3,
-    designation: "CE Mohanpura Kundaliya Projects, Bhopal",
-    linkedinUrl: "https://in.linkedin.com/",
+    designation: "Assistant Engineer and Assistant Program Manager",
+    linkedinUrl: "https://www.linkedin.com/in/vipin-tiwari-83761a83/",
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
       "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
@@ -206,10 +250,10 @@ const teamMemberDetails_array = [
     ],
   },
   {
-    fullName: "Silawat Sir",
+    fullName: "Shri GP Silawat",
     profilePicture: profilePicture_4,
     linkedinUrl: "/",
-    designation: "CE Mohanpura Kundaliya Projects, Bhopal",
+    designation: "Chief ESupriendent Project Director",
 
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
@@ -234,10 +278,10 @@ const teamMemberDetails_array = [
     ],
   },
   {
-    fullName: "Shubhankar Sir",
+    fullName: "Shri Shubhankar Biswas",
     profilePicture: profilePicture_5,
-    designation: "CE Mohanpura Kundaliya Projects, Bhopal",
-    linkedinUrl: "https://in.linkedin.com/",
+    designation: "Supriendent Engineer and Additional Project Director",
+    linkedinUrl: "https://www.linkedin.com/in/shubhankar-biswas-215758201/",
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
       "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
@@ -419,34 +463,29 @@ const projectOutreach_page = {
       date: "Oct 2022",
     },
     {
-      picture: projectOutreact_1,
-      title:
-        "24th International Congress of Irrigation and Drainage, Australia",
-      date: "Oct 2022",
+      picture: projectOutreact_2,
+      title: "World Environmental % Water Resource Congress, USA",
+      date: "May 2023",
     },
     {
-      picture: projectOutreact_1,
-      title:
-        "24th International Congress of Irrigation and Drainage, Australia",
-      date: "Oct 2022",
+      picture: projectOutreact_3,
+      title: "World Irrigation Forum at Bali, Indonesia",
+      date: "September, 2019",
     },
     {
-      picture: projectOutreact_1,
-      title:
-        "24th International Congress of Irrigation and Drainage, Australia",
-      date: "Oct 2022",
+      picture: projectOutreact_4,
+      title: "7th India Water Week, New Delhi",
+      date: "November, 2022",
     },
     {
-      picture: projectOutreact_1,
-      title:
-        "24th International Congress of Irrigation and Drainage, Australia",
-      date: "Oct 2022",
+      picture: projectOutreact_5,
+      title: "G20 Meeting for Environment & Climate Sustainability, Gujarat",
+      date: "March, 2023",
     },
     {
-      picture: projectOutreact_1,
-      title:
-        "24th International Congress of Irrigation and Drainage, Australia",
-      date: "Oct 2022",
+      picture: projectOutreact_6,
+      title: "Command Area Development, World Bank, Lucknow",
+      date: "February, 2024",
     },
   ],
 };
@@ -459,8 +498,9 @@ const newsUpdate_page = {
     {
       picture: newUpdate_1,
       title:
-        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-      date: "12 April 2023",
+        "3 साल में 1.70 लाख हेक्टेयर में सिंचाई:मोहनपुरा कुंडालिया परियोजना में सर्वश्रेष्ठ प्रदर्शन, जिला अभियंता को मिला राज्य स्तरीय पुरस्कार",
+      date: "8 महीने पहले",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/irrigation-in-170-lakh-hectares-in-3-years-132613615.html?_branch_match_id=1280028591755248453&utm_campaign=132613615&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0nMzMvM1k3Sy8zTz%2FbPCTLM8y3P8UgCAMurMc4fAAAA ",
     },
     {
       picture: newUpdate_1,
@@ -503,36 +543,12 @@ const researchPublicationHeader = {
 
 const researchPublication = [
   {
-    picture: researchImg_1,
+    picture: researchPublication_1,
     title:
-      "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-    subtitle:
-      "Leveraged expertise from IHE Delft, Netherlands (tailored training program",
-    date: "12 April 2023",
-  },
-  {
-    picture: researchImg_1,
-    title:
-      "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-    subtitle:
-      "Leveraged expertise from IHE Delft, Netherlands (tailored training program",
-    date: "12 April 2023",
-  },
-  {
-    picture: researchImg_1,
-    title:
-      "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-    subtitle:
-      "Leveraged expertise from IHE Delft, Netherlands (tailored training program",
-    date: "12 April 2023",
-  },
-  {
-    picture: researchImg_1,
-    title:
-      "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-    subtitle:
-      "Leveraged expertise from IHE Delft, Netherlands (tailored training program",
-    date: "12 April 2023",
+      "IMPACT OF MOHANPURA PRESSURIZED IRRIGATION PROJECT,MADHYA PRADESH, INDIA",
+    subtitle: "24th International Congress on Irrigation and Drainage",
+    date: "03-10 October 2022, Adelaide, South Australia",
+    pdf: researchPublicationPdf_1,
   },
 ];
 // ---------------------------------------------------------------------AWARDS AND ACKNOWLEDGEMENT-------------------------------------------------------------------
@@ -632,75 +648,28 @@ const kundaliyaDetails = {
   ],
   salientFeatures: [
     {
-      title: "LOCATION",
-      features: [
-        ["State", "Madhya Pradesh"],
-        ["Tehsil/District", "Zirapur / Rajgarh"],
-        ["Village", "Balaheda"],
-        ["Longitude", "76018’15’’"],
-        ["Latitude", "23055’41’’"],
-      ],
-    },
-    {
-      title: "HYDROLOGY",
-      features: [
-        ["Total Catchment Area", "4925 sq.km"],
-        ["Catchment area from Kalisindh", "3850 sq.km"],
-        ["Diverted catchment from Lakhundar", "1075 sq.km"],
-        ["Longitude", "76018’15’’"],
-        ["Latitude", "23055’41’’"],
-      ],
-    },
-    {
       title: "RESERVOIR DATA",
       features: [
-        ["Gross storage capacity", "582.75 Mcum"],
-        ["Dead storage capacity", "30.00Mcum"],
-        ["Live storage capacity", "552.75Mcum"],
+        ["Live storage", "552.75 MCM"],
+        ["Gross storage", "582.75 MCM"],
       ],
     },
+
     {
-      title: "DAM",
+      title: "WATER USE",
       features: [
-        ["Type", "Zonal dam"],
-        ["Max. height of earthen dam", "32.001m"],
-        ["Max. height of concrete dam from N.B.L.", "44.50 m"],
-        ["Total length of dam", "3100 m"],
-        ["Top width", "7.50 m"],
-        ["Length of spillway", "345 m"],
-        ["Length of earthen dam", "2755m (2487m+268m)"],
-        ["Length of earthen dam", "120m (60m+60m)"],
-        ["Length of NOF", "552.75Mcum"],
-      ],
-    },
-    {
-      title: "SPILLWAY",
-      features: [
-        ["Type", "Gate controlled ogee spillway"],
-        ["Crest level", "388.00m"],
-        ["Type of gate", "Radial gate (17x12 m)."],
-        ["No. of gate", "11"],
-        ["Design discharge moderated", "20747.50cumec"],
-        ["Length", "225m between abutment"],
+        ["For Irrigation", "497.75 MCM"],
+        ["For Drinking", "10.00 MCM"],
+        ["For Industrial ", "15.00 MCM"],
       ],
     },
     {
       title: "IRRIGATION",
       features: [
-        ["Gross command area (GCA)", "200000 ha"],
-        ["Culturable command area (CCA)", "125000 ha"],
-        ["Annual irrigation", "163000 ha"],
-        ["Crop pattern proposed", "Double cropped (Rabi &Kharif)"],
-        ["No. of village to be befitted", "Approximately 411 villages"],
-      ],
-    },
-    {
-      title: "COST OF PROJECT",
-      features: [
-        ["Unit I head work", "1400.03crore"],
-        ["Unit II canal", "2047.97 crore"],
-        ["Total cost", "3448.00 crore"],
-        ["Benefit Cost Ratio", "1.85"],
+        ["CCA & Annual Irrigation", "140000 Ha."],
+        ["Benefitted Village", "411 No."],
+        ["Benefitted Farmer ", "348997 No."],
+        ["Benefitted District ", "Rajgarh and Agar Malwa"],
       ],
     },
   ],
@@ -730,75 +699,28 @@ const mohanpuraDetails = {
   ],
   salientFeatures: [
     {
-      title: "LOCATION",
-      features: [
-        ["State", "Madhya Pradesh"],
-        ["Tehsil/District", "Zirapur / Rajgarh"],
-        ["Village", "Balaheda"],
-        ["Longitude", "76018’15’’"],
-        ["Latitude", "23055’41’’"],
-      ],
-    },
-    {
-      title: "HYDROLOGY",
-      features: [
-        ["Total Catchment Area", "4925 sq.km"],
-        ["Catchment area from Kalisindh", "3850 sq.km"],
-        ["Diverted catchment from Lakhundar", "1075 sq.km"],
-        ["Longitude", "76018’15’’"],
-        ["Latitude", "23055’41’’"],
-      ],
-    },
-    {
       title: "RESERVOIR DATA",
       features: [
-        ["Gross storage capacity", "582.75 Mcum"],
-        ["Dead storage capacity", "30.00Mcum"],
-        ["Live storage capacity", "552.75Mcum"],
+        ["Gross storage", "616.27 MCM"],
+        ["Live storage", "572.96 MCM"],
       ],
     },
+
     {
-      title: "DAM",
+      title: "WATER USE",
       features: [
-        ["Type", "Zonal dam"],
-        ["Max. height of earthen dam", "32.001m"],
-        ["Max. height of concrete dam from N.B.L.", "44.50 m"],
-        ["Total length of dam", "3100 m"],
-        ["Top width", "7.50 m"],
-        ["Length of spillway", "345 m"],
-        ["Length of earthen dam", "2755m (2487m+268m)"],
-        ["Length of earthen dam", "120m (60m+60m)"],
-        ["Length of NOF", "552.75Mcum"],
-      ],
-    },
-    {
-      title: "SPILLWAY",
-      features: [
-        ["Type", "Gate controlled ogee spillway"],
-        ["Crest level", "388.00m"],
-        ["Type of gate", "Radial gate (17x12 m)."],
-        ["No. of gate", "11"],
-        ["Design discharge moderated", "20747.50cumec"],
-        ["Length", "225m between abutment"],
+        ["For Irrigation", "510.96 MCM"],
+        ["For Drinking", "12.60 MCM"],
+        ["For Industrial ", "5.00 MCM"],
       ],
     },
     {
       title: "IRRIGATION",
       features: [
-        ["Gross command area (GCA)", "200000 ha"],
-        ["Culturable command area (CCA)", "125000 ha"],
-        ["Annual irrigation", "163000 ha"],
-        ["Crop pattern proposed", "Double cropped (Rabi &Kharif)"],
-        ["No. of village to be befitted", "Approximately 411 villages"],
-      ],
-    },
-    {
-      title: "COST OF PROJECT",
-      features: [
-        ["Unit I head work", "1400.03crore"],
-        ["Unit II canal", "2047.97 crore"],
-        ["Total cost", "3448.00 crore"],
-        ["Benefit Cost Ratio", "1.85"],
+        ["CCA & Annual Irrigation", "151994 Ha."],
+        ["Benefitted Village", "792 No."],
+        ["Benefitted Farmer ", "289152 No."],
+        ["Benefitted District ", "Rajgarh"],
       ],
     },
   ],

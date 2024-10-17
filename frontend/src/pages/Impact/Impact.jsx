@@ -73,7 +73,7 @@ export default function Impact() {
       <section className="cleanWaterSection droughtLandSection">
         <article>
           <h2>
-            <span>50000+ People</span> did&apos;t had access to clean water
+            <span>50000+ People</span> didn&apos;t had access to clean water
           </h2>
           <div>
             <h3>Life In A Thirsty Land</h3>

@@ -85,7 +85,7 @@ export default function About() {
             resources to support agriculture and natural habitats.
           </p>
         </div>
-        <div>
+        {/* <div>
           <h1>Safety & Flood Damage</h1>
           <p>
             We prioritize safety and flood risk management by incorporating
@@ -93,9 +93,13 @@ export default function About() {
             human settlements and the natural environment from potential flood
             damage.
           </p>
-        </div>
+        </div> */}
       </article>
-      <Team_section />
+      {/* <Team_section /> */}
+      <br />
+      <br />
+      <br />
+      <br />
       <iframe
         className="h-[40vw] w-full"
         src="https://www.youtube.com/embed/ZZnAAckMRI4?si=pprR29m1o9xXCe-H"

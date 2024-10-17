@@ -203,7 +203,7 @@
   overflow: hidden;
   max-width: 320px;
   max-height: 320px;
-  width: 100%;
+  /* width: 100%; */
 }
 .storyCard video {
   object-fit: cover;

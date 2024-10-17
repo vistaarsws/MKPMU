@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "server": "cd ../backend && npm run dev",
     "client": "vite",
-    "dev": "concurrently -n \"frontend,backend\" -c \"bgBlue,bgYellow\" \"npm run client\" \"npm run server\""
+    "dev": "concurrently -n \"frontend,backend\" -c \"bgBlue,bgYellow\" \"npm run client\" \"npm run server\"",
+    "host": "vite --host"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",

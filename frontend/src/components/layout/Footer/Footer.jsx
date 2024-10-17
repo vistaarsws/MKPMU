@@ -2,6 +2,7 @@ import xIcon from "../../../assets/images/X.svg";
 import facebookIcon from "../../../assets/images/Facebook.svg";
 import instagramIcon from "../../../assets/images/Instagram.svg";
 import youtubeIcon from "../../../assets/images/Youtube.svg";
+import linkedinIcon from "../../../assets/images/linkedin-svgrepo-com.svg";
 import footerLogo from "../../../assets/images/Emblem_of_Madhya_Pradesh1.svg";
 import "./Footer.css";
 import { Link } from "react-router-dom";
@@ -9,10 +10,27 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   const footer_details = {
     reachOut: [
-      { platform: "Instagram", icon: instagramIcon, url: "/" },
-      { platform: "Facebook", icon: facebookIcon, url: "/" },
-      { platform: "X", icon: xIcon, url: "/" },
-      { platform: "Youtube", icon: youtubeIcon },
+      {
+        platform: "Instagram",
+        icon: instagramIcon,
+        url: "https://www.instagram.com/mohanpura.kundalia/",
+      },
+      {
+        platform: "Facebook",
+        icon: facebookIcon,
+        url: "https://www.facebook.com/people/Mohanpura-Kundalia-Irrigation-Projects/100083424845078/",
+      },
+      { platform: "X", icon: xIcon, url: "https://x.com/pmumohanpurak " },
+      {
+        platform: "Youtube",
+        icon: youtubeIcon,
+        url: "https://www.youtube.com/@mohanpurakundaliamajorproj6855",
+      },
+      {
+        platform: "Linkedin",
+        icon: linkedinIcon,
+        url: "https://www.linkedin.com/company/mohanpura-kundalia-project-management-unit/?viewAsMember=true",
+      },
     ],
     quickLinks: [
       { companyInfo: "About Us", link: "/about" },
@@ -22,9 +40,10 @@ export default function Footer() {
       { companyInfo: "News & Updates", link: "/news-updates" },
     ],
     contactUs: {
-      header: "Government of Madhya Pradesh, Water Resource Department",
-      telephone: 9111111111,
-      email: "contact@mppmu.gov.in",
+      header:
+        "Office of project director, mohanpura kundalia project management unit, rajgarh MP",
+      telephone: "0772299285",
+      email: "communications.mkpmu@gmail.com ",
     },
   };
 
@@ -52,12 +71,17 @@ export default function Footer() {
             })}
           </ul>
         </section>
-        <section>
+        <section className="contactDetails_box">
           <strong className="">Contact us</strong>
           <ul>
             <li>{footer_details.contactUs.header}</li>
-            <li>Telephone: {footer_details.contactUs.telephone}</li>
-            <li>Email: {footer_details.contactUs.email}</li>
+            <li>
+              <span>Telephone: </span>
+              {footer_details.contactUs.telephone}
+            </li>
+            <li>
+              <span>Email: </span> {footer_details.contactUs.email}
+            </li>
           </ul>
         </section>
         <section>
@@ -66,9 +90,9 @@ export default function Footer() {
             {footer_details.reachOut.map((e, index) => {
               return (
                 <li key={index}>
-                  <a>
+                  <Link to={e.url} target="_blank">
                     <img src={e.icon} alt={`${e.platform} Icon`} />
-                  </a>
+                  </Link>
                 </li>
               );
             })}
