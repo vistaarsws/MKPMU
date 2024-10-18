@@ -5,6 +5,7 @@ import "./About.css";
 import Team_section from "../../components/layout/TeamSection/TeamSection";
 import Banner from "../../components/ui/Header/Banner/Banner";
 import aboutBanner from "../../assets/images/aboutBanner.png";
+import ProjectTimeline from "./Timeline";
 
 export default function About() {
   const bannerText = {
@@ -100,6 +101,7 @@ export default function About() {
       <br />
       <br />
       <br />
+      <ProjectTimeline />
       <iframe
         className="h-[40vw] w-full"
         src="https://www.youtube.com/embed/ZZnAAckMRI4?si=pprR29m1o9xXCe-H"
