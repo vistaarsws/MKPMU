@@ -125,15 +125,25 @@ export default function Home() {
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className="descriptionSection">
         <p>
-          <span>The Mohanpura and Kundalia</span> Irrigation Projects in Madhya
-          Pradesh represent landmark initiatives in sustainable water
-          management. Commissioned in 2018, these projects feature innovative
-          underground pipeline systems and pressurised piped-irrigation
-          technologies, benefiting over <span>1,300 villages</span> across
-          multiple districts. It aims to irrigate more than
+          <span>Mohnapura and Kundalia</span> irrigation project located in
+          Rajgarg and Agar malwa district of Madhya Pradesh. Envisinoned and
+          built to bring water to one of the driest areas of MP battling
+          dessertification and distress. Currently, the project is delivering
+          water to <span>1300 villages</span> inhabiting{" "}
+          <span>5 lakh farmers</span> and spread over an area of
+          <span> 3 lakh ha </span>
+          making it the world&apos;s largest contiguous areas serviced with
+          pressurised pipes irrigation network.
+          {/* ____________ */}
+          {/* The Mohanpura and Kundalia Irrigation Projects in Madhya Pradesh
+          represent landmark initiatives in sustainable water management.
+          Commissioned in 2018, these projects feature innovative underground
+          pipeline systems and pressurised piped-irrigation technologies,
+          benefiting over <span>1,300 villages</span> across multiple districts.
+          It aims to irrigate more than
           <span> 290,495 hectares of land</span>,transforming agricultural
           practices and improving livelihoods in the region through efficient
-          water use and <span>pressurized irrigation systems.</span>
+          water use and <span>pressurized irrigation systems.</span> */}
         </p>
       </section>
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
@@ -378,7 +388,7 @@ export default function Home() {
       <Form />
 
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className="irrigatedLand_section">
+      {/* <section className="irrigatedLand_section">
         <div>
           <h1>
             Book an <span>educational visit</span>
@@ -391,7 +401,7 @@ export default function Home() {
         <div>
           <button onClick={() => navigate("/contact")}>Contact Us</button>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
