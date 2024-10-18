@@ -38,7 +38,7 @@ import profilePicture_5 from "../assets/images/ShubhankarSir.png";
 
 import projectHighlight_icon1 from "../assets/images/totalIrrigatedArea.svg";
 import projectHighlight_icon2 from "../assets/images/systemEfficiency.svg";
-import projectHighlight_icon3 from "../assets/images/energyEfficiency.svg";
+import projectHighlight_icon3 from "../assets/images/farmBenefitted.svg";
 import projectHighlight_icon4 from "../assets/images/villageBenefitted.svg";
 import projectHighlight_icon5 from "../assets/images/totalPipelineLayed.svg";
 import projectHighlight_icon6 from "../assets/images/enabledFullyAutomated.svg";
@@ -353,9 +353,9 @@ const teamMemberDetails_array = [
 const heroBanners = [
   {
     banner: banner1,
-    title: "World’s Largest Contiguous Irrigated Area With PIN",
+    title: "1 Project. 500,000 Lives Changed",
     description:
-      "India’s First Pressurised Piped Irrigation Project, enhancing the lives of lakhs while making agriculture more efficient and sustainable for brighter future.",
+      "India’s first pressurized piped irrigation project made to tranform many lives, check dessertification, and, increase water use efficiency.",
   },
 ];
 const HeroBanner_array = heroBanners.map((e, index) => (
@@ -383,8 +383,8 @@ const projectHighlightCards_array = [
   },
   {
     icon: projectHighlight_icon3,
-    value: "~ 50%",
-    label: "Energy Efficiency",
+    value: "5 Lakhs+",
+    label: "Farmers Benefitted",
     bgColor: "#FFF597",
   },
   {
@@ -889,7 +889,7 @@ const kundaliyaDetails = {
     {
       type: "paragraph",
       content:
-        "In addition to improving agricultural productivity, KIP also addresses domestic and industrial water supply needs, groundwater recharge, and flood control. The dam's construction mitigates flood risks in the Kalisindh sub-basin, ensuring sustainable water management. By fostering agricultural growth and enhancing water availability, the Kundalia Irrigation Project represents a significant step towards transforming the agricultural landscape of Madhya Pradesh while contributing to the region's overall socio-economic development.",
+        "In addition to improving agricultural productivity, KIP also addresses domestic and industrial water supply needs, groundwater recharge, and flood control. The dam's construction mitigates flood risks in the Kalisindh sub-basin, ensuring sustainable water management.",
     },
   ],
   mainComponents: [
@@ -905,17 +905,17 @@ const kundaliyaDetails = {
         "Gravity-fed distribution through buried pipelines",
         "Hydrants installed every 3 hectares",
         "Designed to provide 2 kg/cm² pressure for micro-irrigation (drip and micro-sprinklers)",
+        "Integrated supply system for domestic and industrial water needs",
+        "Contributes to community development",
+        "Pre-filtration at pump stations",
+        "Secondary filtration at the 30-hectare level for enhanced water quality",
+        "Participatory approach with farmer involvement",
+        "Farmer Field Schools (FFS) covering over 1,250 hectares",
+        "Four Farmer Support Centres (FSC) to assist with irrigation practices and technology adoption",
+        "Decision Support System (DSS) for operational efficiency",
+        "Construction of access roads and electrical connections for pump stations to the grid",
       ],
     },
-    "Integrated supply system for domestic and industrial water needs",
-    "Contributes to community development",
-    "Pre-filtration at pump stations",
-    "Secondary filtration at the 30-hectare level for enhanced water quality",
-    "Participatory approach with farmer involvement",
-    "Farmer Field Schools (FFS) covering over 1,250 hectares",
-    "Four Farmer Support Centres (FSC) to assist with irrigation practices and technology adoption",
-    "Decision Support System (DSS) for operational efficiency",
-    "Construction of access roads and electrical connections for pump stations to the grid",
   ],
   salientFeatures: [
     {

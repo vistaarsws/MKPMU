@@ -122,7 +122,7 @@ export default function GridContentTemplate(template) {
           <Newsletter no_of_cards={4} />
         </section>
       )}
-      {isNewUpdatePage && (
+      {/* {isNewUpdatePage && (
         <section className="importantVisits_section">
           <div>
             <h3>Important Visits</h3>
@@ -134,7 +134,7 @@ export default function GridContentTemplate(template) {
 
           <Newsletter no_of_cards={4} />
         </section>
-      )}
+      )} */}
     </div>
   );
 }

@@ -31,6 +31,7 @@ export default function Testimonials() {
           navigationArrow={true}
           delay={5000}
           autoScroll={false}
+          autoSlide={false}
           navigationDots={false}
         />
       </article>
