@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./ImageModal.css";
 import CLOSE_ICON from "../../../assets/images/closeIcon.svg";
 
