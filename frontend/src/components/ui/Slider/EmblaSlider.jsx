@@ -11,17 +11,28 @@ export function EmblaSlider({
   slides,
   no_of_slides = { xs: 1, sm: 1, md: 2, lg: 3, xl: 4 },
   delay,
+  autoSlide,
   autoScroll,
   navigationDots = true,
   navigationArrow = false,
 }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    autoScroll
-      ? AutoScroll({
-          play: true,
-          stopOnInteraction: false,
-        })
-      : Autoplay({ delay: delay, stopOnInteraction: false }),
+    ...(autoSlide
+      ? [
+          AutoScroll({
+            play: true,
+            stopOnInteraction: false,
+          }),
+        ]
+      : []),
+    ...(autoScroll
+      ? [
+          Autoplay({
+            delay: delay,
+            stopOnInteraction: false,
+          }),
+        ]
+      : []),
   ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [slidesPerView, setSlidesPerView] = useState(no_of_slides);
@@ -123,6 +134,7 @@ EmblaSlider.propTypes = {
   no_of_slides: PropTypes.number,
   delay: PropTypes.number,
   autoScroll: PropTypes.bool,
+  autoSlide: PropTypes.bool,
   navigationDots: PropTypes.bool,
   navigationArrow: PropTypes.bool,
 };

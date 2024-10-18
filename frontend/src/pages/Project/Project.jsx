@@ -46,13 +46,23 @@ export default function Project() {
         <div>
           {currentPage.details.introduction.map((intro, index) => {
             if (intro.type === "paragraph") {
-              return <p key={index}>{intro.content}</p>;
+              return (
+                <p key={index}>
+                  {intro.content}
+                  <br />
+                  <br />
+                </p>
+              );
             } else if (intro.type === "list") {
               return (
                 <ul key={index}>
                   {intro.items.map((item, itemIndex) => (
-                    <li key={itemIndex}>{item}</li>
+                    <li key={itemIndex}>
+                      {item} <br /> <br />
+                    </li>
                   ))}
+                  <br />
+                  <br />
                 </ul>
               );
             } else {
@@ -66,12 +76,20 @@ export default function Project() {
         <section>
           {currentPage.details.mainComponents.map((card, index) => {
             if (card.type === "paragraph") {
-              return <p key={index}>{card.content}</p>;
+              return (
+                <p key={index}>
+                  {card.content}
+                  <br />
+                  <br />
+                </p>
+              );
             } else if (card.type === "list") {
               return (
                 <ul key={index}>
                   {card.items.map((item, itemIndex) => (
-                    <li key={itemIndex}>{item}</li>
+                    <li key={itemIndex}>
+                      {item} <br /> <br />
+                    </li>
                   ))}
                 </ul>
               );
@@ -81,23 +99,33 @@ export default function Project() {
           })}
         </section>
       </article>
-      <article>
-        {currentPage.details.howItWorks.map((item, index) => {
-          if (item.type === "paragraph") {
-            return <p key={index}>{item.content}</p>;
-          } else if (item.type === "list") {
-            return (
-              <ul key={index}>
-                {item.items.map((item, itemIndex) => (
-                  <li key={itemIndex}>{item}</li>
-                ))}
-              </ul>
-            );
-          } else {
-            return null;
-          }
-        })}
-      </article>
+      {currentPage.details.howItWorks && (
+        <article>
+          <h2>How It Works</h2>
+          {currentPage.details.howItWorks?.map((item, index) => {
+            if (item.type === "paragraph") {
+              return (
+                <p key={index}>
+                  {item.content}
+                  <br /> <br />
+                </p>
+              );
+            } else if (item.type === "list") {
+              return (
+                <ul key={index}>
+                  {item.items.map((item, itemIndex) => (
+                    <li key={itemIndex}>
+                      {item} <br /> <br />
+                    </li>
+                  ))}
+                </ul>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </article>
+      )}
       <article className="salientFeatures_container">
         <h2>Salient Features</h2>
         <section>

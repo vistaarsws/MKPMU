@@ -205,8 +205,10 @@
   max-height: 320px;
   /* width: 100%; */
 }
-.storyCard video {
+.storyCard div video {
   object-fit: cover;
+
+  /* object-position: ; */
 }
 
 .custom-player-wrapper {
