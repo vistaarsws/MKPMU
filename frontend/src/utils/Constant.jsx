@@ -5,7 +5,7 @@ import { MinisterSlider } from "../components/ui/Slider/MinisterSlider/MinisterS
 import { TestimonialSlider } from "../components/ui/Slider/TestimonialSlider/TestimonialSlider";
 import HeroSlider from "../components/ui/Slider/HeroSlider/HeroSlider";
 
-import banner1 from "../assets/images/banner1.png";
+import heroBanner_1 from "../assets/images/aboutBanner.png";
 import dam1 from "../assets/images/mohanpuraDam_1.png";
 import dam2 from "../assets/images/kindaliyaDam_1.png";
 
@@ -352,7 +352,7 @@ const teamMemberDetails_array = [
 // ----------------------------------------------------------------------HERO SLIDER--------------------------------------------------------------------------------
 const heroBanners = [
   {
-    banner: banner1,
+    banner: heroBanner_1,
     title: "1 Project. 500,000 Lives Changed",
     description:
       "India’s first pressurized piped irrigation project made to tranform many lives, check dessertification, and, increase water use efficiency.",
@@ -893,10 +893,16 @@ const kundaliyaDetails = {
     },
   ],
   mainComponents: [
-    "Irrigation Area: New pressurized irrigation system covering 125,000 hectares",
-    "Irrigation Infrastructure:",
     {
       type: "list",
+      items: [
+        "*Irrigation Area :* New pressurized irrigation system covering 125,000 hectares",
+        "*Irrigation Infrastructure*:",
+      ],
+    },
+
+    {
+      type: "list_numb",
       items: [
         "Fully automated and SCADA-enabled system",
         "Underground pipeline network extending 130,639 hectares",
@@ -950,7 +956,7 @@ const mohanpuraDetails = {
     {
       type: "paragraph",
       content:
-        "The Mohanpura Irrigation Project (MIP) is situated in Rajgarh District, Madhya Pradesh, on the Newaj River, part of the Chambal River Basin. The Newaj River, originating from Sehore district, travels 220 km before joining the Chambal River. The Newaj sub-basin covers a drainage area of 4,290 km², which accounts for 7.2% of the Chambal basin's total drainage area within Madhya Pradesh. The location of the Mohanpura dam is strategically positioned within this basin to optimize water resource management for irrigation and other uses. The Mohanpura Irrigation Project (MIP) was initiated to meet the agricultural water demands of the Newaj sub-basin and neighboring Parbati and Kalisindh sub-basins, aiming to irrigate 210,000 hectares. While 877 Mm³ of water was required, only 616 Mm³ of gross storage, including 572.96 Mm³ of live water, could be created through the Mohanpura Dam. Conventionally, this could irrigate only 87,000 hectares. To bridge this gap, MIP adopted a Pressurized Irrigation Network (PIN), increasing efficiency to serve 145,661 hectares, while also addressing drinking, environmental, and industrial needs. The project integrates automated control systems for optimal water distribution, with sub-projects at various stages of completion.",
+        "The Mohanpura Irrigation Project (MIP) is situated in Rajgarh District, Madhya Pradesh, on the Newaj River, part of the Chambal River Basin. The Newaj River, originating from Sehore district, travels 220 km before joining the Chambal River. The Newaj sub-basin covers a drainage area of 4,290 km², which accounts for 7.2% of the Chambal basin's total drainage area within Madhya Pradesh. The location of the Mohanpura dam is strategically positioned within this basin to optimize water resource management for irrigation and other uses. The Mohanpura Irrigation Project (MIP) was initiated to meet the agricultural water demands of the Newaj sub-basin and neighboring Parbati and Kalisindh sub-basins, aiming to irrigate 210,000 hectares. While 877 Mm³ of water was required, only 616 Mm³ of gross storage, including 572.96 Mm³ of live water, could be created through the Mohanpura Dam. Conventionally via open canals, this could irrigate only 87,000 hectares. To bridge this gap, MIP adopted a Pressurized Irrigation Network (PIN), increasing efficiency to serve 145,661 hectares, while also addressing drinking, environmental, and industrial needs. The project integrates automated control systems for optimal water distribution, with sub-projects at various stages of completion.",
     },
     {
       type: "paragraph",
@@ -960,56 +966,31 @@ const mohanpuraDetails = {
     {
       type: "list",
       items: [
-        "System Control: The entire irrigation system is monitored from the water source to chak levels (30 or 20 ha), extending to sub-chaks (5 ha) and individual farm outlets (1 ha).",
-        "Outlet Management: Each 1 ha outlet provides a residual head of 20 meters and operates under rotational irrigation management.",
-        "Micro Irrigation Systems (MIS): Farmers are responsible for procuring and connecting MIS to the 1 ha outlets.",
-        "Integrated Automation: All automation components, from the pump house to the field outlets, are integrated to ensure efficient operations.",
-        "Remote Monitoring: Remote control of key parameters is vital for successful operation and maintenance of the large-scale Pressurized Irrigation Network System (PINS).",
+        "*System Control :* The entire irrigation system is monitored from the water source to chak levels (30 or 20 ha), extending to sub-chaks (5 ha) and individual farm outlets (1 ha).",
+        "*Outlet Management :* Each 1 ha outlet provides a residual head of 20 meters and operates under rotational irrigation management.",
+        "*Micro Irrigation Systems (MIS) :* Farmers are responsible for procuring and connecting MIS to the 1 ha outlets.",
+        "*Integrated Automation :* All automation components, from the pump house to the field outlets, are integrated to ensure efficient operations.",
+        "*Remote Monitoring :* Remote control of key parameters is vital for successful operation and maintenance of the large-scale Pressurized Irrigation Network System (PINS).",
       ],
     },
   ],
   mainComponents: [
     {
-      type: "paragraph",
-      content: "Mohanpura Reservoir: The primary water source for the project.",
-    },
-    {
-      type: "paragraph",
-      content:
-        "Approach Channel: Carries water from the reservoir to the main pump house.",
-    },
-    {
-      type: "paragraph",
-      content:
-        "Main Pump House: Pumps water from the reservoir through the rising main to higher elevations.",
-    },
-    {
-      type: "paragraph",
-      content:
-        "Rising Main: The main pipeline that transports water from the pump house to different distribution zones.",
-    },
-    {
-      type: "paragraph",
-      content:
-        "Break Pressure Tank/Delivery Chamber (BPT/DC): Regulates the water pressure before further distribution.",
-    },
-    {
-      type: "paragraph",
-      content:
-        "Kalipeeth Booster Pumping Station: Provides additional pressure to distribute water to Area B and Area C.",
-    },
-    {
-      type: "paragraph",
-      content:
-        "Small Booster Pumping Station for Area D: Ensures water delivery to Area D.",
-    },
-    {
-      type: "paragraph",
-      content: "Distribution Networks:",
+      type: "list",
+      items: [
+        "*Mohanpura Reservoir :* The primary water source for the project.",
+        "*Approach Channel :* Carries water from the reservoir to the main pump house.",
+        "*Main Pump House :* Pumps water from the reservoir through the rising main to higher elevations.",
+        "*Rising Main :* The main pipeline that transports water from the pump house to different distribution zones.",
+        "*Break Pressure Tank/Delivery Chamber (BPT/DC) :* Regulates the water pressure before further distribution.",
+        "*Kalipeeth Booster Pumping Station :* Provides additional pressure to distribute water to Area B and Area C.",
+        "*Small Booster Pumping Station for Area D :* Ensures water delivery to Area D.",
+        "*Distribution Networks :*",
+      ],
     },
 
     {
-      type: "list",
+      type: "list_numb",
       items: [
         "Area A Distribution",
         "Area B Distribution",
@@ -1020,12 +1001,12 @@ const mohanpuraDetails = {
   ],
   howItWorks: [
     {
-      type: "list",
+      type: "list_numb",
 
       items: [
         "Water is drawn from the Mohanpura Reservoir through the Approach Channel and directed into the Main Pump House.",
         "The water is pumped into the Rising Main, which transports it to a central distribution hub, the Break Pressure Tank (BPT/DC). This tank reduces and regulates water pressure to ensure smooth flow.",
-        "Water is then directed to different zones:",
+        "*Water is then directed to different zones :*",
       ],
     },
     {

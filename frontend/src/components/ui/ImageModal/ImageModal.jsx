@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./ImageModal.css";
 import CLOSE_ICON from "../../../assets/images/closeIcon.svg";
+import PropTypes from "prop-types";
 
 const ImageModal = ({ isOpen, onClose, image, title, date }) => {
   useEffect(() => {
@@ -65,9 +66,9 @@ const ImageModal = ({ isOpen, onClose, image, title, date }) => {
 };
 export default ImageModal;
 ImageModal.propTypes = {
-  isOpen: Boolean,
-  onClose: Boolean,
-  image: String,
-  title: String,
-  date: String,
+  isOpen: PropTypes.bool,
+  onClose: PropTypes.func,
+  image: PropTypes.string,
+  title: PropTypes.string,
+  date: PropTypes.string,
 };

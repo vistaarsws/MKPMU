@@ -1,5 +1,3 @@
-import React from "react";
-
 const TIMELINE_EVENTS = [
   {
     year: "2013",

@@ -7,6 +7,7 @@ import environmentalImpactIcon from "../../assets/images/earth.svg";
 import otherImpactsIcon from "../../assets/images/infrastructure.svg";
 import socialImpactIcon from "../../assets/images/community.svg";
 import nationalImpactIcon from "../../assets/images/indiaMap.svg";
+import ProjectTimeline from "../About/Timeline";
 
 // import pict1 from "../../assets/images/1.jpg";
 // import pict2 from "../../assets/images/2.jpg";

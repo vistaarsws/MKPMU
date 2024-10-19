@@ -32,6 +32,7 @@ import Form from "../../components/ui/Form/Form";
 import { useNavigate } from "react-router-dom";
 import playIcon from "../../assets/images/playIcon.svg";
 import pauseIcon from "../../assets/images/pauseIcon.svg";
+import ProjectTimeline from "../About/Timeline";
 
 const cardContent = [
   testimonial_1,
@@ -125,25 +126,15 @@ export default function Home() {
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className="descriptionSection">
         <p>
-          <span>Mohnapura and Kundalia</span> irrigation project located in
-          Rajgarg and Agar malwa district of Madhya Pradesh. Envisinoned and
-          built to bring water to one of the driest areas of MP battling
-          dessertification and distress. Currently, the project is delivering
-          water to <span>1300 villages</span> inhabiting{" "}
-          <span>5 lakh farmers</span> and spread over an area of
-          <span> 3 lakh ha </span>
-          making it the world&apos;s largest contiguous areas serviced with
-          pressurised pipes irrigation network.
-          {/* ____________ */}
-          {/* The Mohanpura and Kundalia Irrigation Projects in Madhya Pradesh
-          represent landmark initiatives in sustainable water management.
-          Commissioned in 2018, these projects feature innovative underground
-          pipeline systems and pressurised piped-irrigation technologies,
-          benefiting over <span>1,300 villages</span> across multiple districts.
-          It aims to irrigate more than
-          <span> 290,495 hectares of land</span>,transforming agricultural
-          practices and improving livelihoods in the region through efficient
-          water use and <span>pressurized irrigation systems.</span> */}
+          <span>Mohnapura and Kundalia</span> irrigation projects are located in
+          the Rajgarh and Agar Malwa districts of Madhya Pradesh. Envisioned and
+          built to bring water to one of the driest areas of MP, battling
+          desertification and distress, the project is currently delivering
+          water to <span>1,300 villages</span>, benefiting{" "}
+          <span>5 lakh farmers </span>
+          and covering an area of <span>3 lakh ha</span>, making it the
+          world&apos;s largest contiguous area serviced with pressurized pipe
+          irrigation network.
         </p>
       </section>
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
@@ -384,6 +375,8 @@ export default function Home() {
           autoScroll={false}
         />
       </section>
+
+      <section>{/* <ProjectTimeline /> */}</section>
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <Form />
 

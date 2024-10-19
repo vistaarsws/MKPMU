@@ -46,10 +46,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    {
-      linkText: "About",
-      linkUrl: "/about",
-    },
+    // {
+    //   linkText: "About",
+    //   linkUrl: "/about",
+    // },
     {
       linkText: "Impact Story",
       linkUrl: "/impact-story",
