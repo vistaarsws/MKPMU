@@ -2,67 +2,39 @@
   margin: 2% 10%;
 }
 
-.project_container article:nth-of-type(3) section > div {
-  border-radius: 1.2rem;
-  margin-bottom: 1.2rem;
-}
-
 .project_container > article {
   margin: 5% auto;
 
-  ul {
-    list-style: disc;
-    li {
+  section {
+    ul li {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
       font-size: 2.4rem;
     }
   }
 }
 
-.salientFeatures_container {
+.project_container > article:last-of-type {
   margin-top: 5%;
+
+  div {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.project_container article:first-of-type div p {
-  font-size: 2.4rem;
-  line-height: 3.8rem;
-}
-
-.project_container article:nth-of-type(2) section div {
-  background-color: #ff6b001f;
-  padding: 2rem 2.8rem;
-  margin-bottom: 1.2rem;
-  border-radius: 1.2rem;
-}
-
-.project_container article > h2 {
+.project_container > article h2 {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 2.4rem;
   color: var(--high-grey);
 }
 
-.project_container article:nth-of-type(3) section > div span {
-  display: block;
-  margin-right: 1rem;
-  text-align: center;
-}
-
-.project_container article:nth-of-type(2),
-.project_container article:nth-of-type(3) {
-  margin: 2% auto;
-  width: 100%;
-  font-size: 2.4rem;
-  line-height: 3.8rem;
-}
-
-.project_container article:nth-of-type(3) {
-  margin: 5% auto;
-}
-.project_container article:nth-of-type(2) div p {
-  margin-bottom: 2.4rem;
-}
-.project_container article:nth-of-type(2) div span {
-  margin-right: 0.5rem;
+.salientFeatures_container {
+  margin-top: 5%;
 }
 
 .salientFeature_block ul > li {
@@ -72,14 +44,16 @@
   margin: 0 auto;
   text-align: start;
   margin-bottom: 0.8rem;
+
+  span {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: center;
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+  }
 }
-.salientFeature_block ul li span {
-  display: flex;
-  flex-basis: 20%;
-  justify-content: center;
-  font-size: 2.4rem;
-  line-height: 3.8rem;
-}
+
 .salientFeature_block ul li div:first-of-type,
 .salientFeature_block ul li div:nth-of-type(2) {
   font-size: 2.4rem;
@@ -132,15 +106,17 @@
   .project_container article ul {
     padding: 0 1rem;
   }
-  .project_container article:first-of-type div p,
-  .project_container article ul li {
-    font-size: 1.6rem;
-    line-height: 2.8rem;
-  }
 
-  .project_container article:nth-of-type(2) section > div {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+  .project_container > article {
+    section {
+      ul li {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
   }
 
   .salientFeature_block h3 {
@@ -153,9 +129,9 @@
   }
 
   .salientFeature_block ul > li > div {
-    font-size: 1.6rem !important;
-    line-height: 2.4rem;
+    font-size: 1.8rem !important;
   }
+
   .salientFeature_block ul > li {
     margin-bottom: 2%;
   }

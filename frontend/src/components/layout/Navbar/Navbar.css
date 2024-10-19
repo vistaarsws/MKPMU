@@ -107,13 +107,13 @@ nav ul li:hover {
   color: var(--primary-accent);
 }
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1600px) {
   .nav-list {
     display: flex !important;
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599px) {
   nav {
     position: absolute;
     top: 10vh;

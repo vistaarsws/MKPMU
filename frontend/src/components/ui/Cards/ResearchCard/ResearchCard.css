@@ -78,4 +78,8 @@
   .researchCard_container div button {
     margin: 1rem;
   }
+
+  .researchCard_container article h3 {
+    font-size: 1.8rem;
+  }
 }

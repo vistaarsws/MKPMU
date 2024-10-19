@@ -11,7 +11,9 @@ import img_4 from "../../assets/images/4.png";
 
 import damImg_2 from "../../assets/images/mohanpuraDam_2.png";
 import img_5 from "../../assets/images/5_.png";
-import img_6 from "../../assets/images/6_.png";
+import img_6 from "../../assets/images/6_.jpg";
+
+import { boldString } from "../../utils/HelperFunction/boldString";
 
 export default function Project() {
   const pageUrl = useUrlToGetPage();
@@ -41,94 +43,129 @@ export default function Project() {
         description={currentPage.banner.description}
         backgroundPicture={currentPage.banner.picture.banner}
       />
+      {/* ---------------------------------------------------------------------------------------------------------------- */}
       <article>
         <h2>Introduction</h2>
-        <div>
-          {currentPage.details.introduction.map((intro, index) => {
-            if (intro.type === "paragraph") {
-              return (
-                <p key={index}>
-                  {intro.content}
-                  <br />
-                  <br />
-                </p>
-              );
-            } else if (intro.type === "list") {
-              return (
-                <ul key={index}>
-                  {intro.items.map((item, itemIndex) => (
-                    <li key={itemIndex}>
-                      {item} <br /> <br />
-                    </li>
-                  ))}
-                  <br />
-                  <br />
-                </ul>
-              );
-            } else {
-              return null;
-            }
-          })}
-        </div>
-      </article>
-      <article>
-        <h2>Main Components</h2>
         <section>
-          {currentPage.details.mainComponents.map((card, index) => {
-            if (card.type === "paragraph") {
-              return (
-                <p key={index}>
-                  {card.content}
-                  <br />
-                  <br />
-                </p>
-              );
-            } else if (card.type === "list") {
-              return (
-                <ul key={index}>
-                  {card.items.map((item, itemIndex) => (
-                    <li key={itemIndex}>
-                      {item} <br /> <br />
-                    </li>
-                  ))}
-                </ul>
-              );
-            } else {
-              return null;
+          {currentPage.details.introduction.map((intro, index) => {
+            switch (intro.type) {
+              case "paragraph":
+                return (
+                  <p key={index}>
+                    {boldString(intro.content)}
+                    <br />
+                    <br />
+                  </p>
+                );
+
+              case "list":
+              case "list_numb":
+                const isNumberedList = intro.type === "list_numb";
+                return (
+                  <ul
+                    key={index}
+                    style={{ listStyle: isNumberedList ? "decimal" : "disc" }}
+                  >
+                    {intro.items.map((item, itemIndex) => (
+                      <li key={itemIndex}>
+                        {boldString(item)} <br /> <br />
+                      </li>
+                    ))}
+                    <br />
+                    <br />
+                  </ul>
+                );
+
+              default:
+                return null;
             }
           })}
         </section>
       </article>
+      {/* ---------------------------------------------------------------------------------------------------------------- */}
+      <article>
+        <h2>Main Components</h2>
+        <section>
+          {currentPage.details.mainComponents.map((card, index) => {
+            switch (card.type) {
+              case "paragraph":
+                return (
+                  <p key={index}>
+                    {boldString(card.content)}
+                    <br />
+                    <br />
+                  </p>
+                );
+
+              case "list_numb":
+              case "list":
+                const isNumberedList = card.type === "list_numb";
+
+                // Render items with appropriate list style (bullet for list, decimal for numbered list)
+                return (
+                  <ul
+                    key={index}
+                    style={{ listStyle: isNumberedList ? "disc" : "decimal" }}
+                  >
+                    {card.items?.map((item, itemIndex) => (
+                      <li key={itemIndex}>
+                        {boldString(item)} <br />
+                        <br />
+                      </li>
+                    ))}
+                  </ul>
+                );
+
+              default:
+                return null;
+            }
+          })}
+        </section>
+      </article>
+
+      {/* ---------------------------------------------------------------------------------------------------------------- */}
+
       {currentPage.details.howItWorks && (
         <article>
           <h2>How It Works</h2>
-          {currentPage.details.howItWorks?.map((item, index) => {
-            if (item.type === "paragraph") {
-              return (
-                <p key={index}>
-                  {item.content}
-                  <br /> <br />
-                </p>
-              );
-            } else if (item.type === "list") {
-              return (
-                <ul key={index}>
-                  {item.items.map((item, itemIndex) => (
-                    <li key={itemIndex}>
-                      {item} <br /> <br />
-                    </li>
-                  ))}
-                </ul>
-              );
-            } else {
-              return null;
-            }
-          })}
+          <section>
+            {currentPage.details.howItWorks?.map((item, index) => {
+              switch (item.type) {
+                case "paragraph":
+                  return (
+                    <p key={index}>
+                      {boldString(item.content)}
+                      <br /> <br />
+                    </p>
+                  );
+
+                case "list":
+                case "list_numb":
+                  const isNumberedList = item.type === "list_numb";
+                  return (
+                    <ul
+                      key={index}
+                      style={{ listStyle: isNumberedList ? "decimal" : "disc" }}
+                    >
+                      {item.items.map((listItem, itemIndex) => (
+                        <li key={itemIndex}>
+                          {boldString(listItem)} <br /> <br />
+                        </li>
+                      ))}
+                    </ul>
+                  );
+
+                default:
+                  return null;
+              }
+            })}
+          </section>
         </article>
       )}
+      {/* ---------------------------------------------------------------------------------------------------------------- */}
       <article className="salientFeatures_container">
         <h2>Salient Features</h2>
-        <section>
+        <div>
           {currentPage.details.salientFeatures.map((card, index) => {
             return (
               <div key={index} className="salientFeature_block">
@@ -147,18 +184,20 @@ export default function Project() {
               </div>
             );
           })}
-        </section>
+        </div>
       </article>
       <article>
         <h2>Schematic drawings of Kundalia Project</h2>
-        {currentPage.banner.picture.images.map((img, index) => {
-          return (
-            <div key={index}>
-              <img src={img} alt="Schematic Drawing" />
-              <br />
-            </div>
-          );
-        })}
+        <section>
+          {currentPage.banner.picture.images.map((img, index) => {
+            return (
+              <div key={index}>
+                <img src={img} alt="Schematic Drawing" />
+                <br />
+              </div>
+            );
+          })}
+        </section>
       </article>
     </div>
   );
