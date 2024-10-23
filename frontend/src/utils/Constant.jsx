@@ -6,6 +6,11 @@ import { TestimonialSlider } from "../components/ui/Slider/TestimonialSlider/Tes
 import HeroSlider from "../components/ui/Slider/HeroSlider/HeroSlider";
 
 import heroBanner_1 from "../assets/images/aboutBanner.png";
+import heroBanner_2 from "../assets/images/heroBanner_2.jpg";
+import heroBanner_3 from "../assets/images/heroBanner_3.jpg";
+import heroBanner_4 from "../assets/images/heroBanner_4.jpg";
+import heroBanner_5 from "../assets/images/heroBanner_5.jpg";
+
 import dam1 from "../assets/images/mohanpuraDam_1.png";
 import dam2 from "../assets/images/kindaliyaDam_1.png";
 
@@ -52,7 +57,9 @@ import projectOutreact_5 from "../assets/images/po_5.png";
 import projectOutreact_6 from "../assets/images/po_6.png";
 
 import newUpdate_1 from "../assets/images/newsUpdate_1.png";
-// import researchImg_1 from "../assets/images/researchIcon.png";
+import blogs_2 from "../assets/images/blogs_2.png";
+import blogs_3 from "../assets/images/blogs_3.png";
+import researchImg_1 from "../assets/images/researchIcon.png";
 import researchPublication_1 from "../assets/images/researchPublication_1.jpg";
 import researchPublicationPdf_1 from "../../public/ResearchPublication_1.pdf";
 
@@ -353,6 +360,31 @@ const teamMemberDetails_array = [
 const heroBanners = [
   {
     banner: heroBanner_1,
+    title: "1 Project. 500,000 Lives Changed",
+    description:
+      "India’s first pressurized piped irrigation project made to tranform many lives, check dessertification, and, increase water use efficiency.",
+  },
+  {
+    banner: heroBanner_2,
+    title: "1 Project. 500,000 Lives Changed",
+    description:
+      "India’s first pressurized piped irrigation project made to tranform many lives, check dessertification, and, increase water use efficiency.",
+  },
+  {
+    banner: heroBanner_4,
+    title: "1 Project. 500,000 Lives Changed",
+    description:
+      "India’s first pressurized piped irrigation project made to tranform many lives, check dessertification, and, increase water use efficiency.",
+  },
+  {
+    banner: heroBanner_3,
+    title: "1 Project. 500,000 Lives Changed",
+    description:
+      "India’s first pressurized piped irrigation project made to tranform many lives, check dessertification, and, increase water use efficiency.",
+  },
+
+  {
+    banner: heroBanner_5,
     title: "1 Project. 500,000 Lives Changed",
     description:
       "India’s first pressurized piped irrigation project made to tranform many lives, check dessertification, and, increase water use efficiency.",
@@ -1089,7 +1121,7 @@ const blogs_page = {
         },
         {
           type: "image",
-          src: newUpdate_1,
+          src: blogs_2,
           alt: "A blog image",
         },
         {
@@ -1124,7 +1156,7 @@ const blogs_page = {
       id: 2,
       title:
         "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-      picture: newUpdate_1,
+      picture: blogs_3,
       description:
         "The Water Resources Department, state government of Madhya Pradesh envisages to develop Mohanpura dam, near vilage Banskhedi in district Rajgarh. The dam is proposed constructed across river Newaj at an estimated investment of 3,866-crore. The proposed Mohanpura dam proposes to provide water for irrigation, domestic and industrial uses.",
       date: "2024-10-01",
@@ -1262,6 +1294,39 @@ const newsletters = [
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+const TIMELINE_EVENTS = [
+  {
+    year: "2013",
+    description: "Project Announced",
+  },
+  {
+    year: "2014",
+    description: "Mohanpura Dam Construction Begins",
+  },
+  {
+    year: "2015",
+    description: "Kundalia Dam Construction Begins",
+  },
+  {
+    year: "2017",
+    description: "Mohanpura Dam Completed",
+  },
+  {
+    year: "2018",
+    descriptions: [
+      "Kundalia Dam Completed",
+      "Dedicated Project Management Unit Established",
+      "Hon'ble PM Inaugurated Mohanpura Dam",
+      {
+        text: "2018 onwards project commissioned as subparts",
+        highlight: true,
+      },
+    ],
+  },
+];
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 export {
   ministerQuoteSlides_array,
   testimonialSlides_array,
@@ -1282,4 +1347,5 @@ export {
   kundaliyaDetails,
   mohanpuraDetails,
   newsletters,
+  TIMELINE_EVENTS,
 };
