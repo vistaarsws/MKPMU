@@ -2,32 +2,22 @@ import { useState } from "react";
 
 import mapBackground from "../../assets/images/map_background.png";
 import Card from "../../components/ui/Cards/Card/Card";
-// import vdo from "../../assets/videos/testimonialVideo.mp4";
-import plusIcon from "../../assets/images/plus-circle.svg";
-import minusIcon from "../../assets/images/circle-minus.svg";
 import ReactPlayer from "react-player";
-import "./Home.css";
 import { EmblaSlider } from "../../components/ui/Slider/EmblaSlider";
 import Team_section from "../../components/layout/TeamSection/TeamSection";
 import {
   ministerQuoteSlides_array,
-  testimonialSlides_array,
   HeroBanner_array,
   projectHighlightCards_array,
   irrigationProjectDetails,
 } from "../../utils/Constant";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import Typography from "@mui/material/Typography";
+
 import testimonial_1 from "../../assets/videos/testimonial-1.mp4";
 import testimonial_2 from "../../assets/videos/testimonial-2.mp4";
 import testimonial_3 from "../../assets/videos/testimonial-3.mp4";
 import testimonial_4 from "../../assets/videos/testimonial-4.mp4";
+import "./Home.css";
 
-// import person_2 from "../../assets/images/Frame2.png";
-// import person_3 from "../../assets/images/Frame3.png";
-// import person_4 from "../../assets/images/Frame4.png";
 import Form from "../../components/ui/Form/Form";
 import { useNavigate } from "react-router-dom";
 import playIcon from "../../assets/images/playIcon.svg";
@@ -44,12 +34,6 @@ const cardContent = [
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
-
-  // const [playing, setPlaying] = useState(false);
-
-  // const handlePlayPause = () => {
-  //   setPlaying(!playing);
-  // };
 
   const [playingStates, setPlayingStates] = useState(
     Array(cardContent.length).fill(false) // Initially all videos are paused
@@ -115,9 +99,9 @@ export default function Home() {
       <section className="heroSection">
         <EmblaSlider
           slides={HeroBanner_array}
-          no_of_slides={1}
-          delay={5000}
-          autoScroll={false}
+          no_of_slides={{ xs: 1, sm: 1, md: 1, lg: 1, xl: 1 }}
+          delay={3000}
+          autoScroll={true}
           navigationDots={true}
           backdrop={true}
         />
@@ -253,10 +237,6 @@ export default function Home() {
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className="projectHighlightSection">
         <h1>Project Highlights</h1>
-        {/* <p>
-          The Mohanpura and Kundalia Irrigation projects is India&apos;s first
-          such project delivering pressurised water through buried pipes.
-        </p> */}
         <div>
           {projectHighlightCards_array.map((card, index) => {
             return (
@@ -357,44 +337,24 @@ export default function Home() {
         </article>
       </section>
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
-      {/* <EmblaSlider
-        slides={testimonialSlides_array}
-        no_of_slides={{ xs: 1, sm: 1, md: 2, lg: 2, xl: 2 }}
-        delay={1000}
-        autoScroll={true}
-        navigationDots={false}
-      /> */}
-      {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <Team_section />
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
+
+      <section>
+        <ProjectTimeline />
+      </section>
+
       <section>
         <EmblaSlider
           slides={ministerQuoteSlides_array}
-          no_of_slides={1}
+          no_of_slides={{ xs: 1, sm: 1, md: 1, lg: 1, xl: 1 }}
           delay={5000}
           autoScroll={false}
         />
       </section>
 
-      <section>{/* <ProjectTimeline /> */}</section>
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <Form />
-
-      {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
-      {/* <section className="irrigatedLand_section">
-        <div>
-          <h1>
-            Book an <span>educational visit</span>
-          </h1>
-          <p>
-            for institutions, schools, colleges, independent scholars or
-            researchers.
-          </p>
-        </div>
-        <div>
-          <button onClick={() => navigate("/contact")}>Contact Us</button>
-        </div>
-      </section> */}
     </>
   );
 }

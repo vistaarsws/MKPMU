@@ -32,7 +32,7 @@ const TIMELINE_EVENTS = [
 const styles = {
   container: {
     minHeight: "100vh",
-    backgroundColor: "#c3f6fd",
+    // backgroundColor: "#c3f6fd",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -48,19 +48,19 @@ const styles = {
     padding: "20px",
   },
   title: {
-    fontSize: "3rem",
+    fontSize: "4.8rem",
     marginBottom: "24px",
-    color: "#31aebf",
+    color: "black",
     fontWeight: 700,
   },
   year: {
-    fontSize: "2rem",
+    fontSize: "2.4rem",
     marginTop: "20px",
     color: "#000000",
     fontWeight: 900,
   },
   description: {
-    fontSize: "1.5rem",
+    fontSize: "1.6rem",
     marginBottom: "8px",
     color: "#000000",
   },
@@ -80,16 +80,16 @@ const styles = {
     margin: "24px auto", // Increased margin for better spacing
   },
   statusTitle: {
-    fontSize: "2rem",
-    color: "#9ec828",
+    fontSize: "3.8rem",
+    color: "black",
     marginBottom: "16px",
-    fontWeight: 800,
+    fontWeight: 700,
   },
   statusText: {
-    fontSize: "1.25rem",
+    fontSize: "1.6rem",
     marginBottom: "8px",
     color: "#FF851B",
-    fontWeight: 900,
+    fontWeight: 700,
   },
 };
 
@@ -131,7 +131,7 @@ function CurrentStatus() {
       <div style={styles.longDivider} />
       <div style={{ marginTop: "32px" }}>
         <h2 style={styles.statusTitle}>Current Status</h2>
-        <p style={styles.statusText}>2,00,000 HA being Irrigated</p>
+        <p style={styles.statusText}>2,00,000 ha being Irrigated</p>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1600) {
+      if (window.innerWidth < 1500) {
         setIsMobileView(true);
         setIsNavVisible(false); // Hide nav on mobile initially
       } else {
