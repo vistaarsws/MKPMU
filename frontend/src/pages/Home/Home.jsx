@@ -12,10 +12,10 @@ import {
   irrigationProjectDetails,
 } from "../../utils/Constant";
 
-import testimonial_1 from "../../assets/videos/Testimonial-1.mp4";
-import testimonial_2 from "../../assets/videos/Testimonial-2.mp4";
-import testimonial_3 from "../../assets/videos/Testimonial-3.mp4";
-import testimonial_4 from "../../assets/videos/Testimonial-4.mp4";
+import testimonial_1 from "../../assets/videos/testimonial-1.mp4";
+import testimonial_2 from "../../assets/videos/testimonial-2.mp4";
+import testimonial_3 from "../../assets/videos/testimonial-3.mp4";
+import testimonial_4 from "../../assets/videos/testimonial-4.mp4";
 import "./Home.css";
 
 import Form from "../../components/ui/Form/Form";
