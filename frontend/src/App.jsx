@@ -16,6 +16,7 @@ import Awards from "./pages/Awards/Awards";
 import Contact from "./pages/Contact/Contact";
 import Blog from "./pages/Blog/Blog";
 import Newsletters from "./pages/newsletters/Newsletters";
+import Visitor from "./pages/Visitor/Visitor";
 
 import {
   projectOutreach_page,
@@ -23,6 +24,7 @@ import {
   blogs_page,
 } from "./utils/Constant";
 import ScrollToTop from "./hooks/ScrollToTop";
+import Team from "./pages/Team/Team";
 
 function App() {
   return (
@@ -41,11 +43,13 @@ function App() {
             <Route path="/team/:name" element={<MemberProfile />} />
             <Route path="/testimonials" element={<Testimonials />} />
 
+            <Route path="/visitor" element={<Visitor />} />
             <Route
               path="/news-updates"
               element={<GridConentTemplate template={newsUpdate_page} />}
             />
             <Route path="/newsletters" element={<Newsletters />} />
+            <Route path="/team" element={<Team />} />
             <Route
               path="/project-outreach"
               element={<GridConentTemplate template={projectOutreach_page} />}

@@ -9,7 +9,7 @@ export default function Form() {
           <img src={damPicture} alt="Dam Picture" />
         </figure>
         <form>
-          <h1>Reach Out</h1>
+          <h1>Contact Us</h1>
           <p>To know more about the project or for any enquiries contact us.</p>
           <div>
             <div>

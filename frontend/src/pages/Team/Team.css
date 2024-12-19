@@ -1,0 +1,60 @@
+.otherTeams__container > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  background-color: #e4fafe;
+  margin: 2% auto 5%;
+
+  & > h1 {
+    font-size: 4.8rem;
+    font-size: 500;
+    color: #202020;
+  }
+}
+
+.otherTeams__container > section > article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+  margin-top: 4rem;
+
+  & > div {
+    text-align: center;
+    & > h2 {
+      font-size: 6.4rem;
+      font-weight: 700;
+      color: #00939e;
+    }
+    & > p {
+      font-size: 2.4rem;
+      font-weight: 400;
+      color: #202020;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .otherTeams__container > section {
+    & > h1 {
+      font-size: 3.6rem;
+    }
+    & > article {
+      gap: 5rem;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .otherTeams__container > section {
+    padding: 2rem;
+  }
+  .otherTeams__container > section {
+    & > h1 {
+      font-size: 2.8rem;
+      text-align: center;
+    }
+  }
+}

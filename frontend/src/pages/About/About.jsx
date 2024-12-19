@@ -2,10 +2,8 @@ import Card from "../../components/ui/Cards/Card/Card";
 import { aboutUs_card_details } from "../../utils/Constant";
 // import bg_1 from "../../assets/images/indiaLifestyleIllustration.png";
 import "./About.css";
-import Team_section from "../../components/layout/TeamSection/TeamSection";
 import Banner from "../../components/ui/Header/Banner/Banner";
 import aboutBanner from "../../assets/images/aboutBanner.png";
-import ProjectTimeline from "./Timeline";
 
 export default function About() {
   const bannerText = {
@@ -86,22 +84,11 @@ export default function About() {
             resources to support agriculture and natural habitats.
           </p>
         </div>
-        {/* <div>
-          <h1>Safety & Flood Damage</h1>
-          <p>
-            We prioritize safety and flood risk management by incorporating
-            robust design principles that minimize submergence and protect both
-            human settlements and the natural environment from potential flood
-            damage.
-          </p>
-        </div> */}
       </article>
-      {/* <Team_section /> */}
       <br />
       <br />
       <br />
       <br />
-      <ProjectTimeline />
       <iframe
         className="h-[40vw] w-full"
         src="https://www.youtube.com/embed/ZZnAAckMRI4?si=pprR29m1o9xXCe-H"

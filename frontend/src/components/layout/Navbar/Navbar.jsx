@@ -15,7 +15,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1500) {
+      if (window.innerWidth < 1620) {
         setIsMobileView(true);
         setIsNavVisible(false); // Hide nav on mobile initially
       } else {
@@ -46,14 +46,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    // {
-    //   linkText: "About",
-    //   linkUrl: "/about",
-    // },
     {
       linkText: "Impact Story",
       linkUrl: "/impact-story",
     },
+    { linkText: "MIP", linkUrl: "/project/mohanpura" },
+    { linkText: "KIP", linkUrl: "/project/kundaliya" },
     {
       linkText: "Project Outreach",
       linkUrl: "/project-outreach",
@@ -63,14 +61,15 @@ export default function Navbar() {
       linkUrl: "/awards-acknowledgement",
     },
     {
-      linkText: "More",
-      linkUrl: "#",
+      linkText: "",
+      linkUrl: "",
       sideIcon: true,
       dropdown: [
         { text: "News & Updates", link: "/news-updates" },
         { text: "Research & Publication", link: "/research-publication" },
         { text: "Testimonials", link: "/testimonials" },
         { text: "Contact Us", link: "/contact" },
+        { text: "Our Team", link: "/team" },
         { text: "Blogs", link: "/blogs" },
       ],
     },
@@ -101,15 +100,15 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   isActive ? "!text-[var(--primary-accent)]" : ""
                 }
-                to={link.linkUrl}
-                onClick={() => {
-                  if (link.linkText !== "More") {
-                    setIsNavVisible(false);
-                  }
+                to={link.dropdown ? "#" : link.linkUrl}
+                onClick={(event) => {
                   if (link.dropdown) {
+                    event.preventDefault(); // Prevent navigation for dropdown
                     setOpenDropdownIndex(
                       openDropdownIndex === index ? null : index
                     );
+                  } else {
+                    setIsNavVisible(false);
                   }
                 }}
               >
@@ -121,7 +120,7 @@ export default function Navbar() {
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    stroke="black"
+                    stroke="white"
                     id="dropDownArrow"
                   >
                     <path
@@ -136,19 +135,16 @@ export default function Navbar() {
               {link.dropdown && openDropdownIndex === index && (
                 <div className="dropdown-content" ref={dropdownRef}>
                   {link.dropdown.map((dLink, dIndex) => (
-                    <NavLink
+                    <Link
                       key={dIndex}
                       to={dLink.link}
-                      className={({ isActive }) =>
-                        isActive ? "!text-[var(--primary-accent)]" : ""
-                      }
                       onClick={() => {
                         setOpenDropdownIndex(null);
                         setIsNavVisible(false);
                       }}
                     >
                       {dLink.text}
-                    </NavLink>
+                    </Link>
                   ))}
                 </div>
               )}

@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import Card from "../../ui/Cards/Card/Card";
 import PropTypes from "prop-types";
 import "./TeamSection.css";
-import { EmblaSlider } from "../../ui/Slider/EmblaSlider";
 
 export default function Team_section({ disableMember = "" }) {
   const navigate = useNavigate();
@@ -45,15 +44,6 @@ export default function Team_section({ disableMember = "" }) {
         <h1>Mohanpura Kundalia Project Management Unit</h1>
         <p>Team that made the impossible, possible.</p>
         <div className="TeamMemberCard_container">
-          {/* <EmblaSlider
-            slides={teamMemberDetails}
-            no_of_slides={{ xs: 1, sm: 1, md: 2, lg: 3, xl: 3 }}
-            navigationArrow={true}
-            delay={8000}
-            autoScroll={false}
-            navigationDots={false}
-          /> */}
-
           {teamMemberDetails_array
             .filter((e) => e.fullName !== disableMember)
             .map((member, index) => {

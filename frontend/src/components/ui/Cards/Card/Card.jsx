@@ -16,7 +16,6 @@ const defaultParameter = {
 
 export default function Card({ card = defaultParameter }) {
   const navigate = useNavigate();
-  console.log(card.hasItsPage);
 
   const {
     text = {},

@@ -1,21 +1,59 @@
-/* .impactPage_container {
-} */
-
 .impactPage_container > article:first-child {
   text-align: center;
-  margin: 7.4rem 20%;
+  margin: 7.4rem 15%;
 }
-.impactPage_container article h1 {
+.impactPage_container > article:first-of-type h1 {
   font-size: 6.8rem;
   font-weight: 500;
   line-height: 8.2rem;
   margin-bottom: 2.8rem;
 }
-.impactPage_container article p {
+.impactPage_container > article:first-of-type p {
   font-size: 3.2rem;
   line-height: 3.8rem;
 }
-.cleanWaterSection article {
+.impactPage_container > article:nth-of-type(2) {
+  display: flex;
+  margin: 5%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  & > section:first-of-type {
+    flex-basis: 45%;
+    color: #202020;
+    & > h2 {
+      font-size: 5.8rem;
+      font-weight: 800;
+      color: #00939e;
+      margin-bottom: 2.4rem;
+    }
+
+    & > h3 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    & > p {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+
+  & > section:nth-of-type(2) {
+    flex-basis: 40%;
+
+    & > figure {
+      margin-bottom: 3rem;
+    }
+
+    & > div:first-of-type {
+      height: 40rem;
+    }
+  }
+}
+
+/* .cleanWaterSection article {
   height: 100%;
   z-index: 2;
   display: flex;
@@ -148,7 +186,7 @@
 }
 .impactOfIrrigation_section section > div:first-of-type figure {
   max-width: 100%;
-  /* margin-bottom: 2.4rem; */
+  margin-bottom: 2.4rem; 
 }
 
 .impactOfIrrigation_section section div {
@@ -160,24 +198,199 @@
   height: max-content;
   border-radius: 0;
 }
+*/
 
-@media screen and (max-width: 1654px) {
+/* @media screen and (max-width: 1654px) {
   .cleanWaterSection article h2 {
     width: 90%;
+  }
+} */
+
+.card-container {
+  display: flex;
+  gap: 5rem;
+  margin: 20px 5%;
+  background-color: #fff;
+}
+
+.left-section {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-section {
+  flex: 1;
+  /* padding: 20px 30px; */
+  text-align: left;
+  line-height: 1.6;
+}
+
+.solution-title {
+  color: #ff6b00;
+  font-size: 5.8rem;
+  font-weight: 800;
+}
+
+.content-title {
+  margin-top: 10px;
+  font-size: 3.2rem;
+  color: #202020;
+  font-weight: 700;
+}
+
+.right-section p {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #202020;
+}
+
+.result_box {
+  padding: 4rem;
+  margin: 5%;
+  background-color: #91b31e29;
+  & > h2 {
+    color: #5b680e;
+    font-size: 5.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  & > p {
+    font-size: 2rem;
+    color: #202020;
+    margin: 1rem auto;
+  }
+}
+
+.waterEfficiency_container {
+  margin: 5%;
+
+  & > span {
+    color: #202020;
+    background-color: #fafafa;
+  }
+
+  & > div {
+    & > h2 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #434343;
+    }
+
+    & > p {
+      font-size: 2.4rem;
+      margin: 2rem auto;
+    }
+    & > p:last-of-type {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.cropProduction_container {
+  margin: 5%;
+  & > h2 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #434343;
+  }
+  & > p {
+    font-size: 2.4rem;
+  }
+
+  & > figure {
+    margin: 1rem auto;
+  }
+}
+
+.irrigationServices {
+  margin: 5%;
+  & > h2 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #434343;
+  }
+  & > p {
+    font-size: 2.4rem;
+  }
+  & > figure {
+    margin: 1rem 0;
+  }
+}
+
+.energyConservation {
+  margin: 5%;
+  & > h2 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #434343;
+  }
+  & > p {
+    font-size: 2.4rem;
+    margin: 2rem auto;
+  }
+
+  & > span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
+.environmentalImpact_container {
+  margin: 5%;
+  & > h2 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #434343;
+  }
+  & > p {
+    font-size: 2.4rem;
+    margin: 2rem auto;
+  }
+}
+
+.localMigration_container {
+  margin: 5%;
+  & > h2 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #434343;
+  }
+  & > p {
+    font-size: 2.4rem;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 1468px) {
+  .card-container {
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 1440px) {
-  .impactOfIrrigation_section section > div:first-of-type p {
+  /* .impactOfIrrigation_section section > div:first-of-type p {
     font-size: 2rem;
     line-height: 3rem;
-  }
+  } */
 
   .impactPage_container > article:first-child {
     margin: 7.4rem 15%;
   }
 
-  .cleanWaterSection {
+  /* .cleanWaterSection {
     grid-template-columns: 1fr;
   }
 
@@ -193,13 +406,13 @@
   }
   .cleanWaterSection article div {
     width: 100%;
-  }
+  } */
 }
 
 @media screen and (max-width: 1024px) {
   .impactPage_container > article:first-child {
     margin: 7.4rem 10%;
-  }
+    /* }
   .impactOfIrrigation_section section > div:first-of-type {
     width: 90vw;
   }
@@ -210,6 +423,11 @@
   }
   .impactOfIrrigation_section > p:first-of-type {
     width: 80%;
+  } */
+  }
+
+  .right-section {
+    padding: 15px;
   }
 }
 
@@ -219,22 +437,47 @@
     line-height: 11.5vw;
   }
 
-  .impactOfIrrigation_section {
-    margin: 5% auto;
+  .impactPage_container > article:first-of-type h1 {
+    font-size: 3.2rem;
+    margin-bottom: 0;
+    line-height: 4.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .impactPage_container > article:first-of-type p {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
   }
 
+  .impactPage_container > article:nth-of-type(2) {
+    & > section:first-of-type {
+      flex-basis: 100%;
+      margin-bottom: 5rem;
+    }
+    & > section:nth-of-type(2) {
+      flex-basis: 100%;
+    }
+  }
+
+  .card-container {
+    margin-top: 10rem;
+    gap: 0;
+  }
+
+  /* .impactOfIrrigation_section {
+    margin: 5% auto;
+  } */
+
   .impactPage_container article p {
-    font-size: 6vw;
-    line-height: 8vw;
+    font-size: 2rem;
   }
-  .impactOfIrrigation_section > p:first-of-type {
+  /* .impactOfIrrigation_section > p:first-of-type {
     padding: 2% 5%;
-    width: 95%;
-  }
+    width: 95%; */
+
   .impactPage_container > article:first-child {
     margin: 7.4rem 5%;
   }
-  .cleanWaterSection {
+  /* .cleanWaterSection {
     padding: 10% 10vw;
   }
 
@@ -251,7 +494,7 @@
   }
   .impactOfIrrigation_section section > div:first-of-type {
     grid-template-columns: 1fr;
-  }
+  } */
 }
 @media screen and (max-width: 425px) {
   .impactPage_container article h1 {
@@ -260,7 +503,7 @@
   .impactPage_container > article:first-child {
     margin-bottom: 5%;
   }
-  .cleanWaterSection article div {
+  /* .cleanWaterSection article div {
     padding: 2.5rem;
   }
   .impactOfIrrigation_section > h2:first-of-type {
@@ -283,7 +526,7 @@
   }
   .impactOfIrrigation_section section > div:first-of-type div {
     padding: 2.5rem !important;
-  }
+  } */
 }
 
 /* --------------------------------- */
