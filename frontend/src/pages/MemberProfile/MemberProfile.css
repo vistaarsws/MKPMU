@@ -41,7 +41,8 @@
 
 .memberProfile_container > section:first-of-type figure {
   max-width: 55rem;
-  height: 75vh;
+  height: 88vh;
+  position: relative;
 }
 
 .memberProfile_container > section:first-of-type figure img {
@@ -103,7 +104,7 @@
   }
 }
 
-@media screen and (max-width: 1355px) {
+@media screen and (max-width: 1250px) {
   .memberProfile_container section article div:first-of-type {
     width: 100%;
     margin: 2% auto;
@@ -113,11 +114,12 @@
     flex-direction: column;
     border-radius: 2.4rem;
     align-items: start;
-    padding: 4rem;
     padding: 5%;
+    margin: 5% auto;
   }
 
   .memberProfile_container > section:first-of-type figure {
+    max-width: unset;
     width: 100%;
   }
   .memberProfile_container > section:first-of-type figure img {
@@ -132,7 +134,9 @@
     width: 100%;
     border-radius: 0;
     padding: 10%;
+    margin: 0% auto;
   }
+
   .memberProfile_container > section:first-of-type figure {
     height: auto;
   }

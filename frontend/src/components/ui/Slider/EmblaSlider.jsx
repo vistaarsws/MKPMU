@@ -131,7 +131,7 @@ export function EmblaSlider({
 
 EmblaSlider.propTypes = {
   slides: PropTypes.array,
-  no_of_slides: PropTypes.number,
+  no_of_slides: PropTypes.object,
   delay: PropTypes.number,
   autoScroll: PropTypes.bool,
   autoSlide: PropTypes.bool,

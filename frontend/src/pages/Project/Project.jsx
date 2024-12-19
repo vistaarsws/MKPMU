@@ -82,10 +82,54 @@ export default function Project() {
           })}
         </section>
       </article>
+      {currentPage.details?.operationPhilosophy && (
+        <article className="operationPhilosophy_container">
+          <h2>Operation Philosophy for Kundalia Project</h2>
+          <section>
+            {currentPage.details?.operationPhilosophy?.map((card, index) => {
+              switch (card.type) {
+                case "paragraph":
+                  return (
+                    <p key={index}>
+                      {boldString(card.content)}
+                      <br />
+                      <br />
+                    </p>
+                  );
+
+                case "list_numb":
+                case "list":
+                  const isNumberedList = card.type === "list_numb";
+
+                  // Render items with appropriate list style (bullet for list, decimal for numbered list)
+                  return (
+                    <ul
+                      key={index}
+                      style={{ listStyle: isNumberedList ? "disc" : "" }}
+                    >
+                      {card.items?.map((item, itemIndex) => (
+                        <li
+                          key={itemIndex}
+                          style={{ backgroundColor: `${item.bg}` }}
+                        >
+                          {boldString(item)}
+                        </li>
+                      ))}
+                    </ul>
+                  );
+
+                default:
+                  return null;
+              }
+            })}
+          </section>
+        </article>
+      )}
+
       {/* ---------------------------------------------------------------------------------------------------------------- */}
       <article>
         <h2>Main Components</h2>
-        <section>
+        <section className="mainComponents">
           {currentPage.details.mainComponents.map((card, index) => {
             switch (card.type) {
               case "paragraph":
@@ -105,12 +149,38 @@ export default function Project() {
                 return (
                   <ul
                     key={index}
-                    style={{ listStyle: isNumberedList ? "disc" : "decimal" }}
+                    style={{ listStyle: isNumberedList ? "disc" : "" }}
                   >
                     {card.items?.map((item, itemIndex) => (
-                      <li key={itemIndex}>
-                        {boldString(item)} <br />
-                        <br />
+                      <li
+                        key={itemIndex}
+                        style={{ backgroundColor: `${item.bg}` }}
+                      >
+                        <figure>
+                          <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.5007 7.98735C13.0007 10.4874 11.1157 12.8414 8.47071 13.3674C7.1807 13.6243 5.84252 13.4676 4.64672 12.9197C3.45091 12.3719 2.45843 11.4607 1.81061 10.3159C1.16278 9.17119 0.892631 7.85124 1.03862 6.54402C1.18461 5.23681 1.7393 4.00898 2.62371 3.03535C4.43771 1.03735 7.50071 0.48735 10.0007 1.48735"
+                              stroke={item.iconColor}
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M5.00098 6.98828L7.50098 9.48828L13.501 2.98828"
+                              stroke={item.iconColor}
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </figure>
+                        {item.text}
                       </li>
                     ))}
                   </ul>
@@ -126,7 +196,7 @@ export default function Project() {
       {/* ---------------------------------------------------------------------------------------------------------------- */}
 
       {currentPage.details.howItWorks && (
-        <article>
+        <article className="howItWorks_container">
           <h2>How It Works</h2>
           <section>
             {currentPage.details.howItWorks?.map((item, index) => {
@@ -145,7 +215,7 @@ export default function Project() {
                   return (
                     <ul
                       key={index}
-                      style={{ listStyle: isNumberedList ? "decimal" : "disc" }}
+                      style={{ listStyle: isNumberedList ? "decimal" : "" }}
                     >
                       {item.items.map((listItem, itemIndex) => (
                         <li key={itemIndex}>
@@ -163,7 +233,7 @@ export default function Project() {
         </article>
       )}
       {/* ---------------------------------------------------------------------------------------------------------------- */}
-      <article className="salientFeatures_container">
+      {/* <article className="salientFeatures_container">
         <h2>Salient Features</h2>
         <div>
           {currentPage.details.salientFeatures.map((card, index) => {
@@ -185,7 +255,7 @@ export default function Project() {
             );
           })}
         </div>
-      </article>
+      </article> */}
       <article>
         <h2>Schematic drawings of Kundalia Project</h2>
         <section>
