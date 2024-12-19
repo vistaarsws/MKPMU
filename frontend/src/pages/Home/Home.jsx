@@ -4,6 +4,7 @@ import mapBackground from "../../assets/images/map_background.png";
 import Card from "../../components/ui/Cards/Card/Card";
 import ReactPlayer from "react-player";
 import { EmblaSlider } from "../../components/ui/Slider/EmblaSlider";
+
 import {
   ministerQuoteSlides_array,
   HeroBanner_array,
