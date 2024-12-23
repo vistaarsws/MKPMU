@@ -7,11 +7,12 @@ import damImg_1 from "../../assets/images/kundaliyaDam_2.png";
 import img_1 from "../../assets/images/1.png";
 import img_2 from "../../assets/images/2.png";
 import img_3 from "../../assets/images/3.png";
-import img_4 from "../../assets/images/4.png";
 
 import damImg_2 from "../../assets/images/mohanpuraDam_2.png";
 import img_5 from "../../assets/images/5_.png";
-import img_6 from "../../assets/images/6_.jpg";
+import img_6 from "../../assets/images/6_.png";
+
+import downArrow from "../../assets/images/downArrow_orange.svg";
 
 import { boldString } from "../../utils/HelperFunction/boldString";
 
@@ -20,15 +21,13 @@ export default function Project() {
 
   const kundaliyaBanner = {
     title: "Kundalia Irrigation Project",
-    picture: { banner: damImg_1, images: [img_1, img_2, img_3, img_4] },
-    description:
-      "Kundalia Irrigation Project (KIP) is a part of Madhya Pradesh Irrigation Efficiency Improvement Project (MPIEIP), aimed to achieve high irrigation efficiency and improve water productivity in Madhya Pradesh, India. The project aims to develop a new highly efficient pressurized irrigation network and productive command area under the Kundalia irrigation Project (KIP) in Rajgarh and Agar Malwa Districts.",
+    picture: { banner: damImg_1, images: [img_1, img_2, img_3] },
+    description: "",
   };
   const mohanpuraBanner = {
     title: "Mohanpura Irrigation Project",
     picture: { banner: damImg_2, images: [img_5, img_6] },
-    description:
-      "The Water Resources Department, state government of Madhya Pradesh envisages to develop Mohanpura dam, near vilage Banskhedi in district Rajgarh. The dam is proposed constructed across river Newaj at an estimated investment of 3,866-crore. The proposed Mohanpura dam proposes to provide water for irrigation, domestic and industrial uses.",
+    description: "",
   };
 
   const currentPage =
@@ -105,7 +104,9 @@ export default function Project() {
                   return (
                     <ul
                       key={index}
-                      style={{ listStyle: isNumberedList ? "disc" : "" }}
+                      style={{
+                        listStyle: isNumberedList ? "disc" : "",
+                      }}
                     >
                       {card.items?.map((item, itemIndex) => (
                         <li
@@ -167,16 +168,16 @@ export default function Project() {
                             <path
                               d="M13.5007 7.98735C13.0007 10.4874 11.1157 12.8414 8.47071 13.3674C7.1807 13.6243 5.84252 13.4676 4.64672 12.9197C3.45091 12.3719 2.45843 11.4607 1.81061 10.3159C1.16278 9.17119 0.892631 7.85124 1.03862 6.54402C1.18461 5.23681 1.7393 4.00898 2.62371 3.03535C4.43771 1.03735 7.50071 0.48735 10.0007 1.48735"
                               stroke={item.iconColor}
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                             <path
                               d="M5.00098 6.98828L7.50098 9.48828L13.501 2.98828"
                               stroke={item.iconColor}
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </figure>
@@ -203,26 +204,44 @@ export default function Project() {
               switch (item.type) {
                 case "paragraph":
                   return (
-                    <p key={index}>
-                      {boldString(item.content)}
-                      <br /> <br />
-                    </p>
+                    <>
+                      <p key={index}>
+                        {boldString(item.content)}
+                        <br /> <br />
+                      </p>
+                      {index !== currentPage.details.howItWorks.length - 1 && (
+                        <figure
+                          style={{ display: "flex", justifyContent: "center" }}
+                        >
+                          <img src={downArrow} alt="Down Arrow" />
+                        </figure>
+                      )}
+                    </>
                   );
 
                 case "list":
                 case "list_numb":
                   const isNumberedList = item.type === "list_numb";
                   return (
-                    <ul
-                      key={index}
-                      style={{ listStyle: isNumberedList ? "decimal" : "" }}
-                    >
-                      {item.items.map((listItem, itemIndex) => (
-                        <li key={itemIndex}>
-                          {boldString(listItem)} <br /> <br />
-                        </li>
-                      ))}
-                    </ul>
+                    <>
+                      <ul
+                        key={index}
+                        style={{ listStyle: isNumberedList ? "decimal" : "" }}
+                      >
+                        {item.items.map((listItem, itemIndex) => (
+                          <li key={itemIndex}>
+                            {boldString(listItem)} <br /> <br />
+                          </li>
+                        ))}
+                      </ul>
+                      {index !== currentPage.details.howItWorks.length - 1 && (
+                        <figure
+                          style={{ display: "flex", justifyContent: "center" }}
+                        >
+                          <img src={downArrow} alt="Down Arrow" />
+                        </figure>
+                      )}
+                    </>
                   );
 
                 default:

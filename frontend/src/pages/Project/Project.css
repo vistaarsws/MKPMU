@@ -108,6 +108,9 @@
     padding: 2rem;
     border-radius: 2rem;
   }
+  & > ul {
+    max-height: unset !important;
+  }
 }
 
 .howItWorks_container {

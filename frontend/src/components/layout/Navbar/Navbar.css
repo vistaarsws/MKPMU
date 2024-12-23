@@ -62,7 +62,6 @@ nav ul li a:visited {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
-  color: rgb(255, 255, 255);
 }
 
 .nav-mobile {
@@ -119,6 +118,10 @@ nav ul li a:visited {
 
   nav ul > li:last-of-type {
     width: 100%;
+  }
+
+  .nav-list li a svg {
+    stroke: black;
   }
 
   .dropdown-content {

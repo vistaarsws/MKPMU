@@ -395,7 +395,7 @@
 
 /* -----------------------------------------------------Project Highlight Section---------------------------------------------------------------------------------------- */
 .projectHighlightSection {
-  margin: 2% 8%;
+  margin: 5% 8%;
 }
 
 .projectHighlightSection > div:first-of-type {
@@ -404,7 +404,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 2.4rem;
-  margin-top: 4vw;
+  margin-top: 5rem;
 }
 
 .projectHighlightSection div figure img {
@@ -430,7 +430,7 @@
   font-size: 3.2rem;
   line-height: 4rem;
   color: var(--low-grey);
-  margin: 1% 8%;
+  margin: 1% 2%;
 }
 /* .projectHighlightSection > p:first-of-type {
   font-size: 4rem;
