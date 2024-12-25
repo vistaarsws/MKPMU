@@ -12,43 +12,45 @@ import dam2 from "../assets/images/kindaliyaDam_1.png";
 
 const writtenTestimonials = {
   writtenTestimonial_1:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412891/MKPMU/image/Testimonials/q6skgasxxzqzafmajzdq.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674905/MKPMU/image/Testimonials/q88us6glnkthzdzk7lkf.jpg",
   writtenTestimonial_2:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412891/MKPMU/image/Testimonials/haj1egvmg9qcj2xvyygm.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674904/MKPMU/image/Testimonials/ikli83yvyej1abrjn9f3.jpg",
   writtenTestimonial_3:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412891/MKPMU/image/Testimonials/oc4y1v0ctqwrhmg6wllk.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674904/MKPMU/image/Testimonials/jiwmypbjzlph6mlxnkxi.jpg",
   writtenTestimonial_4:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412891/MKPMU/image/Testimonials/kmb3hoqkkuus5newyinx.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674903/MKPMU/image/Testimonials/vjutnkizusfejquxr28x.jpg",
   writtenTestimonial_5:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412891/MKPMU/image/Testimonials/e7ya7eurbxb5qubexzhg.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674904/MKPMU/image/Testimonials/mm5ktagt1egyztlp2xfx.jpg",
   writtenTestimonial_6:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412891/MKPMU/image/Testimonials/cmxvawv0tel1fnvcn5ed.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674904/MKPMU/image/Testimonials/mpx4ewrukzk52q90fpwm.jpg",
   writtenTestimonial_7:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412890/MKPMU/image/Testimonials/emrzhksnhlfkw1xyk1e5.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674904/MKPMU/image/Testimonials/tc3hykhqrtfymuxhbdac.jpg",
   writtenTestimonial_8:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412890/MKPMU/image/Testimonials/vxs3n4fxoog6vhp6iezr.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674904/MKPMU/image/Testimonials/p4ovfr64gksob8hzriek.jpg",
   writtenTestimonial_9:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412890/MKPMU/image/Testimonials/k6ghvwo9mxhptgrvofnn.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674905/MKPMU/image/Testimonials/hnbr5cklazcwrl8n8qti.jpg",
   writtenTestimonial_10:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412890/MKPMU/image/Testimonials/i6dobsfcvfbcdcychaun.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674905/MKPMU/image/Testimonials/au3uqteg6d5qakysop5k.jpg",
   writtenTestimonial_11:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412890/MKPMU/image/Testimonials/blkphwcbrkfqfsdqhdrw.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674905/MKPMU/image/Testimonials/uim2p3obc8axjdisz0c7.jpg",
   writtenTestimonial_12:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412890/MKPMU/image/Testimonials/e2idqy7k0wsp9q1i4uas.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674905/MKPMU/image/Testimonials/j8oafiffulzvrzeylyds.jpg",
   writtenTestimonial_13:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412890/MKPMU/image/Testimonials/b4mazx7adoegnsiqp91k.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674905/MKPMU/image/Testimonials/tjw03dgxioggwjuwcush.jpg",
   writtenTestimonial_14:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412889/MKPMU/image/Testimonials/cbqhufbiwd104b6jafve.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674905/MKPMU/image/Testimonials/da40qg9abjnzmkjk1u8y.jpg",
   writtenTestimonial_15:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412889/MKPMU/image/Testimonials/z440q4temogaukmfn5dg.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674901/MKPMU/image/Testimonials/yj0jzhry4li2mfybhmzn.jpg",
   writtenTestimonial_16:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412889/MKPMU/image/Testimonials/n0bdjocoe1kzufs1oiar.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674903/MKPMU/image/Testimonials/qu9ulxmfw0mozz9cvzae.jpg",
   writtenTestimonial_17:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412889/MKPMU/image/Testimonials/xjmhpax3ou5lur9acks4.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674903/MKPMU/image/Testimonials/mbbwgc8ypm5xr19pkycq.jpg",
   writtenTestimonial_18:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412889/MKPMU/image/Testimonials/zcv8cc6vojj3bkj2hc4y.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674905/MKPMU/image/Testimonials/mn0pnvgnzqovdeplhwqz.jpg",
   writtenTestimonial_19:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734412889/MKPMU/image/Testimonials/zqjyp3vobyhqqttjitsr.png",
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674902/MKPMU/image/Testimonials/qtwkdjxtbik1sswfuo2r.jpg",
+  writtenTestimonial_20:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734674903/MKPMU/image/Testimonials/f3oqxastw8agxushxaie.jpg",
 };
 
 import profilePicture_1 from "../assets/images/VikasRajoria.png";
@@ -58,10 +60,10 @@ import profilePicture_4 from "../assets/images/SilawatSir.png";
 import profilePicture_5 from "../assets/images/ShubhankarSir.png";
 import profilePicture_6 from "../assets/images/sumitSingh.jpg";
 
-import visitor_1 from "../assets/images/NirmalaSitharaman.png";
+import visitor_1 from "../assets/images/vinay_sahastrabuddhe.jpg";
 import visitor_2 from "../assets/images/ShivrajSinghChouhan.png";
-import visitor_3 from "../assets/images/AlokSharma.png";
-import visitor_4 from "../assets/images/RameshwarSharma.png";
+import visitor_3 from "../assets/images/rodmal_nagar.jpeg";
+import visitor_4 from "../assets/images/jyotiraditya_scindia.jpg";
 import visitor_5 from "../assets/images/MohanYadavVisitor.png";
 
 import projectHighlight_icon1 from "../assets/images/totalIrrigatedArea.svg";
@@ -457,7 +459,7 @@ const heroBanners = [
   },
   {
     banner:
-      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734426720/MKPMU/image/Banners/n2ji6qfnrd3uh0c3sg1q.png",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734678284/MKPMU/image/Banners/n5h0tiggoybjxs7afiy5.jpg",
     title: "",
     description: "",
   },
@@ -1587,9 +1589,9 @@ const TIMELINE_EVENTS = [
 // --------------------------------------------------------------------VISITOR PAGE----------------------------------------------------------------------------------
 const visitorData = [
   {
-    visitorName: "Nirmala Sitharaman",
+    visitorName: "Vinay Sahasrabuddhe",
     visitorPicture: visitor_1,
-    visitorDesignation: "Finance Minister of India",
+    visitorDesignation: "Former Member of Rajya Sabha",
     visitPictures: [visitPicture_1, visitPicture_1, visitPicture_1],
     visitDate: "12/10/2024",
     visitDescription: [
@@ -1599,7 +1601,7 @@ const visitorData = [
   {
     visitorName: "Shivraj Singh Chouhan",
     visitorPicture: visitor_2,
-    visitorDesignation: "Chief Minister of Madhya Pradesh",
+    visitorDesignation: "Former Chief Minister of MP",
     visitPictures: [visitPicture_1, visitPicture_1],
     visitDate: "12/10/2024",
     visitDescription: [
@@ -1607,9 +1609,9 @@ const visitorData = [
     ],
   },
   {
-    visitorName: "Alok Sharma",
+    visitorName: "Rodmal Nagar",
     visitorPicture: visitor_3,
-    visitorDesignation: "Member of Parliament (MP)",
+    visitorDesignation: "Member of the Lok Sabha",
     visitPictures: [visitPicture_1, visitPicture_1],
     visitDate: "12/10/2024",
     visitDescription: [
@@ -1617,69 +1619,20 @@ const visitorData = [
     ],
   },
   {
-    visitorName: "Rameshwar Sharma",
+    visitorName: "Jyotiraditya Scindia",
     visitorPicture: visitor_4,
-    visitorDesignation: "MLA from Huzur constituency",
+    visitorDesignation: "Minister of Communications of India",
     visitPictures: [visitPicture_1, visitPicture_1],
     visitDate: "12/10/2024",
     visitDescription: [
       "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
     ],
   },
+
   {
     visitorName: "Mohan Yadav",
     visitorPicture: visitor_5,
-    visitorDesignation: "Higher Education Minister",
-    visitPictures: [visitPicture_1, visitPicture_1],
-    visitDate: "12/10/2024",
-    visitDescription: [
-      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
-    ],
-  },
-  {
-    visitorName: "Mohan Yadav",
-    visitorPicture: visitor_5,
-    visitorDesignation: "Higher Education Minister",
-    visitPictures: [visitPicture_1, visitPicture_1],
-    visitDate: "12/10/2024",
-    visitDescription: [
-      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
-    ],
-  },
-  {
-    visitorName: "Mohan Yadav",
-    visitorPicture: visitor_5,
-    visitorDesignation: "Higher Education Minister",
-    visitPictures: [visitPicture_1, visitPicture_1],
-    visitDate: "12/10/2024",
-    visitDescription: [
-      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
-    ],
-  },
-  {
-    visitorName: "Mohan Yadav",
-    visitorPicture: visitor_5,
-    visitorDesignation: "Higher Education Minister",
-    visitPictures: [visitPicture_1, visitPicture_1],
-    visitDate: "12/10/2024",
-    visitDescription: [
-      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
-    ],
-  },
-  {
-    visitorName: "Mohan Yadav",
-    visitorPicture: visitor_5,
-    visitorDesignation: "Higher Education Minister",
-    visitPictures: [visitPicture_1, visitPicture_1],
-    visitDate: "12/10/2024",
-    visitDescription: [
-      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
-    ],
-  },
-  {
-    visitorName: "Mohan Yadav",
-    visitorPicture: visitor_5,
-    visitorDesignation: "Higher Education Minister",
+    visitorDesignation: "Chief Minister of Madhya Pradesh",
     visitPictures: [visitPicture_1, visitPicture_1],
     visitDate: "12/10/2024",
     visitDescription: [

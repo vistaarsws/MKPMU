@@ -17,6 +17,17 @@
   margin: 4rem 0;
 }
 
+.testimonials_slider > article > div > div {
+  & > div {
+    width: 30vw;
+    margin-inline: auto;
+
+    & > div {
+      margin-inline: 5%;
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .testimonials_slider p {
     width: 90%;
@@ -30,5 +41,12 @@
   .testimonials_slider h1 {
     font-size: 3.6rem;
     line-height: 4rem;
+  }
+
+  .testimonials_slider > article > div > div {
+    & > div {
+      width: 80vw;
+      /* margin-inline: auto; */
+    }
   }
 }

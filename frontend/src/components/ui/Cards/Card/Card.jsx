@@ -9,7 +9,7 @@ const defaultParameter = {
     justify: ["start", "start", "start"],
   },
   color: { bgColor: "white", textColor: ["#202020", "#202020", "#ccc000"] },
-  image: { src: "", borderRadius: "" },
+  image: { src: "", borderRadius: "", height: "" },
   dimensions: { maxHeight: "100%", maxWidth: "maxWidth" },
   padding: "",
 };
@@ -37,12 +37,17 @@ export default function Card({ card = defaultParameter }) {
         backgroundColor: color.bgColor,
         maxHeight: dimensions.maxHeight,
         maxWidth: dimensions.maxWidth,
+        minHeight: dimensions.minHeight,
         padding: padding,
       }}
     >
       {card.image?.src && (
         <figure style={{ borderRadius: image.borderRadius }}>
-          <img src={image.src} alt={`${content[1]}`} />
+          <img
+            src={image.src}
+            alt={`${content[1]}`}
+            style={{ height: card.image.height }}
+          />
         </figure>
       )}
       {card.text.content[0] !== "" && (

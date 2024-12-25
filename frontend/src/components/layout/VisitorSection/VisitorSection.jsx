@@ -38,7 +38,10 @@ export default function VisitorSection({ visitToShow }) {
           >
             <Card
               card={{
-                image: { src: visitor.visitorPicture },
+                image: {
+                  src: visitor.visitorPicture,
+                  height: "24rem",
+                },
 
                 text: {
                   size: ["", "2rem", "1.4rem"],
@@ -49,11 +52,14 @@ export default function VisitorSection({ visitToShow }) {
                   ],
                   justify: ["", "center", "center"],
                 },
-                dimensions: { maxHeight: "", maxWidth: "28rem" },
+                dimensions: {
+                  maxHeight: "",
+                  maxWidth: "28rem",
+                },
                 padding: "1rem",
               }}
-              //   imgHeight={"42rem"}
-              //   imgWidth={"42rem"}
+              // imgHeight={"42rem"}
+              // imgWidth={"42rem"}
             />
           </div>
         );

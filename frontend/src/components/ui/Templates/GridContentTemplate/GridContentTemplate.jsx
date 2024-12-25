@@ -119,7 +119,7 @@ export default function GridContentTemplate(template) {
           title={selectedCard?.title}
           date={selectedCard?.date}
         />
-        {isNewUpdatePage && (
+        {/* {isNewUpdatePage && (
           <section className="newsletter_section">
             <div>
               <h3>News Letters</h3>
@@ -131,7 +131,8 @@ export default function GridContentTemplate(template) {
 
             <Newsletter no_of_cards={4} />
           </section>
-        )}
+        )} */}
+
         {/* {isNewUpdatePage && (
   <section className="importantVisits_section">
     <div>
