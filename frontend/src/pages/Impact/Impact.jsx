@@ -410,7 +410,7 @@ export default function Impact() {
           <h2>
             <span className="solution-title">Solution</span>
           </h2>
-          <h3 className="content-title">Blossoming Prosperity</h3>
+          {/* <h3 className="content-title">Blossoming Prosperity</h3> */}
           <p>
             In 2014, under PM Narendra Modi's vision of "Har Khet ko Paani," the
             construction of two major dams—Mohanpura and Kundaliya—began in
@@ -579,7 +579,7 @@ export default function Impact() {
         </p>
       </article>
       <article className="environmentalImpact_container">
-        <h2>Environmental impact and reduction in carbon footprint</h2>
+        <h2>Environmental Impact and Reduction in Carbon Footprint</h2>
         <p>
           Due to centralised pumping system with high efficiency, there is net
           reduction of 9.38 million energy (kW-hr) as shown above compared to
@@ -599,7 +599,7 @@ export default function Impact() {
         </p>
       </article>
       <article className="localMigration_container">
-        <h2>Mitigation of local distress migration</h2>
+        <h2>Mitigation of Local Distress Migration</h2>
         <p>
           Mohanpura right-bank command area was water scarce, drought-prone and
           lands are generally barren with little top-soil. Most of the locals

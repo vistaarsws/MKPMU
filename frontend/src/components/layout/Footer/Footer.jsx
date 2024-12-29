@@ -41,7 +41,7 @@ export default function Footer() {
     ],
     contactUs: {
       header:
-        "Office of project director, mohanpura kundalia project management unit, rajgarh MP",
+        "Office of Project Director, Mohanpura Kundalia Project Management Unit, Rajgarh MP",
       telephone: "0772299285",
       email: "communications.mkpmu@gmail.com ",
     },

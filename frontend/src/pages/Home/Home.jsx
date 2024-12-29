@@ -111,8 +111,8 @@ export default function Home() {
           located in the Rajgarh and Agar Malwa districts of Madhya Pradesh.
           Built to bring water to one of MP's driest regions facing
           desertification and distress, these projects now deliver water to
-          <span>1,300 villages.</span> They benefit more than{" "}
-          <span>500,000 farmers</span>
+          <span> 1,300 villages.</span> They benefit more than{" "}
+          <span>500,000 farmers </span>
           and cover an area of <span>300,000 hectares.</span>
         </p>
       </section>

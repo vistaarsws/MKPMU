@@ -1,11 +1,8 @@
 .VisitorCardContainer {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(24rem, 1fr) minmax(24rem, 1fr)
-  );
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   place-items: center;
-  gap: 1rem;
+  /* gap: 1rem; */
   cursor: pointer;
 }
 
@@ -103,13 +100,6 @@
 }
 
 @media screen and (max-width: 720px) {
-  .VisitorCardContainer {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(13rem, 1fr) minmax(13rem, 1fr)
-    );
-  }
-
   .modalImgSlider_container > div {
     & > div:nth-of-type(2) {
       display: none;
@@ -139,6 +129,33 @@
     }
     & > p:last-of-type {
       font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .VisitorCardContainer {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(18rem, 1fr) minmax(18rem, 1fr)
+    );
+  }
+  .VisitorCard > div:first-of-type p {
+    color: red;
+    height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .VisitorCardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+  .VisitorCard div:first-of-type {
+    & > h2 {
+      font-size: 1.4rem !important;
+    }
+    & > p {
+      font-size: 1.2rem !important;
     }
   }
 }

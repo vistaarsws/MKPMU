@@ -5,7 +5,10 @@
 
 .TeamMemberCard_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 42rem));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(15rem, 42rem) minmax(15rem, 42rem) minmax(15rem, 42rem)
+  );
   padding: 2% 5%;
   place-content: center;
 }
@@ -91,6 +94,15 @@
     font-size: 6vw;
     line-height: 8vw;
     padding: 0 2%;
+  }
+  .TeamMemberCard div {
+    height: 40rem;
+  }
+  .TeamMemberCard_container {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(15rem, 42rem) minmax(15rem, 42rem)
+    );
   }
 
   .mkpmuTeam_container > p:first-of-type {

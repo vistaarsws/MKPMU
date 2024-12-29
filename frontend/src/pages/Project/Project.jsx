@@ -129,9 +129,9 @@ export default function Project() {
 
       {/* ---------------------------------------------------------------------------------------------------------------- */}
       <article>
-        <h2>Main Components</h2>
+        {/* <h2>Main Components</h2> */}
         <section className="mainComponents">
-          {currentPage.details.mainComponents.map((card, index) => {
+          {currentPage.details?.mainComponents?.map((card, index) => {
             switch (card.type) {
               case "paragraph":
                 return (
@@ -276,7 +276,9 @@ export default function Project() {
         </div>
       </article> */}
       <article>
-        <h2>Schematic drawings of Kundalia Project</h2>
+        <h2>{`Schematic drawings of ${
+          pageUrl == "kundaliya" ? "Kundalia" : "Mohanpura"
+        } Project`}</h2>
         <section>
           {currentPage.banner.picture.images.map((img, index) => {
             return (
