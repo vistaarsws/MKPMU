@@ -5,7 +5,6 @@ import Navbar from "./components/layout/Navbar/Navbar";
 import Footer from "./components/layout/Footer/Footer";
 
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
 import Impact from "./pages/Impact/Impact";
 import Project from "./pages/Project/Project";
 import MemberProfile from "./pages/MemberProfile/MemberProfile";
@@ -38,7 +37,6 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/about" element={<About />} /> */}
             <Route path="/impact-story" element={<Impact />} />
             <Route path="/team/:name" element={<MemberProfile />} />
             <Route path="/testimonials" element={<Testimonials />} />

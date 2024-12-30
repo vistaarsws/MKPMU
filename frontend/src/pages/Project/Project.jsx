@@ -6,7 +6,7 @@ import Banner from "../../components/ui/Header/Banner/Banner";
 import damImg_1 from "../../assets/images/kundaliyaDam_2.png";
 import img_1 from "../../assets/images/1.png";
 import img_2 from "../../assets/images/2.png";
-import img_3 from "../../assets/images/3.jpg";
+import img_3 from "../../assets/images/3.webp";
 
 import damImg_2 from "../../assets/images/mohanpuraDam_2.png";
 import img_5 from "../../assets/images/5_.png";
@@ -282,7 +282,7 @@ export default function Project() {
         <section>
           {currentPage.banner.picture.images.map((img, index) => {
             return (
-              <div key={index}>
+              <div key={index} style={{ marginTop: "2rem" }}>
                 <img src={img} alt="Schematic Drawing" />
                 <br />
               </div>
