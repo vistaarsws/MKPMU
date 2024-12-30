@@ -284,10 +284,65 @@ const actual_testimonials_array = actual_testimonials.map((e, index) => (
 
 const teamMemberDetails_array = [
   {
+    fullName: "Shri GP Silawat",
+    profilePicture: profilePicture_4,
+    linkedinUrl: "/",
+    designation: "Chief ESupriendent Project Director",
+
+    profile_description: [
+      "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
+      "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
+    ],
+    experience: [
+      {
+        position: "Superintending Engineer & Project Administrator",
+        department: "Government Of Madhya Pradesh, Water resources Department",
+        duration: "Jun 2024 - Present · 3 mos",
+      },
+      {
+        position: "Executive Engineer",
+        department: "Water Resources Department, Madhya Pradesh",
+        duration: "Jan 2018 - Jun 2024 · 6 yrs 6 mos",
+      },
+      {
+        position: "Assistant Engineer",
+        department: "Madhya Pradesh Water Resources Department",
+        duration: "Jan 2006 - Dec 2017 · 12 yrs",
+      },
+    ],
+  },
+  {
     fullName: "Shri Vikas Rajoria",
     profilePicture: profilePicture_1,
     designation: "Supriendent Engineer and Project Administrator",
     linkedinUrl: "https://www.linkedin.com/in/vikasrajoria80/",
+    profile_description: [
+      "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
+      "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
+    ],
+    experience: [
+      {
+        position: "Superintending Engineer & Project Administrator",
+        department: "Government Of Madhya Pradesh, Water resources Department",
+        duration: "Jun 2024 - Present · 3 mos",
+      },
+      {
+        position: "Executive Engineer",
+        department: "Water Resources Department, Madhya Pradesh",
+        duration: "Jan 2018 - Jun 2024 · 6 yrs 6 mos",
+      },
+      {
+        position: "Assistant Engineer",
+        department: "Madhya Pradesh Water Resources Department",
+        duration: "Jan 2006 - Dec 2017 · 12 yrs",
+      },
+    ],
+  },
+  {
+    fullName: "Shri Shubhankar Biswas",
+    profilePicture: profilePicture_5,
+    designation: "Supriendent Engineer and Additional Project Director",
+    linkedinUrl: "https://www.linkedin.com/in/shubhankar-biswas-215758201/",
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
       "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
@@ -364,61 +419,7 @@ const teamMemberDetails_array = [
       },
     ],
   },
-  {
-    fullName: "Shri GP Silawat",
-    profilePicture: profilePicture_4,
-    linkedinUrl: "/",
-    designation: "Chief ESupriendent Project Director",
 
-    profile_description: [
-      "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
-      "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
-    ],
-    experience: [
-      {
-        position: "Superintending Engineer & Project Administrator",
-        department: "Government Of Madhya Pradesh, Water resources Department",
-        duration: "Jun 2024 - Present · 3 mos",
-      },
-      {
-        position: "Executive Engineer",
-        department: "Water Resources Department, Madhya Pradesh",
-        duration: "Jan 2018 - Jun 2024 · 6 yrs 6 mos",
-      },
-      {
-        position: "Assistant Engineer",
-        department: "Madhya Pradesh Water Resources Department",
-        duration: "Jan 2006 - Dec 2017 · 12 yrs",
-      },
-    ],
-  },
-  {
-    fullName: "Shri Shubhankar Biswas",
-    profilePicture: profilePicture_5,
-    designation: "Supriendent Engineer and Additional Project Director",
-    linkedinUrl: "https://www.linkedin.com/in/shubhankar-biswas-215758201/",
-    profile_description: [
-      "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
-      "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
-    ],
-    experience: [
-      {
-        position: "Superintending Engineer & Project Administrator",
-        department: "Government Of Madhya Pradesh, Water resources Department",
-        duration: "Jun 2024 - Present · 3 mos",
-      },
-      {
-        position: "Executive Engineer",
-        department: "Water Resources Department, Madhya Pradesh",
-        duration: "Jan 2018 - Jun 2024 · 6 yrs 6 mos",
-      },
-      {
-        position: "Assistant Engineer",
-        department: "Madhya Pradesh Water Resources Department",
-        duration: "Jan 2006 - Dec 2017 · 12 yrs",
-      },
-    ],
-  },
   {
     fullName: "Shri  Sumit Singh",
     profilePicture: profilePicture_6,
@@ -467,6 +468,12 @@ const heroBanners = [
   {
     banner:
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734427321/MKPMU/image/Banners/tpqrnvpanibj1hn6vi20.png",
+    title: "",
+    description: "",
+  },
+  {
+    banner:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1735548596/MKPMU/image/Banners/n4zenuqgg5dn4tubfjts.webp",
     title: "",
     description: "",
   },

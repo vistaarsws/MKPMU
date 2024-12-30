@@ -340,43 +340,42 @@
   font-size: 1.4rem;
 }
 
-.svgPaths path:first-of-type:hover {
+.svgPaths path:nth-of-type(1):hover {
+  filter: drop-shadow(2px 4px 6px rgba(110, 151, 255, 0.6));
+  stroke: rgba(0, 37, 134, 1);
+  fill: rgba(168, 192, 254, 1);
+}
+.svgPaths path:nth-of-type(2):hover {
   filter: drop-shadow(2px 4px 6px rgba(194, 116, 255, 0.6));
   fill: rgba(216, 166, 255, 1);
   stroke: rgba(123, 0, 134, 1);
 }
 
-.svgPaths path:nth-of-type(2):hover {
-  filter: drop-shadow(2px 4px 6px rgba(255, 155, 155, 0.6));
-  stroke: rgba(76, 6, 6, 1);
-  fill: rgba(255, 190, 190, 1);
-}
-
 .svgPaths path:nth-of-type(3):hover {
-  filter: drop-shadow(2px 4px 6px rgba(232, 213, 36, 0.6));
-  stroke: rgba(85, 78, 5, 1);
-  fill: rgba(255, 244, 140, 1);
-}
-
-.svgPaths path:nth-of-type(4):hover {
   filter: drop-shadow(2px 4px 6px rgba(129, 255, 225, 0.6));
   stroke: rgba(3, 101, 78, 1);
   fill: rgba(134, 255, 226, 1);
 }
 
-.svgPaths path:nth-of-type(8):hover {
-  filter: drop-shadow(2px 4px 6px rgba(110, 151, 255, 0.6));
-  stroke: rgba(0, 37, 134, 1);
-  fill: rgba(168, 192, 254, 1);
+.svgPaths path:nth-of-type(4):hover {
+  filter: drop-shadow(2px 4px 6px rgba(255, 155, 155, 0.6));
+  stroke: rgba(76, 6, 6, 1);
+  fill: rgba(255, 190, 190, 1);
 }
 
-/* .svgPaths path:nth-of-type(8):hover {
+.svgPaths path:nth-of-type(5):hover {
+  filter: drop-shadow(2px 4px 6px rgba(232, 213, 36, 0.6));
+  stroke: rgba(85, 78, 5, 1);
+  fill: rgba(255, 244, 140, 1);
+}
+
+.svgPaths path:nth-of-type(6):hover {
   filter: drop-shadow(2px 4px 6px rgba(147, 255, 229, 0.6));
   stroke: rgba(5, 79, 61, 1);
   fill: rgba(213, 255, 245, 1);
-} */
+}
 
-.svgPaths path:nth-of-type(7):hover {
+.svgPaths path:nth-of-type(8):hover {
   filter: drop-shadow(2px 4px 6px rgba(161, 255, 151, 0.6));
   stroke: rgba(14, 76, 8, 1);
   fill: rgba(218, 255, 214, 1);
