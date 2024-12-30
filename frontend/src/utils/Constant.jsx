@@ -1591,10 +1591,20 @@ const TIMELINE_EVENTS = [
 // --------------------------------------------------------------------VISITOR PAGE----------------------------------------------------------------------------------
 const visitorData = [
   {
-    visitorName: "Vinay Sahasrabuddhe",
-    visitorPicture: visitor_1,
-    visitorDesignation: "Former Member of Rajya Sabha",
-    visitPictures: [visitPicture_1, visitPicture_1, visitPicture_1],
+    visitorName: "Mohan Yadav",
+    visitorPicture: visitor_5,
+    visitorDesignation: "Chief Minister of Madhya Pradesh",
+    visitPictures: [visitPicture_1, visitPicture_1],
+    visitDate: "12/10/2024",
+    visitDescription: [
+      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
+    ],
+  },
+  {
+    visitorName: "Jyotiraditya Scindia",
+    visitorPicture: visitor_4,
+    visitorDesignation: "Minister of Communications of India",
+    visitPictures: [visitPicture_1, visitPicture_1],
     visitDate: "12/10/2024",
     visitDescription: [
       "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
@@ -1621,21 +1631,10 @@ const visitorData = [
     ],
   },
   {
-    visitorName: "Jyotiraditya Scindia",
-    visitorPicture: visitor_4,
-    visitorDesignation: "Minister of Communications of India",
-    visitPictures: [visitPicture_1, visitPicture_1],
-    visitDate: "12/10/2024",
-    visitDescription: [
-      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
-    ],
-  },
-
-  {
-    visitorName: "Mohan Yadav",
-    visitorPicture: visitor_5,
-    visitorDesignation: "Chief Minister of Madhya Pradesh",
-    visitPictures: [visitPicture_1, visitPicture_1],
+    visitorName: "Vinay Sahasrabuddhe",
+    visitorPicture: visitor_1,
+    visitorDesignation: "Former Member of Rajya Sabha",
+    visitPictures: [visitPicture_1, visitPicture_1, visitPicture_1],
     visitDate: "12/10/2024",
     visitDescription: [
       "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
