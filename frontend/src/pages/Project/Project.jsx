@@ -276,7 +276,7 @@ export default function Project() {
         </div>
       </article> */}
       <article>
-        <h2>{`Schematic drawings of ${
+        <h2>{`Schematic Drawings of ${
           pageUrl == "kundaliya" ? "Kundalia" : "Mohanpura"
         } Project`}</h2>
         <section>
