@@ -943,7 +943,7 @@ const awardsAndAcknowledgementHeader = {
 
 const awardsAndAcknowledgement = [
   {
-    title: "Central Bureau of Irrigation & Power Awards, 2022",
+    title: "National Water Awards, 2022",
     subTitle: "",
     awards: [
       {
