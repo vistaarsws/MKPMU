@@ -618,7 +618,7 @@ const projectOutreach_page = {
     },
     {
       picture: projectOutreact_2,
-      title: "World Environmental % Water Resource Congress, USA",
+      title: "World Environmental & Water Resource Congress, USA",
       date: "May 2023",
     },
     {
@@ -1024,11 +1024,6 @@ const kundaliyaDetails = {
         "*Water Source and Delivery:* Water is drawn from the Kundalia Dam and distributed via pressurized pipeline networks, ensuring minimal losses and efficient delivery.",
     },
     {
-      type: "paragraph",
-      content:
-        "*Water Source and Delivery:* Water is drawn from the Kundalia Dam and distributed via pressurized pipeline networks, ensuring minimal losses and efficient delivery.",
-    },
-    {
       type: "list",
       items: [
         "*Rising Mains and Distribution Network:*",
@@ -1084,80 +1079,80 @@ const kundaliyaDetails = {
         "*Sustainability and Future Readiness:* Designed for scalability and adaptability to changing agricultural and industrial demands, supporting long-term regional development.",
     },
   ],
-  mainComponents: [
-    {
-      type: "list",
+  // mainComponents: [
+  //   {
+  //     type: "list",
 
-      items: [
-        {
-          bg: "#fff0e5",
-          iconColor: "#D7A47F",
-          text: "Construction of dam for 2655 m. This will consist of left earthen dam in 2335 m length and right earthen dam in 320 m length , and subsidiary bund in a saddle of 2 km .",
-        },
-        {
-          bg: "#e7f6f5",
-          iconColor: "#83BCB8",
-          text: "Construction of a central gated spillway in 345m length which will consist of 11 no’s of 17x12m size radial gates and 10piers of 3.5m thickness each.",
-        },
-        {
-          bg: "#f1f4e7",
-          iconColor: "#BCCF7E",
-          text: "Construction of right and left NOF in 120m length wherein5 blocks of 20m each will be provided in left flank and1 blocks of 20m each will provide in right flank.",
-        },
+  //     items: [
+  //       {
+  //         bg: "#fff0e5",
+  //         iconColor: "#D7A47F",
+  //         text: "Construction of dam for 2655 m. This will consist of left earthen dam in 2335 m length and right earthen dam in 320 m length , and subsidiary bund in a saddle of 2 km .",
+  //       },
+  //       {
+  //         bg: "#e7f6f5",
+  //         iconColor: "#83BCB8",
+  //         text: "Construction of a central gated spillway in 345m length which will consist of 11 no’s of 17x12m size radial gates and 10piers of 3.5m thickness each.",
+  //       },
+  //       {
+  //         bg: "#f1f4e7",
+  //         iconColor: "#BCCF7E",
+  //         text: "Construction of right and left NOF in 120m length wherein5 blocks of 20m each will be provided in left flank and1 blocks of 20m each will provide in right flank.",
+  //       },
 
-        {
-          bg: "#fef6e0",
-          iconColor: "#D5C393",
-          text: "One no of head sluice on left flank and one no. of head sluice on right flank from dam to provide irrigation on d/s of dam to approx. 125000ha of CCA.",
-        },
-        {
-          bg: "#f0fcfe",
-          iconColor: "#6ACADA",
-          text: "1 no's of emergency gate consisting of 8 multiple units of 17x 1.35m each and 1 top unit of 17x1.2m with gantry crane type of hoisting arrangement.",
-        },
-        {
-          bg: "#e8f7ee",
-          iconColor: "#7DBC96",
-          text: "11 no's of radial service gates of size 17x12m (10+1stand by) with electromechanical rope drum hoisting arrangement. Alternatively this can be provided with hydraulic hoist.",
-        },
-        {
-          bg: "#f4f7e8",
-          iconColor: "#B0BA89",
-          text: "350m long 7.50 m wide T-beam Type double lane Bridge over the spillway.",
-        },
-        {
-          bg: "#edeae6",
-          iconColor: "#AE987B",
-          text: "10m long key wall on left earthen dam site at junction between earth dam and spillway.",
-        },
-        {
-          bg: "#feeff3",
-          iconColor: "#E86C8D",
-          text: "D/S energy dissipation arrangement in the form of slotted roller bucket of 15m radius.",
-        },
-        {
-          bg: "#f0fcfe",
-          iconColor: "#6ACADA",
-          text: "Construction of d/s training wall, guide wall and returned wall.",
-        },
-        {
-          bg: "#fafcee",
-          iconColor: "#A3AB6F",
-          text: "1 no's of emergency gate consisting of 8 multiple units of 17x 1.35m each and 1 top unit of 17x1.2m with gantry crane type of hoisting arrangement.",
-        },
-        {
-          bg: "#f1f4e7",
-          iconColor: "#D7A47F",
-          text: "Construction of diversion barrage and channel from Lakhundar river .",
-        },
-        {
-          bg: "#e7f6f5",
-          iconColor: "#83BCB8",
-          text: " Construction of complete left bank & right bank pressurized irrigation system including rising main, pump house, transmission line including construction of all the pressurized structure required therein.",
-        },
-      ],
-    },
-  ],
+  //       {
+  //         bg: "#fef6e0",
+  //         iconColor: "#D5C393",
+  //         text: "One no of head sluice on left flank and one no. of head sluice on right flank from dam to provide irrigation on d/s of dam to approx. 125000ha of CCA.",
+  //       },
+  //       {
+  //         bg: "#f0fcfe",
+  //         iconColor: "#6ACADA",
+  //         text: "1 no's of emergency gate consisting of 8 multiple units of 17x 1.35m each and 1 top unit of 17x1.2m with gantry crane type of hoisting arrangement.",
+  //       },
+  //       {
+  //         bg: "#e8f7ee",
+  //         iconColor: "#7DBC96",
+  //         text: "11 no's of radial service gates of size 17x12m (10+1stand by) with electromechanical rope drum hoisting arrangement. Alternatively this can be provided with hydraulic hoist.",
+  //       },
+  //       {
+  //         bg: "#f4f7e8",
+  //         iconColor: "#B0BA89",
+  //         text: "350m long 7.50 m wide T-beam Type double lane Bridge over the spillway.",
+  //       },
+  //       {
+  //         bg: "#edeae6",
+  //         iconColor: "#AE987B",
+  //         text: "10m long key wall on left earthen dam site at junction between earth dam and spillway.",
+  //       },
+  //       {
+  //         bg: "#feeff3",
+  //         iconColor: "#E86C8D",
+  //         text: "D/S energy dissipation arrangement in the form of slotted roller bucket of 15m radius.",
+  //       },
+  //       {
+  //         bg: "#f0fcfe",
+  //         iconColor: "#6ACADA",
+  //         text: "Construction of d/s training wall, guide wall and returned wall.",
+  //       },
+  //       {
+  //         bg: "#fafcee",
+  //         iconColor: "#A3AB6F",
+  //         text: "1 no's of emergency gate consisting of 8 multiple units of 17x 1.35m each and 1 top unit of 17x1.2m with gantry crane type of hoisting arrangement.",
+  //       },
+  //       {
+  //         bg: "#f1f4e7",
+  //         iconColor: "#D7A47F",
+  //         text: "Construction of diversion barrage and channel from Lakhundar river .",
+  //       },
+  //       {
+  //         bg: "#e7f6f5",
+  //         iconColor: "#83BCB8",
+  //         text: " Construction of complete left bank & right bank pressurized irrigation system including rising main, pump house, transmission line including construction of all the pressurized structure required therein.",
+  //       },
+  //     ],
+  //   },
+  // ],
   howItWorks: [
     {
       type: "list",
@@ -1247,53 +1242,53 @@ const mohanpuraDetails = {
       ],
     },
   ],
-  mainComponents: [
-    {
-      type: "list",
-      items: [
-        {
-          bg: "#fff0e5",
-          iconColor: "#D7A47F",
-          text: "Mohanpura Reservoir : The primary water source for the project.",
-        },
-        {
-          bg: "#e7f6f5",
-          iconColor: "#83BCB8",
-          text: "Approach Channel : Carries water from the reservoir to the main pump house.",
-        },
-        {
-          bg: "#f1f4e7",
-          iconColor: "#BCCF7E",
-          text: "Main Pump House : Pumps water from the reservoir through the rising main to higher elevations.",
-        },
-        {
-          bg: "#fef6e0",
-          iconColor: "#D5C393",
-          text: "Rising Main : The main pipeline that transports water from the pump house to different distribution zones.",
-        },
-        {
-          bg: "#f0fcfe",
-          iconColor: "#6ACADA",
-          text: "Break Pressure Tank/Delivery Chamber (BPT/DC) : Regulates the water pressure before further distribution.",
-        },
-        {
-          bg: "#e8f7ee",
-          iconColor: "#7DBC96",
-          text: "Kalipeeth Booster Pumping Station : Provides additional pressure to distribute water to Area B and Area C.",
-        },
-        {
-          bg: "#f4f7e8",
-          iconColor: "#B0BA89",
-          text: "Small Booster Pumping Station for Area D : Ensures water delivery to Area D.",
-        },
-        {
-          bg: "#fff0e5",
-          iconColor: "#AE987B",
-          text: "Distribution Networks : Area A Distribution,Area B Distribution,Area C Distribution,Area D Distribution",
-        },
-      ],
-    },
-  ],
+  // mainComponents: [
+  //   {
+  //     type: "list",
+  //     items: [
+  //       {
+  //         bg: "#fff0e5",
+  //         iconColor: "#D7A47F",
+  //         text: "Mohanpura Reservoir : The primary water source for the project.",
+  //       },
+  //       {
+  //         bg: "#e7f6f5",
+  //         iconColor: "#83BCB8",
+  //         text: "Approach Channel : Carries water from the reservoir to the main pump house.",
+  //       },
+  //       {
+  //         bg: "#f1f4e7",
+  //         iconColor: "#BCCF7E",
+  //         text: "Main Pump House : Pumps water from the reservoir through the rising main to higher elevations.",
+  //       },
+  //       {
+  //         bg: "#fef6e0",
+  //         iconColor: "#D5C393",
+  //         text: "Rising Main : The main pipeline that transports water from the pump house to different distribution zones.",
+  //       },
+  //       {
+  //         bg: "#f0fcfe",
+  //         iconColor: "#6ACADA",
+  //         text: "Break Pressure Tank/Delivery Chamber (BPT/DC) : Regulates the water pressure before further distribution.",
+  //       },
+  //       {
+  //         bg: "#e8f7ee",
+  //         iconColor: "#7DBC96",
+  //         text: "Kalipeeth Booster Pumping Station : Provides additional pressure to distribute water to Area B and Area C.",
+  //       },
+  //       {
+  //         bg: "#f4f7e8",
+  //         iconColor: "#B0BA89",
+  //         text: "Small Booster Pumping Station for Area D : Ensures water delivery to Area D.",
+  //       },
+  //       {
+  //         bg: "#fff0e5",
+  //         iconColor: "#AE987B",
+  //         text: "Distribution Networks : Area A Distribution,Area B Distribution,Area C Distribution,Area D Distribution",
+  //       },
+  //     ],
+  //   },
+  // ],
   howItWorks: [
     {
       type: "paragraph",

@@ -52,6 +52,7 @@ export default function VisitorSection({ visitToShow }) {
                   ],
                   justify: ["", "center", "center"],
                 },
+                color: { textColor: ["", "", "#202020"] },
                 dimensions: {
                   maxHeight: "",
                   maxWidth: "28rem",

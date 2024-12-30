@@ -80,7 +80,7 @@ export default function Navbar() {
       <div className="brand">
         <Link to="/" onClick={() => setIsNavVisible(false)}>
           <img src={logo} alt="Brand Logo" />
-          <h1>MOHANPURA - KUNDALIYA IRRIGATION PROJECTS</h1>
+          <h1>MOHANPURA - KUNDALIA IRRIGATION PROJECTS</h1>
         </Link>
       </div>
       <div className="nav-mobile">
