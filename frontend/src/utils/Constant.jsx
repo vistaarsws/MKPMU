@@ -83,8 +83,8 @@ import projectOutreact_5 from "../assets/images/po_5.png";
 import projectOutreact_6 from "../assets/images/po_6.png";
 
 import newUpdate_1 from "../assets/images/newsUpdate_1.png";
-import blogs_2 from "../assets/images/blogs_2.png";
-import blogs_3 from "../assets/images/blogs_3.png";
+import blogImg_1 from "../assets/images/blogImg_1.jpg";
+
 import researchImg_1 from "../assets/images/researchIcon.png";
 import researchPublication_1 from "../assets/images/researchPublication_1.jpg";
 import researchPublicationPdf_1 from "../../public/ResearchPublication_1.pdf";
@@ -287,7 +287,7 @@ const teamMemberDetails_array = [
     fullName: "Shri GP Silawat",
     profilePicture: profilePicture_4,
     linkedinUrl: "/",
-    designation: "Chief ESupriendent Project Director",
+    designation: "Chief Engineer Supriendent Project Director",
 
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
@@ -1358,166 +1358,63 @@ const blogs_page = {
     {
       id: 1,
       title:
-        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-      picture: newUpdate_1,
+        "Mohanpura and Kundalia Irrigation Projects Transforming 5 lakh Lives",
+      picture: blogImg_1,
       description:
-        "The Water Resources Department, state government of Madhya Pradesh envisages to develop Mohanpura dam, near vilage Banskhedi in district Rajgarh. The dam is proposed constructed across river Newaj at an estimated investment of 3,866-crore. The proposed Mohanpura dam proposes to provide water for irrigation, domestic and industrial uses.",
-      date: "2024-10-01",
-      author: {
-        name: "John Doe",
-        profilePic: "https://example.com/profile.jpg",
-      },
+        "The Mohanpura and Kundalia irrigation projects are large-scale water management initiatives in Madhya Pradesh, India. These projects are designed to address water scarcity and improve agricultural productivity, including reservoirs, irrigation canals, and pipelines serving rural areas. Mohanpura, located in Rajgarh district, provides drinking water and irrigation facilities. Similarly, Kundalia Dam, on the Kalisindh River, supports irrigation and drinking water needs in surrounding neighborhoods.",
+      date: "",
+
       content: [
-        { type: "heading", level: 1, text: "Introduction" },
+        // { type: "heading", level: 1, text: "Introduction" },
         {
-          type: "paragraph",
-          text: "Mohanpura project is a major multipurpose project, which is proposed, in lower Chambal basin in lower zone-I. The project is proposed on river Kalisindh which is one of the major three river constituting this zone of lower Chambal sub basin. Under the scope of proposed project a barrier is proposed to be constructed on river Kalisindh near village Balaheda of Zirapur tehsil of district Rajgarh",
+          type: "subheading",
+          text: "Improving water availability",
         },
         {
           type: "paragraph",
-          text: "Mohanpura project is a major multipurpose project, which is proposed, in lower Chambal basin in lower zone-I. The project is proposed on river Kalisindh which is one of the major three river constituting this zone of lower Chambal sub basin. Under the scope of proposed project a barrier is proposed to be constructed on river Kalisindh near village Balaheda of Zirapur tehsil of district Rajgarh",
+          text: "Both projects are engineered to ensure year-round water availability in areas previously dependent on erratic monsoon rains. Mohanpura has a storage capacity of 616 million cubic meters, enabling irrigation for 1.35 lakh hectares of land. Kundalia supports irrigation for over 2 lakh hectares. With these reservoirs, farmers gain access to a reliable water supply, reducing dependence on borewells and rain-fed agriculture.",
         },
-        { type: "subheading", level: 2, text: "Why Structure is Important" },
+        { type: "subheading", level: 2, text: "Impact on Agriculture" },
         {
           type: "paragraph",
-          text: "The project in its proposed form will provide irrigation on d/s of proposed Mohanpura dam on left and right flank of Kalisindh River. The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur.",
+          text: "The consistent water supply allows farmers to cultivate multiple crops annually. Crops like wheat, soybeans, and pulses, which require significant water, can now be grown without the fear of drought. Additionally, the projects promote micro-irrigation systems like drip and sprinkler irrigation, which conserve water and improve crop yield. Farmers have reported increased productivity and income levels since the projects began.",
+        },
+
+        { type: "subheading", text: "Benefits to Rural Communities" },
+        {
+          type: "paragraph",
+          text: "Beyond irrigation, the projects also supply potable water to thousands of households, improving overall health and hygiene. Access to clean water reduces the prevalence of waterborne diseases. Furthermore, employment opportunities generated during the construction and maintenance phases have provided livelihoods to many local workers.",
         },
         {
-          type: "image",
-          src: blogs_2,
-          alt: "A blog image",
+          type: "subheading",
+          text: "Addressing Sustainability & Socio-economic Transformations",
         },
         {
-          type: "points",
-          items: [
-            "The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur",
-            "The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur",
-            "The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur",
-          ],
+          type: "paragraph",
+          text: "Sustainability is a core aspect of these initiatives. Both projects integrate modern water management practices to minimize wastage. Efforts are made to maintain ecological balance through afforestation and community participation. Farmers are encouraged to adopt crop diversification and water-efficient farming techniques, ensuring long-term benefits.The irrigation projects have transformed the socio-economic landscape of the region. A reliable water supply has boosted agricultural income, reducing poverty and migration. Families now invest more in education and healthcare. Women, who often bore the brunt of water scarcity, benefit from reduced drudgery, enabling them to pursue other productive activities.",
         },
-        { type: "video", src: "/videos/blog-video.mp4", alt: "A blog video" },
-        { type: "paragraph", text: "Let’s dive into each step." },
+        {
+          type: "subheading",
+          text: "Challenges",
+        },
+        {
+          type: "paragraph",
+          text: "While the projects have achieved significant milestones, challenges such as equitable water distribution, maintenance, and community awareness persist. Ensuring that all beneficiaries receive adequate water supply and training farmers in sustainable practices are areas requiring ongoing attention.",
+        },
+        {
+          type: "subheading",
+          text: "Inspiring similar initiatives in India",
+        },
+        {
+          type: "paragraph",
+          text: "The success of Mohanpura and Kundalia highlights the potential of large-scale water infrastructure to transform rural lives. They serve as models for other water-scarce regions in India. The projects underscore the importance of integrating technology, sustainability, and community engagement in water resource management.",
+        },
+        {
+          type: "paragraph",
+          text: "The Mohanpura and Kundalia irrigation projects have brought about a monumental change in the lives of nearly 5 lakh people. By addressing water scarcity, boosting agricultural productivity, and uplifting socio-economic conditions, these initiatives exemplify how infrastructure development can be a catalyst for holistic rural development. As these projects continue to evolve, they pave the way for a sustainable and prosperous future for the region.",
+        },
       ],
       hasItsPage: true,
-      tags: ["Dam", "Hydro Electricity", "Power Generation"],
-      comments: [
-        {
-          id: 101,
-          user: "Jane Smith",
-          comment: "Great explanation of useEffect!",
-          date: "2024-10-01T08:30:00",
-        },
-        {
-          id: 102,
-          user: "Bob Johnson",
-          comment: "I was confused before, but now it's clear.",
-          date: "2024-10-01T09:15:00",
-        },
-      ],
-    },
-    {
-      id: 2,
-      title:
-        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-      picture: blogs_3,
-      description:
-        "The Water Resources Department, state government of Madhya Pradesh envisages to develop Mohanpura dam, near vilage Banskhedi in district Rajgarh. The dam is proposed constructed across river Newaj at an estimated investment of 3,866-crore. The proposed Mohanpura dam proposes to provide water for irrigation, domestic and industrial uses.",
-      date: "2024-10-01",
-      author: {
-        name: "John Doe",
-        profilePic: "https://example.com/profile.jpg",
-      },
-      content: [
-        { type: "heading", level: 1, text: "Introduction" },
-        {
-          type: "paragraph",
-          text: "In this blog, we will discuss how to implement a blog page with multiple elements.",
-        },
-        { type: "subheading", level: 2, text: "Why Structure is Important" },
-        {
-          type: "paragraph",
-          text: "The project in its proposed form will provide irrigation on d/s of proposed Mohanpura dam on left and right flank of Kalisindh River. The irrigation will be provided by pressurized irrigation system nearly serving 125000ha in the districts of Rajgarh and Shajapur.",
-        },
-        { type: "image", src: "/images/blog-image.jpg", alt: "A blog image" },
-        { type: "video", src: "/videos/blog-video.mp4", alt: "A blog video" },
-        {
-          type: "points",
-          items: [
-            "Structure your content",
-            "Use components",
-            "Ensure responsiveness",
-          ],
-        },
-        { type: "paragraph", text: "Let’s dive into each step." },
-      ],
-      hasItsPage: true,
-      tags: ["Dam", "Hydro Electricity", "Power Generation"],
-      comments: [
-        {
-          id: 101,
-          user: "Jane Smith",
-          comment: "Great explanation of useEffect!",
-          date: "2024-10-01T08:30:00",
-        },
-        {
-          id: 102,
-          user: "Bob Johnson",
-          comment: "I was confused before, but now it's clear.",
-          date: "2024-10-01T09:15:00",
-        },
-      ],
-    },
-    {
-      id: 3,
-      title:
-        "Hon. Minister Govt of India, Social Justice and Empowerment Ministry, Shri Virendra Kumar Khatik",
-      picture: newUpdate_1,
-      description:
-        "The Water Resources Department, state government of Madhya Pradesh envisages to develop Mohanpura dam, near vilage Banskhedi in district Rajgarh. The dam is proposed constructed across river Newaj at an estimated investment of 3,866-crore. The proposed Mohanpura dam proposes to provide water for irrigation, domestic and industrial uses.",
-      date: "2024-10-01",
-      author: {
-        name: "John Doe",
-        profilePic: "https://example.com/profile.jpg",
-      },
-      content: [
-        { type: "heading", level: 1, text: "Introduction" },
-        {
-          type: "paragraph",
-          text: "In this blog, we will discuss how to implement a blog page with multiple elements.",
-        },
-        { type: "subheading", level: 2, text: "Why Structure is Important" },
-        {
-          type: "paragraph",
-          text: "Organizing content properly helps in building scalable and readable pages.",
-        },
-        { type: "image", src: "/images/blog-image.jpg", alt: "A blog image" },
-        { type: "video", src: "/videos/blog-video.mp4", alt: "A blog video" },
-        {
-          type: "points",
-          items: [
-            "Structure your content",
-            "Use components",
-            "Ensure responsiveness",
-          ],
-        },
-        { type: "paragraph", text: "Let’s dive into each step." },
-      ],
-      hasItsPage: true,
-      tags: ["Dam", "Hydro Electricity", "Power Generation"],
-      comments: [
-        {
-          id: 101,
-          user: "Jane Smith",
-          comment: "Great explanation of useEffect!",
-          date: "2024-10-01T08:30:00",
-        },
-        {
-          id: 102,
-          user: "Bob Johnson",
-          comment: "I was confused before, but now it's clear.",
-          date: "2024-10-01T09:15:00",
-        },
-      ],
     },
   ],
 };
