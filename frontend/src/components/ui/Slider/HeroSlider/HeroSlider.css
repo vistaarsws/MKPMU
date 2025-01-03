@@ -1,11 +1,7 @@
 .heroSlideContainer {
   position: relative;
-  display: flex;
-  background-position: center;
-  justify-content: start;
-  align-items: end;
   width: 100%;
-  height: 90vh;
+  height: 45vw;
 
   & > img {
     object-fit: cover;
