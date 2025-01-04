@@ -395,27 +395,36 @@ const teamMemberDetails_array = [
   {
     fullName: "Shri Vipin Tiwari",
     profilePicture: profilePicture_3,
-    designation: "Assistant Engineer and Assistant Program Manager",
+    designation: "Assistant Director",
     linkedinUrl: "https://www.linkedin.com/in/vipin-tiwari-83761a83/",
     profile_description: [
-      "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
-      "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
+      "Vipin Tiwari, Presently Working with Water Resource Department of Madhya Pradesh as a Assistant Director. He previously worked with Global R&D, Eaton Tech. Pvt. Ltd. as a Engineer, has an experience over two and half years in the field of Plant Modeling, Electrical System Modeling and Simulation. He has completed M.Tech (2013-2015) from IIT Roorkee in System and Control. He has Secured 1st Rank in MPPSC State Engineering Services 2016. His key skills are Power System Modeling and Control, Power System Stability and Microgrid and Industrial Automation through SCADA. he has also extensive teaching experience of GATE and IES.",
     ],
     experience: [
       {
-        position: "Superintending Engineer & Project Administrator",
-        department: "Government Of Madhya Pradesh, Water resources Department",
-        duration: "Jun 2024 - Present · 3 mos",
+        position: "Assistant Director",
+        department: "Water Resource Department,MP",
+        duration: "Dec 2017 - Present",
       },
       {
-        position: "Executive Engineer",
-        department: "Water Resources Department, Madhya Pradesh",
-        duration: "Jan 2018 - Jun 2024 · 6 yrs 6 mos",
+        position: "Engineer",
+        department: "Eaton Tech. Pvt. Ltd, Pune India",
+        duration: "July 2015 - Dec 2017",
       },
       {
-        position: "Assistant Engineer",
-        department: "Madhya Pradesh Water Resources Department",
-        duration: "Jan 2006 - Dec 2017 · 12 yrs",
+        position: "Guest Faculty",
+        department: "Gate and IES Coaching Institute",
+        duration: "July 2014 - Present",
+      },
+      {
+        position: "Expert Lecture",
+        department: "Engineering Colleges and Coaching Institute",
+        duration: "July 2015 - Present",
+      },
+      {
+        position: "Internship",
+        department: "Amarkantak Thermal Power Station Chachai Anuppur MP",
+        duration: "June 2011 - July 2011",
       },
     ],
   },
