@@ -5,7 +5,7 @@ import { MinisterSlider } from "../components/ui/Slider/MinisterSlider/MinisterS
 import { TestimonialSlider } from "../components/ui/Slider/TestimonialSlider/TestimonialSlider";
 import HeroSlider from "../components/ui/Slider/HeroSlider/HeroSlider";
 
-import visitPicture_1 from "../assets/images/visitPicture_1.png";
+// import visitPicture_1 from "../assets/images/visitPicture_1.png";
 import visitPicture_JRS_1 from "../assets/images/JRS_visit_img1.jpg";
 import visitPicture_JRS_2 from "../assets/images/JRS_visit_img2.jpg";
 
@@ -13,12 +13,12 @@ import visitPicture_SSC_1 from "../assets/images/shivrajSingh_visit_img1.jpg";
 
 import visitPicture_VS_1 from "../assets/images/VinaySahasrabuddhe_visit_img1.jpg";
 
-import visitPicture_VKK_1 from "../assets/images/ShriVirendraKumarKhatik_visit_img1.jpg";
-import visitPicture_VKK_2 from "../assets/images/ShriVirendraKumarKhatik_visit_img2.jpg";
+// import visitPicture_VKK_1 from "../assets/images/ShriVirendraKumarKhatik_visit_img1.jpg";
+// import visitPicture_VKK_2 from "../assets/images/ShriVirendraKumarKhatik_visit_img2.jpg";
 
-import visitPicture_RS_1 from "../assets/images/RajendraShukla_visit_img1.jpg";
+// import visitPicture_RS_1 from "../assets/images/RajendraShukla_visit_img1.jpg";
 
-import visitPicture_RKandAK_1 from "../assets/images/ASRajeshKumarVerma&CommissionerAnujKanwal.jpg";
+// import visitPicture_RKandAK_1 from "../assets/images/ASRajeshKumarVerma&CommissionerAnujKanwal.jpg";
 
 import dam1 from "../assets/images/mohanpuraDam_1.png";
 import dam2 from "../assets/images/kindaliyaDam_1.png";
@@ -720,48 +720,134 @@ const newsUpdate_page = {
     "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
   cards: [
     {
-      picture: news.NEWS_1,
+      picture: news.NEWS_20,
       title:
         "3 साल में 1.70 लाख हेक्टेयर में सिंचाई:मोहनपुरा कुंडालिया परियोजना में सर्वश्रेष्ठ प्रदर्शन, जिला अभियंता को मिला राज्य स्तरीय पुरस्कार",
-      date: "8 महीने पहले",
+      date: "",
       url: "https://www.bhaskar.com/local/mp/rajgarh/news/irrigation-in-170-lakh-hectares-in-3-years-132613615.html?_branch_match_id=1280028591755248453&utm_campaign=132613615&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0nMzMvM1k3Sy8zTz%2FbPCTLM8y3P8UgCAMurMc4fAAAA ",
     },
     {
-      picture: news.NEWS_2,
-      title: "",
+      picture: news.NEWS_1,
+      title:
+        "50 हजार हेक्टेयर सिंचाई बढ़ाकर एक लाख:इस साल मोहनपुरा की सिंचाई क्षमता बढ़ाकर दोगुनी की, इसी माह मिलेगा किसानों को पानी",
       date: "",
-      url: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/this-year-the-irrigation-capacity-of-mohanpura-has-been-doubled-farmers-will-get-water-this-month-130545735.html",
     },
+
     {
-      picture: news.NEWS_3,
-      title: "",
-      date: "",
-      url: "",
-    },
-    {
-      picture: news.NEWS_4,
-      title: "",
-      date: "",
-      url: "",
-    },
-    {
-      picture: news.NEWS_5,
-      title: "",
-      date: "",
-      url: "",
+      picture: news.NEWS_7,
+      title:
+        "मोहनपुरा सिंचाई परियोजना ने लौटाई तंवरबाड की होली कलेक्टर ने ग्रामीणों के साथ मनाया त्यौहार",
+      date: "18-03-2022",
+      url: "https://successmedianews.com/?p=1117",
     },
     {
       picture: news.NEWS_6,
-      title: "",
-      date: "",
-      url: "",
+      title:
+        "सिंचाई के लिए मोहनपुरा की तर्ज पर कर्नाटक में डालेंगे प्रेशर वाले पाइप",
+      date: "01 Sep 2021",
+      url: "https://www.naidunia.com/madhya-pradesh/rajgarh-rajgarh-news-7019346",
     },
     {
-      picture: news.NEWS_7,
-      title: "",
+      picture: news.NEWS_2,
+      title:
+        "कुंडालिया वृहद सिंचाई परियोजना:कुंडालिया से पहली बार होगी राजगढ़ व आगर जिले में सिंचाई",
       date: "",
-      url: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/irrigation-will-be-done-for-the-first-time-from-kundalia-in-rajgarh-and-agar-districts-130570592.html",
     },
+
+    {
+      picture: news.NEWS_4,
+      title:
+        "डेम और ब्रिज निर्माण की है योजना:खोयरी महादेव मंदिर पर अब स्टाप डेम नहीं बनाएंगे, पुराने की होगी रिपेयरिंग",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/now-stop-dam-will-not-be-made-on-khoyari-mahadev-temple-old-one-will-be-repaired-130695586.html",
+    },
+    {
+      picture: news.NEWS_3,
+      title:
+        "जल संरक्षण व प्रबंधन पर परिचर्चा:भविष्य के लिए जल संरक्षण व प्रबंधन बहुत जरूरी",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/water-conservation-and-management-is-very-important-for-the-future-130528847.html",
+    },
+
+    {
+      picture: news.NEWS_39,
+      title:
+        "निर्माण कार्य:मोहनपुरा-कुंडालिया परियोजना का बचा काम जल्दी करो पूरा, समय पर देंगे पानी",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/hurry-up-the-remaining-work-of-mohanpura-kundalia-project-water-will-be-given-on-time-127403296.html",
+    },
+    {
+      picture: news.NEWS_38,
+      title:
+        "सिंचाई सुविधा:नहर का पानी पहुंचा तो रुका पलायन, खाद्यान्न उत्पादन भी ज्यादा",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/when-canal-water-reached-migration-stopped-food-production-also-increased-128823964.html",
+    },
+    {
+      picture: news.NEWS_37,
+      title:
+        "सेवानिवृत्त इंजीनियर्स हुए सम्मानित:इंजीनियर ही बदलते है देश की दिशा, समय से क्वालिटी का काम करना इंजीनियर की बड़ी खूबी",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/engineers-change-the-direction-of-the-country-doing-quality-work-from-time-to-time-is-a-great-quality-of-an-engineer-130324877.html",
+    },
+    {
+      picture: news.NEWS_36,
+      title:
+        "प्रभारी मंत्री के तीखे तेवर:मैं यहां कथा करने नहीं आया हूं, आंकड़ों के साथ बैठक में आएं, नहीं तो कार्रवाई के लिए तैयार रहें",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/rajgarh/news/i-am-not-here-to-tell-stories-come-to-the-meeting-with-figures-otherwise-be-ready-for-action-130622626.html",
+    },
+    {
+      picture: news.NEWS_34,
+      title:
+        "सिंचाई परियोजना:मंत्री बोले- इसी साल पूरे रकबे में सिंचाई के लिए पानी दीजिए",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/minister-said-give-water-for-irrigation-in-the-entire-area-this-year-128111697.html",
+    },
+    {
+      picture: news.NEWS_35,
+      title:
+        "सर्वे पूरा:नेवज पर बनेगा 325 मीटर लंबा, 16 मीटर ऊंचा पुल, ताकि डेम से पानी छाेड़ने पर न रुके रास्ता",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/a-325-meter-long-16-meter-high-bridge-will-be-built-on-the-foundation-so-that-the-way-does-not-stop-when-water-is-released-from-the-dam-128607906.html",
+    },
+    {
+      picture: news.NEWS_32,
+      title:
+        "दूधी नदी पर बन रहा 1 किमी लंबा पुल:रेलवे के जीएम ने कहा- पुल निर्माण फरवरी तक पूरा करें",
+      date: "",
+      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/railway-gm-said-complete-the-bridge-construction-by-february-128726529.html",
+    },
+    {
+      picture: news.NEWS_30,
+      title:
+        "आयोजित हुआ 24 वां कांग्रेस सम्मेलन:अंतर्राष्ट्रीय मंच पर मोहनपुरा परियोजना का प्रस्तुतिकरण",
+      date: "13 Feb, 2021",
+      url: "https://www.naidunia.com/madhya-pradesh/rajgarh-rajgarh-news-6712642",
+    },
+    {
+      picture: news.NEWS_28,
+      title:
+        "बांध से पाइप के जरिये सीधे किसान के खेतों में पहुंचा जल तो खपत हुई आधी",
+      date: "22 Nov, 2022 ",
+      url: "https://www.jagran.com/chhattisgarh/raipur-raipur-news-changes-in-traditional-methods-of-irrigation-for-water-conservation-jagran-special-23220790.html",
+    },
+    {
+      picture: news.NEWS_24,
+      title: "राजगढ़ में मोहनपुरा-कुण्डालिया डैम से होंगे लाखों किसान लाभांवित",
+      date: "1 March, 2018",
+      url: "https://www.naidunia.com/madhya-pradesh/rajgarh-mohanpura-kundalia-dam-in-rajgarh-will-benefit-millions-of-farmers-1581043",
+    },
+    {
+      picture: news.NEWS_22,
+      title:
+        "Optimising Water Use: Experience and best practices in irrigation in Madhya Pradesh",
+      date: "22 Nov, 2022",
+      url: "https://indianinfrastructure.com/2022/11/22/optimising-water-use-experience-and-best-practices-in-irrigation-in-madhya-pradesh/",
+    },
+
     {
       picture: news.NEWS_8,
       title: "",
@@ -798,97 +884,7 @@ const newsUpdate_page = {
       date: "",
       url: "",
     },
-    {
-      picture: news.NEWS_14,
-      title:
-        "50 हजार हेक्टेयर सिंचाई बढ़ाकर एक लाख:इस साल मोहनपुरा की सिंचाई क्षमता बढ़ाकर दोगुनी की, इसी माह मिलेगा किसानों को पानी",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/rajgarh/news/this-year-the-irrigation-capacity-of-mohanpura-has-been-doubled-farmers-will-get-water-this-month-130545735.html",
-    },
-    {
-      picture: news.NEWS_15,
-      title:
-        "मोहनपुरा सिंचाई परियोजना ने लौटाई तंवरबाड की होली कलेक्टर ने ग्रामीणों के साथ मनाया त्यौहार",
-      date: "18-03-2022",
-      url: "https://successmedianews.com/?p=1117",
-    },
-    {
-      picture: news.NEWS_16,
-      title:
-        "सिंचाई के लिए मोहनपुरा की तर्ज पर कर्नाटक में डालेंगे प्रेशर वाले पाइप",
-      date: "01 Sep 2021",
-      url: "https://www.naidunia.com/madhya-pradesh/rajgarh-rajgarh-news-7019346",
-    },
-    {
-      picture: news.NEWS_17,
-      title:
-        "कुंडालिया वृहद सिंचाई परियोजना:कुंडालिया से पहली बार होगी राजगढ़ व आगर जिले में सिंचाई",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/rajgarh/news/irrigation-will-be-done-for-the-first-time-from-kundalia-in-rajgarh-and-agar-districts-130570592.html",
-    },
-    {
-      picture: news.NEWS_18,
-      title:
-        "डेम और ब्रिज निर्माण की है योजना:खोयरी महादेव मंदिर पर अब स्टाप डेम नहीं बनाएंगे, पुराने की होगी रिपेयरिंग",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/rajgarh/news/now-stop-dam-will-not-be-made-on-khoyari-mahadev-temple-old-one-will-be-repaired-130695586.html",
-    },
-    {
-      picture: news.NEWS_19,
-      title:
-        "जल संरक्षण व प्रबंधन पर परिचर्चा:भविष्य के लिए जल संरक्षण व प्रबंधन बहुत जरूरी",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/rajgarh/news/water-conservation-and-management-is-very-important-for-the-future-130528847.html",
-    },
-    {
-      picture: news.NEWS_20,
-      title:
-        "50 हजार हेक्टेयर सिंचाई बढ़ाकर एक लाख:इस साल मोहनपुरा की सिंचाई क्षमता बढ़ाकर दोगुनी की, इसी माह मिलेगा किसानों को पानी",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/rajgarh/news/this-year-the-irrigation-capacity-of-mohanpura-has-been-doubled-farmers-will-get-water-this-month-130545735.html",
-    },
-    {
-      picture: news.NEWS_21,
-      title:
-        "निर्माण कार्य:मोहनपुरा-कुंडालिया परियोजना का बचा काम जल्दी करो पूरा, समय पर देंगे पानी",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/hurry-up-the-remaining-work-of-mohanpura-kundalia-project-water-will-be-given-on-time-127403296.html",
-    },
-    {
-      picture: news.NEWS_22,
-      title:
-        "सिंचाई सुविधा:नहर का पानी पहुंचा तो रुका पलायन, खाद्यान्न उत्पादन भी ज्यादा",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/when-canal-water-reached-migration-stopped-food-production-also-increased-128823964.html",
-    },
-    {
-      picture: news.NEWS_23,
-      title:
-        "सेवानिवृत्त इंजीनियर्स हुए सम्मानित:इंजीनियर ही बदलते है देश की दिशा, समय से क्वालिटी का काम करना इंजीनियर की बड़ी खूबी",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/rajgarh/news/engineers-change-the-direction-of-the-country-doing-quality-work-from-time-to-time-is-a-great-quality-of-an-engineer-130324877.html",
-    },
-    {
-      picture: news.NEWS_24,
-      title:
-        "प्रभारी मंत्री के तीखे तेवर:मैं यहां कथा करने नहीं आया हूं, आंकड़ों के साथ बैठक में आएं, नहीं तो कार्रवाई के लिए तैयार रहें",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/rajgarh/news/i-am-not-here-to-tell-stories-come-to-the-meeting-with-figures-otherwise-be-ready-for-action-130622626.html",
-    },
-    {
-      picture: news.NEWS_25,
-      title:
-        "सिंचाई परियोजना:मंत्री बोले- इसी साल पूरे रकबे में सिंचाई के लिए पानी दीजिए",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/minister-said-give-water-for-irrigation-in-the-entire-area-this-year-128111697.html",
-    },
-    {
-      picture: news.NEWS_26,
-      title:
-        "सर्वे पूरा:नेवज पर बनेगा 325 मीटर लंबा, 16 मीटर ऊंचा पुल, ताकि डेम से पानी छाेड़ने पर न रुके रास्ता",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/a-325-meter-long-16-meter-high-bridge-will-be-built-on-the-foundation-so-that-the-way-does-not-stop-when-water-is-released-from-the-dam-128607906.html",
-    },
+
     {
       picture: news.NEWS_27,
       title:
@@ -896,13 +892,7 @@ const newsUpdate_page = {
       date: "",
       url: "",
     },
-    {
-      picture: news.NEWS_28,
-      title:
-        "दूधी नदी पर बन रहा 1 किमी लंबा पुल:रेलवे के जीएम ने कहा- पुल निर्माण फरवरी तक पूरा करें",
-      date: "",
-      url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/railway-gm-said-complete-the-bridge-construction-by-february-128726529.html",
-    },
+
     {
       picture: news.NEWS_29,
       title:
@@ -910,68 +900,12 @@ const newsUpdate_page = {
       date: "",
       url: "",
     },
-    {
-      picture: news.NEWS_30,
-      title:
-        "आयोजित हुआ 24 वां कांग्रेस सम्मेलन:अंतर्राष्ट्रीय मंच पर मोहनपुरा परियोजना का प्रस्तुतिकरण",
-      date: "",
-      url: "https://www.naidunia.com/madhya-pradesh/rajgarh-rajgarh-news-6712642",
-    },
-    {
-      picture: news.NEWS_31,
-      title:
-        "बांध से पाइप के जरिये सीधे किसान के खेतों में पहुंचा जल तो खपत हुई आधी",
-      date: "22 Nov 2022 ",
-      url: "",
-    },
-    {
-      picture: news.NEWS_32,
-      title: "",
-      date: "",
-      url: "",
-    },
+
     {
       picture: news.NEWS_33,
       title: "ऐसे हो रही पानी की बचत",
       date: "",
       url: "",
-    },
-    {
-      picture: news.NEWS_34,
-      title: "लीसिंध नदी पर बना कुंडालिया बांध।",
-      date: "",
-      url: "",
-    },
-    {
-      picture: news.NEWS_35,
-      title: "नेवज नदी पर बना हुआ मोहनपुरा बांध।",
-      date: "",
-      url: "https://www.jagran.com/chhattisgarh/raipur-raipur-news-changes-in-traditional-methods-of-irrigation-for-water-conservation-jagran-special-23220790.html",
-    },
-    {
-      picture: news.NEWS_36,
-      title: "राजगढ़ में मोहनपुरा-कुण्डालिया डैम से होंगे लाखों किसान लाभांवित",
-      date: "",
-      url: "https://www.naidunia.com/madhya-pradesh/rajgarh-mohanpura-kundalia-dam-in-rajgarh-will-benefit-millions-of-farmers-1581043",
-    },
-    {
-      picture: news.NEWS_37,
-      title:
-        "Optimising Water Use: Experience and best practices in irrigation in Madhya Pradesh",
-      date: "",
-      url: "",
-    },
-    {
-      picture: news.NEWS_38,
-      title: "Mohanpura irrigation project",
-      date: "",
-      url: "",
-    },
-    {
-      picture: news.NEWS_39,
-      title: "",
-      date: "",
-      url: "https://indianinfrastructure.com/2022/11/22/optimising-water-use-experience-and-best-practices-in-irrigation-in-madhya-pradesh/",
     },
   ],
 };
@@ -1553,7 +1487,7 @@ const visitorData = [
     visitorPicture:
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156138/MKPMU/image/Visitors/Mohan%20Yadav/aqi4njwug15jfuup2sfd.png",
     visitorDesignation: "Chief Minister of Madhya Pradesh",
-    visitPictures: [visitPicture_JRS_1, visitPicture_JRS_2],
+    visitPictures: [visitPicture_JRS_2],
     visitDate: "12/10/2024",
     visitDescription: [
       "Hon. Minister Govt of India, Civil Aviation Ministry ,Shri Jyotiraditya Madhavrao Scindia, Hon. Minister Govt of Madhya Pradesh, Water Resources Dept, Shri Tulsi Ram Silawat, Hon. Minister Govt of Madhya Pradesh, Shri Mohan Yadav",
@@ -1586,10 +1520,10 @@ const visitorData = [
     visitorPicture:
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156170/MKPMU/image/Visitors/Rodmal%20Nagar/du0fgjh2hpl9a7i8fm9k.jpg",
     visitorDesignation: "Member of the Lok Sabha",
-    visitPictures: [visitPicture_1, visitPicture_1],
+    visitPictures: [""],
     visitDate: "12/10/2024",
     visitDescription: [
-      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quibusdam, earum aliquid quas, ad autem impedit sunt odio dolor quam ullam voluptates natus distinctio?",
     ],
   },
   {
