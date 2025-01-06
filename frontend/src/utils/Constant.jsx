@@ -521,14 +521,14 @@ const heroBanners = [
   },
   {
     banner:
-      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734678284/MKPMU/image/Banners/n5h0tiggoybjxs7afiy5.jpg",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736176983/MKPMU/image/Banners/hvkyxfuvsqxkyfv47gx5.webp",
     title: "",
     description: "",
   },
 
   {
     banner:
-      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734427321/MKPMU/image/Banners/tpqrnvpanibj1hn6vi20.png",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736177715/MKPMU/image/Banners/mzdf0iwidegetzkuawae.webp",
     title: "",
     description: "",
   },
