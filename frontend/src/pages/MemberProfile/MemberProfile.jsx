@@ -25,7 +25,7 @@ export default function MemberProfile() {
               <p>{memberProfile.designation}</p>
             </div>
             <div>
-              <Link to={memberProfile.linkedinUrl}>
+              <Link to={memberProfile.linkedinUrl} target="_blank">
                 <img src={linkedinIcon} alt="Linkedin Icon" />
               </Link>
             </div>

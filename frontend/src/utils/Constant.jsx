@@ -283,11 +283,20 @@ const actual_testimonials_array = actual_testimonials.map((e, index) => (
 // ---------------------------------------------------------------------- MKPMU TEAM -------------------------------------------------------------------------------------
 
 const teamMemberDetails_array = [
+  // January 1988 - 1993: Served as Attached Officer in Engineer-in-Charge Office
+  // June 1993 - October 2002: Worked as Sub Divisional Officer (SDO) in Kolar Major Project, overseeing canal lining, structure construction, and canal regulation
+  // December 2002 - May 2008: Served as SDO in Barna Major Project, managing canal lining, structure construction, and canal regulation
+  // June 2008 - September 2013: Worked as SDO in Ashta Sub Division (Minor Project)
+  // October 2013 - April 2015: Served as SDO in Deori Sub Division, handling Mogha Project and Minor Sub Division, including construction of Nagpura Nagjhiri Medium Tank in Raisen District
+  // May 2015: Promoted to Executive Engineer (EE), posted at Seoni Division. Completed three minor dams and regulated other medium tanks in Katchnamanadi
+  // Later transferred to Betul Division as EE in Multai Division. Constructed Madhor Project, Parasdor Bhardha (pressurized micro irrigation work) and approximately 15 minor tanks
+  // October 2022: Promoted to Additional Project Director (APD) in MKPMU Rajgarh
+
   {
     fullName: "Shri GP Silawat",
     profilePicture: profilePicture_4,
     linkedinUrl: "/",
-    designation: "Chief Engineer Supriendent Project Director",
+    designation: "Additional Project Director (APD)",
 
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
@@ -295,19 +304,39 @@ const teamMemberDetails_array = [
     ],
     experience: [
       {
-        position: "Superintending Engineer & Project Administrator",
-        department: "Government Of Madhya Pradesh, Water resources Department",
-        duration: "Jun 2024 - Present · 3 mos",
+        position: "Additional Project Director (APD)",
+        department: "MKPMU Rajgarh",
+        duration: "October 2022 - Present",
       },
       {
-        position: "Executive Engineer",
-        department: "Water Resources Department, Madhya Pradesh",
-        duration: "Jan 2018 - Jun 2024 · 6 yrs 6 mos",
+        position: "Executive Engineer (EE)",
+        department: "Deori Sub Division & Betul Division",
+        duration: "May 2015 - September 2015",
       },
       {
-        position: "Assistant Engineer",
-        department: "Madhya Pradesh Water Resources Department",
-        duration: "Jan 2006 - Dec 2017 · 12 yrs",
+        position: "Sub Divisional Officer (SDO)",
+        department: "Deori Sub Division",
+        duration: "October 2013 - April 2015",
+      },
+      {
+        position: "Sub Divisional Officer (SDO)",
+        department: "Ashta Sub Division (Minor Project)",
+        duration: "June 2008 - September 2013",
+      },
+      {
+        position: "Sub Divisional Officer (SDO)",
+        department: "Barna Major Project",
+        duration: "December 2002 - May 2008",
+      },
+      {
+        position: "Sub Divisional Officer (SDO)",
+        department: "Kolar Major Project",
+        duration: "June 1993 - October 2002",
+      },
+      {
+        position: "Attached Officer",
+        department: "Engineer-in-Charge Office",
+        duration: "January 1988 - 1993",
       },
     ],
   },
@@ -324,17 +353,17 @@ const teamMemberDetails_array = [
       {
         position: "Superintending Engineer & Project Administrator",
         department: "Government Of Madhya Pradesh, Water resources Department",
-        duration: "Jun 2024 - Present · 3 mos",
+        duration: "Jun 2024 - Present",
       },
       {
         position: "Executive Engineer",
         department: "Water Resources Department, Madhya Pradesh",
-        duration: "Jan 2018 - Jun 2024 · 6 yrs 6 mos",
+        duration: "Jan 2018 - Jun 2024",
       },
       {
         position: "Assistant Engineer",
         department: "Madhya Pradesh Water Resources Department",
-        duration: "Jan 2006 - Dec 2017 · 12 yrs",
+        duration: "Jan 2006 - Dec 2017",
       },
     ],
   },
@@ -344,31 +373,42 @@ const teamMemberDetails_array = [
     designation: "Supriendent Engineer and Additional Project Director",
     linkedinUrl: "https://www.linkedin.com/in/shubhankar-biswas-215758201/",
     profile_description: [
-      "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
-      "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
+      "Mr. Shubhankar Biswas is currently posted Superintending Engineer in Mohanpura-Kundalia PMU, Madhya Pradesh Water Resources Department. He is currently involved with the implementation of ADB assisted Kundalia Irrigation System (130,000 ha). Prior to the current assignment, he was involved with World Bank assisted Madhya Pradesh Water Sector Restructuring Project.",
+      "He is graduate in Civil Engineering and post-graduate in Geotechnical Engineering from NIT Bhopal, India and has put in more than 18 years of service in Madhya Pradesh Water Resources Department. He likes to collaborate with Department engineers for formulation and implementation of pressurized piped irrigation projects. Apart from water resources development, his areas of competence include River Basin Planning and has co-authored Sind and Chambal River Basin Plans of Madhya Pradesh in association with IHE-Delft. His areas of interest are Integrated Water Resources Management, hydro-informatics and pressurized pipe irrigation systems for high performance agriculture",
     ],
     experience: [
       {
-        position: "Superintending Engineer & Project Administrator",
-        department: "Government Of Madhya Pradesh, Water resources Department",
-        duration: "Jun 2024 - Present · 3 mos",
+        position:
+          "Superintending Engineer & Additional Project Director in Madhya Pradesh Water Resources Department",
+        department: "Government of Madhya Pradesh",
+        duration: "Jun 2024 - Present",
       },
       {
-        position: "Executive Engineer",
-        department: "Water Resources Department, Madhya Pradesh",
-        duration: "Jan 2018 - Jun 2024 · 6 yrs 6 mos",
+        position: "Project Manager",
+        department: "Government of Madhya Pradesh- Water Resources Department",
+        duration: "Jan 2018 - Aug 2024",
+      },
+      {
+        position: "Government of Madhya Pradesh, Water Resources Department",
+        department: "Assistant Engineer & Sub Divisional Officer",
+        duration: "Feb 2015 - Dec 2017",
+      },
+      {
+        position: "OSD to Project Director",
+        department: "Government of Madhya Pradesh, Water Resources Department",
+        duration: "Feb 2010 - Nov 2013",
       },
       {
         position: "Assistant Engineer",
-        department: "Madhya Pradesh Water Resources Department",
-        duration: "Jan 2006 - Dec 2017 · 12 yrs",
+        department: "Government of Madhya Pradesh- Water Resources Depatment",
+        duration: "Jan 2006 - Jan 2010 ",
       },
     ],
   },
   {
     fullName: "Shri Sandeep Dubey",
     profilePicture: profilePicture_2,
-    designation: "Executive Engineer and Program Manager",
+    designation: "Executive Engineer",
     linkedinUrl: "https://www.linkedin.com/in/sandeep-dubey-b2972731b/",
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
@@ -376,19 +416,24 @@ const teamMemberDetails_array = [
     ],
     experience: [
       {
-        position: "Superintending Engineer & Project Administrator",
-        department: "Government Of Madhya Pradesh, Water resources Department",
-        duration: "Jun 2024 - Present · 3 mos",
-      },
-      {
-        position: "Executive Engineer",
-        department: "Water Resources Department, Madhya Pradesh",
-        duration: "Jan 2018 - Jun 2024 · 6 yrs 6 mos",
+        position: "MKPMU Project Manager",
+        department: "Executive Engineer",
+        duration: "2018- Present",
       },
       {
         position: "Assistant Engineer",
-        department: "Madhya Pradesh Water Resources Department",
-        duration: "Jan 2006 - Dec 2017 · 12 yrs",
+        department: "Bureau of Design and Hydraulics (BODHI)",
+        duration: "2013 -2018",
+      },
+      {
+        position: "Assistant Engineer",
+        department: "Water Resources Department, Madhya Pradesh",
+        duration: "2012",
+      },
+      {
+        position: "Civil Engineering",
+        department: "Samrat Ashok Technological Institute",
+        duration: "2007 - 2011",
       },
     ],
   },
@@ -442,17 +487,17 @@ const teamMemberDetails_array = [
       {
         position: "Superintending Engineer & Project Administrator",
         department: "Government Of Madhya Pradesh, Water resources Department",
-        duration: "Jun 2024 - Present · 3 mos",
+        duration: "Jun 2024 - Present",
       },
       {
         position: "Executive Engineer",
         department: "Water Resources Department, Madhya Pradesh",
-        duration: "Jan 2018 - Jun 2024 · 6 yrs 6 mos",
+        duration: "Jan 2018 - Jun 2024",
       },
       {
         position: "Assistant Engineer",
         department: "Madhya Pradesh Water Resources Department",
-        duration: "Jan 2006 - Dec 2017 · 12 yrs",
+        duration: "Jan 2006 - Dec 2017",
       },
     ],
   },
@@ -1002,11 +1047,11 @@ const awardsAndAcknowledgement = [
           },
           {
             picture: awards_7,
-            description: "Mr. Sandeep Dubey, Project Manager",
+            description: "Mr. Vipin Tiwari, Assistant Manager",
           },
           {
             picture: awards_8,
-            description: "Mr. Sandeep Dubey, Project Manager",
+            description: "Mr. Kamta Prasad Kadium, Assistant Manager",
           },
         ],
       },
