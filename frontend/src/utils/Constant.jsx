@@ -6,6 +6,19 @@ import { TestimonialSlider } from "../components/ui/Slider/TestimonialSlider/Tes
 import HeroSlider from "../components/ui/Slider/HeroSlider/HeroSlider";
 
 import visitPicture_1 from "../assets/images/visitPicture_1.png";
+import visitPicture_JRS_1 from "../assets/images/JRS_visit_img1.jpg";
+import visitPicture_JRS_2 from "../assets/images/JRS_visit_img2.jpg";
+
+import visitPicture_SSC_1 from "../assets/images/shivrajSingh_visit_img1.jpg";
+
+import visitPicture_VS_1 from "../assets/images/VinaySahasrabuddhe_visit_img1.jpg";
+
+import visitPicture_VKK_1 from "../assets/images/ShriVirendraKumarKhatik_visit_img1.jpg";
+import visitPicture_VKK_2 from "../assets/images/ShriVirendraKumarKhatik_visit_img2.jpg";
+
+import visitPicture_RS_1 from "../assets/images/RajendraShukla_visit_img1.jpg";
+
+import visitPicture_RKandAK_1 from "../assets/images/ASRajeshKumarVerma&CommissionerAnujKanwal.jpg";
 
 import dam1 from "../assets/images/mohanpuraDam_1.png";
 import dam2 from "../assets/images/kindaliyaDam_1.png";
@@ -59,12 +72,6 @@ import profilePicture_3 from "../assets/images/VipinSir.png";
 import profilePicture_4 from "../assets/images/SilawatSir.png";
 import profilePicture_5 from "../assets/images/ShubhankarSir.png";
 import profilePicture_6 from "../assets/images/sumitSingh.jpg";
-
-import visitor_1 from "../assets/images/vinay_sahastrabuddhe.jpg";
-import visitor_2 from "../assets/images/ShivrajSinghChouhan.png";
-import visitor_3 from "../assets/images/rodmal_nagar.jpeg";
-import visitor_4 from "../assets/images/jyotiraditya_scindia.jpg";
-import visitor_5 from "../assets/images/MohanYadavVisitor.png";
 
 import projectHighlight_icon1 from "../assets/images/totalIrrigatedArea.svg";
 import projectHighlight_icon2 from "../assets/images/systemEfficiency.svg";
@@ -1543,37 +1550,41 @@ const TIMELINE_EVENTS = [
 const visitorData = [
   {
     visitorName: "Mohan Yadav",
-    visitorPicture: visitor_5,
+    visitorPicture:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156138/MKPMU/image/Visitors/Mohan%20Yadav/aqi4njwug15jfuup2sfd.png",
     visitorDesignation: "Chief Minister of Madhya Pradesh",
-    visitPictures: [visitPicture_1, visitPicture_1],
+    visitPictures: [visitPicture_JRS_1, visitPicture_JRS_2],
     visitDate: "12/10/2024",
     visitDescription: [
-      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
+      "Hon. Minister Govt of India, Civil Aviation Ministry ,Shri Jyotiraditya Madhavrao Scindia, Hon. Minister Govt of Madhya Pradesh, Water Resources Dept, Shri Tulsi Ram Silawat, Hon. Minister Govt of Madhya Pradesh, Shri Mohan Yadav",
     ],
   },
   {
     visitorName: "Jyotiraditya Scindia",
-    visitorPicture: visitor_4,
+    visitorPicture:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156154/MKPMU/image/Visitors/Jyotiraditya%20Scindia/pw70olurwnqnltx1fefy.jpg",
     visitorDesignation: "Minister of Communications of India",
-    visitPictures: [visitPicture_1, visitPicture_1],
+    visitPictures: [visitPicture_JRS_1, visitPicture_JRS_2],
     visitDate: "12/10/2024",
     visitDescription: [
-      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
+      "Hon. Minister Govt of India, Civil Aviation Ministry ,Shri Jyotiraditya Madhavrao Scindia, Hon. Minister Govt of Madhya Pradesh, Water Resources Dept, Shri Tulsi Ram Silawat, Hon. Minister Govt of Madhya Pradesh, Shri Mohan Yadav",
     ],
   },
   {
     visitorName: "Shivraj Singh Chouhan",
-    visitorPicture: visitor_2,
+    visitorPicture:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156197/MKPMU/image/Visitors/Shivraj%20Singh/ylpit0qwh8yywx3twiea.png",
     visitorDesignation: "Former Chief Minister of MP",
-    visitPictures: [visitPicture_1, visitPicture_1],
+    visitPictures: [visitPicture_SSC_1],
     visitDate: "12/10/2024",
     visitDescription: [
-      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
+      "Hon. Rajnath Singh, Defence Minister GoI, Hon. Shivraj Singh Chauhan, EX-CM of MP & Hon. Tulsiram Silawat, Minister WRD",
     ],
   },
   {
     visitorName: "Rodmal Nagar",
-    visitorPicture: visitor_3,
+    visitorPicture:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156170/MKPMU/image/Visitors/Rodmal%20Nagar/du0fgjh2hpl9a7i8fm9k.jpg",
     visitorDesignation: "Member of the Lok Sabha",
     visitPictures: [visitPicture_1, visitPicture_1],
     visitDate: "12/10/2024",
@@ -1583,14 +1594,37 @@ const visitorData = [
   },
   {
     visitorName: "Vinay Sahasrabuddhe",
-    visitorPicture: visitor_1,
+    visitorPicture:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156182/MKPMU/image/Visitors/Vinay%20Sahasrabuddhe/ftaqpt1vz4xsgzsqrfv3.jpg",
     visitorDesignation: "Former Member of Rajya Sabha",
-    visitPictures: [visitPicture_1, visitPicture_1, visitPicture_1],
+    visitPictures: [visitPicture_VS_1],
     visitDate: "12/10/2024",
     visitDescription: [
-      "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
+      "Hon. Dr. Vinay Sahasrabuddhe President, Indian Council for Cultural Relations",
     ],
   },
+  // {
+  //   visitorName: "Virendra Kumar",
+  //   visitorPicture:
+  //     "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156182/MKPMU/image/Visitors/Vinay%20Sahasrabuddhe/ftaqpt1vz4xsgzsqrfv3.jpg",
+  //   visitorDesignation: "Minister of Social Justice and Empowerment of India",
+  //   visitPictures: [visitPicture_VKK_1, visitPicture_VKK_2],
+  //   visitDate: "12/10/2024",
+  //   visitDescription: [
+  //     "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
+  //   ],
+  // },
+  // {
+  //   visitorName: "Vinay Sahasrabuddhe",
+  //   visitorPicture:
+  //     "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156182/MKPMU/image/Visitors/Vinay%20Sahasrabuddhe/ftaqpt1vz4xsgzsqrfv3.jpg",
+  //   visitorDesignation: "Former Member of Rajya Sabha",
+  //   visitPictures: [visitPicture_VS_1],
+  //   visitDate: "12/10/2024",
+  //   visitDescription: [
+  //     "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
+  //   ],
+  // },
 ];
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
