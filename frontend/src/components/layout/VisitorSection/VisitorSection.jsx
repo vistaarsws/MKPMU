@@ -92,8 +92,9 @@ export default function VisitorSection({ visitToShow }) {
               <p>{selectedVisitor.visitorDesignation}</p>
             </div>
             <p>
-              {selectedVisitor.visitDescription ||
-                "This is a placeholder description."}
+              {selectedVisitor.visitDescription.map((visitors) => {
+                return visitors;
+              }) || "This is a placeholder description."}
             </p>
           </div>
         </div>
