@@ -1023,12 +1023,17 @@ const kundaliyaDetails = {
     {
       type: "paragraph",
       content:
-        "*Water Source and Delivery:* Water is drawn from the Kundalia Dam and distributed via pressurized pipeline networks, ensuring minimal losses and efficient delivery.",
+        "**Water Source and Delivery:** Water is drawn from the Kundalia Dam and distributed via pressurized pipeline networks, ensuring minimal losses and efficient delivery.",
+    },
+    {
+      type: "paragraph",
+      content:
+        "**Pump Houses:** Multi-stage vertical turbine pumps with standby units ensure reliable water lifting across varying duty heads.",
     },
     {
       type: "list",
       items: [
-        "*Rising Mains and Distribution Network:*",
+        "**Rising Mains and Distribution Network:**",
         "Rising mains transport water to distribution chambers.",
         "MS and HDPE pipelines ensure water delivery across zones with reduced friction losses.",
       ],
@@ -1037,17 +1042,17 @@ const kundaliyaDetails = {
     {
       type: "paragraph",
       content:
-        "*Zonal Coverage:* Water is distributed to multiple zones for irrigation, benefiting thousands of hectares of farmland and supporting domestic and industrial needs.",
+        "**Zonal Coverage:** Water is distributed to multiple zones for irrigation, benefiting thousands of hectares of farmland and supporting domestic and industrial needs.",
     },
     {
       type: "paragraph",
       content:
-        "*Energy and Power Management:* Dual power supplies (132 kV and 220 kV lines) with a switchyard ensure uninterrupted power for operations.",
+        "**Energy and Power Management:** Dual power supplies (132 kV and 220 kV lines) with a switchyard ensure uninterrupted power for operations.",
     },
     {
       type: "list",
       items: [
-        "*Automation and Monitoring:*",
+        "**Automation and Monitoring:**",
         "SCADA systems enable real-time monitoring, remote operation, and efficient flow regulation.",
         "Automation minimizes manual intervention, enhancing system efficiency.",
       ],
@@ -1055,17 +1060,17 @@ const kundaliyaDetails = {
     {
       type: "paragraph",
       content:
-        "*Water Use Efficiency:* Pressurized systems and micro-irrigation enable precise water application, maximizing water use efficiency and crop productivity.",
+        "**Water Use Efficiency:** Pressurized systems and micro-irrigation enable precise water application, maximizing water use efficiency and crop productivity.",
     },
     {
       type: "paragraph",
       content:
-        "*Reliability and Redundancy:* Standby pumps and backup power sources provide operational continuity during maintenance or emergencies.",
+        "**Reliability and Redundancy:** Standby pumps and backup power sources provide operational continuity during maintenance or emergencies.",
     },
     {
       type: "list",
       items: [
-        "*Environmental Considerations:*",
+        "**Environmental Considerations:**",
         "Reduced land footprint through underground pipelines.",
         "Minimization of evaporation and seepage losses.",
       ],
@@ -1073,12 +1078,12 @@ const kundaliyaDetails = {
     {
       type: "paragraph",
       content:
-        "*Maintenance and Monitoring:* Regular maintenance schedules, inspection, and performance monitoring ensure the longevity and reliability of the system.",
+        "**Maintenance and Monitoring:** Regular maintenance schedules, inspection, and performance monitoring ensure the longevity and reliability of the system.",
     },
     {
       type: "paragraph",
       content:
-        "*Sustainability and Future Readiness:* Designed for scalability and adaptability to changing agricultural and industrial demands, supporting long-term regional development.",
+        "**Sustainability and Future Readiness:** Designed for scalability and adaptability to changing agricultural and industrial demands, supporting long-term regional development.",
     },
   ],
   // mainComponents: [
@@ -1159,7 +1164,7 @@ const kundaliyaDetails = {
     {
       type: "list",
       items: [
-        "*Water Source and Initial Infrastructure*",
+        "**Water Source and Initial Infrastructure**",
         "The *Kundalia Dam*, located on the *Kalisindh River*, serves as the primary water source for the project. The dam is strategically positioned to store and regulate water, which is then distributed through a network of advanced pumping and pipeline systems.",
         "The dam's *Full Reservoir Level (FRL)* is at *+400.00 meters*, providing a stable supply of water that is essential for the irrigation process. Water from the dam is conveyed through an *approach channel measuring 1.8 km* and then pumped into the irrigation system via multiple *pump houses* located on both the *Right Bank and Left Bank.*",
       ],
@@ -1168,15 +1173,15 @@ const kundaliyaDetails = {
     {
       type: "list",
       items: [
-        "*Pumping and Distribution Infrastructure*",
-        "Water is pumped through Vertical Turbine Pumps (VT Pumps) in strategically located pump houses. Each pump house is designed to handle high volumes of water, ensuring that it is efficiently lifted and distributed across vast distances. The system employs multiple pumping units in each station, optimized for different operational conditions:",
+        "**Pumping and Distribution Infrastructure**",
+        "Water is pumped through *Vertical Turbine Pumps (VT Pumps)* in strategically located *pump houses*. Each pump house is designed to handle high volumes of water, ensuring that it is efficiently lifted and distributed across vast distances. The system employs multiple pumping units in each station, optimized for different operational conditions:",
 
         "*Right Bank Pump Houses:*",
-        "Pump House-1 has a capacity of 12,869 cum/hr at a 57.5m head.",
-        "Pump House-3 operates with a capacity of 5,589 cum/hr at a 42m head.",
+        "*Pump House-1* has a capacity of 12,869 cum/hr at a 57.5m head.",
+        "*Pump House-3* operates with a capacity of 5,589 cum/hr at a 42m head.",
         "*Left Bank Pump Houses:*",
-        "Pump House-2 has a capacity of 11,450 cum/hr at a 32.5m head.",
-        "Pump House-4 handles 5,767 cum/hr at a 52m head.",
+        "*Pump House-2* has a capacity of 11,450 cum/hr at a 32.5m head.",
+        "*Pump House-4* handles 5,767 cum/hr at a 52m head.",
         "These pump houses work in tandem, continuously supplying water to the system.",
       ],
     },
@@ -1184,39 +1189,39 @@ const kundaliyaDetails = {
     {
       type: "list",
       items: [
-        "*Mainline and Distribution Networks*",
-        "The project employs an extensive network of pipelines to distribute water efficiently. The network includes both Mild Steel (MS) pipes and High-Density Polyethylene (HDPE) pipes, spanning over 6,400 km on the Left Bank and 367 km on the Right Bank.",
-        "*MS Pipes*(ranging from *400 mm to 3,000 mm diameter*) carry high volumes of water over long distances",
-        "*HDPE Pipes* (ranging from *63 mm to 280 mm diameter*) are used for smaller, localized distribution.",
-        "The water is conveyed through the rising main pipelines (designated as RM1, RM2, RM3) and various distribution chambers (DCs), which help in regulating and directing water to the designated zones.Each zone is designated a specific volume of water to ensure the equitable distribution of resources across six zones (with areas ranging from 5,518 hectares to 22,926 hectares).",
+        "**Mainline and Distribution Networks**",
+        "The project employs an extensive network of pipelines to distribute water efficiently. The network includes both *Mild Steel (MS) pipes and High-Density Polyethylene (HDPE) pipes*, spanning over *6,400 km on the Left Bank and 367 km on the Right Bank.*",
+        "MS Pipes (ranging from *400 mm to 3,000 mm diameter*) carry high volumes of water over long distances",
+        "HDPE Pipes (ranging from *63 mm to 280 mm diameter*) are used for smaller, localized distribution.",
+        "The water is conveyed through the *rising main pipelines (designated as RM1, RM2, RM3)* and various *distribution chambers (DCs)*, which help in regulating and directing water to the designated zones.Each zone is designated a specific volume of water to ensure the equitable distribution of resources across *six zones* (with areas ranging from *5,518 hectares to 22,926 hectares*).",
       ],
     },
     {
       type: "list",
       items: [
-        "*Distribution Chambers and Control Systems*",
-        "Distribution Chambers (DCs) are key components in regulating water flow within each zone. They are equipped with gates, valves, and flow meters that allow operators to control and monitor the flow of water based on real-time demands. The distribution system is split into several chambers:",
-        "DC-1, DC-2, DC-3, and DC-4 are connected to the rising mains and facilitate water distribution to each zone.",
-        "The DC chambers are connected by pipelines of varying sizes and are strategically placed to minimize water losses and optimize water use",
-        "Each zone is provided with a regulated supply of water to support its irrigation needs while also ensuring pressure management within the system.",
+        "**Distribution Chambers and Control Systems**",
+        "*Distribution Chambers (DCs)* are key components in regulating water flow within each zone. They are equipped with *gates, valves, and flow meters* that allow operators to control and monitor the flow of water based on real-time demands. The distribution system is split into several chambers:",
+        "*DC-1, DC-2, DC-3, and DC-4* are connected to the rising mains and facilitate water distribution to each zone.",
+        "The *DC chambers* are connected by pipelines of varying sizes and are strategically placed to minimize water losses and optimize water use",
+        "Each zone is provided with a regulated supply of water to support its *irrigation needs* while also ensuring pressure management within the system.",
       ],
     },
     {
       type: "list",
       items: [
-        "*SCADA and Telemetry Systems*",
-        "The project is controlled and monitored through an advanced SCADA (Supervisory Control and Data Acquisition) system that integrates all elements of the irrigation system into a centralized control platform. SCADA allows for remote monitoring, operation, and troubleshooting of the system’s components.",
-        "Telemetry systems ensure real-time data transmission from field equipment (pumps, flow meters, gates, etc.) to the central control center, allowing operators to monitor critical parameters like water flow, pressure, and pump performance.",
-        "Automated Control Valves and Gates in the system ensure that water is distributed efficiently to each zone, and any disruptions are quickly detected and corrected remotely.",
+        "**SCADA and Telemetry Systems**",
+        "The project is controlled and monitored through an advanced *SCADA (Supervisory Control and Data Acquisition) system* that integrates all elements of the irrigation system into a centralized control platform. SCADA allows for *remote monitoring, operation, and troubleshooting* of the system’s components.",
+        "*Telemetry systems* ensure real-time data transmission from field equipment (pumps, flow meters, gates, etc.) to the central control center, allowing operators to monitor critical parameters like water flow, pressure, and pump performance.",
+        "*Automated Control Valves and Gates* in the system ensure that water is distributed efficiently to each zone, and any disruptions are quickly detected and corrected remotely.",
       ],
     },
     {
       type: "list",
       items: [
-        "*Power Supply and Backup Infrastructure*",
-        "The project is supported by a robust power supply infrastructure, ensuring that all pumping and distribution systems operate without disruption:",
-        "132 kV transmission lines supply power to the main pumping stations, while 220/132 kV substations are located at Nalkheda to ensure power redundancy.",
-        "Backup generators and additional 132/11.5 kV switch yards are installed to provide backup power in case of grid failure, ensuring continuous water supply.",
+        "**Power Supply and Backup Infrastructure**",
+        "The project is supported by a robust *power supply infrastructure*, ensuring that all pumping and distribution systems operate without disruption:",
+        "*132 kV transmission lines* supply power to the main pumping stations, *while 220/132 kV substations* are located at *Nalkheda* to ensure power redundancy.",
+        "*Backup generators* and additional *132/11.5 kV switch yards* are installed to provide backup power in case of grid failure, ensuring continuous water supply.",
       ],
     },
   ],
@@ -1231,16 +1236,16 @@ const mohanpuraDetails = {
     {
       type: "paragraph",
       content:
-        "The operation philosophy of irrigation projects in Madhya Pradesh revolves around a *Source to Farm* approach, utilizing SCADA communication for remote control and monitoring. Key points include:",
+        "The operation philosophy of irrigation projects in Madhya Pradesh revolves around a *Source to Farm* approach, utilizing *SCADA* communication for remote control and monitoring. Key points include:",
     },
     {
       type: "list",
       items: [
-        "*System Control :* The entire irrigation system is monitored from the water source to chak levels (30 or 20 ha), extending to sub-chaks (5 ha) and individual farm outlets (1 ha).",
-        "*Outlet Management :* Each 1 ha outlet provides a residual head of 20 meters and operates under rotational irrigation management.",
-        "*Micro Irrigation Systems (MIS) :* Farmers are responsible for procuring and connecting MIS to the 1 ha outlets.",
-        "*Integrated Automation :* All automation components, from the pump house to the field outlets, are integrated to ensure efficient operations.",
-        "*Remote Monitoring :* Remote control of key parameters is vital for successful operation and maintenance of the large-scale Pressurized Irrigation Network System (PINS).",
+        "**System Control :** The entire irrigation system is monitored from the water source to chak levels (30 or 20 ha), extending to sub-chaks (5 ha) and individual farm outlets (1 ha).",
+        "**Outlet Management :** Each 1 ha outlet provides a residual head of 20 meters and operates under rotational irrigation management.",
+        "**Micro Irrigation Systems (MIS) :** Farmers are responsible for procuring and connecting MIS to the 1 ha outlets.",
+        "**Integrated Automation :** All automation components, from the pump house to the field outlets, are integrated to ensure efficient operations.",
+        "**Remote Monitoring :** Remote control of key parameters is vital for successful operation and maintenance of the large-scale Pressurized Irrigation Network System (PINS).",
       ],
     },
   ],
@@ -1306,7 +1311,7 @@ const mohanpuraDetails = {
     {
       type: "list",
       items: [
-        "*Water is then directed to different zones:*",
+        "**Water is then directed to different zones:**",
         "Kalipeeth Booster Pumping Station boosts water pressure to supply Area B and Area C, ensuring the water reaches these higher-elevation regions.",
         "The Small Booster Pumping Station handles water distribution to Area D.",
         "⁠Each area has its own distribution network to ensure water is delivered effectively to farmers' fields, including a provision for delivering water with adequate pressure at each outlet.",
