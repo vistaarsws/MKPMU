@@ -1,10 +1,10 @@
 import "./GridContentTemplate.css";
 import Card from "../../Cards/Card/Card";
 import Header from "../../Header/Header";
-import Newsletter from "../../Cards/newsletter/Newsletter";
-import rightArrow from "../../../../assets/images/Arrow right.svg";
+// import Newsletter from "../../Cards/newsletter/Newsletter";
+// import rightArrow from "../../../../assets/images/Arrow right.svg";
 import { useNavigate, Link, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ImageModal from "../../ImageModal/ImageModal";
 
 export default function GridContentTemplate(template) {
