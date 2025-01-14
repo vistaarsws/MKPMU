@@ -2,16 +2,18 @@
   padding: 3% 5%;
 }
 .memberProfile_container > section:first-of-type {
-  margin: 0 auto;
-  width: 80vw;
-  border-radius: 2.4rem;
-  overflow: hidden;
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
   height: auto;
+  gap: 2rem;
+  place-content: start;
+}
 
-  justify-content: center;
+.memberProfile_article {
   background-color: #e9fcff;
-  align-items: center;
+  border-radius: 2.4rem;
+  padding: 4rem 6rem;
+  flex: 1 0;
 }
 
 .memberProfile_article ul li {
@@ -31,6 +33,10 @@
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2rem;
+
+  & > em {
+    font-weight: 400;
+  }
 }
 .memberProfile_article ul li h4 {
   font-size: 1.4rem;
@@ -40,20 +46,20 @@
 }
 
 .memberProfile_container > section:first-of-type figure {
-  max-width: 55rem;
+  /* max-width: 55rem; */
+
   height: 88vh;
   position: relative;
+  border-radius: 2.4rem;
+  overflow: hidden;
 }
 
 .memberProfile_container > section:first-of-type figure img {
   object-fit: cover;
+  /* object-position: top; */
+
   height: 100%;
   width: 100%;
-}
-
-.memberProfile_container > section:first-of-type article {
-  flex: 1 0;
-  padding: 0 6rem;
 }
 
 .memberProfile_container > section:first-of-type article div:first-of-type {
@@ -89,7 +95,7 @@
   font-size: 1.6rem;
 }
 
-@media screen and (max-width: 1482px) {
+/* @media screen and (max-width: 1482px) {
   .memberProfile_container {
     padding: 0;
   }
@@ -102,9 +108,9 @@
   .memberProfile_container > section:first-of-type article {
     padding-right: 0;
   }
-}
+} */
 
-@media screen and (max-width: 1250px) {
+/* @media screen and (max-width: 1250px) {
   .memberProfile_container section article div:first-of-type {
     width: 100%;
     margin: 2% auto;
@@ -128,27 +134,45 @@
   .memberProfile_container > section:first-of-type article {
     padding: 0;
   }
-}
-@media screen and (max-width: 768px) {
+} */
+
+@media screen and (max-width: 1024px) {
   .memberProfile_container > section:first-of-type {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .memberProfile_container > section:first-of-type {
     width: 100%;
-    border-radius: 0;
     padding: 10%;
     margin: 0% auto;
+  } */
+
+  .memberProfile_article {
+    padding: 4rem;
   }
 
   .memberProfile_container > section:first-of-type figure {
     height: auto;
   }
+
+  .memberProfile_container {
+    padding: 5% 2%;
+  }
+
   .memberProfile_container > section:first-of-type figure img {
     object-fit: contain;
-    height: 100%;
-    width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
   .memberProfile_article div:first-of-type div:first-of-type h1 {
     font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .memberProfile_article {
+    padding: 2.5rem;
   }
   .memberProfile_article div:first-of-type div:first-of-type h1 + p {
     font-size: 1.8rem;
