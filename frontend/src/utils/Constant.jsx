@@ -307,7 +307,6 @@ const teamMemberDetails_array = [
 
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
-      "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
     ],
     experience: [
       {
@@ -318,11 +317,24 @@ const teamMemberDetails_array = [
       {
         position: "Executive Engineer (EE)",
         department: "Deori Sub Division & Betul Division",
+        description: [
+          {
+            data: " Completed three minor dams and regulated other medium tanks in Katchnamanadi",
+          },
+          {
+            data: "Later transferred to Betul Division as EE in Multai Division. Constructed Madhor Project, Parasdor Bhardha (pressurized micro irrigation work) and approximately 15 minor tanks",
+          },
+        ],
         duration: "May 2015 - September 2015",
       },
       {
         position: "Sub Divisional Officer (SDO)",
         department: "Deori Sub Division",
+        description: [
+          {
+            data: "handling Mogha Project and Minor Sub Division, including construction of Nagpura Nagjhiri Medium Tank in Raisen District",
+          },
+        ],
         duration: "October 2013 - April 2015",
       },
       {
@@ -333,11 +345,22 @@ const teamMemberDetails_array = [
       {
         position: "Sub Divisional Officer (SDO)",
         department: "Barna Major Project",
+        description: [
+          {
+            data: "Managing canal lining, structure construction, and canal regulation",
+          },
+        ],
         duration: "December 2002 - May 2008",
       },
+
       {
         position: "Sub Divisional Officer (SDO)",
         department: "Kolar Major Project",
+        description: [
+          {
+            data: "Overseeing canal lining, structure construction, and canal regulation",
+          },
+        ],
         duration: "June 1993 - October 2002",
       },
       {
@@ -419,22 +442,44 @@ const teamMemberDetails_array = [
     linkedinUrl: "https://www.linkedin.com/in/sandeep-dubey-b2972731b/",
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
-      "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
     ],
     experience: [
       {
         position: "MKPMU Project Manager",
         department: "Executive Engineer",
+        description: [
+          { data: "Executive Engineer  ( JUNE 2024)" },
+          { data: "Mohanpura LBC Ext. Pachore : SDO" },
+          { data: " Mohanpura RBC Ext. Abhaypura : SDO" },
+        ],
         duration: "2018- Present",
       },
+      //       - Pressurised Piped Irrigation Network - 1. Technical Circulars, Guidelines, Rate Analysis Guidelines
+      // - Structural Design and Drawing
+      // - CSR
+
       {
         position: "Assistant Engineer",
         department: "Bureau of Design and Hydraulics (BODHI)",
+        description: [
+          {
+            data: "Pressurised Piped Irrigation Network (Technical Circulars, Guidelines, Rate Analysis Guidelines)",
+          },
+          { data: "Structural Design and Drawing" },
+          { data: " CSR" },
+        ],
         duration: "2013 -2018",
       },
       {
         position: "Assistant Engineer",
-        department: "Water Resources Department, Madhya Pradesh",
+        department: "Joined Water Resources Department (WRD), MP",
+        description: [
+          {
+            data: "Rewa : Bahoti Canal",
+            subData: [{ data: "DPR,Planning,Estimation,Tendering" }],
+          },
+        ],
+        // "Rewa : Bahoti Canal - 1. DPR 2. Planning 3. Estimation 4. Tendering",
         duration: "2012",
       },
       {

@@ -12,6 +12,33 @@ export default function MemberProfile() {
     return memberName === currentPage;
   });
 
+  // Component to render the nested structure
+  const NestedList = ({ data }) => {
+    return (
+      <ul>
+        {data?.map((item, index) => (
+          <li
+            key={index}
+            style={{
+              margin: "0.1rem 0",
+              listStyle: "none",
+              marginLeft: "1rem",
+            }}
+          >
+            {/* Display main data */}
+            <span style={{ fontWeight: 400, fontSize: "1.2rem" }}>
+              {item.data}
+            </span>
+            {/* Check for and render subData recursively */}
+            {item.subData && item.subData.length > 0 && (
+              <NestedList data={item.subData} />
+            )}
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
   return (
     <div className="memberProfile_container">
       <section>
@@ -44,9 +71,13 @@ export default function MemberProfile() {
             {memberProfile.experience.map((exp, index) => {
               return (
                 <li key={index}>
-                  <h3>{exp.position}</h3>
+                  <h3>
+                    {exp.position} <em>({exp.duration})</em>
+                  </h3>
                   <h4>{exp.department}</h4>
-                  <em>{exp.duration}</em>
+                  <h5>
+                    <NestedList data={exp.description} />
+                  </h5>
                 </li>
               );
             })}
