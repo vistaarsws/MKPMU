@@ -11,8 +11,6 @@ import visitPicture_JRS_2 from "../assets/images/JRS_visit_img2.jpg";
 
 import visitPicture_SSC_1 from "../assets/images/shivrajSingh_visit_img1.jpg";
 
-import visitPicture_VS_1 from "../assets/images/VinaySahasrabuddhe_visit_img1.jpg";
-
 // import visitPicture_VKK_1 from "../assets/images/ShriVirendraKumarKhatik_visit_img1.jpg";
 // import visitPicture_VKK_2 from "../assets/images/ShriVirendraKumarKhatik_visit_img2.jpg";
 
@@ -108,83 +106,120 @@ import awards_8 from "../assets/images/awards-8.png";
 // -------------------------------------------------------NEWS----------------------------------------------------------------------------
 const news = {
   NEWS_1:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413429/MKPMU/image/News/hj7efozh7ifaawrd5b9m.png",
-  NEWS_2:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413429/MKPMU/image/News/dmzasc8yqifssckd6f3r.png",
-  NEWS_3:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413429/MKPMU/image/News/ync9spw7ybt1mqxrb6n0.png",
-  NEWS_4:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413429/MKPMU/image/News/btph66r4btgs4ikc86sk.png",
-  NEWS_5:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/kb4ztdt6tdfzj8qro7ho.png",
-  NEWS_6:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/k6yjhtyyezgit17jbg4v.png",
-  NEWS_7:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/e1ouz7janvijaqszwh0n.png",
-  NEWS_8:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/vg6tj0cidgvfhuoax8el.png",
-  NEWS_9:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/ax8pkfiiozs3hb9lcwzh.png",
-  NEWS_10:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/nqjw5qiqzeefdkmphfzj.png",
-  NEWS_11:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/yhe5o4zomixahyxsugxk.png",
-  NEWS_12:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/q28lbh2uxtiq6badnlit.png",
-  NEWS_13:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/mohxz0ujfvy6tipkcn9b.png",
-  NEWS_14:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/wplzqrxkzjfrb9v9ax7b.png",
-  NEWS_15:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/m1f4uodtztz19fd7d5hy.png",
-  NEWS_16:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/zbdrsfdkicbv2snyotxq.png",
-  NEWS_17:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/tbnjkstkms1fesgb8ukk.png",
-  NEWS_18:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/ax5ktnzo424wbt24jnyd.png",
-  NEWS_19:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/ragmhafefphpt9c9tf0j.png",
-  NEWS_20:
     "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/ksiz7ugkxthg8ykgev25.png",
-  NEWS_21:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/b3cwrpfv8ncs8nbpj3ej.png",
-  NEWS_22:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/wdu37ffukqenblppop2d.png",
-  NEWS_23:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/vrzbfnlza7xgqby9azfj.png",
-  NEWS_24:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/sdvphtg9im6cjopof3mx.png",
-  NEWS_25:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/hfeanxsh4yvdk5r2ybc6.png",
-  NEWS_26:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/b6bchcrtotwi6kul8k7x.png",
-  NEWS_27:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/grhlnbx1nvzezojlxy7f.png",
-  NEWS_28:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/tqvjjsanjmfamrtgxsv3.png",
-  NEWS_29:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/jjhzxsz0lw4qvqhzgfaa.png",
-  NEWS_30:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/xgrstltdzobaew0og4du.png",
-  NEWS_31:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/dez5jjbeswabt6laf8sh.png",
-  NEWS_32:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/fgk1wl49uqfuglsmn0qn.png",
-  NEWS_33:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/lks3fvyouxqa4jsv9rn3.png",
-  NEWS_34:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/rrh5kxhdgpnhr73e7kkp.png",
-  NEWS_35:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/smumnwlzasex9pfoowlm.png",
-  NEWS_36:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/x3qm84vsl8ukcucgsh4j.png",
-  NEWS_37:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413424/MKPMU/image/News/xfcqcmzanavuk4vwmsmg.png",
-  NEWS_38:
-    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413424/MKPMU/image/News/exzzdm9qqz8dxclzvpks.png",
-  NEWS_39:
+
+  NEWS_2:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413429/MKPMU/image/News/hj7efozh7ifaawrd5b9m.png",
+
+  NEWS_3:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/e1ouz7janvijaqszwh0n.png",
+
+  NEWS_4:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/k6yjhtyyezgit17jbg4v.png",
+
+  NEWS_5:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413429/MKPMU/image/News/dmzasc8yqifssckd6f3r.png",
+
+  NEWS_6:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413429/MKPMU/image/News/btph66r4btgs4ikc86sk.png",
+
+  NEWS_7:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413429/MKPMU/image/News/ync9spw7ybt1mqxrb6n0.png",
+
+  // NEWS_14:
+  //   "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/wplzqrxkzjfrb9v9ax7b.png",
+  // NEWS_15:
+  //   "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/m1f4uodtztz19fd7d5hy.png",
+  // NEWS_16:
+  //   "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/zbdrsfdkicbv2snyotxq.png",
+  // NEWS_17:
+  //   "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/tbnjkstkms1fesgb8ukk.png",
+  // NEWS_18:
+  //   "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/ax5ktnzo424wbt24jnyd.png",
+  // NEWS_19:
+  //   "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413427/MKPMU/image/News/ragmhafefphpt9c9tf0j.png",
+
+  NEWS_8:
     "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413424/MKPMU/image/News/vnkyakgrw8cf1wtydd16.png",
+  NEWS_9:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413424/MKPMU/image/News/exzzdm9qqz8dxclzvpks.png",
+  NEWS_10:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413424/MKPMU/image/News/xfcqcmzanavuk4vwmsmg.png",
+  NEWS_11:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/x3qm84vsl8ukcucgsh4j.png",
+  NEWS_12:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/rrh5kxhdgpnhr73e7kkp.png",
+  NEWS_13:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/smumnwlzasex9pfoowlm.png",
+  NEWS_14:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/fgk1wl49uqfuglsmn0qn.png",
+  NEWS_15:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/xgrstltdzobaew0og4du.png",
+  NEWS_16:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/tqvjjsanjmfamrtgxsv3.png",
+  NEWS_17:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/sdvphtg9im6cjopof3mx.png",
+  NEWS_18:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/wdu37ffukqenblppop2d.png",
+  NEWS_19:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/vg6tj0cidgvfhuoax8el.png",
+  NEWS_20:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/ax8pkfiiozs3hb9lcwzh.png",
+  NEWS_21:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/nqjw5qiqzeefdkmphfzj.png",
+  NEWS_22:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/yhe5o4zomixahyxsugxk.png",
+  NEWS_23:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/q28lbh2uxtiq6badnlit.png",
+  NEWS_24:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413428/MKPMU/image/News/mohxz0ujfvy6tipkcn9b.png",
+  NEWS_25:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/grhlnbx1nvzezojlxy7f.png",
+  NEWS_26:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/jjhzxsz0lw4qvqhzgfaa.png",
+  NEWS_27:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/lks3fvyouxqa4jsv9rn3.png",
+
+  NEWS_28:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736927348/MKPMU/image/News/we4y5ozssealnfongqgn.webp",
+  NEWS_29:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736927347/MKPMU/image/News/mygjy3n1mgxbgeieuboi.webp",
+  NEWS_30:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736927347/MKPMU/image/News/wd9vpknfl2ydiuuqknf2.webp",
+  NEWS_31:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736927347/MKPMU/image/News/kbamft0jixf8o2vgodve.webp",
+  NEWS_32:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736927347/MKPMU/image/News/m7hygxf3joeasfbs9trz.webp",
+  NEWS_33:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736927347/MKPMU/image/News/z4cw8imvchvtxp27ooio.webp",
+  NEWS_34:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736927347/MKPMU/image/News/bebhkzkjmzikryxzgnzu.webp",
+  NEWS_35:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736927347/MKPMU/image/News/lp9u68ut9xgx2ubiwuak.webp",
+  NEWS_36:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736927347/MKPMU/image/News/lcqqyfafeahs7fgvpkiv.webp",
+  NEWS_37:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736927347/MKPMU/image/News/mcrwi5h2rj650aogibaz.webp",
+  NEWS_38:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736937753/MKPMU/image/News/mdvybub6aoohexewp5m5.webp",
+  NEWS_39:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736937753/MKPMU/image/News/ppdllcgygozlky1yqbsn.webp",
+  NEWS_40:
+    "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736937752/MKPMU/image/News/utjwlcbbkepa77mgn2u4.webp",
+
+  // NEWS_21:
+  //   "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/b3cwrpfv8ncs8nbpj3ej.png",
+
+  // NEWS_23:
+  //   "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/vrzbfnlza7xgqby9azfj.png",
+
+  // NEWS_25:
+  //   "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/hfeanxsh4yvdk5r2ybc6.png",
+  // NEWS_26:
+  //   "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413426/MKPMU/image/News/b6bchcrtotwi6kul8k7x.png",
+
+  // NEWS_31:
+  //   "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734413425/MKPMU/image/News/dez5jjbeswabt6laf8sh.png",
 };
 
 // ------------------------------------------------------Words of misinster SLIDER---------------------------------------------------------------------------------------
@@ -765,14 +800,14 @@ const newsUpdate_page = {
     "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
   cards: [
     {
-      picture: news.NEWS_20,
+      picture: news.NEWS_1,
       title:
         "3 साल में 1.70 लाख हेक्टेयर में सिंचाई:मोहनपुरा कुंडालिया परियोजना में सर्वश्रेष्ठ प्रदर्शन, जिला अभियंता को मिला राज्य स्तरीय पुरस्कार",
       date: "",
       url: "https://www.bhaskar.com/local/mp/rajgarh/news/irrigation-in-170-lakh-hectares-in-3-years-132613615.html?_branch_match_id=1280028591755248453&utm_campaign=132613615&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0nMzMvM1k3Sy8zTz%2FbPCTLM8y3P8UgCAMurMc4fAAAA ",
     },
     {
-      picture: news.NEWS_1,
+      picture: news.NEWS_2,
       title:
         "50 हजार हेक्टेयर सिंचाई बढ़ाकर एक लाख:इस साल मोहनपुरा की सिंचाई क्षमता बढ़ाकर दोगुनी की, इसी माह मिलेगा किसानों को पानी",
       date: "",
@@ -780,21 +815,21 @@ const newsUpdate_page = {
     },
 
     {
-      picture: news.NEWS_7,
+      picture: news.NEWS_3,
       title:
         "मोहनपुरा सिंचाई परियोजना ने लौटाई तंवरबाड की होली कलेक्टर ने ग्रामीणों के साथ मनाया त्यौहार",
       date: "18-03-2022",
       url: "https://successmedianews.com/?p=1117",
     },
     {
-      picture: news.NEWS_6,
+      picture: news.NEWS_4,
       title:
         "सिंचाई के लिए मोहनपुरा की तर्ज पर कर्नाटक में डालेंगे प्रेशर वाले पाइप",
       date: "01 Sep 2021",
       url: "https://www.naidunia.com/madhya-pradesh/rajgarh-rajgarh-news-7019346",
     },
     {
-      picture: news.NEWS_2,
+      picture: news.NEWS_5,
       title:
         "कुंडालिया वृहद सिंचाई परियोजना:कुंडालिया से पहली बार होगी राजगढ़ व आगर जिले में सिंचाई",
       date: "",
@@ -802,14 +837,14 @@ const newsUpdate_page = {
     },
 
     {
-      picture: news.NEWS_4,
+      picture: news.NEWS_6,
       title:
         "डेम और ब्रिज निर्माण की है योजना:खोयरी महादेव मंदिर पर अब स्टाप डेम नहीं बनाएंगे, पुराने की होगी रिपेयरिंग",
       date: "",
       url: "https://www.bhaskar.com/local/mp/rajgarh/news/now-stop-dam-will-not-be-made-on-khoyari-mahadev-temple-old-one-will-be-repaired-130695586.html",
     },
     {
-      picture: news.NEWS_3,
+      picture: news.NEWS_7,
       title:
         "जल संरक्षण व प्रबंधन पर परिचर्चा:भविष्य के लिए जल संरक्षण व प्रबंधन बहुत जरूरी",
       date: "",
@@ -817,76 +852,76 @@ const newsUpdate_page = {
     },
 
     {
-      picture: news.NEWS_39,
+      picture: news.NEWS_8,
       title:
         "निर्माण कार्य:मोहनपुरा-कुंडालिया परियोजना का बचा काम जल्दी करो पूरा, समय पर देंगे पानी",
       date: "",
       url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/hurry-up-the-remaining-work-of-mohanpura-kundalia-project-water-will-be-given-on-time-127403296.html",
     },
     {
-      picture: news.NEWS_38,
+      picture: news.NEWS_9,
       title:
         "सिंचाई सुविधा:नहर का पानी पहुंचा तो रुका पलायन, खाद्यान्न उत्पादन भी ज्यादा",
       date: "",
       url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/when-canal-water-reached-migration-stopped-food-production-also-increased-128823964.html",
     },
     {
-      picture: news.NEWS_37,
+      picture: news.NEWS_10,
       title:
         "सेवानिवृत्त इंजीनियर्स हुए सम्मानित:इंजीनियर ही बदलते है देश की दिशा, समय से क्वालिटी का काम करना इंजीनियर की बड़ी खूबी",
       date: "",
       url: "https://www.bhaskar.com/local/mp/rajgarh/news/engineers-change-the-direction-of-the-country-doing-quality-work-from-time-to-time-is-a-great-quality-of-an-engineer-130324877.html",
     },
     {
-      picture: news.NEWS_36,
+      picture: news.NEWS_11,
       title:
         "प्रभारी मंत्री के तीखे तेवर:मैं यहां कथा करने नहीं आया हूं, आंकड़ों के साथ बैठक में आएं, नहीं तो कार्रवाई के लिए तैयार रहें",
       date: "",
       url: "https://www.bhaskar.com/local/mp/rajgarh/news/i-am-not-here-to-tell-stories-come-to-the-meeting-with-figures-otherwise-be-ready-for-action-130622626.html",
     },
     {
-      picture: news.NEWS_34,
+      picture: news.NEWS_12,
       title:
         "सिंचाई परियोजना:मंत्री बोले- इसी साल पूरे रकबे में सिंचाई के लिए पानी दीजिए",
       date: "",
       url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/minister-said-give-water-for-irrigation-in-the-entire-area-this-year-128111697.html",
     },
     {
-      picture: news.NEWS_35,
+      picture: news.NEWS_13,
       title:
         "सर्वे पूरा:नेवज पर बनेगा 325 मीटर लंबा, 16 मीटर ऊंचा पुल, ताकि डेम से पानी छाेड़ने पर न रुके रास्ता",
       date: "",
       url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/a-325-meter-long-16-meter-high-bridge-will-be-built-on-the-foundation-so-that-the-way-does-not-stop-when-water-is-released-from-the-dam-128607906.html",
     },
     {
-      picture: news.NEWS_32,
+      picture: news.NEWS_14,
       title:
         "दूधी नदी पर बन रहा 1 किमी लंबा पुल:रेलवे के जीएम ने कहा- पुल निर्माण फरवरी तक पूरा करें",
       date: "",
       url: "https://www.bhaskar.com/local/mp/bhopal/rajgarh/news/railway-gm-said-complete-the-bridge-construction-by-february-128726529.html",
     },
     {
-      picture: news.NEWS_30,
+      picture: news.NEWS_15,
       title:
         "आयोजित हुआ 24 वां कांग्रेस सम्मेलन:अंतर्राष्ट्रीय मंच पर मोहनपुरा परियोजना का प्रस्तुतिकरण",
       date: "13 Feb, 2021",
       url: "https://www.naidunia.com/madhya-pradesh/rajgarh-rajgarh-news-6712642",
     },
     {
-      picture: news.NEWS_28,
+      picture: news.NEWS_16,
       title:
         "बांध से पाइप के जरिये सीधे किसान के खेतों में पहुंचा जल तो खपत हुई आधी",
       date: "22 Nov, 2022 ",
       url: "https://www.jagran.com/chhattisgarh/raipur-raipur-news-changes-in-traditional-methods-of-irrigation-for-water-conservation-jagran-special-23220790.html",
     },
     {
-      picture: news.NEWS_24,
+      picture: news.NEWS_17,
       title: "राजगढ़ में मोहनपुरा-कुण्डालिया डैम से होंगे लाखों किसान लाभांवित",
       date: "1 March, 2018",
       url: "https://www.naidunia.com/madhya-pradesh/rajgarh-mohanpura-kundalia-dam-in-rajgarh-will-benefit-millions-of-farmers-1581043",
     },
     {
-      picture: news.NEWS_22,
+      picture: news.NEWS_18,
       title:
         "Optimising Water Use: Experience and best practices in irrigation in Madhya Pradesh",
       date: "22 Nov, 2022",
@@ -894,44 +929,44 @@ const newsUpdate_page = {
     },
 
     {
-      picture: news.NEWS_8,
+      picture: news.NEWS_19,
       title: "",
       date: "",
       url: "",
     },
     {
-      picture: news.NEWS_9,
+      picture: news.NEWS_20,
       title: "",
       date: "",
       url: "",
     },
     {
-      picture: news.NEWS_10,
+      picture: news.NEWS_21,
       title: "",
       date: "",
       url: "",
     },
     {
-      picture: news.NEWS_11,
+      picture: news.NEWS_22,
       title: "",
       date: "",
       url: "",
     },
     {
-      picture: news.NEWS_12,
+      picture: news.NEWS_23,
       title: "",
       date: "",
       url: "",
     },
     {
-      picture: news.NEWS_13,
+      picture: news.NEWS_24,
       title: "",
       date: "",
       url: "",
     },
 
     {
-      picture: news.NEWS_27,
+      picture: news.NEWS_25,
       title:
         "मुख्य समारोह आयोजित:विद्यार्थियों ने बिखेरे कला-संस्कृति के रंग, बल ने किया मार्च पास्ट",
       date: "",
@@ -939,7 +974,7 @@ const newsUpdate_page = {
     },
 
     {
-      picture: news.NEWS_29,
+      picture: news.NEWS_26,
       title:
         "पौधे रोपे व उनकी देखभाल का संकल्प लिया:अंकुर अभियान- कुंडालिया बांध परिसर में 300 से ज्यादा पौधे रोपे",
       date: "",
@@ -947,9 +982,88 @@ const newsUpdate_page = {
     },
 
     {
-      picture: news.NEWS_33,
+      picture: news.NEWS_27,
       title: "ऐसे हो रही पानी की बचत",
       date: "",
+      url: "",
+    },
+
+    {
+      picture: news.NEWS_28,
+      title: "",
+      date: "18 July, 2024",
+      url: "",
+    },
+    {
+      picture: news.NEWS_29,
+      title: "",
+      date: "18 July, 2024",
+      url: "",
+    },
+    {
+      picture: news.NEWS_30,
+      title: "",
+      date: "18 July, 2024",
+      url: "",
+    },
+    {
+      picture: news.NEWS_31,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: news.NEWS_32,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: news.NEWS_33,
+      title: "",
+      date: "18 July, 2024",
+      url: "",
+    },
+    {
+      picture: news.NEWS_34,
+      title: "",
+      date: "17 July, 2024",
+      url: "",
+    },
+    {
+      picture: news.NEWS_35,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: news.NEWS_36,
+      title: "",
+      date: "18 July, 2024",
+      url: "",
+    },
+    {
+      picture: news.NEWS_37,
+      title: "",
+      date: "18 July, 2024",
+      url: "",
+    },
+    {
+      picture: news.NEWS_38,
+      title: "",
+      date: "20 July, 2024",
+      url: "",
+    },
+    {
+      picture: news.NEWS_39,
+      title: "",
+      date: "",
+      url: "",
+    },
+    {
+      picture: news.NEWS_40,
+      title: "",
+      date: "19 July, 2024",
       url: "",
     },
   ],
@@ -1548,7 +1662,11 @@ const visitorData = [
     visitorPicture:
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156154/MKPMU/image/Visitors/Jyotiraditya%20Scindia/pw70olurwnqnltx1fefy.jpg",
     visitorDesignation: "Minister of Communications of India",
-    visitPictures: [visitPicture_JRS_1, visitPicture_JRS_2],
+    visitPictures: [
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736918253/MKPMU/image/Visits/Jyotiraditya%20Scindia%20Visit/q1nvxd3gvy8mgnzxxnbl.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736918252/MKPMU/image/Visits/Jyotiraditya%20Scindia%20Visit/cgi9z9mnj6gqq4us5ruh.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736918252/MKPMU/image/Visits/Jyotiraditya%20Scindia%20Visit/mpg462doexw4nf40lfmb.webp",
+    ],
     visitDate: "12/10/2024",
     visitDescription: [
       "Hon. Minister Govt of India, Civil Aviation Ministry ,Shri Jyotiraditya Madhavrao Scindia, Hon. Minister Govt of Madhya Pradesh, Water Resources Dept, Shri Tulsi Ram Silawat, Hon. Minister Govt of Madhya Pradesh, Shri Mohan Yadav",
@@ -1570,7 +1688,10 @@ const visitorData = [
     visitorPicture:
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156170/MKPMU/image/Visitors/Rodmal%20Nagar/du0fgjh2hpl9a7i8fm9k.jpg",
     visitorDesignation: "Member of the Lok Sabha",
-    visitPictures: [""],
+    visitPictures: [
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736917980/MKPMU/image/Visits/Rodmal%20Nagar%20Visit/ujeiyz6kla8ilqnyr4oj.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736917979/MKPMU/image/Visits/Rodmal%20Nagar%20Visit/qdtg90x5sgvzven3qdhe.webp",
+    ],
     visitDate: "12/10/2024",
     visitDescription: [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quibusdam, earum aliquid quas, ad autem impedit sunt odio dolor quam ullam voluptates natus distinctio?",
@@ -1581,7 +1702,13 @@ const visitorData = [
     visitorPicture:
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156182/MKPMU/image/Visitors/Vinay%20Sahasrabuddhe/ftaqpt1vz4xsgzsqrfv3.jpg",
     visitorDesignation: "Former Member of Rajya Sabha",
-    visitPictures: [visitPicture_VS_1],
+    visitPictures: [
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736920227/MKPMU/image/Visits/Vinay%20Sahasrabuddhe%20Visit/oon4zw8kwysrhokgbovi.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736920227/MKPMU/image/Visits/Vinay%20Sahasrabuddhe%20Visit/iuvytc80sqvuhlf1cijm.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736920227/MKPMU/image/Visits/Vinay%20Sahasrabuddhe%20Visit/d1doeb56qksgnnm59qgq.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736920227/MKPMU/image/Visits/Vinay%20Sahasrabuddhe%20Visit/faff7aaz48i70zquwqy7.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736920227/MKPMU/image/Visits/Vinay%20Sahasrabuddhe%20Visit/jantsapulo8fjfpmu1bl.webp",
+    ],
     visitDate: "12/10/2024",
     visitDescription: [
       "Hon. Dr. Vinay Sahasrabuddhe President, Indian Council for Cultural Relations",

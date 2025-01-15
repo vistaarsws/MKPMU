@@ -22,6 +22,11 @@
   display: flex;
   flex-direction: column;
 }
+.modalImgSlider_container {
+  height: 100%;
+  max-height: 60vh;
+  overflow-y: hidden;
+}
 
 .modal-content {
   overflow-y: auto;
@@ -55,7 +60,9 @@
 
 .image-container {
   max-height: calc(90vh - 10rem);
-  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
   border-radius: 1.4rem 1.4rem 0 0;
 }
 
