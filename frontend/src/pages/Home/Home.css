@@ -442,6 +442,21 @@
   margin-bottom: 2%;
 } */
 
+.recentUpdateSection {
+  margin: 5% auto;
+  & > h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  & > p {
+    font-size: 1.6rem;
+    padding: 0 2%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .storyContainer {
     justify-content: start;

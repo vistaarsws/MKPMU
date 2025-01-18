@@ -28,7 +28,7 @@ export default function Team() {
   return (
     <div className="otherTeams__container">
       <Team_section />
-      <section>
+      {/* <section>
         <h1>Other Team Members</h1>
         <article>
           {otherTeams.map((otherTeam) => {
@@ -40,7 +40,7 @@ export default function Team() {
             );
           })}
         </article>
-      </section>
+      </section> */}
     </div>
   );
 }

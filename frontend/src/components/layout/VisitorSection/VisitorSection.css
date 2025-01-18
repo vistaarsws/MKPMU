@@ -47,6 +47,7 @@
   max-height: 90vh;
   height: auto;
   overflow-y: scroll;
+  scrollbar-width: none;
   max-width: 60vw;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

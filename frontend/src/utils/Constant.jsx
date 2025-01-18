@@ -18,8 +18,11 @@ import visitPicture_SSC_1 from "../assets/images/shivrajSingh_visit_img1.jpg";
 
 // import visitPicture_RKandAK_1 from "../assets/images/ASRajeshKumarVerma&CommissionerAnujKanwal.jpg";
 
-import dam1 from "../assets/images/mohanpuraDam_1.png";
-import dam2 from "../assets/images/kindaliyaDam_1.png";
+import dam1 from "../assets/images/mohanpuraDam_1.jpg";
+import dam2 from "../assets/images/kindaliyaDam_1.jpg";
+
+import recentUpdate_1 from "../assets/images/facebook postArtboard1copy 2@10x-100.jpg";
+import recentUpdate_2 from "../assets/images/facebook postArtboard1copy@10x-100.jpg";
 
 const writtenTestimonials = {
   writtenTestimonial_1:
@@ -88,7 +91,7 @@ import projectOutreact_5 from "../assets/images/po_5.png";
 import projectOutreact_6 from "../assets/images/po_6.png";
 
 import newUpdate_1 from "../assets/images/newsUpdate_1.png";
-import blogImg_1 from "../assets/images/blogImg_1.jpg";
+import blogImg_1 from "../assets/images/mohanpuraDam_1.jpg";
 
 import researchImg_1 from "../assets/images/researchIcon.png";
 import researchPublication_1 from "../assets/images/researchPublication_1.jpg";
@@ -102,6 +105,7 @@ import awards_5 from "../assets/images/awards-5.png";
 import awards_6 from "../assets/images/awards-6.png";
 import awards_7 from "../assets/images/awards-7.png";
 import awards_8 from "../assets/images/awards-8.png";
+import Card from "../components/ui/Cards/Card/Card";
 
 // -------------------------------------------------------NEWS----------------------------------------------------------------------------
 const news = {
@@ -255,6 +259,32 @@ const ministerQuoteSlides_array = ministerQuoteSlides.map((e, index) => (
   />
 ));
 
+const recentUpdateSlides = [
+  recentUpdate_1,
+  recentUpdate_1,
+  recentUpdate_1,
+  recentUpdate_2,
+];
+
+const recentImg_array = recentUpdateSlides.map((e, index) => {
+  return (
+    <figure
+      style={{
+        height: "100%",
+        margin: "0 2rem",
+        // borderRadius: "1.5rem",
+        overflow: "hidden",
+      }}
+    >
+      <img
+        src={e}
+        alt=""
+        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+      />
+    </figure>
+  );
+});
+
 // ------------------------------------------------------------------TESTIMONIAL SLIDER-----------------------------------------------------------------------------------
 
 const testimonialHeader = {
@@ -338,51 +368,62 @@ const teamMemberDetails_array = [
     fullName: "Shri GP Silawat",
     profilePicture: profilePicture_4,
     linkedinUrl: "/",
-    designation: "Additional Project Director (APD)",
+    designation: "Chief Engineer and Project Director",
 
     profile_description: [
-      "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
+      "From managing canal lining and structure construction in major projects to supervising advanced micro-irrigation systems, my career highlights include delivering innovative water management solutions. Notable achievements include constructing the Madhor Project, Nagpura Nagjhiri Medium Tank, and over 15 minor tanks, directly impacting water security and agricultural productivity in the region.",
     ],
     experience: [
       {
         position: "Additional Project Director (APD)",
         department: "MKPMU Rajgarh",
         duration: "October 2022 - Present",
-      },
-      {
-        position: "Executive Engineer (EE)",
-        department: "Deori Sub Division & Betul Division",
         description: [
           {
-            data: " Completed three minor dams and regulated other medium tanks in Katchnamanadi",
-          },
-          {
-            data: "Later transferred to Betul Division as EE in Multai Division. Constructed Madhor Project, Parasdor Bhardha (pressurized micro irrigation work) and approximately 15 minor tanks",
+            data: "Spearheading operations for large-scale irrigation projects, ensuring timely and efficient delivery",
           },
         ],
-        duration: "May 2015 - September 2015",
+      },
+      {
+        position: "Executive Engineersxc (EE)",
+        department: "Seoni Division & Multai Division, Betul",
+        description: [
+          {
+            data: "Completed three minor dams and regulated medium tanks in the Katchnamanadi region.",
+          },
+          {
+            data: "Constructed the Madhor Project, Parasdor Bhardha (pressurized micro irrigation), and 15 minor tanks.",
+          },
+        ],
+        duration: "May 2015 - October 2022",
       },
       {
         position: "Sub Divisional Officer (SDO)",
         department: "Deori Sub Division",
         description: [
           {
-            data: "handling Mogha Project and Minor Sub Division, including construction of Nagpura Nagjhiri Medium Tank in Raisen District",
+            data: "Managed the Mogha Project and Minor Sub Division.",
+          },
+          {
+            data: "Oversaw the construction of the Nagpura Nagjhiri Medium Tank, Raisen District.",
           },
         ],
         duration: "October 2013 - April 2015",
       },
       {
         position: "Sub Divisional Officer (SDO)",
-        department: "Ashta Sub Division (Minor Project)",
+        department: "Ashta Sub Division",
         duration: "June 2008 - September 2013",
+        description: [
+          { data: "Led operations for minor water resource projects." },
+        ],
       },
       {
         position: "Sub Divisional Officer (SDO)",
         department: "Barna Major Project",
         description: [
           {
-            data: "Managing canal lining, structure construction, and canal regulation",
+            data: "Supervised canal lining, structure construction, and canal regulation.",
           },
         ],
         duration: "December 2002 - May 2008",
@@ -393,7 +434,7 @@ const teamMemberDetails_array = [
         department: "Kolar Major Project",
         description: [
           {
-            data: "Overseeing canal lining, structure construction, and canal regulation",
+            data: "Directed canal lining, structure construction, and canal regulation.",
           },
         ],
         duration: "June 1993 - October 2002",
@@ -402,6 +443,11 @@ const teamMemberDetails_array = [
         position: "Attached Officer",
         department: "Engineer-in-Charge Office",
         duration: "January 1988 - 1993",
+        description: [
+          {
+            data: "Provided critical administrative and technical support for major engineering projects.",
+          },
+        ],
       },
     ],
   },
@@ -473,90 +519,161 @@ const teamMemberDetails_array = [
   {
     fullName: "Shri Sandeep Dubey",
     profilePicture: profilePicture_2,
-    designation: "Executive Engineer",
+    designation: "Project Manager",
     linkedinUrl: "https://www.linkedin.com/in/sandeep-dubey-b2972731b/",
     profile_description: [
-      "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
+      "Throughout my career, I have contributed to some of the most ambitious water resource initiatives in the region, such as the Mohanpura Left and Right Bank Canal Extensions and the Bahoti Canal Project. My expertise spans structural design, project estimation, and technical guidelines for pressurized piped irrigation networks. With a strong foundation in civil engineering and years of hands-on experience, I have consistently delivered high-quality infrastructure solutions.",
     ],
     experience: [
       {
-        position: "MKPMU Project Manager",
-        department: "Executive Engineer",
+        position: "Project Manager",
+        department: "MKPMU",
         description: [
-          { data: "Executive Engineer  ( JUNE 2024)" },
-          { data: "Mohanpura LBC Ext. Pachore : SDO" },
-          { data: " Mohanpura RBC Ext. Abhaypura : SDO" },
+          {
+            data: "Leading the implementation and management of large-scale irrigation projects, ensuring efficient operations and adherence to project timelines.",
+          },
         ],
         duration: "2018- Present",
       },
       //       - Pressurised Piped Irrigation Network - 1. Technical Circulars, Guidelines, Rate Analysis Guidelines
       // - Structural Design and Drawing
       // - CSR
-
       {
-        position: "Assistant Engineer",
-        department: "Bureau of Design and Hydraulics (BODHI)",
+        position: "Executive Engineer",
+        department: "MKPMU",
         description: [
           {
-            data: "Pressurised Piped Irrigation Network (Technical Circulars, Guidelines, Rate Analysis Guidelines)",
+            data: "Overseeing project execution for Mohanpura LBC Extension at Pachore and RBC Extension at Abhaypura as Sub-Divisional Officer (SDO).",
           },
-          { data: "Structural Design and Drawing" },
-          { data: " CSR" },
+        ],
+        duration: "June 2024 – Present",
+      },
+      {
+        position: "Assistant Engineer",
+        department: "Bureau of Design and Hydraulics (BODHI), WRD, MP",
+        description: [
+          {
+            data: "Developed technical circulars, guidelines, and rate analysis documents for pressurized piped irrigation networks.",
+          },
+          {
+            data: "Specialized in structural design, drawing preparation, and CSR activities.",
+          },
         ],
         duration: "2013 -2018",
       },
       {
         position: "Assistant Engineer",
-        department: "Joined Water Resources Department (WRD), MP",
+        department: "Water Resources Department, Madhya Pradesh",
         description: [
           {
-            data: "Rewa : Bahoti Canal",
-            subData: [{ data: "DPR,Planning,Estimation,Tendering" }],
+            data: "Worked on the Bahoti Canal Project in Rewa, handling DPR preparation, project planning, estimation, and tendering.",
           },
         ],
         // "Rewa : Bahoti Canal - 1. DPR 2. Planning 3. Estimation 4. Tendering",
         duration: "2012",
       },
       {
-        position: "Civil Engineering",
-        department: "Samrat Ashok Technological Institute",
+        position: "Bachelor of Engineering in Civil Engineering",
+        department:
+          "Samrat Ashok Technological Institute, Vidisha, Madhya Pradesh",
         duration: "2007 - 2011",
       },
+    ],
+    keySkills: [
+      "Pressurized Piped Irrigation Systems",
+      "Structural Design and Drawing",
+      "Project Planning and Execution",
+      "Technical Circulars and Guidelines Development",
+      "Rate Analysis and Estimation",
+      "Civil Engineering Design Software",
     ],
   },
   {
     fullName: "Shri Vipin Tiwari",
     profilePicture: profilePicture_3,
-    designation: "Assistant Director",
+    designation: "Assistant Engineer and Assistant Project Manager",
     linkedinUrl: "https://www.linkedin.com/in/vipin-tiwari-83761a83/",
     profile_description: [
-      "Vipin Tiwari, Presently Working with Water Resource Department of Madhya Pradesh as a Assistant Director. He previously worked with Global R&D, Eaton Tech. Pvt. Ltd. as a Engineer, has an experience over two and half years in the field of Plant Modeling, Electrical System Modeling and Simulation. He has completed M.Tech (2013-2015) from IIT Roorkee in System and Control. He has Secured 1st Rank in MPPSC State Engineering Services 2016. His key skills are Power System Modeling and Control, Power System Stability and Microgrid and Industrial Automation through SCADA. he has also extensive teaching experience of GATE and IES.",
+      "An accomplished engineer with a distinguished academic and professional background, I bring over eight years of expertise in power system modeling, industrial automation, and control systems. Currently serving as Assistant Director with the Water Resource Department of Madhya Pradesh, I integrate cutting-edge technology and robust analytical skills to ensure sustainable water resource management.",
+      "I hold an M.Tech in System and Control from IIT Roorkee and have secured the 1st Rank in MPPSC State Engineering Services 2016. With a unique blend of industry experience and academic engagement, I have honed skills in power system stability, microgrid systems, and SCADA-based industrial automation, alongside extensive teaching experience for GATE and IES aspirants. Experience",
     ],
     experience: [
       {
         position: "Assistant Director",
         department: "Water Resource Department,MP",
         duration: "Dec 2017 - Present",
+        description: [
+          {
+            data: "Leading initiatives to integrate automation and control systems in water resource projects, ensuring efficient operations and sustainability.",
+          },
+        ],
       },
       {
         position: "Engineer",
-        department: "Eaton Tech. Pvt. Ltd, Pune India",
+        department: "Global R&D, Eaton Tech. Pvt. Ltd., Pune",
         duration: "July 2015 - Dec 2017",
+        description: [
+          {
+            data: "Focused on plant modeling, electrical system modeling, and simulation, contributing to innovative power solutions.",
+          },
+        ],
       },
       {
         position: "Guest Faculty",
         department: "Gate and IES Coaching Institute",
         duration: "July 2014 - Present",
+        description: [
+          {
+            data: "Conducting specialized coaching sessions for engineering aspirants, focusing on power systems and control engineering.",
+          },
+        ],
       },
       {
         position: "Expert Lecture",
         department: "Engineering Colleges and Coaching Institute",
         duration: "July 2015 - Present",
+        description: [
+          {
+            data: "Delivering expert lectures on power systems, control systems, and industrial automation.",
+          },
+        ],
       },
       {
-        position: "Internship",
-        department: "Amarkantak Thermal Power Station Chachai Anuppur MP",
+        position: "Intern",
+        department:
+          "Amarkantak Thermal Power Station, Chachai, Anuppur, Madhya Pradesh",
         duration: "June 2011 - July 2011",
+        description: [
+          {
+            data: "Gained hands-on exposure to thermal power generation and plant operations.",
+          },
+        ],
+      },
+      {
+        position: "Education",
+        department: "Indian Institute of Technology (IIT) Roorkee",
+        duration: "2013 - 2015",
+        description: [
+          {
+            data: "M.Tech in System and Control",
+          },
+        ],
+      },
+      {
+        position: "Education",
+        department: "",
+        duration: "2009 – 2013",
+        description: [
+          {
+            data: "B.E. in Electrical Engineering",
+          },
+        ],
+      },
+    ],
+    achievements: [
+      { data: "1st Rank in MPPSC State Engineering Services (2016)." },
+      {
+        data: "Extensive experience as a GATE and IES mentor, with a proven track record of guiding successful candidates.",
       },
     ],
   },
@@ -564,7 +681,7 @@ const teamMemberDetails_array = [
   {
     fullName: "Shri  Sumit Singh",
     profilePicture: profilePicture_6,
-    designation: "Supriendent Engineer and Additional Project Director",
+    designation: "Assistant Engineer and Assistant Project Manager",
     linkedinUrl: "https://www.linkedin.com/in/shubhankar-biswas-215758201/",
     profile_description: [
       "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
@@ -1170,12 +1287,12 @@ const kundaliyaDetails = {
     {
       type: "paragraph",
       content:
-        "KIP focuses on creating a robust irrigation infrastructure, including the construction of a dam on the Kalisindh River, which is a significant tributary of the Chambal River. The project incorporates advanced technologies, such as pressurized pipelines and micro-irrigation systems, to increase water-use efficiency. This infrastructure now serves approximately 125,000 hectares of culturable command area (CCA) and provides irrigation to the surrounding regions.",
+        "KIP focuses on creating a robust irrigation infrastructure, including the construction of a dam on the Kali Sindh River, which is a significant tributary of the Chambal River. The project incorporates advanced technologies, such as pressurized pipelines and micro-irrigation systems, to increase water-use efficiency. This infrastructure now serves approximately 125,000 hectares of culturable command area (CCA) and provides irrigation to the surrounding regions.",
     },
     {
       type: "paragraph",
       content:
-        "In addition to improving agricultural productivity, KIP has  also addressed domestic and industrial water supply needs, groundwater recharge, and flood control. The dam's construction has ever since mitigated flood risks in the Kalisindh sub-basin, ensuring sustainable water management. By improving agricultural growth and enhancing water availability, the Kundalia Irrigation Project represents a significant step towards transforming the agricultural landscape of Madhya Pradesh while contributing to the region's overall socio-economic development.",
+        "In addition to improving agricultural productivity, KIP has  also addressed domestic and industrial water supply needs, groundwater recharge, and flood control. The dam's construction has ever since mitigated flood risks in the Kali Sindh sub-basin, ensuring sustainable water management. By improving agricultural growth and enhancing water availability, the Kundalia Irrigation Project represents a significant step towards transforming the agricultural landscape of Madhya Pradesh while contributing to the region's overall socio-economic development.",
     },
   ],
   operationPhilosophy: [
@@ -1324,8 +1441,8 @@ const kundaliyaDetails = {
       type: "list",
       items: [
         "**Water Source and Initial Infrastructure**",
-        "The *Kundalia Dam*, located on the *Kalisindh River*, serves as the primary water source for the project. The dam is strategically positioned to store and regulate water, which is then distributed through a network of advanced pumping and pipeline systems.",
-        "The dam's *Full Reservoir Level (FRL)* is at *+400.00 meters*, providing a stable supply of water that is essential for the irrigation process. Water from the dam is conveyed through an *approach channel measuring 1.8 km* and then pumped into the irrigation system via multiple *pump houses* located on both the *Right Bank and Left Bank.*",
+        "The *Kundalia Dam,* located on the *Kali Sindh River,* serves as the primary water source for the project. The dam is strategically positioned to store and regulate water, which is then distributed through a network of advanced pumping and pipeline systems.",
+        "The dam's *Full Reservoir Level (FRL)* is at *+400.00 meters,* providing a stable supply of water that is essential for the irrigation process. Water from the dam is conveyed through an *approach channel measuring 1.8 km* and then pumped into the irrigation system via multiple *pump houses* located on both the *Right Bank and Left Bank.*",
       ],
     },
 
@@ -1349,10 +1466,10 @@ const kundaliyaDetails = {
       type: "list",
       items: [
         "**Mainline and Distribution Networks**",
-        "The project employs an extensive network of pipelines to distribute water efficiently. The network includes both *Mild Steel (MS) pipes and High-Density Polyethylene (HDPE) pipes*, spanning over *6,400 km on the Left Bank and 367 km on the Right Bank.*",
+        "The project employs an extensive network of pipelines to distribute water efficiently. The network includes both *Mild Steel (MS) pipes and High-Density Polyethylene (HDPE) pipes,* spanning over *6,400 km on the Left Bank and 367 km on the Right Bank.*",
         "MS Pipes (ranging from *400 mm to 3,000 mm diameter*) carry high volumes of water over long distances",
         "HDPE Pipes (ranging from *63 mm to 280 mm diameter*) are used for smaller, localized distribution.",
-        "The water is conveyed through the *rising main pipelines (designated as RM1, RM2, RM3)* and various *distribution chambers (DCs)*, which help in regulating and directing water to the designated zones.Each zone is designated a specific volume of water to ensure the equitable distribution of resources across *six zones* (with areas ranging from *5,518 hectares to 22,926 hectares*).",
+        "The water is conveyed through the *rising main pipelines (designated as RM1, RM2, RM3)* and various *distribution chambers (DCs),* which help in regulating and directing water to the designated zones. Each zone is designated a specific volume of water to ensure the equitable distribution of resources across *six zones* (with areas ranging from *5,518 hectares to 22,926 hectares*).",
       ],
     },
     {
@@ -1378,7 +1495,7 @@ const kundaliyaDetails = {
       type: "list",
       items: [
         "**Power Supply and Backup Infrastructure**",
-        "The project is supported by a robust *power supply infrastructure*, ensuring that all pumping and distribution systems operate without disruption:",
+        "The project is supported by a robust *power supply infrastructure,* ensuring that all pumping and distribution systems operate without disruption:",
         "*132 kV transmission lines* supply power to the main pumping stations, *while 220/132 kV substations* are located at *Nalkheda* to ensure power redundancy.",
         "*Backup generators* and additional *132/11.5 kV switch yards* are installed to provide backup power in case of grid failure, ensuring continuous water supply.",
       ],
@@ -1390,7 +1507,7 @@ const mohanpuraDetails = {
     {
       type: "paragraph",
       content:
-        "The Mohanpura Irrigation Project (MIP) is situated in Rajgarh District, Madhya Pradesh, on the Newaj River, part of the Chambal River Basin. The Newaj River, originating from Sehore district, travels 220 km before joining the Chambal River. The Newaj sub-basin covers a drainage area of 4,290 km², which accounts for 7.2% of the Chambal basin's total drainage area within Madhya Pradesh. The location of the Mohanpura dam is strategically positioned within this basin to optimize water resource management for irrigation and other uses. The Mohanpura Irrigation Project (MIP) was initiated to meet the agricultural water demands of the Newaj sub-basin and neighboring Parbati and Kalisindh sub-basins, aiming to irrigate 210,000 hectares. While 877 Mm³ of water was required, only 616 Mm³ of gross storage, including 572.96 Mm³ of live water, could be created through the Mohanpura Dam. Conventionally via open canals, this could irrigate only 87,000 hectares. To bridge this gap, MIP adopted a Pressurized Irrigation Network (PIN), increasing efficiency to serve 145,661 hectares, while also addressing drinking, environmental, and industrial needs. The project integrates automated control systems for optimal water distribution, with sub-projects at various stages of completion.",
+        "The Mohanpura Irrigation Project (MIP) is situated in Rajgarh District, Madhya Pradesh, on the Newaj River, part of the Chambal River Basin. The Newaj River, originating from Sehore district, travels 220 km before joining the Chambal River. The Newaj sub-basin covers a drainage area of 4,290 km², which accounts for 7.2% of the Chambal basin's total drainage area within Madhya Pradesh. The location of the Mohanpura dam is strategically positioned within this basin to optimize water resource management for irrigation and other uses. The Mohanpura Irrigation Project (MIP) was initiated to meet the agricultural water demands of the Newaj sub-basin and neighboring Parbati and Kali Sindh sub-basins, aiming to irrigate 210,000 hectares. While 877 Mm³ of water was required, only 616 Mm³ of gross storage, including 572.96 Mm³ of live water, could be created through the Mohanpura Dam. Conventionally via open canals, this could irrigate only 87,000 hectares. To bridge this gap, MIP adopted a Pressurized Irrigation Network (PIN), increasing efficiency to serve 145,661 hectares, while also addressing drinking, environmental, and industrial needs. The project integrates automated control systems for optimal water distribution, with sub-projects at various stages of completion.",
     },
     {
       type: "paragraph",
@@ -1520,7 +1637,7 @@ const blogs_page = {
         "Mohanpura and Kundalia Irrigation Projects Transforming 5 lakh Lives",
       picture: blogImg_1,
       description:
-        "The Mohanpura and Kundalia irrigation projects are large-scale water management initiatives in Madhya Pradesh, India. These projects are designed to address water scarcity and improve agricultural productivity, including reservoirs, irrigation canals, and pipelines serving rural areas. Mohanpura, located in Rajgarh district, provides drinking water and irrigation facilities. Similarly, Kundalia Dam, on the Kalisindh River, supports irrigation and drinking water needs in surrounding neighborhoods.",
+        "The Mohanpura and Kundalia irrigation projects are large-scale water management initiatives in Madhya Pradesh, India. These projects are designed to address water scarcity and improve agricultural productivity, including reservoirs, irrigation canals, and pipelines serving rural areas. Mohanpura, located in Rajgarh district, provides drinking water and irrigation facilities. Similarly, Kundalia Dam, on the Kali Sindh River, supports irrigation and drinking water needs in surrounding neighborhoods.",
       date: "",
 
       content: [
@@ -1693,9 +1810,7 @@ const visitorData = [
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736917979/MKPMU/image/Visits/Rodmal%20Nagar%20Visit/qdtg90x5sgvzven3qdhe.webp",
     ],
     visitDate: "12/10/2024",
-    visitDescription: [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quibusdam, earum aliquid quas, ad autem impedit sunt odio dolor quam ullam voluptates natus distinctio?",
-    ],
+    visitDescription: [""],
   },
   {
     visitorName: "Vinay Sahasrabuddhe",
@@ -1714,17 +1829,35 @@ const visitorData = [
       "Hon. Dr. Vinay Sahasrabuddhe President, Indian Council for Cultural Relations",
     ],
   },
-  // {
-  //   visitorName: "Virendra Kumar",
-  //   visitorPicture:
-  //     "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156182/MKPMU/image/Visitors/Vinay%20Sahasrabuddhe/ftaqpt1vz4xsgzsqrfv3.jpg",
-  //   visitorDesignation: "Minister of Social Justice and Empowerment of India",
-  //   visitPictures: [visitPicture_VKK_1, visitPicture_VKK_2],
-  //   visitDate: "12/10/2024",
-  //   visitDescription: [
-  //     "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
-  //   ],
-  // },
+  {
+    visitorName: "Tulsiram Silawat",
+    visitorPicture:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737119578/MKPMU/image/Visitors/Tulsiram%20Silawat/g2qq9ftwtz5j1d4mhjy7.webp",
+    visitorDesignation: "Minister of Social Justice and Empowerment of India",
+    visitPictures: [
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737118350/MKPMU/image/Visits/Tulsiram%20Silawat/t2i1pd1ivn23ixfocgpy.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737118350/MKPMU/image/Visits/Tulsiram%20Silawat/kfyjdcjohmwfho7tspa3.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737118350/MKPMU/image/Visits/Tulsiram%20Silawat/nfgxjlh3hkkqmtjr6vyv.webp",
+    ],
+    visitDate: "",
+    visitDescription: [""],
+  },
+  {
+    visitorName: "Gujarat Minister",
+    visitorPicture: "",
+    visitorDesignation: "Minister of Social Justice and Empowerment of India",
+    visitPictures: [],
+    visitDate: "",
+    visitDescription: [""],
+  },
+  {
+    visitorName: "Goi",
+    visitorPicture: "",
+    visitorDesignation: "Minister of Social Justice and Empowerment of India",
+    visitPictures: [],
+    visitDate: "",
+    visitDescription: [""],
+  },
   // {
   //   visitorName: "Vinay Sahasrabuddhe",
   //   visitorPicture:
@@ -1760,5 +1893,6 @@ export {
   mohanpuraDetails,
   newsletters,
   visitorData,
+  recentImg_array,
   TIMELINE_EVENTS,
 };
