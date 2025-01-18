@@ -6,10 +6,10 @@ import { TestimonialSlider } from "../components/ui/Slider/TestimonialSlider/Tes
 import HeroSlider from "../components/ui/Slider/HeroSlider/HeroSlider";
 
 // import visitPicture_1 from "../assets/images/visitPicture_1.png";
-import visitPicture_JRS_1 from "../assets/images/JRS_visit_img1.jpg";
-import visitPicture_JRS_2 from "../assets/images/JRS_visit_img2.jpg";
+// import visitPicture_JRS_1 from "../assets/images/JRS_visit_img1.jpg";
+// import visitPicture_JRS_2 from "../assets/images/JRS_visit_img2.jpg";
 
-import visitPicture_SSC_1 from "../assets/images/shivrajSingh_visit_img1.jpg";
+// import visitPicture_SSC_1 from "../assets/images/shivrajSingh_visit_img1.jpg";
 
 // import visitPicture_VKK_1 from "../assets/images/ShriVirendraKumarKhatik_visit_img1.jpg";
 // import visitPicture_VKK_2 from "../assets/images/ShriVirendraKumarKhatik_visit_img2.jpg";
@@ -461,20 +461,20 @@ const teamMemberDetails_array = [
       "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
     ],
     experience: [
-      {
-        position: "Superintending Engineer & Project Administrator",
-        department: "Government Of Madhya Pradesh, Water resources Department",
-        duration: "Jun 2024 - Present",
-      },
-      {
-        position: "Executive Engineer",
-        department: "Water Resources Department, Madhya Pradesh",
-        duration: "Jan 2018 - Jun 2024",
-      },
+      // {
+      //   position: "Superintending Engineer & Project Administrator",
+      //   department: "Government Of Madhya Pradesh, Water resources Department",
+      //   duration: "Jun 2024 - Present",
+      // },
+      // {
+      //   position: "Executive Engineer",
+      //   department: "Water Resources Department, Madhya Pradesh",
+      //   duration: "Jan 2018 - Jun 2024",
+      // },
       {
         position: "Assistant Engineer",
         department: "Madhya Pradesh Water Resources Department",
-        duration: "Jan 2006 - Dec 2017",
+        duration: "2018- Present",
       },
     ],
   },
@@ -599,7 +599,7 @@ const teamMemberDetails_array = [
     ],
     experience: [
       {
-        position: "Assistant Director",
+        position: "Assistant Program Manager",
         department: "Water Resource Department,MP",
         duration: "Dec 2017 - Present",
         description: [
@@ -682,26 +682,64 @@ const teamMemberDetails_array = [
     fullName: "Shri  Sumit Singh",
     profilePicture: profilePicture_6,
     designation: "Assistant Engineer and Assistant Project Manager",
-    linkedinUrl: "https://www.linkedin.com/in/shubhankar-biswas-215758201/",
+    linkedinUrl: "#",
     profile_description: [
-      "Steering the world's largest contiguous pressurized irrigation network, my tenure at the Water Resources Department of Madhya Pradesh has been marked by groundbreaking enhancements in water use efficiency. The Mohanpura and Kundalia projects stand as testaments to our team's ability to double efficiency gains compared to traditional canal networks, directly impacting 290,000 hectares of agricultural land.",
-      "With over 18 years dedicated to water resource management, I've honed skills in hydraulic modeling, agribusiness management, and water security, ensuring sustainable water practices. The Water Resources Department benefits from my ability to integrate complex project management with technical design, fostering improvements in water governance and policy alongside key stakeholders.",
+      "Dedicated and experienced civil engineer with over 6 years of expertise in water resources management and large-scale irrigation projects. Currently serving as Assistant Manager for the Kundaliya RBC Project under the Water Resources Department, Madhya Pradesh. Skilled in project execution, pipeline construction, hydraulic system management, and commissioning.",
+      "Key achievements include the successful commissioning of one of the most extensive irrigation networks, delivering water to 67,091 hectares and spearheading its extension to cover an additional 8,000 hectares. Recognized for technical proficiency, leadership, and a strong commitment to enhancing agricultural water efficiency.",
     ],
     experience: [
       {
-        position: "Superintending Engineer & Project Administrator",
-        department: "Government Of Madhya Pradesh, Water resources Department",
-        duration: "Jun 2024 - Present",
-      },
-      {
-        position: "Executive Engineer",
-        department: "Water Resources Department, Madhya Pradesh",
-        duration: "Jan 2018 - Jun 2024",
+        position: "Assistant Manager",
+        department:
+          "Water Resources Department, Madhya Pradesh – Kundaliya RBC Project",
+        duration: "September 2018 – Present",
+        description: [
+          {
+            data: "Supervised the construction of a 340 km MS pipeline, 6000 km HDPE pipeline, pump house, and distribution chamber.",
+          },
+          {
+            data: "Successfully commissioned the project in 2022, initially serving 15,000 hectares, later scaling to the full command area of 67,091 hectares.",
+          },
+          {
+            data: "Currently managing the extension of the project to cover an additional 8,000 hectares.",
+          },
+        ],
       },
       {
         position: "Assistant Engineer",
-        department: "Madhya Pradesh Water Resources Department",
-        duration: "Jan 2006 - Dec 2017",
+        department: "Water Resources Department, Madhya Pradesh",
+        duration: "December 2017 – September 2018",
+        description: [
+          {
+            data: "Played a key role in the execution phase of the Kundaliya RBC Project.",
+          },
+        ],
+      },
+      {
+        position: "Site Engineer",
+        department: "Navratna CPSE NBCC India Limited",
+        duration: "2017",
+        description: [
+          {
+            data: "Gained practical experience in civil project execution with one of India’s premier public sector enterprises.",
+          },
+        ],
+      },
+      {
+        position: "Education",
+        department:
+          "Samrat Ashok Technological Institute, Vidisha, Madhya Pradesh",
+        duration: "2015",
+        description: [
+          {
+            data: "Bachelor of Engineering (Civil)",
+          },
+        ],
+      },
+    ],
+    achievements: [
+      {
+        data: "Secured All India Rank (AIR) 230 in GATE 2016 (Civil Engineering).",
       },
     ],
   },
@@ -732,6 +770,18 @@ const heroBanners = [
   {
     banner:
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1735548596/MKPMU/image/Banners/n4zenuqgg5dn4tubfjts.webp",
+    title: "",
+    description: "",
+  },
+  {
+    banner:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737201329/MKPMU/image/Banners/afmm0wrwti1amn7cb07i.webp",
+    title: "",
+    description: "",
+  },
+  {
+    banner:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737201329/MKPMU/image/Banners/ztnhlalsemf5lupkjdvr.webp",
     title: "",
     description: "",
   },
@@ -1764,11 +1814,24 @@ const TIMELINE_EVENTS = [
 // --------------------------------------------------------------------VISITOR PAGE----------------------------------------------------------------------------------
 const visitorData = [
   {
+    visitorName: "Narendra Modi",
+    visitorPicture:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737221685/03_Merged_xzpa9j.webp",
+    visitorDesignation: "Prime Minister of India",
+    visitPictures: [
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737221813/WhatsApp_Image_2025-01-18_at_18.37.30_f34268b1_c99kpn.webp",
+    ],
+    visitDate: "",
+    visitDescription: [],
+  },
+  {
     visitorName: "Mohan Yadav",
     visitorPicture:
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156138/MKPMU/image/Visitors/Mohan%20Yadav/aqi4njwug15jfuup2sfd.png",
     visitorDesignation: "Chief Minister of Madhya Pradesh",
-    visitPictures: [visitPicture_JRS_2],
+    visitPictures: [
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737220444/JRS_visit_img2_rhmjs6.webp",
+    ],
     visitDate: "12/10/2024",
     visitDescription: [
       "Hon. Minister Govt of India, Civil Aviation Ministry ,Shri Jyotiraditya Madhavrao Scindia, Hon. Minister Govt of Madhya Pradesh, Water Resources Dept, Shri Tulsi Ram Silawat, Hon. Minister Govt of Madhya Pradesh, Shri Mohan Yadav",
@@ -1794,7 +1857,9 @@ const visitorData = [
     visitorPicture:
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156197/MKPMU/image/Visitors/Shivraj%20Singh/ylpit0qwh8yywx3twiea.png",
     visitorDesignation: "Former Chief Minister of MP",
-    visitPictures: [visitPicture_SSC_1],
+    visitPictures: [
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737220974/shivrajSingh_visit_img1_mivi0m.webp",
+    ],
     visitDate: "12/10/2024",
     visitDescription: [
       "Hon. Rajnath Singh, Defence Minister GoI, Hon. Shivraj Singh Chauhan, EX-CM of MP & Hon. Tulsiram Silawat, Minister WRD",
@@ -1833,7 +1898,7 @@ const visitorData = [
     visitorName: "Tulsiram Silawat",
     visitorPicture:
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737119578/MKPMU/image/Visitors/Tulsiram%20Silawat/g2qq9ftwtz5j1d4mhjy7.webp",
-    visitorDesignation: "Minister of Social Justice and Empowerment of India",
+    visitorDesignation: "Minister of Water Resources, MP",
     visitPictures: [
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737118350/MKPMU/image/Visits/Tulsiram%20Silawat/t2i1pd1ivn23ixfocgpy.webp",
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737118350/MKPMU/image/Visits/Tulsiram%20Silawat/kfyjdcjohmwfho7tspa3.webp",
@@ -1843,32 +1908,48 @@ const visitorData = [
     visitDescription: [""],
   },
   {
-    visitorName: "Gujarat Minister",
-    visitorPicture: "",
-    visitorDesignation: "Minister of Social Justice and Empowerment of India",
-    visitPictures: [],
+    visitorName: "Kunvarjibhai Mohanbhai Bavaliya",
+    visitorPicture:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737220202/IMG_6115_22_lqaecj.webp",
+    visitorDesignation: "",
+    visitPictures: [
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737118365/MKPMU/image/Visits/Gol/ltyasoefis2ksljlk0op.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737118364/MKPMU/image/Visits/Gol/parwpuq2tmbqfp2szaf3.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737118363/MKPMU/image/Visits/Gol/aos1xboqeajsd7mmb1pg.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737118363/MKPMU/image/Visits/Gol/vit3tfji1zcseq5cx4xj.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737118363/MKPMU/image/Visits/Gol/i7hunkk7asvltyaprnc5.webp",
+    ],
     visitDate: "",
     visitDescription: [""],
   },
   {
-    visitorName: "Goi",
-    visitorPicture: "",
-    visitorDesignation: "Minister of Social Justice and Empowerment of India",
-    visitPictures: [],
+    visitorName: "Rakesh Kumar Verma & Anuj Kanwal	",
+    visitorPicture:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737219393/IMG_3160_eaq4qh.webp",
+    visitorDesignation: "",
+    visitPictures: [
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737219490/WhatsApp_Image_2024-07-20_at_16.36.58_plhryg.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737219488/IMG_3298_2_iffjma.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737219484/WhatsApp_Image_2024-07-19_at_18.05.34_fqjayv.webp",
+    ],
     visitDate: "",
-    visitDescription: [""],
+    visitDescription: [
+      "Shri Rakesh Kumar Verma Additional Secretary, MoJS + Shri Anuj Kanwal	Commissioner (CADWM & BWUE), MoJS",
+    ],
   },
-  // {
-  //   visitorName: "Vinay Sahasrabuddhe",
-  //   visitorPicture:
-  //     "https://res.cloudinary.com/dqmmeiqum/image/upload/v1736156182/MKPMU/image/Visitors/Vinay%20Sahasrabuddhe/ftaqpt1vz4xsgzsqrfv3.jpg",
-  //   visitorDesignation: "Former Member of Rajya Sabha",
-  //   visitPictures: [visitPicture_VS_1],
-  //   visitDate: "12/10/2024",
-  //   visitDescription: [
-  //     "Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​ Stay informed with the latest developments, milestones, and stories from our ongoing journey. Discover how we’re making an impact and what’s next for our projects and community.​",
-  //   ],
-  // },
+  {
+    visitorName: "ASCE-IPWE",
+    visitorPicture:
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737221531/DSC_1794-min_w465gk.webp",
+    visitorDesignation: "",
+    visitPictures: [
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737221506/WhatsApp_Image_2025-01-18_at_18.56.43_7a927640_xpaadn.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737221505/DJI_0566-min_ndtwhv.webp",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737221503/WhatsApp_Image_2025-01-18_at_18.56.03_6810c6f2_x68es0.webp",
+    ],
+    visitDate: "",
+    visitDescription: [],
+  },
 ];
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
