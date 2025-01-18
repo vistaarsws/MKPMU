@@ -1,4 +1,4 @@
-import damPicture from "../../../assets/images/dam.png";
+import damPicture from "../../../assets/images/dam.jpg";
 import "./Form.css";
 
 export default function Form() {

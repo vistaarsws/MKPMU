@@ -4,17 +4,28 @@ import DataTable from "../../components/ui/Table/DataTable";
 
 import modi_Irrigation from "../../assets/images/modi_Irrigation.png";
 import wheatMetricData from "../../assets/images/impact_wheatMetric.png";
+import procurementData_1 from "../../assets/images/procurementfinal.png";
+import procurementData_2 from "../../assets/images/procurementvalue.png";
+
+import droughtImg from "../../assets/images/droughtImg.png";
+
 import gpsViewData_1 from "../../assets/images/gpsViewData_1.png";
+import EnhanceExcess_1 from "../../assets/images/ndvi_plots.png";
+
+import energyConservation from "../../assets/images/energyconservation.jpg";
+
 import gpsViewData_2 from "../../assets/images/gpsViewData_2.png";
 import irrigationData from "../../assets/images/irrigationData.png";
+
+import areaEVI from "../../assets/images/areaEVI.jpg";
 
 import imagePageMap from "../../assets/images/impactPageMap.png";
 import { PieChart } from "react-minimal-pie-chart";
 
 export default function Impact() {
   const data = [
-    { title: "One", value: 704000, color: "#E38627" },
-    { title: "Two", value: 60000, color: "#4caf50" },
+    { title: "Non-irrigated Area", value: 704000, color: "#E38627" },
+    { title: "Irrigated Area", value: 60000, color: "#4caf50" },
   ];
 
   const tableData1 = {
@@ -208,18 +219,23 @@ export default function Impact() {
 
       <article>
         <section>
-          <h2>Why?</h2>
-          <h3>Less Than 10% of Land Was Irrigated Before the Project.</h3>
-          <p>
-            Rajgarh, the westernmost district of MP bordering the arid state of
-            Rajasthan, was on the verge of desertification. Out of the 7.05 lakh
-            hectares of agricultural land, only 60,000 hectares were being
-            irrigated through available resources. This severe scarcity of
-            irrigation water created hardship for local farmers, who were forced
-            to either migrate or—in desperate circumstances—turn to crime to
-            survive, as they lacked sufficient water to irrigate their
-            farmlands.
-          </p>
+          <figure>
+            <img src={droughtImg} alt="" />
+          </figure>
+          <div>
+            <h2>Why?</h2>
+            <h3>Less Than 10% of Land Was Irrigated Before the Project.</h3>
+            <p>
+              Rajgarh, the westernmost district of MP bordering the arid state
+              of Rajasthan, was on the verge of desertification. Out of the 7.05
+              lakh hectares of agricultural land, only 60,000 hectares were
+              being irrigated through available resources. This severe scarcity
+              of irrigation water created hardship for local farmers, who were
+              forced to either migrate or—in desperate circumstances—turn to
+              crime to survive, as they lacked sufficient water to irrigate
+              their farmlands.
+            </p>
+          </div>
         </section>
         <section>
           <figure>
@@ -287,7 +303,7 @@ export default function Impact() {
           {/* <h3 className="content-title">Blossoming Prosperity</h3> */}
           <p>
             In 2014, under PM Narendra Modi's vision of "Har Khet ko Paani," the
-            construction of two major dams—Mohanpura and Kundaliya—began in
+            construction of two major dams—Mohanpura and Kundalia—began in
             Rajgarh, one of the driest districts of Madhya Pradesh. Within a
             record time of three years, the construction of both dams was
             completed, and in June 2018, the Honorable Prime Minister
@@ -300,7 +316,8 @@ export default function Impact() {
           <p>
             In 2018, therefore, a dedicated PMU was established which deployed
             the innovative technology of pressurized piped irrigation to deliver
-            water directly from the reservoir to farm level.
+            water directly from the reservoir to farm level. Hence, known as the
+            Mohanpura Model
           </p>
         </div>
       </article>
@@ -370,8 +387,11 @@ export default function Impact() {
           certain quantities for purposes of seed as well as domestic
           consumption.
         </p>
+        <figure style={{ display: "flex", flexWrap: "wrap" }}>
+          <img src={procurementData_1} alt="" />
+        </figure>
         <figure>
-          <img src={wheatMetricData} alt="" />
+          <img src={procurementData_2} alt="" />
         </figure>
         <p>
           In the above figure, we see a slight increase in production with
@@ -398,21 +418,21 @@ export default function Impact() {
           plates from year 2017 to 2021 are shown in figure below.
         </p>
         <figure>
-          <img src={gpsViewData_1} alt="" />
+          <img src={EnhanceExcess_1} alt="" />
         </figure>
         <p>
           The results of the calculations of irrigated area within the command
           boundaries of the sub-project are shown in figure as follows:
         </p>
-        <figure>
+        {/* <figure>
           <img src={gpsViewData_2} alt="" />
-        </figure>
+        </figure> */}
         <p>
           The calculations of irrigated area from the satellite imageries are
           shown in the graph.
         </p>
         <figure>
-          <img src={irrigationData} alt="" />
+          <img src={areaEVI} alt="" />
         </figure>
       </article>
       <article className="energyConservation">
@@ -424,7 +444,7 @@ export default function Impact() {
           and control system, the overall system efficiency is higher. The power
           calculation for the pumping station is shown in table below.
         </p>
-        <DataTable headers={tableData3.headers} data={tableData3.data} />
+        {/* <DataTable headers={tableData3.headers} data={tableData3.data} /> */}
         <p>
           If farmer was supposed to arrange water on her own then she would have
           used the water from well or borewell. Assuming any farmer is having
@@ -434,18 +454,21 @@ export default function Impact() {
           the average efficiency of 27.6% (Energy Management Centre -Kerala,
           2018).
         </p>
-        <DataTable headers={tableData4.headers} data={tableData4.data} />
-        <span>* Duty/flowrate considered same as per project</span>
+        <figure>
+          <img src={energyConservation} alt="" />
+        </figure>
+        {/* <DataTable headers={tableData4.headers} data={tableData4.data} /> */}
+        {/* <span>* Duty/flowrate considered same as per project</span>
         <span>
           ** Pump efficiencies taken as maximum efficiencies available in market
           but farmers predominantly use 10 to 12 years old pumps with efficiency
           less than 35%.
-        </span>
+        </span> */}
         <p>
           The power and energy consumption for one irrigation season of 120 days
           and 8 Hrs operation of pumps is shown in Table-5.
         </p>
-        <DataTable headers={tableData5.headers} data={tableData5.data} />
+        {/* <DataTable headers={tableData5.headers} data={tableData5.data} /> */}
         <p>
           From the above calculations, it is clear that there is a saving of
           almost 9.38 million kW-hr energy per crop season due to centralised

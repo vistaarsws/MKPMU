@@ -57,7 +57,7 @@ export default function Footer() {
               alt="Mohanpura & Kundaliya Irrigation Project Logo"
             />
           </div>
-          <h1>MOHANPURA & KUNDALIYA IRRIGATION PROJECT</h1>
+          <h1>MOHANPURA & KUNDALIA IRRIGATION PROJECT</h1>
         </section>
         <section>
           <strong className="">Quick Links</strong>

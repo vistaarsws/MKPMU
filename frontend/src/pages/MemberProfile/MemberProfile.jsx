@@ -7,8 +7,10 @@ import "./MemberProfile.css";
 
 export default function MemberProfile() {
   const currentPage = useUrlToGetPage();
+
   const memberProfile = teamMemberDetails_array.find((m) => {
     const memberName = m.fullName.split(" ").join("_");
+
     return memberName === currentPage;
   });
 
@@ -52,7 +54,7 @@ export default function MemberProfile() {
               <p>{memberProfile.designation}</p>
             </div>
             <div>
-              <Link to={memberProfile.linkedinUrl} target="_blank">
+              <Link to={memberProfile?.linkedinUrl} target="_blank">
                 <img src={linkedinIcon} alt="Linkedin Icon" />
               </Link>
             </div>
@@ -82,6 +84,40 @@ export default function MemberProfile() {
               );
             })}
           </ul>
+
+          {memberProfile.achievements && (
+            <>
+              <h2>Achievements</h2>
+              <ul>
+                {memberProfile.achievements.map((ach, index) => {
+                  return <li style={{ fontSize: "1.5rem" }}>{ach.data}</li>;
+                })}
+              </ul>
+            </>
+          )}
+          {/* 
+          {memberProfile.keySkills && (
+            <>
+              <h2 style={{ marginBottom: "2rem" }}>Key Skills</h2>
+              <ul style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+                {memberProfile.keySkills.map((skill, index) => {
+                  return (
+                    <span
+                      style={{
+                        fontSize: "1.4rem",
+                        borderRadius: "2rem",
+                        color: "white",
+                        backgroundColor: "#ff6b00",
+                        padding: "1rem 1.5rem",
+                      }}
+                    >
+                      {skill}
+                    </span>
+                  );
+                })}
+              </ul>
+            </>
+          )} */}
         </article>
       </section>
       <article>

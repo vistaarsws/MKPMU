@@ -55,7 +55,9 @@
 
 .image-container {
   max-height: calc(90vh - 10rem);
-  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
   border-radius: 1.4rem 1.4rem 0 0;
 }
 

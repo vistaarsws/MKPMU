@@ -10,6 +10,7 @@ import {
   HeroBanner_array,
   projectHighlightCards_array,
   irrigationProjectDetails,
+  recentImg_array,
 } from "../../utils/Constant";
 
 import "./Home.css";
@@ -363,6 +364,20 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </article>
+      </section>
+      {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
+
+      <section className="recentUpdateSection">
+        <h1>Recent Updates</h1>
+        <p></p>
+        <article>
+          <EmblaSlider
+            slides={recentImg_array}
+            no_of_slides={{ xs: 1, sm: 2, md: 3, lg: 4, xl: 4 }}
+            delay={3000}
+            autoSlide={true}
+          />
         </article>
       </section>
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}

@@ -14,29 +14,32 @@
 }
 .impactPage_container > article:nth-of-type(2) {
   display: flex;
-  margin: 5%;
   flex-wrap: wrap;
+  margin: 5%;
+  gap: 5%;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 
   & > section:first-of-type {
     flex-basis: 45%;
-    color: #202020;
-    & > h2 {
-      font-size: 5.8rem;
-      font-weight: 800;
-      color: #00939e;
-      margin-bottom: 2.4rem;
-    }
+    & > div:first-of-type {
+      color: #202020;
+      & > h2 {
+        font-size: 5.8rem;
+        font-weight: 800;
+        color: #00939e;
+        margin-bottom: 2.4rem;
+      }
 
-    & > h3 {
-      font-size: 3.2rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-    }
-    & > p {
-      font-size: 2rem;
-      line-height: 3rem;
+      & > h3 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+      }
+      & > p {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
     }
   }
 
@@ -45,6 +48,9 @@
 
     & > figure {
       margin-bottom: 3rem;
+      display: flex;
+      justify-content: end;
+      align-items: start;
     }
 
     & > div:first-of-type {

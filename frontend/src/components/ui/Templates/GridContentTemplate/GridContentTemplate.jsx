@@ -73,6 +73,7 @@ export default function GridContentTemplate(template) {
                       content: ["", card.title, card.date],
                       justify: ["left", "left", "left"],
                     },
+                    dimensions: { maxHeight: isNewUpdatePage ? "40rem" : "" },
                   }}
                 />
               </div>
