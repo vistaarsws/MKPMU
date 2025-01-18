@@ -393,7 +393,7 @@ export default function Impact() {
         <figure>
           <img src={procurementData_2} alt="" />
         </figure>
-        <p>
+        {/* <p>
           In the above figure, we see a slight increase in production with
           increased impounding of water in Mohanpura reservoir in 2018-19 when
           compared to pre-project levels of production. After commissioning of
@@ -403,34 +403,39 @@ export default function Impact() {
           linkage to a combination of improved access to both surface water
           irrigation and improved groundwater levels due to Mohanpura reservoir.
           This increase is also indicative of improved water productivity.
-        </p>
+        </p> */}
       </article>
 
       <article className="irrigationServices">
         <h2>Enhanced Access to Irrigation Services</h2>
         <p>
-          As irrigation operators, the coverage of irrigated areas after
+          {/* As irrigation operators, the coverage of irrigated areas after
           commissioning of the sub-project was well understood and it was
           established that the sub-project had benefitted at least 12,000 ha and
           25,600 ha in the years 2019 and 2020 onwards respectively. A study
           using Copernicus Sentinel (10mx10m resolution) data was conducted for
           NDVI and irrigated area calculations. NDVI (change detection) study
-          plates from year 2017 to 2021 are shown in figure below.
+          plates from year 2017 to 2021 are shown in figure below. */}
+          After the commissioning of the project, the coverage of irrigated
+          areas was well understood, with the project benefiting approximately 3
+          lakh hectares. To validate and analyze this further, a study was
+          conducted using Copernicus Sentinel data (10m x 10m resolution) to
+          calculate the Normalized Difference Vegetation Index (NDVI) and
+          monitor irrigated area changes. NDVI-based change detection plates
+          from 2019 to 2024 are presented in the figure below.
         </p>
         <figure>
           <img src={EnhanceExcess_1} alt="" />
         </figure>
-        <p>
+        {/* <p>
           The results of the calculations of irrigated area within the command
           boundaries of the sub-project are shown in figure as follows:
         </p>
-        {/* <figure>
-          <img src={gpsViewData_2} alt="" />
-        </figure> */}
+     
         <p>
           The calculations of irrigated area from the satellite imageries are
           shown in the graph.
-        </p>
+        </p> */}
         <figure>
           <img src={areaEVI} alt="" />
         </figure>
@@ -464,41 +469,40 @@ export default function Impact() {
           but farmers predominantly use 10 to 12 years old pumps with efficiency
           less than 35%.
         </span> */}
-        <p>
+        {/* <p>
           The power and energy consumption for one irrigation season of 120 days
           and 8 Hrs operation of pumps is shown in Table-5.
-        </p>
+        </p> */}
         {/* <DataTable headers={tableData5.headers} data={tableData5.data} /> */}
-        <p>
+        {/* <p>
           From the above calculations, it is clear that there is a saving of
           almost 9.38 million kW-hr energy per crop season due to centralised
           pumping approach.
-        </p>
+        </p> */}
       </article>
       <article className="environmentalImpact_container">
         <h2>Environmental Impact and Reduction in Carbon Footprint</h2>
         <p>
-          Due to centralised pumping system with high efficiency, there is net
-          reduction of 9.38 million energy (kW-hr) as shown above compared to
-          conventional pumping system by individual farmers. This reduction in
-          energy consumption will result it into reduced greenhouse emission
-          equivalent to carbon foot print of 2186 metric tonnes of carbon per
-          irrigation season (1 kW-hr = 0.23314 kg CO2 reduction). In addition to
-          providing required irrigation water in equitable manner to every
-          farmer there is also substantial saving in electricity and thereby
-          carbon footprint. There is a recurring saving in carbon footprint
-          every season considering 30 years of project life; the total impact
-          will be 65,580 metric tonnes. This would be equivalent to taking
-          14,257 passenger vehicles off-road (A typical passenger vehicle emits
-          about 4.6 metric tons of carbon dioxide per year). Thus, the approach
-          of having centralised pumping station alleviates the environmental
-          impact due to agriculture activities.
+          Due to the centralized pumping system with high efficiency, there is a
+          net reduction of 69 million kW-hr of energy consumption, as shown
+          above, compared to conventional pumping systems used by individual
+          farmers. This reduction in energy usage results in a decrease in
+          greenhouse gas emissions equivalent to a carbon footprint reduction of
+          2186 metric tonnes of CO2 per irrigation season (calculated at 1 kW-hr
+          = 0.23314 kg CO2). Along with providing equitable irrigation water
+          access to every farmer, the system achieves substantial electricity
+          savings, leading to a recurring reduction in the carbon footprint each
+          season. Over the 30-year project lifespan, the cumulative carbon
+          footprint reduction is projected to be 65,580 metric tonnes,
+          equivalent to removing 14,257 passenger vehicles from the road
+          (considering that a typical passenger vehicle emits about 4.6 metric
+          tonnes of CO2 per year).
         </p>
       </article>
       <article className="localMigration_container">
         <h2>Mitigation of Local Distress Migration</h2>
         <p>
-          Mohanpura right-bank command area was water scarce, drought-prone and
+          {/* Mohanpura right-bank command area was water scarce, drought-prone and
           lands are generally barren with little top-soil. Most of the locals
           had no option but to relocate to nearby Rajasthan towns of Kota, Tonk
           and Jaipur as labourers thereby denying a permanent home to their
@@ -506,7 +510,20 @@ export default function Impact() {
           sub-project and assured availability of irrigation water in the lands
           of 168 villages has made the villagers to stay back and cultivate the
           second crop. The Sentinel data shows that about 12,000 ha got
-          cultivated for the first time after the sub-project.
+          cultivated for the first time after the sub-project. */}
+          The Mohanpura-Kundaliya Irrigation Project has transformed previously
+          water-scarce, drought-prone, and largely barren lands with minimal
+          topsoil into fertile and productive agricultural zones. Prior to the
+          project's implementation, many locals had no choice but to migrate to
+          nearby towns such as Kota, Tonk, and Jaipur in Rajasthan to work as
+          laborers, depriving their families of a permanent home and their
+          children of stable educational opportunities. With the commissioning
+          of the project and the assured availability of irrigation water across
+          1,300 villages, farmers can now cultivate their lands effectively,
+          often harvesting a second crop. This has not only encouraged villagers
+          to remain in their communities but has also revitalized the local
+          economy, ensuring food security, stable livelihoods, and opportunities
+          for sustainable development.
         </p>
       </article>
       <article style={{ margin: "5%", height: "80vh" }}>

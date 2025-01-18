@@ -370,11 +370,11 @@ export default function Home() {
 
       <section className="recentUpdateSection">
         <h1>Recent Updates</h1>
-        <p></p>
+
         <article>
           <EmblaSlider
             slides={recentImg_array}
-            no_of_slides={{ xs: 1, sm: 2, md: 3, lg: 4, xl: 4 }}
+            no_of_slides={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 3 }}
             delay={3000}
             autoSlide={true}
           />
