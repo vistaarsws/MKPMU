@@ -443,14 +443,14 @@ export default function Impact() {
       <article className="energyConservation">
         <h2>Energy Conservation</h2>
         <p>
-          Centralised pumping station is provided in the sub-project to deliver
-          the water to the irrigated area of 25,600 Ha area. Considering the
-          large size pumps to handle large flow rates and advanced automation
-          and control system, the overall system efficiency is higher. The power
-          calculation for the pumping station is shown in table below.
+          Centralised pumping station is provided in the projects to deliver the
+          water to the irrigated area of 3,00,000 Ha area. Considering the large
+          size pumps to handle large flow rates and advanced automation and
+          control system, the overall system efficiency is higher. The power
+          calculation for the pumping station is shown in table below.
         </p>
         {/* <DataTable headers={tableData3.headers} data={tableData3.data} /> */}
-        <p>
+        {/* <p>
           If farmer was supposed to arrange water on her own then she would have
           used the water from well or borewell. Assuming any farmer is having
           landholding of 1 Ha and taking water from her own borewell of 100 mtr
@@ -458,7 +458,7 @@ export default function Impact() {
           agriculture pumps as shown in Table-4. This assumption is well above
           the average efficiency of 27.6% (Energy Management Centre -Kerala,
           2018).
-        </p>
+        </p> */}
         <figure>
           <img src={energyConservation} alt="" />
         </figure>
