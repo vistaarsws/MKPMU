@@ -21,8 +21,18 @@ import HeroSlider from "../components/ui/Slider/HeroSlider/HeroSlider";
 import dam1 from "../assets/images/mohanpuraDam_1.jpg";
 import dam2 from "../assets/images/kindaliyaDam_1.jpg";
 
-import recentUpdate_1 from "../assets/images/facebook postArtboard1copy 2@10x-100.jpg";
-import recentUpdate_2 from "../assets/images/facebook postArtboard1copy@10x-100.jpg";
+import recentUpdate_1 from "../assets/images/recentUpdate_1.webp";
+import recentUpdate_2 from "../assets/images/recentUpdate_2.webp";
+import recentUpdate_3 from "../assets/images/recentUpdate_3.webp";
+import recentUpdate_4 from "../assets/images/recentUpdate_4.webp";
+import recentUpdate_5 from "../assets/images/recentUpdate_5.webp";
+import recentUpdate_6 from "../assets/images/recentUpdate_6.webp";
+import recentUpdate_7 from "../assets/images/recentUpdate_7.webp";
+import recentUpdate_8 from "../assets/images/recentUpdate_8.webp";
+import recentUpdate_9 from "../assets/images/recentUpdate_9.webp";
+import recentUpdate_10 from "../assets/images/recentUpdate_10.webp";
+import recentUpdate_11 from "../assets/images/recentUpdate_11.webp";
+import recentUpdate_12 from "../assets/images/recentUpdate_12.webp";
 
 const writtenTestimonials = {
   writtenTestimonial_1:
@@ -261,9 +271,17 @@ const ministerQuoteSlides_array = ministerQuoteSlides.map((e, index) => (
 
 const recentUpdateSlides = [
   recentUpdate_1,
-  recentUpdate_1,
-  recentUpdate_1,
   recentUpdate_2,
+  recentUpdate_3,
+  recentUpdate_4,
+  recentUpdate_5,
+  recentUpdate_6,
+  recentUpdate_7,
+  recentUpdate_8,
+  recentUpdate_9,
+  recentUpdate_10,
+  recentUpdate_11,
+  recentUpdate_12,
 ];
 
 const recentImg_array = recentUpdateSlides.map((e, index) => {
@@ -271,7 +289,9 @@ const recentImg_array = recentUpdateSlides.map((e, index) => {
     <figure
       style={{
         height: "100%",
-        margin: "0 2rem",
+        margin: "0 1rem",
+        maxWidth: "50vh",
+
         // borderRadius: "1.5rem",
         overflow: "hidden",
       }}
@@ -279,7 +299,7 @@ const recentImg_array = recentUpdateSlides.map((e, index) => {
       <img
         src={e}
         alt=""
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        style={{ width: "100%", height: "100%", objectFit: "contain" }}
       />
     </figure>
   );
@@ -679,19 +699,19 @@ const teamMemberDetails_array = [
   },
 
   {
-    fullName: "Shri  Sumit Singh",
+    fullName: "Shri Sumit Singh",
     profilePicture: profilePicture_6,
     designation: "Assistant Engineer and Assistant Project Manager",
     linkedinUrl: "#",
     profile_description: [
-      "Dedicated and experienced civil engineer with over 6 years of expertise in water resources management and large-scale irrigation projects. Currently serving as Assistant Manager for the Kundaliya RBC Project under the Water Resources Department, Madhya Pradesh. Skilled in project execution, pipeline construction, hydraulic system management, and commissioning.",
+      "Dedicated and experienced civil engineer with over 6 years of expertise in water resources management and large-scale irrigation projects. Currently serving as Assistant Manager for the Kundalia RBC Project under the Water Resources Department, Madhya Pradesh. Skilled in project execution, pipeline construction, hydraulic system management, and commissioning.",
       "Key achievements include the successful commissioning of one of the most extensive irrigation networks, delivering water to 67,091 hectares and spearheading its extension to cover an additional 8,000 hectares. Recognized for technical proficiency, leadership, and a strong commitment to enhancing agricultural water efficiency.",
     ],
     experience: [
       {
-        position: "Assistant Manager",
+        position: "Assistant Project Manager",
         department:
-          "Water Resources Department, Madhya Pradesh – Kundaliya RBC Project",
+          "Water Resources Department, Madhya Pradesh – Kundalia RBC Project",
         duration: "September 2018 – Present",
         description: [
           {
@@ -711,7 +731,7 @@ const teamMemberDetails_array = [
         duration: "December 2017 – September 2018",
         description: [
           {
-            data: "Played a key role in the execution phase of the Kundaliya RBC Project.",
+            data: "Played a key role in the execution phase of the Kundalia RBC Project.",
           },
         ],
       },
@@ -750,7 +770,7 @@ const teamMemberDetails_array = [
 const heroBanners = [
   {
     banner:
-      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1734426721/MKPMU/image/Banners/o2iuqdftji3vjmbfksuu.png",
+      "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737369971/MKPMU/image/Banners/s2k8cnbkgss8w6gyiz0p.webp",
     title: "",
     description: "",
   },
@@ -799,7 +819,7 @@ const HeroBanner_array = heroBanners.map((e, index) => (
 const projectHighlightCards_array = [
   {
     icon: projectHighlight_icon1,
-    value: "2,90,000 ha",
+    value: "2,90,000+ ha",
     label: "Total Irrigated Area",
     bgColor: "#9BFFAB",
   },
@@ -1934,7 +1954,7 @@ const visitorData = [
     ],
     visitDate: "",
     visitDescription: [
-      "Shri Rakesh Kumar Verma Additional Secretary, MoJS + Shri Anuj Kanwal	Commissioner (CADWM & BWUE), MoJS",
+      "Shri Rakesh Kumar Verma Additional Secretary, MoJS & Shri Anuj Kanwal	Commissioner (CADWM & BWUE), MoJS",
     ],
   },
   {
@@ -1948,7 +1968,7 @@ const visitorData = [
       "https://res.cloudinary.com/dqmmeiqum/image/upload/v1737221503/WhatsApp_Image_2025-01-18_at_18.56.03_6810c6f2_x68es0.webp",
     ],
     visitDate: "",
-    visitDescription: [],
+    visitDescription: ["ASCE-IPWE Technical visit"],
   },
 ];
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------

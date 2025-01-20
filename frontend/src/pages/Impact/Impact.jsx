@@ -327,7 +327,7 @@ export default function Impact() {
           Since then, a herculean infrastructure has been created, consisting of
           26,000 km of underground pipelines that pump water through 20 pumping
           stations using 130 MW of electricity, irrigating a contiguous area of
-          290,000 hectares.
+          290,000+ hectares.
         </p>
         <p>
           This state-of-the-art technology has directly improved the lives of
@@ -417,8 +417,8 @@ export default function Impact() {
           NDVI and irrigated area calculations. NDVI (change detection) study
           plates from year 2017 to 2021 are shown in figure below. */}
           After the commissioning of the project, the coverage of irrigated
-          areas was well understood, with the project benefiting approximately 3
-          lakh hectares. To validate and analyze this further, a study was
+          areas was well understood, with the project benefiting approximately
+          2,90,000+ hectares. To validate and analyze this further, a study was
           conducted using Copernicus Sentinel data (10m x 10m resolution) to
           calculate the Normalized Difference Vegetation Index (NDVI) and
           monitor irrigated area changes. NDVI-based change detection plates
@@ -444,9 +444,9 @@ export default function Impact() {
         <h2>Energy Conservation</h2>
         <p>
           Centralised pumping station is provided in the projects to deliver the
-          water to the irrigated area of 3,00,000 Ha area. Considering the large
-          size pumps to handle large flow rates and advanced automation and
-          control system, the overall system efficiency is higher. The power
+          water to the irrigated area of 2,90,000+ Ha area. Considering the
+          large size pumps to handle large flow rates and advanced automation
+          and control system, the overall system efficiency is higher. The power
           calculation for the pumping station is shown in table below.
         </p>
         {/* <DataTable headers={tableData3.headers} data={tableData3.data} /> */}
@@ -511,7 +511,7 @@ export default function Impact() {
           of 168 villages has made the villagers to stay back and cultivate the
           second crop. The Sentinel data shows that about 12,000 ha got
           cultivated for the first time after the sub-project. */}
-          The Mohanpura-Kundaliya Irrigation Project has transformed previously
+          The Mohanpura-Kundalia Irrigation Project has transformed previously
           water-scarce, drought-prone, and largely barren lands with minimal
           topsoil into fertile and productive agricultural zones. Prior to the
           project's implementation, many locals had no choice but to migrate to
