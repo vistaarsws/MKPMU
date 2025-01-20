@@ -120,7 +120,7 @@ export default function Home() {
           desertification and distress, these projects now deliver water to
           <span> 1,300 villages.</span> They benefit more than{" "}
           <span>500,000 farmers </span>
-          and cover an area of <span>300,000 hectares.</span>
+          and cover an area of <span>2,90,000+ hectares.</span>
         </p>
       </section>
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
@@ -374,9 +374,10 @@ export default function Home() {
         <article>
           <EmblaSlider
             slides={recentImg_array}
-            no_of_slides={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 3 }}
+            no_of_slides={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4 }}
             delay={3000}
             autoSlide={true}
+            navigationDots={false}
           />
         </article>
       </section>
@@ -402,7 +403,7 @@ export default function Home() {
 
       {/* ----------------------------------------------------------------------------------------------------------------------------------------- */}
       <Form />
-      <section className="irrigatedLand_section">
+      {/* <section className="irrigatedLand_section">
         <div>
           <h1>
             Book an <span>educational visit</span>
@@ -415,7 +416,7 @@ export default function Home() {
         <div>
           <button onClick={() => navigate("/contact")}>Contact Us</button>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

@@ -8,6 +8,8 @@ import img_1 from "../../assets/images/1.png";
 import img_2 from "../../assets/images/2.png";
 import img_3 from "../../assets/images/3.webp";
 
+import mohanpuraChamberImg from "../../assets/images/MIP-min.webp";
+
 import damImg_2 from "../../assets/images/mohanpuraDam_2.jpg";
 import img_5 from "../../assets/images/5_.png";
 import img_6 from "../../assets/images/6_.png";
@@ -26,7 +28,7 @@ export default function Project() {
   };
   const mohanpuraBanner = {
     title: "Mohanpura Irrigation Project",
-    picture: { banner: damImg_2, images: [img_5, img_6] },
+    picture: { banner: damImg_2, images: [img_5, img_6, mohanpuraChamberImg] },
     description: "",
   };
 
@@ -284,6 +286,7 @@ export default function Project() {
             return (
               <div key={index} style={{ marginTop: "2rem" }}>
                 <img src={img} alt="Schematic Drawing" />
+                <br />
                 <br />
               </div>
             );
