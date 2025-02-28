@@ -1,0 +1,9 @@
+{
+    "name": "mkpmu",
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
