@@ -327,7 +327,7 @@ export default function Impact() {
           Since then, a herculean infrastructure has been created, consisting of
           26,000 km of underground pipelines that pump water through 20 pumping
           stations using 130 MW of electricity, irrigating a contiguous area of
-          290,000+ hectares.
+          2,90,000+ hectares.
         </p>
         <p>
           This state-of-the-art technology has directly improved the lives of
