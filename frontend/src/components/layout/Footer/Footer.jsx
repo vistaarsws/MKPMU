@@ -6,8 +6,12 @@ import linkedinIcon from "../../../assets/images/linkedin-svgrepo-com.svg";
 import footerLogo from "../../../assets/images/Emblem_of_Madhya_Pradesh1.svg";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import EmailImg from "../../../assets/images/communications.mkpmu@gmail.com.svg";
+
 
 export default function Footer() {
+
+
   const footer_details = {
     reachOut: [
       {
@@ -43,9 +47,12 @@ export default function Footer() {
       header:
         "Office of Project Director, Mohanpura Kundalia Project Management Unit, Rajgarh MP",
       telephone: "0772299285",
-      email: "communications.mkpmu@gmail.com ",
+      // email: "communications.mkpmu@gmail.com ",
     },
   };
+
+
+
 
   return (
     <>
@@ -79,8 +86,12 @@ export default function Footer() {
               <span>Telephone: </span>
               {footer_details.contactUs.telephone}
             </li>
-            <li>
-              <span>Email: </span> {footer_details.contactUs.email}
+            <li style={{ display: "flex", alignItems: "center" }}>
+              <span>Email: </span>
+              <figure style={{ marginLeft: "0.5rem" }}>
+                <img src={EmailImg} alt="Contact Email" />
+              </figure>
+              {/* <span>Email: </span> {footer_details.contactUs.email} */}
             </li>
           </ul>
         </section>

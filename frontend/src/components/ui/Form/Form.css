@@ -11,6 +11,12 @@
   margin: 0 auto;
 }
 
+.error {
+  color: #ff2c2c;
+  font-size: 12px !important;
+  margin-top: 0 !important;
+}
+
 .formSection form h1 {
   font-size: 4.8rem;
   font-weight: 500;
