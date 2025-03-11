@@ -532,9 +532,10 @@ export default function Impact() {
           height="100%"
           src="https://www.youtube.com/embed/ZZnAAckMRI4?si=uLo2vN6SFo-UzM6G"
           title="YouTube video player"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
         ></iframe>
       </article>
     </div>
