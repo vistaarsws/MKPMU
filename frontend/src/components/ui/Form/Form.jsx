@@ -5,16 +5,26 @@ import "./Form.css";
 
 export default function Form() {
   const form = useRef();
-
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     message: "",
+    honeypot: "", // ✅ Honeypot field to trap bots
   });
 
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false); // ✅ Prevent spam submissions
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [lastSubmitTime, setLastSubmitTime] = useState(0); // ✅ Rate Limiting
 
+  // ✅ Stronger email regex validation
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  // ✅ Sanitize input to prevent XSS attacks
+  const sanitizeInput = (input) => {
+    return input.replace(/<[^>]*>?/gm, ""); // Removes HTML tags
+  };
+
+  // ✅ Validate form fields
   const validateForm = () => {
     let newErrors = {};
 
@@ -26,7 +36,7 @@ export default function Form() {
 
     if (!formData.email.trim()) {
       newErrors.email = "Email is required.";
-    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+    } else if (!emailRegex.test(formData.email)) {
       newErrors.email = "Invalid email format.";
     }
 
@@ -41,42 +51,53 @@ export default function Form() {
   };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: sanitizeInput(e.target.value),
+    });
   };
 
   const sendEmail = async (e) => {
     e.preventDefault();
 
-    if (!validateForm() || isSubmitting) {
-      return; // ✅ Stop if form is invalid or already submitting
+    // ✅ Prevent spam bots using honeypot field
+    if (formData.honeypot) {
+      console.warn("Spam bot detected! Submission blocked.");
+      return;
     }
 
-    setIsSubmitting(true); // ✅ Disable form submission
+    // ✅ Implement Rate Limiting (User must wait 15 seconds before re-submitting)
+    const currentTime = Date.now();
+    if (currentTime - lastSubmitTime < 15000) {
+      alert("Please wait before submitting again.");
+      return;
+    }
+
+    if (!validateForm() || isSubmitting) {
+      return; // ✅ Stop if invalid or already submitting
+    }
+
+    setIsSubmitting(true);
+    setLastSubmitTime(currentTime);
 
     try {
       const result = await emailjs.sendForm(
-        "service_qam8xa6",
-        "template_hv958jt",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        "4SqkT4v1qR72qrYOX"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       console.log("SUCCESS!", result.text);
+      alert("Message sent successfully!");
 
-      // ✅ Show alert and wait for user confirmation
-      await new Promise((resolve) => {
-        alert("Message sent successfully!");
-        resolve();
-      });
-
-      // ✅ Reset form AFTER alert is closed
-      setFormData({ fullName: "", email: "", message: "" });
+      setFormData({ fullName: "", email: "", message: "", honeypot: "" });
       setErrors({});
     } catch (error) {
       console.log("FAILED...", error.text);
       alert("Message failed to send. Please try again later.");
     } finally {
-      setIsSubmitting(false); // ✅ Re-enable form submission
+      setIsSubmitting(false);
     }
   };
 
@@ -88,6 +109,15 @@ export default function Form() {
       <form ref={form} onSubmit={sendEmail} noValidate>
         <h1>Contact Us</h1>
         <p>To know more about the project or for any enquiries, contact us.</p>
+
+        {/* ✅ Hidden honeypot field for spam protection */}
+        <input
+          type="text"
+          name="honeypot"
+          value={formData.honeypot}
+          onChange={handleChange}
+          style={{ display: "none" }}
+        />
 
         <div>
           <div>
