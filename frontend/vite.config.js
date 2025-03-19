@@ -12,6 +12,7 @@ export default defineConfig({
         "font-src 'self' https://fonts.gstatic.com; " +
         "img-src 'self' data: blob: https://*; " +
         "media-src 'self' https://*; " +
+        "connect-src 'self' https://api.emailjs.com; " +
         "frame-ancestors 'none';",
     },
   },
