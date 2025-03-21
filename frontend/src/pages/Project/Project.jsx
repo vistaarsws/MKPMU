@@ -17,6 +17,7 @@ import img_6 from "../../assets/images/6_.png";
 import downArrow from "../../assets/images/downArrow_orange.svg";
 
 import { boldString } from "../../utils/HelperFunction/boldString";
+import React from "react";
 
 export default function Project() {
   const pageUrl = useUrlToGetPage();
@@ -206,7 +207,7 @@ export default function Project() {
               switch (item.type) {
                 case "paragraph":
                   return (
-                    <>
+                    <React.Fragment key={index}>
                       <p key={index}>
                         {boldString(item.content)}
                         <br /> <br />
@@ -218,14 +219,14 @@ export default function Project() {
                           <img src={downArrow} alt="Down Arrow" />
                         </figure>
                       )}
-                    </>
+                    </React.Fragment>
                   );
 
                 case "list":
                 case "list_numb":
                   const isNumberedList = item.type === "list_numb";
                   return (
-                    <>
+                    <React.Fragment key={index}>
                       <ul
                         key={index}
                         style={{ listStyle: isNumberedList ? "decimal" : "" }}
@@ -243,7 +244,7 @@ export default function Project() {
                           <img src={downArrow} alt="Down Arrow" />
                         </figure>
                       )}
-                    </>
+                    </React.Fragment>
                   );
 
                 default:

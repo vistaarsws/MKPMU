@@ -1,86 +1,93 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 import damPicture from "../../../assets/images/dam.jpg";
 import "./Form.css";
 
+// 🔹 Validation Schema using Yup
+const validationSchema = Yup.object({
+  fullName: Yup.string()
+    .min(3, "Full name must be at least 3 characters.")
+    .required("Full name is required."),
+  email: Yup.string()
+    .email("Invalid email format.")
+    .required("Email is required."),
+  message: Yup.string()
+    .min(10, "Message should be at least 10 characters.")
+    .test(
+      "no-html",
+      "HTML tags are not allowed.",
+      (value) => !/<\/?[a-z][\s\S]*>/i.test(value)
+    ) // Prevents XSS
+    .required("Message cannot be empty."),
+  honeypot: Yup.string(), // Hidden honeypot field (Should be empty)
+});
+
 export default function Form() {
   const form = useRef();
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    message: "",
-    honeypot: "", // ✅ Honeypot field to trap bots
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [recaptchaReady, setRecaptchaReady] = useState(false);
+  const RATE_LIMIT = 15000; // 15 seconds
+  const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+
+  // ✅ Ensure reCAPTCHA is loaded
+  useEffect(() => {
+    if (window.grecaptcha) {
+      setRecaptchaReady(true);
+    } else {
+      window.onload = () => setRecaptchaReady(true);
+    }
+  }, []);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(validationSchema),
   });
 
-  const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [lastSubmitTime, setLastSubmitTime] = useState(0); // ✅ Rate Limiting
-
-  // ✅ Stronger email regex validation
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-  // ✅ Sanitize input to prevent XSS attacks
-  const sanitizeInput = (input) => {
-    return input.replace(/<[^>]*>?/gm, ""); // Removes HTML tags
-  };
-
-  // ✅ Validate form fields
-  const validateForm = () => {
-    let newErrors = {};
-
-    if (!formData.fullName.trim()) {
-      newErrors.fullName = "Full name is required.";
-    } else if (formData.fullName.length < 3) {
-      newErrors.fullName = "Full name must be at least 3 characters long.";
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required.";
-    } else if (!emailRegex.test(formData.email)) {
-      newErrors.email = "Invalid email format.";
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = "Message cannot be empty.";
-    } else if (formData.message.length < 10) {
-      newErrors.message = "Message should be at least 10 characters.";
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: sanitizeInput(e.target.value),
-    });
-  };
-
-  const sendEmail = async (e) => {
-    e.preventDefault();
-
-    // ✅ Prevent spam bots using honeypot field
-    if (formData.honeypot) {
+  // 🔹 Handle Form Submission
+  const onSubmit = async (data) => {
+    if (data.honeypot) {
       console.warn("Spam bot detected! Submission blocked.");
       return;
     }
 
-    // ✅ Implement Rate Limiting (User must wait 15 seconds before re-submitting)
+    // 🛑 Rate Limiting
+    const lastSubmitTime = localStorage.getItem("lastSubmitTime") || 0;
     const currentTime = Date.now();
-    if (currentTime - lastSubmitTime < 15000) {
+    if (currentTime - lastSubmitTime < RATE_LIMIT) {
       alert("Please wait before submitting again.");
       return;
     }
 
-    if (!validateForm() || isSubmitting) {
-      return; // ✅ Stop if invalid or already submitting
+    // 🛑 Ensure reCAPTCHA is ready
+    if (!recaptchaReady || !window.grecaptcha) {
+      alert("reCAPTCHA is not ready yet. Please try again.");
+      return;
     }
 
     setIsSubmitting(true);
-    setLastSubmitTime(currentTime);
 
     try {
+      // ✅ Execute reCAPTCHA v3
+      const token = await window.grecaptcha.execute(siteKey, {
+        action: "submit",
+      });
+      if (!token) {
+        alert("reCAPTCHA verification failed. Please try again.");
+        setIsSubmitting(false);
+        return;
+      }
+      console.log("reCAPTCHA Token:", token);
+
+      const formData = new FormData(form.current);
+      formData.append("g-recaptcha-response", token);
+
       const result = await emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
@@ -90,11 +97,10 @@ export default function Form() {
 
       console.log("SUCCESS!", result.text);
       alert("Message sent successfully!");
-
-      setFormData({ fullName: "", email: "", message: "", honeypot: "" });
-      setErrors({});
+      reset();
+      localStorage.setItem("lastSubmitTime", currentTime);
     } catch (error) {
-      console.log("FAILED...", error.text);
+      console.error("FAILED...", error);
       alert("Message failed to send. Please try again later.");
     } finally {
       setIsSubmitting(false);
@@ -106,16 +112,14 @@ export default function Form() {
       <figure>
         <img src={damPicture} alt="Dam Picture" />
       </figure>
-      <form ref={form} onSubmit={sendEmail} noValidate>
+      <form ref={form} onSubmit={handleSubmit(onSubmit)} noValidate>
         <h1>Contact Us</h1>
         <p>To know more about the project or for any enquiries, contact us.</p>
 
         {/* ✅ Hidden honeypot field for spam protection */}
         <input
           type="text"
-          name="honeypot"
-          value={formData.honeypot}
-          onChange={handleChange}
+          {...register("honeypot")}
           style={{ display: "none" }}
         />
 
@@ -124,38 +128,36 @@ export default function Form() {
             <label htmlFor="fullName">Full Name</label>
             <input
               type="text"
-              name="fullName"
+              {...register("fullName")}
               placeholder="Enter your full name"
               id="fullName"
-              value={formData.fullName}
-              onChange={handleChange}
             />
-            {errors.fullName && <p className="error">{errors.fullName}</p>}
+            {errors.fullName && (
+              <p className="error">{errors.fullName.message}</p>
+            )}
           </div>
 
           <div>
             <label htmlFor="email">Email</label>
             <input
               type="email"
-              name="email"
+              {...register("email")}
               placeholder="Enter your email"
               id="email"
-              value={formData.email}
-              onChange={handleChange}
             />
-            {errors.email && <p className="error">{errors.email}</p>}
+            {errors.email && <p className="error">{errors.email.message}</p>}
           </div>
 
           <div>
             <label htmlFor="message">Reason</label>
             <textarea
-              name="message"
+              {...register("message")}
               id="message"
               placeholder="Tell us your reason for contacting us"
-              value={formData.message}
-              onChange={handleChange}
             />
-            {errors.message && <p className="error">{errors.message}</p>}
+            {errors.message && (
+              <p className="error">{errors.message.message}</p>
+            )}
           </div>
         </div>
 

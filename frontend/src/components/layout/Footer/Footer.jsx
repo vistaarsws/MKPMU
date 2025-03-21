@@ -6,12 +6,9 @@ import linkedinIcon from "../../../assets/images/linkedin-svgrepo-com.svg";
 import footerLogo from "../../../assets/images/Emblem_of_Madhya_Pradesh1.svg";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import EmailImg from "../../../assets/images/communications.mkpmu@gmail.com.svg";
-
+import EmailImg from "../../../assets/images/communications[dot]mkpmu[at]gmail.com.svg";
 
 export default function Footer() {
-
-
   const footer_details = {
     reachOut: [
       {
@@ -51,9 +48,6 @@ export default function Footer() {
     },
   };
 
-
-
-
   return (
     <>
       <footer>
@@ -88,7 +82,11 @@ export default function Footer() {
             </li>
             <li style={{ display: "flex", alignItems: "center" }}>
               <span>Email: </span>
-              <figure style={{ marginLeft: "0.5rem" }}>
+              <figure
+                style={{
+                  marginLeft: "0.5rem",
+                }}
+              >
                 <img src={EmailImg} alt="Contact Email" />
               </figure>
               {/* <span>Email: </span> {footer_details.contactUs.email} */}

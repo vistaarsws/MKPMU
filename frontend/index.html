@@ -75,7 +75,7 @@
       content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://res.cloudinary.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*; media-src 'self' https://*;"
     /> -->
 
-    <meta
+    <!-- <meta
       http-equiv="Content-Security-Policy"
       content="
     default-src 'self'; 
@@ -85,16 +85,25 @@
     img-src 'self' data: blob: https://*; 
     media-src 'self' https://*; 
     connect-src 'self' https://api.emailjs.com;"
+    /> -->
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="frame-src 'self' https://www.google.com/ https://www.gstatic.com/ https://www.youtube.com https://www.youtube-nocookie.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://res.cloudinary.com https://www.google.com https://www.gstatic.com;"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="connect-src 'self' https://api.emailjs.com https://www.google.com https://www.gstatic.com;"
     />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      src="https://www.google.com/recaptcha/api.js?render=%VITE_RECAPTCHA_SITE_KEY%"
+      async
+      defer
     ></script>
   </body>
 </html>

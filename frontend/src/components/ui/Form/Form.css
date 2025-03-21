@@ -74,6 +74,18 @@
   align-items: start;
 }
 
+.grecaptcha-badge {
+  bottom: 10px !important; /* Adjust position */
+  right: 10px !important; /* Adjust position */
+  transform: scale(0.8); /* Scale down if needed */
+  opacity: 0.8; /* Slight transparency */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.grecaptcha-badge:hover {
+  opacity: 1; /* Fully visible on hover */
+}
+
 @media screen and (max-width: 1400px) {
   .formSection form p {
     /* font-size: 2.4rem;
