@@ -16,6 +16,8 @@ export default defineConfig({
         "frame-src 'self' https://www.google.com https://www.gstatic.com https://www.youtube.com https://www.youtube-nocookie.com;" +
         "connect-src 'self' https://api.emailjs.com https://www.google.com https://www.gstatic.com; " +
         "frame-ancestors 'none';",
+      "Referrer-Policy": "same-origin",
+      "X-XSS-Protection": "1; mode=block",
     },
   },
   plugins: [react()],

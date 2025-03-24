@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 import damPicture from "../../../assets/images/dam.jpg";
 import "./Form.css";
 
-// 🔹 Validation Schema using Yup
+// 🔹 Validation Schema
 const validationSchema = Yup.object({
   fullName: Yup.string()
     .min(3, "Full name must be at least 3 characters.")
@@ -16,29 +16,37 @@ const validationSchema = Yup.object({
     .required("Email is required."),
   message: Yup.string()
     .min(10, "Message should be at least 10 characters.")
-    .test(
-      "no-html",
-      "HTML tags are not allowed.",
-      (value) => !/<\/?[a-z][\s\S]*>/i.test(value)
-    ) // Prevents XSS
     .required("Message cannot be empty."),
-  honeypot: Yup.string(), // Hidden honeypot field (Should be empty)
+  honeypot: Yup.string(), // Hidden honeypot field
 });
 
 export default function Form() {
   const form = useRef();
+  const recaptchaRef = useRef(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [recaptchaReady, setRecaptchaReady] = useState(false);
-  const RATE_LIMIT = 15000; // 15 seconds
   const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
-  // ✅ Ensure reCAPTCHA is loaded
+  // 🔹 Load reCAPTCHA v2 Script Dynamically
   useEffect(() => {
-    if (window.grecaptcha) {
-      setRecaptchaReady(true);
-    } else {
-      window.onload = () => setRecaptchaReady(true);
-    }
+    const script = document.createElement("script");
+    script.src = "https://www.google.com/recaptcha/api.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      if (window.grecaptcha) {
+        setRecaptchaReady(true);
+        console.log("✅ reCAPTCHA v2 Loaded Successfully!");
+      } else {
+        console.error("❌ reCAPTCHA v2 failed to load.");
+      }
+    };
+
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   const {
@@ -53,38 +61,34 @@ export default function Form() {
   // 🔹 Handle Form Submission
   const onSubmit = async (data) => {
     if (data.honeypot) {
-      console.warn("Spam bot detected! Submission blocked.");
+      console.warn("🚨 Spam bot detected! Submission blocked.");
       return;
     }
 
-    // 🛑 Rate Limiting
-    const lastSubmitTime = localStorage.getItem("lastSubmitTime") || 0;
-    const currentTime = Date.now();
-    if (currentTime - lastSubmitTime < RATE_LIMIT) {
-      alert("Please wait before submitting again.");
+    if (!recaptchaReady) {
+      alert("⚠️ reCAPTCHA is not ready yet. Please wait.");
       return;
     }
 
-    // 🛑 Ensure reCAPTCHA is ready
-    if (!recaptchaReady || !window.grecaptcha) {
-      alert("reCAPTCHA is not ready yet. Please try again.");
+    // 🔹 Retrieve the reCAPTCHA token
+    const token = window.grecaptcha.getResponse();
+    if (!token) {
+      alert("⚠️ Please complete the reCAPTCHA verification.");
       return;
     }
+
+      // 🔹 Rate Limiting: Prevent submissions more than once per minute
+  const lastSubmitTime = localStorage.getItem("lastSubmitTime");
+  const now = Date.now();
+  if (lastSubmitTime && now - lastSubmitTime < 60000) { // 1-minute limit
+    alert("⚠️ Please wait before sending another message.");
+    return;
+  }
+  localStorage.setItem("lastSubmitTime", now);
 
     setIsSubmitting(true);
 
     try {
-      // ✅ Execute reCAPTCHA v3
-      const token = await window.grecaptcha.execute(siteKey, {
-        action: "submit",
-      });
-      if (!token) {
-        alert("reCAPTCHA verification failed. Please try again.");
-        setIsSubmitting(false);
-        return;
-      }
-      console.log("reCAPTCHA Token:", token);
-
       const formData = new FormData(form.current);
       formData.append("g-recaptcha-response", token);
 
@@ -95,13 +99,13 @@ export default function Form() {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
-      console.log("SUCCESS!", result.text);
-      alert("Message sent successfully!");
+      console.log("🎉 SUCCESS!", result.text);
+      alert("✅ Message sent successfully!");
       reset();
-      localStorage.setItem("lastSubmitTime", currentTime);
+      window.grecaptcha.reset(); // ✅ Reset reCAPTCHA after submission
     } catch (error) {
-      console.error("FAILED...", error);
-      alert("Message failed to send. Please try again later.");
+      console.error("❌ FAILED...", error);
+      alert("⚠️ Message failed to send. Please try again later.");
     } finally {
       setIsSubmitting(false);
     }
@@ -160,6 +164,13 @@ export default function Form() {
             )}
           </div>
         </div>
+
+        {/* ✅ Google reCAPTCHA v2 Checkbox */}
+        <div
+          className="g-recaptcha"
+          data-sitekey={siteKey}
+          ref={recaptchaRef}
+        ></div>
 
         <button type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Send Message"}

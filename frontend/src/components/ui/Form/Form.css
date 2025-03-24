@@ -9,6 +9,8 @@
 
 .formSection figure {
   margin: 0 auto;
+  height: 100%;
+  padding-block: 2rem;
 }
 
 .error {
@@ -74,16 +76,12 @@
   align-items: start;
 }
 
-.grecaptcha-badge {
-  bottom: 10px !important; /* Adjust position */
-  right: 10px !important; /* Adjust position */
-  transform: scale(0.8); /* Scale down if needed */
-  opacity: 0.8; /* Slight transparency */
-  transition: opacity 0.3s ease-in-out;
-}
+.g-recaptcha {
+  margin-block: 2rem;
 
-.grecaptcha-badge:hover {
-  opacity: 1; /* Fully visible on hover */
+  & div:first-of-type {
+    margin: unset !important;
+  }
 }
 
 @media screen and (max-width: 1400px) {
