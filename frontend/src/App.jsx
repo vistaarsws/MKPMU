@@ -26,6 +26,9 @@ import ScrollToTop from "./hooks/ScrollToTop";
 import Team from "./pages/Team/Team";
 
 function App() {
+  if (window.top !== window.self) {
+    window.top.location = window.self.location; // Prevents iframe embedding
+  }
   return (
     <>
       <BrowserRouter>
