@@ -89,11 +89,11 @@
 
     <meta
       http-equiv="Content-Security-Policy"
-      content="frame-src 'self' https://www.google.com/ https://www.gstatic.com/ https://www.youtube.com https://www.youtube-nocookie.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://res.cloudinary.com https://www.google.com https://www.gstatic.com;"
-    />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="connect-src 'self' https://api.emailjs.com https://www.google.com https://www.gstatic.com;"
+      content="
+      frame-src 'self' https://www.google.com https://www.gstatic.com https://www.youtube.com https://www.youtube-nocookie.com;
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://res.cloudinary.com https://www.google.com https://www.gstatic.com https://vercel.live;
+      connect-src 'self' https://api.emailjs.com https://www.google.com https://www.gstatic.com;
+    "
     />
   </head>
   <body>
