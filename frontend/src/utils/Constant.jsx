@@ -105,7 +105,7 @@ import blogImg_1 from "../assets/images/mohanpuraDam_1.jpg";
 
 import researchImg_1 from "../assets/images/researchIcon.png";
 import researchPublication_1 from "../assets/images/researchPublication_1.jpg";
-import researchPublicationPdf_1 from "../../public/ResearchPublication_1.pdf";
+import researchPublicationPdf_1 from "../../src/assets/ResearchPublication_1.pdf";
 
 import awards_1 from "../assets/images/awards-1.png";
 import awards_2 from "../assets/images/awards-2.png";
