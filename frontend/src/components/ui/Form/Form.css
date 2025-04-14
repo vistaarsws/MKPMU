@@ -28,6 +28,10 @@
   padding: 1rem 5%;
 }
 
+#recaptchaElement div div {
+  margin: 0;
+}
+
 .formSection form p {
   font-size: 2.4rem;
   font-weight: 400;
