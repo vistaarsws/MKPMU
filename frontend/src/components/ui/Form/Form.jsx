@@ -109,7 +109,6 @@ export default function Form() {
     setIsSubmitting(true);
 
     try {
-
       // ✅ Send form data via EmailJS
       const result = await emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -210,7 +209,7 @@ export default function Form() {
           data-callback="recaptchaCallback"
         ></div> */}
 
-        <ReCAPTCHA sitekey={siteKey} ref={recaptchaRef} />
+        <ReCAPTCHA sitekey={siteKey} id="recaptchaElement" ref={recaptchaRef} />
 
         <button type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Send Message"}
