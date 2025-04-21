@@ -7,11 +7,13 @@ import damPicture from "../../../assets/images/dam.jpg";
 import ReCAPTCHA from "react-google-recaptcha";
 import "./Form.css";
 
-const containsHTML = (value) => /<\/?[^>]+(>|$)/.test(value); // Regex to detect HTML tags
+const containsHTML = (value) =>
+  typeof value === "string" && /<\/?[^>]+(>|$)/.test(value.trim()); // Regex to detect HTML tags
 
 // ✅ Validation Schema (Prevents HTML input)
 const validationSchema = Yup.object({
   fullName: Yup.string()
+    .transform((value) => value.trim())
     .min(3, "Full name must be at least 3 characters.")
     .test(
       "no-html",
@@ -20,6 +22,7 @@ const validationSchema = Yup.object({
     )
     .required("Full name is required."),
   email: Yup.string()
+    .transform((value) => value.trim())
     .email("Invalid email format.")
     .test(
       "no-html",
@@ -28,6 +31,7 @@ const validationSchema = Yup.object({
     )
     .required("Email is required."),
   message: Yup.string()
+    .transform((value) => value.trim())
     .min(10, "Message should be at least 10 characters.")
     .test(
       "no-html",
